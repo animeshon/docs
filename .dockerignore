@@ -1,10 +1,9 @@
 .cache
-.codefresh.yaml
 .dockerignore
 .git
 .gitignore
 .vscode
-*.md
+/*.md
 /build
 /dist
 /Dockerfile
