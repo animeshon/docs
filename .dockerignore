@@ -1,0 +1,12 @@
+.cache
+.codefresh.yaml
+.dockerignore
+.git
+.gitignore
+.vscode
+*.md
+/build
+/dist
+/Dockerfile
+/node_modules
+/terraform
