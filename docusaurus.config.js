@@ -1,17 +1,17 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Animeshon Docs',
+  tagline: 'Anime-Manga Research and Development Center',
+  url: 'https://docs.animeshon.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'animeshon',
+  projectName: 'docs',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Animeshon',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Animeshon Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -23,7 +23,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/animeshon/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -36,11 +36,19 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Search Engine',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
+              label: 'RESTful APIs',
+              to: 'docs/doc2/',
+            },
+            {
+              label: 'GraphQL',
+              to: 'docs/doc2/',
+            },
+            {
+              label: 'OAuth 2.0',
               to: 'docs/doc2/',
             },
           ],
@@ -49,16 +57,24 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.gg/WvNsjtR',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Discourse',
+              href: 'https://discuss.animeshon.com/',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/AnimeshonSNS',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://facebook.com/AnimeshonSNS',
+            },
+            {
+              label: 'Instagram',
+              href: 'https://instagram.com/animeshon.official',
             },
           ],
         },
@@ -66,17 +82,25 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Animeshon',
+              to: 'https://animeshon.com',
+            },
+            {
+              label: 'Encyclopedia',
+              to: 'https://insider.animeshon.com',
+            },
+            {
               label: 'Blog',
               to: 'blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/animeshon/docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Animeshon S.r.l. | Built with Docusaurus.`,
     },
   },
   presets: [
@@ -89,13 +113,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/animeshon/docs/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/animeshon/docs/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
