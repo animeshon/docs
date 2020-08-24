@@ -65,6 +65,10 @@ module.exports = {
               href: 'https://discuss.animeshon.com/',
             },
             {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/animeshon/',
+            },
+            {
               label: 'Twitter',
               href: 'https://twitter.com/AnimeshonSNS',
             },
