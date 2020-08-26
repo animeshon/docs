@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Animeshon Docs',
-  tagline: 'Anime-Manga Research and Development Center',
+  tagline: 'Japanese Multimedia Content Research and Development Center',
   url: 'https://docs.animeshon.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
