@@ -12,28 +12,28 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Animeshon was designed to provided fundation features and service. 
+        Simple but essentials functionalities to spend less time searching and more enjoying the Japanese Multmedia Culture.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>Easy to Integrate</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        All our components are designed to be easily integrated by third party Application, Ecosystems and Platform. 
+        Focus on your idea an leave the rest to Animeshon.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>Easy.</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Reinvent the way of consume, organize, syncronize, search, play and discover the Japanese Mulltimedia Culture.
+        Let's create togheter a new Ecosystem where everyone can freely interact with it's favourite content and where we can link together.
       </>
     ),
   },
