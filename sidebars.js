@@ -1,7 +1,6 @@
 module.exports = {
   docs: [
     'home',
-    'manifesto',
     {
       type: 'category',
       label: 'GraphQL',
@@ -22,5 +21,6 @@ module.exports = {
       label: 'Design Concepts',
       items: ['design/design_ashen', 'design/design_kb', 'design/design_encyclopedia', 'design/design_searchengine']
     },
+    'manifesto',
   ],
 };
