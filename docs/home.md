@@ -14,7 +14,7 @@ Designed by Japanese Multimedia Content's enthusiasts for Japanese Multimedia Co
 [GraphQL](graphql/graphql_start)   
 Get Started with our GraphQL interfaces and start explore our Knowledge Base
 
-[RestAPI](restapi/restapi_start)
+[RestAPI](restapi/restapi_start)  
 Integrate Animeshon's functionalities and service through Open RestAPI intefaces
 
 [Oauth 2.0](oauth2/oauth2_start)   
