@@ -14,18 +14,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Oauth2.0',
+      label: 'Oauth 2.0',
       items: ['oauth2/oauth2_start', 'oauth2/oauth2_integration'],
     },
     {
       type: 'category',
-      label: 'Docusaurus',
-      items: ['doc1', 'doc2', 'doc3']
+      label: 'Design Concepts',
+      items: ['design/design_ashen', 'design/design_kb', 'design/design_encyclopedia', 'design/design_searchengine']
     },
-    {
-      type: 'category',
-      label: 'Features',
-      items: ['mdx'],
-    }
   ],
 };
