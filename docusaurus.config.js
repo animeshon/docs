@@ -35,10 +35,10 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Search Engine',
-              to: 'docs/',
-            },
+            // {
+            //   label: 'Search Engine',
+            //   to: 'docs/',
+            // },
             {
               label: 'RESTful APIs',
               to: 'docs/doc2/',
@@ -113,7 +113,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'home',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
