@@ -17,8 +17,8 @@ Get Started with our GraphQL interfaces and start explore our Knowledge Base
 [RestAPI](restapi/restapi_start)  
 Integrate Animeshon's functionalities and service through Open RestAPI intefaces
 
-[Oauth 2.0](oauth2/oauth2_start)   
-Improve Autorization and Authentication in your Japanese Multimedia Content application using Animeshon's Oauth 2.0 APIs. One account to manage them all.
+[OAuth 2.0](oauth2/oauth2_start)   
+Improve Autorization and Authentication in your Japanese Multimedia Content application using Animeshon's OAuth 2.0 APIs. One account to manage them all.
 
 <br />
 

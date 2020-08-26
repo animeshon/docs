@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Oauth 2.0',
+      label: 'OAuth 2.0',
       items: ['oauth2/oauth2_start', 'oauth2/oauth2_integration'],
     },
     {
