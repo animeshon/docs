@@ -46,6 +46,9 @@ Animeshon is made better every day by the growing community and the contributors
 [Community](https://discuss.animeshon.com/)   
 Discuss Animeshon on the official community.
 
+[Discord](https://discord.com/invite/WvNsjtR)   
+Join Animeshon Discord community.
+
 <br />
 
 ## Roadmap & Further Developments
