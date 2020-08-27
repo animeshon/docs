@@ -3,18 +3,23 @@ module.exports = {
     'home',
     {
       type: 'category',
+      label: 'Developers',
+      items: ['developers/early-adopters-program', 'developers/release-lifecycles'],
+    },
+    {
+      type: 'category',
       label: 'GraphQL',
       items: ['graphql/graphql_start', 'graphql/graphql_schema', 'graphql/graphql_query', 'graphql/graphql_tutorials'],
     },
     {
       type: 'category',
-      label: 'RestAPI',
-      items: ['restapi/restapi_start', 'restapi/restapi_doc', 'restapi/restapi_tutorials'],
+      label: 'REST APIs',
+      items: ['restapi/introduction', 'restapi/tutorials'],
     },
     {
       type: 'category',
       label: 'OAuth 2.0',
-      items: ['oauth2/oauth2_start', 'oauth2/oauth2_integration'],
+      items: ['oauth2/introduction', 'oauth2/roadmap'],
     },
     {
       type: 'category',
