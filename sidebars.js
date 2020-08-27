@@ -1,5 +1,6 @@
 module.exports = {
   docs: [
+    'manifesto',
     'home',
     {
       type: 'category',
@@ -18,6 +19,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Ashen Client',
+      items: ['ashenclient/ashenclient_start', 'ashenclient/ashenclient_theory'],
+    },
+    {
+      type: 'category',
       label: 'OAuth 2.0',
       items: ['oauth2/introduction', 'oauth2/roadmap'],
     },
@@ -26,6 +32,5 @@ module.exports = {
       label: 'Design Concepts',
       items: ['design/design_ashen', 'design/design_kb', 'design/design_encyclopedia', 'design/design_searchengine']
     },
-    'manifesto',
   ],
 };
