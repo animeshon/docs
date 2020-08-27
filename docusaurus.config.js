@@ -68,6 +68,11 @@ module.exports = {
               label: 'Reddit',
               href: 'https://www.reddit.com/r/animeshon/',
             },
+          ],
+        },
+        {
+          title: 'Social',
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/AnimeshonSNS',
@@ -90,16 +95,29 @@ module.exports = {
               to: 'https://animeshon.com',
             },
             {
-              label: 'Encyclopedia',
-              to: 'https://insider.animeshon.com',
-            },
-            {
               label: 'Blog',
               to: 'blog',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/animeshon/docs',
+            },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Privacy Policy',
+              to: 'https://www.iubenda.com/privacy-policy/48776658',
+            },
+            {
+              label: 'Cookie Policy',
+              to: 'https://www.iubenda.com/privacy-policy/48776658/cookie-policy',
+            },
+            {
+              label: 'Terms and Conditions',
+              href: 'https://www.iubenda.com/terms-and-conditions/48776658',
             },
           ],
         },
