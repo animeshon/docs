@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Japanese Multimedia Content Research and Development Center',
   url: 'https://docs.animeshon.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore', // ! NOTE: This should be re-enabled in production once docusaurus provides better support.
   favicon: 'img/favicon.ico',
   organizationName: 'animeshon',
   projectName: 'docs',
