@@ -41,7 +41,7 @@ module.exports = {
             },
             {
               label: 'Knowledge Base',
-              to: 'docs/knowledge-base/introduction',
+              to: 'docs/detabesu/introduction',
             },
             {
               label: 'Encyclopedia',

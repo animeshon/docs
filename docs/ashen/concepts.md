@@ -18,7 +18,7 @@ In the case of a `Video File` Ashen cuts the video in **Frames**. Doing so Ashen
 
 ![Ashen Indexing Step 2](assets/ashen-index-2.svg)
 The images are then preprocessed normalizing colors, resolution, and removing artifacts and features not needed for the generation of the `fingerprint`.   
-This process can be externalized in third party application is explained in depth in the [Ashen-SDK Concept](/docs/ashen-sdk/concepts#image-preprocessing) section.
+This process can be externalized in third party application is explained in depth in the [SDK Concept](/docs/ashen/sdk/concepts#image-preprocessing) section.
 
 <br />
 
@@ -31,7 +31,7 @@ Once the immage has been normalized and cleaned up, Ashen finally generates an *
 Performing a search by Image or Video against Ashen's database can be performed in 2 different ways:
 
 * *Upload* the content and let Ashen handle the generation of the Perceptual Hash searched.
-* *Generate the Perceptual Hash locally* and delegate to Ashen only the matching process. In this case use the documentation present [Ashen-SDK Concept](/docs/ashen-sdk/concepts#image-preprocessing) section to generate healty Perceptual Hashes.
+* *Generate the Perceptual Hash locally* and delegate to Ashen only the matching process. In this case use the documentation present [SDK Concept](/docs/ashen/sdk/concepts#image-preprocessing) section to generate healty Perceptual Hashes.
 
 In the first case Ashen performs adain the above **3 steps** to generate the `Perceptual Hash Fingerprints` from the content.
 After that the Search Process is the conceptually the same.

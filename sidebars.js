@@ -20,17 +20,23 @@ module.exports = {
     {
       type: 'category',
       label: 'Ashen',
-      items: ['ashen/introduction', 'ashen/roadmap', 'ashen/quickstarts', 'ashen/concepts', 'ashen/tutorials'],
+      items: [
+        'ashen/introduction', 
+        'ashen/roadmap', 
+        'ashen/quickstarts', 
+        'ashen/concepts', 
+        'ashen/tutorials',
+        {
+          type: 'category',
+          label: 'SDK',
+          items: ['ashen/sdk/quickstarts', 'ashen/sdk/concepts', 'ashen/sdk/tutorials'],
+        },
+      ],
     },
     {
       type: 'category',
-      label: 'Ashen SDK',
-      items: ['ashen-sdk/introduction', 'ashen-sdk/roadmap', 'ashen-sdk/quickstarts', 'ashen-sdk/concepts', 'ashen-sdk/tutorials'],
-    },
-    {
-      type: 'category',
-      label: 'Knowledge Base',
-      items: ['knowledge-base/introduction', 'knowledge-base/roadmap', 'knowledge-base/quickstarts', 'knowledge-base/concepts', 'knowledge-base/tutorials'],
+      label: 'Detabesu',
+      items: ['detabesu/introduction', 'detabesu/roadmap', 'detabesu/quickstarts', 'detabesu/concepts', 'detabesu/tutorials'],
     },
     {
       type: 'category',
