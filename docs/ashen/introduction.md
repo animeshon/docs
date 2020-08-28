@@ -3,6 +3,8 @@ id: introduction
 title: Introduction
 ---
 
+## Welcome to Ashen, the Sauce's source
+
 ***Ashen*** is a experimental system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/).
 
 ## Perceptual Hashing

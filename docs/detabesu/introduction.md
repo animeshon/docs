@@ -3,6 +3,7 @@ id: introduction
 title: Introduction
 ---
 
+## Welcome to Databesu, the Graph-Knowledge Base
 Detabesu is the first `Graph-Knowledge Base` easily expandable, integrable and consultable of the Japanese Multimedia Industry.
 
 Detabesu proposes a new way of manage and take advantage of the available informations about the Japanese Multimedia Contents thanks to the underlying Graph Database. Graph Databases are known to be particularly suitable to manage higly interconnected data and offer powerfull Query language to *traverse* the **graph** with minimum effort.
