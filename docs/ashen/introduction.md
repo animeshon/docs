@@ -20,3 +20,17 @@ Until now the Japanese Multimedia Community had to rely on algorithms which, giv
 Ashen do the oposite, generating a Perceptual Hash Fingeprint for each frame in the file it is capable of index not the file but the content.
 No matter the resolution, hard subtitles, censorship, edits or localization Ashen is able to detect a previusly indexed video and return the references to the ***Episode*** and/or ***Anime***.
 
+-------
+## Take a tour of Ashen
+
+[Quickstart](quickstart)   
+Get started with Ashen functionalities and try out a new way of getting sauces.
+
+[Roadmap](roadmap)   
+Stay up to date on Ashen's development and optimizations.
+
+[Tutorials](tutorials)   
+A rich set fo tutorial to enjoy Ashen.
+
+[SDK](sdk/quickstarts)   
+Are you a Developer? Check Ashen SDK tool and start integrate our functionalities in your own project!
