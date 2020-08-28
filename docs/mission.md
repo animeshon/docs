@@ -1,6 +1,6 @@
 ---
-id: manifesto
-title: Animeshon's Manifesto
+id: mission
+title: Mission
 ---
 
 We believe in the inherent potential laying in the interaction beween people bound by a passion. We bellieve in the power of **make your fantasy real**.

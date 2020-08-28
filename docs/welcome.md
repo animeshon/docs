@@ -1,8 +1,7 @@
 ---
-id: home
-title: Home
+id: welcome
+title: Welcome
 ---
-
 
 ### Welcome to the official Animeshon Documentation
 Designed by Japanese Multimedia Content's enthusiasts for Japanese Multimedia Content's enthusiasts.

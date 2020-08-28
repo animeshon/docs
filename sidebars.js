@@ -1,7 +1,7 @@
 module.exports = {
   docs: [
-    'manifesto',
-    'home',
+    'welcome',
+    'mission',
     {
       type: 'category',
       label: 'Developers',
@@ -9,18 +9,8 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'GraphQL',
-      items: ['graphql/graphql_start', 'graphql/graphql_schema', 'graphql/graphql_query', 'graphql/graphql_tutorials'],
-    },
-    {
-      type: 'category',
-      label: 'REST APIs',
-      items: ['restapi/introduction', 'restapi/tutorials'],
-    },
-    {
-      type: 'category',
-      label: 'Ashen Client',
-      items: ['ashenclient/ashenclient_start', 'ashenclient/ashenclient_theory'],
+      label: 'Ecosystem',
+      items: ['ecosystem/introduction', 'ecosystem/roadmap'],
     },
     {
       type: 'category',
@@ -29,8 +19,28 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Design Concepts',
-      items: ['design/design_ashen', 'design/design_kb', 'design/design_encyclopedia', 'design/design_searchengine']
+      label: 'Ashen',
+      items: ['ashen/introduction', 'ashen/roadmap', 'ashen/quickstarts', 'ashen/concepts', 'ashen/tutorials'],
+    },
+    {
+      type: 'category',
+      label: 'Ashen SDK',
+      items: ['ashen-sdk/introduction', 'ashen-sdk/roadmap', 'ashen-sdk/quickstarts', 'ashen-sdk/concepts', 'ashen-sdk/tutorials'],
+    },
+    {
+      type: 'category',
+      label: 'Knowledge Base',
+      items: ['knowledge-base/introduction', 'knowledge-base/roadmap', 'knowledge-base/quickstarts', 'knowledge-base/concepts', 'knowledge-base/tutorials'],
+    },
+    {
+      type: 'category',
+      label: 'Encyclopedia',
+      items: ['encyclopedia/introduction', 'encyclopedia/roadmap', 'encyclopedia/quickstarts', 'encyclopedia/concepts', 'encyclopedia/tutorials'],
+    },
+    {
+      type: 'category',
+      label: 'Search Engine',
+      items: ['search-engine/introduction', 'search-engine/roadmap', 'search-engine/quickstarts', 'search-engine/concepts', 'search-engine/tutorials'],
     },
   ],
 };

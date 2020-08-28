@@ -1,6 +1,6 @@
 ---
-id: introduction
-title: Introduction to REST APIs
+id: tutorials
+title: Tutorials
 ---
 
 ## Work in Progress

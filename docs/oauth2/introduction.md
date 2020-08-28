@@ -1,11 +1,11 @@
 ---
 id: introduction
-title: Introduction to OAuth 2.0
+title: Introduction
 ---
 
 :::note
 
-This product is currently available in [Pre-Alpha Preview](developers/release-lifecycles) and is not accessible by the general public. If you wish to obtain **early-access** to this product please apply for the [Early Adopters Program](developers/early-adopters-program).
+This product is currently available in [Pre-Alpha Version](developers/release-lifecycles) and is therefore not accessible by the general public. If you wish to obtain **early-access** to this product please apply for the [Early Adopters Program](developers/early-adopters-program).
 
 :::
 

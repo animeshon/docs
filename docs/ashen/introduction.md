@@ -1,6 +1,6 @@
 ---
-id: design_ashen
-title: Ashen - Perceptual Hash
+id: introduction
+title: Introduction
 ---
 
 ***Ashen*** is a experimental system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/).

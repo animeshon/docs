@@ -35,21 +35,17 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            // {
-            //   label: 'Search Engine',
-            //   to: 'docs/',
-            // },
             {
-              label: 'RESTful APIs',
-              to: 'docs/doc2/',
+              label: 'Ashen',
+              to: 'docs/ashen/introduction',
             },
             {
-              label: 'GraphQL',
-              to: 'docs/doc2/',
+              label: 'Knowledge Base',
+              to: 'docs/knowledge-base/introduction',
             },
             {
-              label: 'OAuth 2.0',
-              to: 'docs/doc2/',
+              label: 'Encyclopedia',
+              to: 'docs/encyclopedia/introduction',
             },
           ],
         },
@@ -96,7 +92,7 @@ module.exports = {
             },
             {
               label: 'Blog',
-              to: 'blog',
+              to: '/blog',
             },
             {
               label: 'GitHub',
@@ -131,10 +127,10 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'home',
+          homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
+          editUrl:  
             'https://github.com/animeshon/docs/edit/master/website/',
         },
         blog: {
