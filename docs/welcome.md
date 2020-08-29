@@ -32,7 +32,7 @@ reflections and reviews are spread across the internet and enthusiast have often
 Get Started with our GraphQL interfaces and start explore our [Detabesu](/docs/detabesu/introduction).
 
 [Ashen RestAPI](/docs/ashen/sdk/quickstarts)  
-Integrate [Ashen](/docs/ashen/introduction)  's functionalities and service through Open RestAPI intefaces.
+Integrate [Ashen](/docs/ashen/introduction)'s functionalities and service through Open RestAPI intefaces.
 
 [OAuth 2.0](/docs/oauth2/introduction)   
 Improve Autorization and Authentication in your Japanese Multimedia Content application using Animeshon's OAuth 2.0 APIs. One account to manage them all.
