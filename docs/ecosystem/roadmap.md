@@ -14,7 +14,7 @@ This Roadmap can be subject to variation. Dates are indicative and are not stric
 | [Ashen](/docs/ashen/introduction) | | |
 | [Ashen Grey](...) | | |
 | [OAuth 2.0](/docs/oauth2/introduction) | | |
-| [Detabesu API (read only)](...) | | |
+| [Detabesu](...) | | |
 | [Search Engine](/docs/search-engine/introduction) | | |
 | [Encyclopedia](/docs/encyclopedia/introduction) | | |
 | [Community contribution](...) | | |
