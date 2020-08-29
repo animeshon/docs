@@ -36,7 +36,17 @@ module.exports = {
     {
       type: 'category',
       label: 'Detabesu',
-      items: ['detabesu/introduction', 'detabesu/roadmap', 'detabesu/quickstarts', 'detabesu/concepts', 'detabesu/tutorials'],
+      items: [
+        'detabesu/introduction', 
+        'detabesu/roadmap', 
+        'detabesu/quickstarts', 
+        'detabesu/concepts', 
+        {
+          type: 'category',
+          label: 'GraphQL',
+          items: ['detabesu/graphql/quickstarts', 'detabesu/graphql/tutorials'],
+        },
+      ],
     },
     {
       type: 'category',
