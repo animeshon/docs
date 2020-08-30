@@ -3,6 +3,14 @@ id: concepts
 title: Concepts
 ---
 
+## Perceptual Hashing
+The Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic using the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s).
+
+Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself.
+
+Not being an algorithm which generates an identifier based on the raw bytes contained in the image, but using the perception of the image as whole, the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
+
+
 ## Ashen Internal Process
 Here an high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.
 

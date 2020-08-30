@@ -7,17 +7,10 @@ title: Introduction
 
 ***Ashen*** is a experimental system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/).
 
+Ashen exploits the capability of the [Perceptual Hashing](/docs/ashen/concepts#perceptual-hashing) technology to analyze and index also **Video Files**. The results is a system able to perform **reverse search by image *and* video**.
+
 Ashen's development state is shown in [Ashen Roadmap](/docs/ashen/roadmap).
 
-## Perceptual Hashing
-The Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic using the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s).
-
-Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself.
-
-Not being an algorithm which generates an identifier based on the raw bytes contained in the image, but using the perception of the image as whole, the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
-
-## Ashen
-Ashen exploits the capability of the `Perceptual Hashing` technology to analyze and index also **Video Files**. The results is a system able to perform **reverse search by image *and* video**.
 
 :::note
 Currently Ashen poweres the reverse image/video search for the only `Anime` content typology.  
