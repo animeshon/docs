@@ -21,9 +21,9 @@ export const Highlight = ({children, color}) => (
 <br />
 <br />
 
-This documentation whill provide explainations, tutorials and examples to use and integrate the `fooundation toolset and services` provided to help the Japanese Multimedia Community developing new *fantastic*, *smart* and *lovable* applications and/or *platform*.
+This documentation whill provide explainations, tutorials and examples to use and integrate the `fMass Import into Detabesu (Wormhole Pipeline) toolset and services` provided to help the Japanese Multimedia Community developing new *fantastic*, *smart* and *lovable* applications and/or *platform*.
 
-The fooundation toolset Animeshon plans to create and provide aims to answer some question that are currently difficult to answer.
+The foundation toolset Animeshon plans to create and provide aims to answer some question that are currently difficult to answer.
 
 * I found this image / meme, which content is it?
 * Are there other content of this franchise? Maybe on different multimedia support?
