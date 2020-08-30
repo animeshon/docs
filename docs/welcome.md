@@ -57,7 +57,7 @@ Discuss Animeshon on the official community.
 [Discord](https://discord.com/invite/WvNsjtR)   
 Join Animeshon Discord community.
 
-## Roadmap & Further Developments
+## Roadmap & Further Development
 Animeshon plans to expand and improve the services provided to the user community and the developer community. Our mission is to create an environment which promotes **free circulation of information**, **easy integration** by third-party systems and promote the birth of a new **360° inclusive experience** for all enthusiasts of the Japanese Multimedia Culture.
 
 A more detailed [Roadmap](/docs/ecosystem/roadmap) is available in the [Ecosystem](/docs/ecosystem/introduction) section.
