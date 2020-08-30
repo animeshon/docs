@@ -13,6 +13,7 @@ The components synergize with eachoter providing the best and most complete sear
 
 ### Ashen - Inverse video/image search for Anime
 [Ashen](/docs/ashen/introduction) is the component responsable for the **indicization** and **search** by image or video for the `Anime` domain.
+
 :::note
 
 Ashen is also candidate to embed indexing and search capability for a larger variety of content (Visual Novels, Covers, Fan Arts, ...) 
@@ -20,7 +21,7 @@ Ashen is also candidate to embed indexing and search capability for a larger var
 :::
 
 ### Ashen Grey - Inverse image search for Paper Content
-[Ashen Grey](...) is the component responsable for the **indicization** and **search** by image for all those content the `Manga`, `Doujinshi` domain. It is a specialized version of [Ashen](/docs/ashen/introduction) aimed to work with **Black & White** content.
+[Ashen Grey](...) is the component responsable for the **indicization** and **search** by image for all those content the `Manga`, `Doujinshi` domain. It is a specialized version of [Ashen](/docs/ashen/introduction) aimed to work with **black & white** content.
 
 ### Fulltext Search Engine
 A fulltext search engine powered by [Elastisearch](https://www.elastic.co/). This component is responsable for every text query submitted.

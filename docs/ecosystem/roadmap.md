@@ -12,11 +12,11 @@ This Roadmap can be subject to variation. Dates are indicative and are not stric
 |Component|Status|Delivery estimation|
 | --- | --- | --- | 
 | [Ashen](/docs/ashen/introduction) | | |
-| [Ashen Grey](...) | | |
+| [Ashen Grey](/docs/ecosystem/roadmap) | | |
 | [OAuth 2.0](/docs/oauth2/introduction) | | |
-| [Detabesu](...) | | |
+| [Detabesu](/docs/detabesu/introduction) | | |
 | [Search Engine](/docs/search-engine/introduction) | | |
 | [Encyclopedia](/docs/encyclopedia/introduction) | | |
-| [Community contribution](...) | | |
-| [External sources import pipeline](...) | | |
-| [Content Share Platform](...) | | |
+| [Community contribution](/docs/ecosystem/roadmap) | | |
+| [Mass Import (Wormhole Pipeline)](/docs/ecosystem/roadmap) | | |
+| [Content Share Platform](/docs/ecosystem/roadmap) | | |
