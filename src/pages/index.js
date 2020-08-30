@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Animeshon was designed to provided fundation features and service. 
+        Animeshon was designed to provide foundation features and services. 
         Simple but essentials functionalities to spend less time searching and more enjoying the Japanese Multmedia Culture.
       </>
     ),
@@ -22,7 +22,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        All our components are designed to be easily integrated by third party Application, Ecosystems and Platform. 
+        All our components are designed to be easily integrated by third-party systems. 
         Focus on your idea an leave the rest to Animeshon.
       </>
     ),
@@ -33,7 +33,7 @@ const features = [
     description: (
       <>
         Reinvent the way of consume, organize, syncronize, search, play and discover the Japanese Mulltimedia Culture.
-        Let's create togheter a new Ecosystem where everyone can freely interact with it's favourite content and where we can link together.
+        Let's create togheter a new Ecosystem where everyone can freely interact with it's favourite content and with other Enthusiasts.
       </>
     ),
   },

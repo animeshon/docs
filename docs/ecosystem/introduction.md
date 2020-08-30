@@ -6,16 +6,16 @@ title: Introduction
 ## The Ecosystem
 This page shows how Animeshon's products and services are ment to interact with eachother, the users, the content creators and third-party services. The compoenets will be released according to [Animeshon Roadmap](/docs/ecosystem/roadmap).
 
-All the Tools, Service and features Animeshon plans to release to the community are ment to become the fundation of a new Japanese Multimedia Content's Ecosystem. We expect this Ecosystem to be **highly technological**, **inclusive** and **interactive** for ***all*** segments involved.
+All the Tools, Service and features Animeshon plans to release to the community are ment to become the foundation of a new Japanese Multimedia Content's Ecosystem. We expect this Ecosystem to be **highly technological**, **inclusive** and **interactive** for ***all*** segments involved.
 
 We internally created two macro objectives to achieve in order to reach Animeshon's final goal:
 
-* Release of a `fundation toolset and services` to the public  
+* Release of a `foundation toolset and services` to the public  
 This phase is ment to improve the ***interaction's quality of the Community*** with the **existing content** through the standardization and exposure of available informations.
 * Development of a `Content Share Platform` where Artists, Fans and Translators can directly interact creating value for everyone.  
 This phase is ment to disrupt the way in which **new content** is ***produced, distributed and supported***.
 
-We are currentrly developing the components required to create the `fundation toolset and services` addressed to the worldwide Community, prioritizing the user experience, enjoyment and discovery of the content.
+We are currentrly developing the components required to create the `foundation toolset and services` addressed to the worldwide Community, prioritizing the user experience, enjoyment and discovery of the content.
 
 ## Animeshon's Ecosystem in detail.
 ![Animeshon's Ecosystem](assets/ecosystem.svg)

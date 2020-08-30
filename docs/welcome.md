@@ -21,9 +21,9 @@ export const Highlight = ({children, color}) => (
 <br />
 <br />
 
-This documentation whill provide explainations, tutorials and examples to use and integrate the `foundation toolset and services` provided to help the Japanese Multimedia Community developing new *fantastic*, *smart* and *lovable* applications and/or *platform*.
+This documentation whill provide explainations, tutorials and examples to use and integrate the `fooundation toolset and services` provided to help the Japanese Multimedia Community developing new *fantastic*, *smart* and *lovable* applications and/or *platform*.
 
-The foundation toolset Animeshon plans to create and provide aims to answer some question that are currently difficult to answer.
+The fooundation toolset Animeshon plans to create and provide aims to answer some question that are currently difficult to answer.
 
 * I found this image / meme, which content is it?
 * Are there other content of this franchise? Maybe on different multimedia support?
@@ -37,7 +37,7 @@ The Japanese Multimedia Culture is charaterized by a deep link between contents 
 reflections and reviews are spread across the internet and enthusiast have often to spend hours in order to fully understand or consume the content they love.
 
 
-## Using Animeshon's fundation components
+## Using Animeshon's foundation components
 
 [GraphQL](/docs/detabesu/graphql/quickstarts)   
 Get Started with our GraphQL interfaces and start explore our [Detabesu](/docs/detabesu/introduction).
