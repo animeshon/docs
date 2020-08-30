@@ -3,8 +3,8 @@ id: concepts
 title: Concepts
 ---
 
-## Perceptual Hashing
-The Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic using the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s).
+## Ashen's Perceptual Hashing
+Ashen's Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic performing a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s).
 
 Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself.
 
@@ -39,7 +39,11 @@ The Image Preprocessing Process can be changed and optimized at any time.
 
 ![Ashen Indexing Step 3](assets/ashen-index-3.svg)
 
-Ashen finally performs a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) of the image and generates an **Unique Identifier** used as `signature` to itendify the ***image's perception***. 
+Ashen finally generates an **Unique Identifier** used as `signature` to itentify the ***image's perception***.
+
+:::note
+See [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) for a detailed explaination about the `signature` generation process.
+:::
 
 ### Search by Image / Video
 Performing a search by `Image` or `Video` against [Ashen](/docs/ashen/introduction)'s database can be performed in 2 different ways:

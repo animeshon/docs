@@ -7,7 +7,7 @@ title: Introduction
 
 ***Ashen*** is a experimental system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/).
 
-Ashen exploits the capability of the [Perceptual Hashing](/docs/ashen/concepts#perceptual-hashing) technology to analyze and index also **Video Files**. The results is a system able to perform **reverse search by image *and* video**.
+[Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) implements the technology in order to analyze and index also **video files**. The results is a system able to perform **reverse search by image *and* video**.
 
 Ashen's development state is shown in [Ashen Roadmap](/docs/ashen/roadmap).
 
