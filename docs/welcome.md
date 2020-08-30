@@ -68,10 +68,10 @@ A Graph-Knowladge Base containing as many information as possible about a large 
 [Open source Encyclopedia](/docs/encyclopedia/introduction)   
 New, responsive, open source Encyclopedia to easily consult, rate and discuss your favourite content.
 
-[Community contribution](/docs/ecosystem/roadmap) to Detabesu   
+[Community contribution to Detabesu](/docs/ecosystem/roadmap) to Detabesu   
 After testing the stability of the KB (knowledge base) and infrastructure itself, we will allow the members of the community to edit, add and mantain the informations.
 
-[Mass Import (Wormhole Pipeline)](/docs/ecosystem/roadmap) of External Datasources   
+[Mass Import into Detabesu (Wormhole Pipeline)](/docs/ecosystem/roadmap) of External Datasources   
 Is planned to create an ingress point to allow external data source to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), creating more crossreference and integrability inside the ecosystem.
 
 [Oracolo](/docs/search-engine/introduction)   

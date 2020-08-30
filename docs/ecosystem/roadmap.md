@@ -17,6 +17,6 @@ This Roadmap can be subject to variation. Dates are indicative and are not stric
 | [Detabesu](/docs/detabesu/introduction) | | |
 | [Search Engine](/docs/search-engine/introduction) | | |
 | [Encyclopedia](/docs/encyclopedia/introduction) | | |
-| [Community contribution](/docs/ecosystem/roadmap) | | |
-| [Mass Import (Wormhole Pipeline)](/docs/ecosystem/roadmap) | | |
+| [Community contribution to Detabesu](/docs/ecosystem/roadmap) | | |
+| [Mass Import into Detabesu (Wormhole Pipeline)](/docs/ecosystem/roadmap) | | |
 | [Content Share Platform](/docs/ecosystem/roadmap) | | |

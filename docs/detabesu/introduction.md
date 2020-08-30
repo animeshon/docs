@@ -11,7 +11,7 @@ Detabesu's development state is shown in [Detabesu Roadmap](/docs/detabesu/roadm
 Detabesu proposes a new way of manage and take advantage of the available informations about the Japanese Multimedia Indutry combining three concepts:
 
 * **Availability of information**:  
-Detabesu has been designed to contain information about all available *content* in all available **multimedia support**. [Community contribution](/docs/ecosystem/roadmap) and [Mass Import (Wormhole Pipeline)](/docs/ecosystem/roadmap) of `external datasources` are key milestones to ensure that Detabesu stays up-to-date with the industry and ensures the support of new content's typology.
+Detabesu has been designed to contain information about all available *content* in all available **multimedia support**. [Community contribution to Detabesu](/docs/ecosystem/roadmap) and [Mass Import into Detabesu (Wormhole Pipeline)](/docs/ecosystem/roadmap) of `external datasources` are key milestones to ensure that Detabesu stays up-to-date with the industry and ensures the support of new content's typology.
 
 * **Interconnection of the information**:  
 Detabesu creates links between different *content* on different **multimedia support**. Providing a thightly interconected dataset allows users and developer to explore new aspects of the industry and discover new way to enjoy the content not as a standalone piece of art but as part of a bigger ecosystem.

@@ -23,8 +23,8 @@ We are currentrly developing the components required to create the `foundation t
 #### Detabesu 
 As shown in the above diagram, the core of our Ecosystem is [Detabesu](/docs/detabesu/introduction), a graph-Knowledge Base containing virtually all existing information about the Japanese Multimedia Industry. **Detabesu** has been designed to be expanded in two different ways:
 
-* A [Community Contribution](/docs/ecosystem/roadmap) system similar to Wikipedia and other existing project.
-* [Mass Import (Wormhole Pipeline)](/docs/ecosystem/roadmap) of information from `External Sources` which might want to become part of the Ecosystem in the future.  
+* A [Community contribution to Detabesu](/docs/ecosystem/roadmap) system similar to Wikipedia and other existing project.
+* [Mass Import into Detabesu (Wormhole Pipeline)](/docs/ecosystem/roadmap) of information from `External Sources` which might want to become part of the Ecosystem in the future.  
 
 We expect Detabesu to become a *stable and self-updating* **source of truth** for every user, developer and third-party systems.
 
