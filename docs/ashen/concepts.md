@@ -4,51 +4,52 @@ title: Concepts
 ---
 
 ## Ashen Internal Process
-Here an high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and 	`Video`, with the difference that the video files are segmented in sequence of frames (nothing else that static *images*) using an algorythm developed by Animeshon's Research Department.
+Here an high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.
 
 ### Image / Video Indexing
-The following process shows how Ashen indexes Videos and Images and creates a signature database capable of recognize partial, entire, edited and corrupted Video / Image files.
-
-<br />
+The following process shows how Ashen indexes `Images` and `Video` and creates a **signature database** capable of recognize partial, entire, edited and corrupted Video / Image files.
 
 ![Ashen Indexing Step 1](assets/ashen-index-1.svg)
+
 In the case of a `Video File` Ashen cuts the video in **Frames**. Doing so Ashen will break down the task of indexing Video in more simpler tasks of indexing Images.
 
-<br />
-
 ![Ashen Indexing Step 2](assets/ashen-index-2.svg)
+
 The images are then preprocessed ensuring that all feature and artifacts that could lead to a missgeneration of the `signature` are removed.   
+
+:::note
 An example is the remotion of black/white borders which are normally used when people create memes.
-This process can be externalized in third party application is explained in depth in the [Image Preprocessing](/docs/ashen/concepts#image-preprocessing) section.
+This process can be externalized in third-party application and it is explained in depth in the [Image Preprocessing](/docs/ashen/concepts#image-preprocessing) section.
+:::
 
 
 :::warning
 
 The Image Preprocessing Process can be changed and optimized at any time.  
-Even if it do not affect the Perceptual Hash itself, the `Community Clients` be updated to meet the new process.
 
 :::
 
-<br />
-
 ![Ashen Indexing Step 3](assets/ashen-index-3.svg)
-Ashen finally performs a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) of the image and generates an **Unique Identifier** used as `Signature` to itendify the ***image's perception***. 
 
-<br />
+Ashen finally performs a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) of the image and generates an **Unique Identifier** used as `signature` to itendify the ***image's perception***. 
 
 ### Search by Image / Video
-Performing a search by Image or Video against Ashen's database can be performed in 2 different ways:
+Performing a search by `Image` or `Video` against [Ashen](/docs/ashen/introduction)'s database can be performed in 2 different ways:
 
-* *Upload* the content and let Ashen handle the generation of the Perceptual Hash searched.
-* *Generate the Perceptual Hash locally* and delegate to Ashen only the matching process. In this case use [available clients](/docs/ashen/sdk/quickstarts) to generate healty Perceptual Hashes.
+* *Upload* the content and let Ashen handle the generation of the Perceptual Hash and matching process.
+* *Generate the Perceptual Hash locally* and delegate to Ashen only the matching process. In this case [official clients](/docs/ashen/sdk/quickstarts) are recommended to generate healty `Perceptual Hash Signatures`.
 
 In the first case Ashen performs the above **3 steps** to generate the `Perceptual Hash Signature` of the content.
-After that the **Search Process** is the conceptually the same.
+
+
+After that the **Search Process** is the the same.
 
 ![Ashen Search Step 1](assets/ashen-search-1.svg)
-The `Perceptual Hash Signature` provided (no matter if it was provided by the client or after an internal generation) is matched against the Signatures alread present in the Database.
+
+The `Perceptual Hash Signature` provided (no matter if it was provided by the client or after an internal generation) is matched against the `signatures` alread present in the database.
 
 ![Ashen Search Step 2](assets/ashen-search-2.svg)
+
 The candidate which match better the provided `Perceptual Hash Signature` is finally returned along with information of the original content such as Episode and/or Anime IDs.
 
 ## Image Preprocessing
