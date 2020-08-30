@@ -38,7 +38,7 @@ module.exports = {
       items: [
         'detabesu/introduction', 
         'detabesu/roadmap', 
-        'detabesu/quickstarts', 
+        // 'detabesu/quickstarts', 
         'detabesu/concepts', 
         {
           type: 'category',
@@ -49,13 +49,28 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Encyclopedia',
-      items: ['encyclopedia/introduction', 'encyclopedia/roadmap', 'encyclopedia/quickstarts', 'encyclopedia/concepts', 'encyclopedia/tutorials'],
+      // label: 'Eye',
+      // label: 'Divination',
+      label: 'Oracolo',
+      // label: 'Search Engine',
+      items: [
+        'search-engine/introduction', 
+        'search-engine/roadmap', 
+        // 'search-engine/quickstarts', 
+        'search-engine/concepts', 
+        // 'search-engine/tutorials'
+      ],
     },
     {
       type: 'category',
-      label: 'Search Engine',
-      items: ['search-engine/introduction', 'search-engine/roadmap', 'search-engine/quickstarts', 'search-engine/concepts', 'search-engine/tutorials'],
+      label: 'Encyclopedia',
+      items: [
+        'encyclopedia/introduction', 
+        'encyclopedia/roadmap', 
+        // 'encyclopedia/quickstarts', 
+        // 'encyclopedia/concepts', 
+        // 'encyclopedia/tutorials'
+      ],
     },
   ],
 };
