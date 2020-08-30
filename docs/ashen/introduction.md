@@ -17,13 +17,18 @@ Perceptual Hashing do not rely on all the feature of the image but just on it's 
 Not being an algorithm which generates an identifier based on the raw bytes contained in the image, but using the perception of the image as whole, the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
 
 ## Ashen
-Ashen brings the Perceptual Hashin out of it's confort zone: the images.   
-It exploits the capability of generate a `Perceptual Hash Signature` of an image to analyze and index **Video Files**.
+Ashen exploits the capability of the `Perceptual Hashing` technology to analyze and index also **Video Files**. The results is a system able to perform **reverse search by image *and* video**.
+
+:::note
+Currently Ashen poweres the reverse image/video search for the only `Anime` content typology.  
+Given its potetial it is planned to extend the application domain to  `Visual Novels`, Coves, Fan Art.
+:::
 
 Until now the Japanese Multimedia Community had to rely on algorithms which, given a file, generates a fingerprint based on the physical state of the bytes of the file itself. One frame edit or even one byte corruption results in a completely different fingerprint.
 
 Ashen do the oposite: generating a `Perceptual Hash Signature` for each frame in the file, it is capable of index not the file but the content.
 No matter the resolution, hard subtitles, censorship, edits or localization, Ashen is able to detect any previusly indexed video and return the references to the ***Episode*** and/or ***Anime***.
+
 
 ## Take a tour of Ashen
 
