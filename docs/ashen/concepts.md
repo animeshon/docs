@@ -4,29 +4,27 @@ title: Concepts
 ---
 
 ## Ashen's Perceptual Hashing
-Ashen's Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic performing a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s).
+Ashen's Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic performing a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s) or video(s).
 
-Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself.
-
-Not being an algorithm which generates an identifier based on the raw bytes contained in the image, but using the perception of the image as whole, the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
+Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself. Therefore the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
 
 
 ## Ashen Internal Process
-Here an high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.
+An high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.
 
-### Image / Video Indexing
-The following process shows how Ashen indexes `Images` and `Video` and creates a **signature database** capable of recognize partial, entire, edited and corrupted Video / Image files.
+### Content Indexing
+The following process shows how Ashen indexes `Images` and `Video` and creates a **signature database** capable of recognize partial, entire, edited and corrupted video or image files.
 
 ![Ashen Indexing Step 1](assets/ashen-index-1.svg)
 
-In the case of a `Video File` Ashen cuts the video in **Frames**. Doing so Ashen will break down the task of indexing Video in more simpler tasks of indexing Images.
+In the case of a `Video File` Ashen cuts the video in **Frames**. Doing so Ashen will break down the task of indexing a video in more simpler tasks of indexing images.
 
 ![Ashen Indexing Step 2](assets/ashen-index-2.svg)
 
 The images are then preprocessed ensuring that all feature and artifacts that could lead to a missgeneration of the `signature` are removed.   
 
 :::note
-An example is the remotion of black/white borders which are normally used when people create memes.
+An example is the removal of black/white borders which are normally used when people create memes.
 This process can be externalized in third-party application and it is explained in depth in the [Image Preprocessing](/docs/ashen/concepts#image-preprocessing) section.
 :::
 
@@ -34,6 +32,7 @@ This process can be externalized in third-party application and it is explained 
 :::warning
 
 The Image Preprocessing Process can be changed and optimized at any time.  
+If you are a maintainer of a `Community Ashen Client`, pay attention to changes in the preprocessing algorithm in order to keep the client up-to-date.
 
 :::
 
@@ -45,27 +44,27 @@ Ashen finally generates an **Unique Identifier** used as `signature` to itentify
 See [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) for a detailed explaination about the `signature` generation process.
 :::
 
-### Search by Image / Video
+### Reverse Search by Image / Video
 Performing a search by `Image` or `Video` against [Ashen](/docs/ashen/introduction)'s database can be performed in 2 different ways:
 
-* *Upload* the content and let Ashen handle the generation of the Perceptual Hash and matching process.
-* *Generate the Perceptual Hash locally* and delegate to Ashen only the matching process. In this case [official clients](/docs/ashen/sdk/quickstarts) are recommended to generate healty `Perceptual Hash Signatures`.
+* *Upload* the content and let Ashen handle the generation of the `signature` and matching process.
+* *Generate the `signature`* and delegate to Ashen only the matching process. In this case [official clients](/docs/ashen/sdk/quickstarts) are recommended to generate healty `signatures`.
 
-In the first case Ashen performs the above **3 steps** to generate the `Perceptual Hash Signature` of the content.
+In the first case Ashen performs the above **3 steps** to generate the `signature` of the content.
 
 
-After that the **Search Process** is the the same.
+After that the **process** is the the same.
 
 ![Ashen Search Step 1](assets/ashen-search-1.svg)
 
-The `Perceptual Hash Signature` provided (no matter if it was provided by the client or after an internal generation) is matched against the `signatures` alread present in the database.
+The `signature` provided (no matter if it was provided by the client or after an internal generation) is matched against the one already indexed in the database.
 
 ![Ashen Search Step 2](assets/ashen-search-2.svg)
 
-The candidate which match better the provided `Perceptual Hash Signature` is finally returned along with information of the original content such as Episode and/or Anime IDs.
+The candidate which better match the provided `signature` is finally returned along with metadata informations of the original contents.
 
 ## Image Preprocessing
 
-### Work in Progress
+#### Work in Progress
 
-More information will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
+More informations will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
