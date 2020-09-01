@@ -78,7 +78,7 @@ After testing the stability of the KB (knowledge base) and infrastructure itself
 An integrable pipeline to allow external data source to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), creating more crossreferences and integrability in the ecosystem.
 
 [Oracolo](/docs/search-engine/introduction)   
-Simple access to the [Detabesu](/docs/detabesu/introduction)'s data thought an **integrable search engine*. GraphQL and RestAPI integrations will be provided to developers of third-party systems.
+Simple access to the [Detabesu](/docs/detabesu/introduction)'s data thought an **integrable search engine*. GraphQL and REST API integrations will be provided to developers of third-party systems.
 
 [Ashen Official Clients](/docs/ecosystem/roadmap)   
 Official clients of [Ashen](/docs/ashen/introduction) to integrate Ashen's functionalities in your application and start indexing video and images against [Detabesu](/docs/detabesu/introduction)'s data.
