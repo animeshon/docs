@@ -21,14 +21,45 @@ module.exports = {
       type: 'category',
       label: 'Ashen',
       items: [
-        'ashen/introduction', 
-        'ashen/roadmap', 
-        'ashen/quickstarts', 
+        'ashen/introduction',
+        'ashen/roadmap',
+        'ashen/quickstarts',
         'ashen/concepts',
         {
           type: 'category',
           label: 'SDK',
           items: ['ashen/sdk/quickstarts', 'ashen/sdk/tutorials'],
+        },
+        {
+          type: 'category',
+          label: 'REST Reference',
+          items: [
+            'ashen/reference/overview',
+            {
+              type: 'category',
+              label: 'v1beta2',
+              items: [
+                {
+                  type: 'category',
+                  label: 'REST Resources',
+                  items: [
+                    'ashen/reference/rest/v1beta2/search.image',
+                    'ashen/reference/rest/v1beta2/search.signature',
+                    'ashen/reference/rest/v1beta2/upload',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Types',
+                  items: [
+                    'ashen/reference/rest/v1beta2/Signature',
+                    'ashen/reference/rest/v1beta2/SearchResult',
+                    'ashen/reference/rest/v1beta2/CrossReference',
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
@@ -36,10 +67,10 @@ module.exports = {
       type: 'category',
       label: 'Detabesu',
       items: [
-        'detabesu/introduction', 
-        'detabesu/roadmap', 
+        'detabesu/introduction',
+        'detabesu/roadmap',
         // 'detabesu/quickstarts', 
-        'detabesu/concepts', 
+        'detabesu/concepts',
         {
           type: 'category',
           label: 'GraphQL',
@@ -54,10 +85,10 @@ module.exports = {
       label: 'Oracolo',
       // label: 'Search Engine',
       items: [
-        'search-engine/introduction', 
-        'search-engine/roadmap', 
+        'search-engine/introduction',
+        'search-engine/roadmap',
         // 'search-engine/quickstarts', 
-        'search-engine/concepts', 
+        'search-engine/concepts',
         // 'search-engine/tutorials'
       ],
     },
@@ -65,8 +96,8 @@ module.exports = {
       type: 'category',
       label: 'Encyclopedia',
       items: [
-        'encyclopedia/introduction', 
-        'encyclopedia/roadmap', 
+        'encyclopedia/introduction',
+        'encyclopedia/roadmap',
         // 'encyclopedia/quickstarts', 
         // 'encyclopedia/concepts', 
         // 'encyclopedia/tutorials'
