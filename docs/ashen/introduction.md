@@ -29,6 +29,9 @@ Get started with Ashen functionalities and try out a new way of getting sauces.
 [Roadmap](roadmap)   
 Stay up to date on Ashen's development and optimizations.
 
+[REST API](reference/overview)   
+Ashen's REST API Documentation.
+
 [Tutorials](sdk/tutorials)   
 A rich set of tutorial to enjoy Ashen.
 

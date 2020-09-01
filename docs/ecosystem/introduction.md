@@ -35,7 +35,7 @@ The entire dataset is exposed by a powerful [GraphQL Interface](/docs/detabesu/g
 [Oracolo](/docs/search-engine/introduction) provides search capabilities against Databesu's data.
 It will be a powerful entrypoint capable of **text search** as well as **reverse image / video search**. 
 
-Oracolo will expose both `RestAPIs` and `GraphQL` interfaces to allow the direct integration of the search capability of this component by third-party services.
+Oracolo will expose both `REST APIs` and `GraphQL` interfaces to allow the direct integration of the search capability of this component by third-party services.
 
 #### OAuth 2.0 Layer
 TODO CHRISTIAN

@@ -45,8 +45,8 @@ If you ever stepped on one of the following question and you coulnd't find the a
 [GraphQL](/docs/detabesu/graphql/quickstarts)   
 Get Started with our GraphQL interfaces and start explore our [Detabesu](/docs/detabesu/introduction).
 
-[Ashen RestAPI](/docs/ashen/sdk/quickstarts)  
-Integrate [Ashen](/docs/ashen/introduction)'s functionalities using our Open RestAPI intefaces.
+[Ashen REST API](/docs/ashen/reference/overview)  
+Integrate [Ashen](/docs/ashen/introduction)'s functionalities using our REST API intefaces.
 
 [OAuth 2.0](/docs/oauth2/introduction)   
 Improve Authorization and Authentication in your system using Animeshon's OAuth 2.0 APIs. One account to manage them all.
