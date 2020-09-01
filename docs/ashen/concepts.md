@@ -6,7 +6,7 @@ title: Concepts
 ## Ashen's Perceptual Hashing
 Ashen's Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic performing a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s) or video(s).
 
-Perceptual Hashing do not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself. Therefore the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
+Perceptual Hashing does not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself. Therefore the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
 
 
 ## Ashen Internal Process
@@ -47,13 +47,10 @@ See [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing)
 ### Reverse Search by Image / Video
 Performing a search by `Image` or `Video` against [Ashen](/docs/ashen/introduction)'s database can be performed in 2 different ways:
 
-* *Upload* the content and let Ashen handle the generation of the `signature` and matching process.
-* *Generate the `signature`* and delegate to Ashen only the matching process. In this case [official clients](/docs/ashen/sdk/quickstarts) are recommended to generate healty `signatures`.
+* *Upload* the content and let Ashen handle the generation of the `signature` and matching process.  
+In this case Ashen performs the above **3 steps**.
+* *Generate the `signature`* and delegate to Ashen only the matching process. In this case [official clients](/docs/ashen/sdk/quickstarts) are recommended to generate healthy `signatures`.
 
-In the first case Ashen performs the above **3 steps** to generate the `signature` of the content.
-
-
-After that the **process** is the the same.
 
 ![Ashen Search Step 1](assets/ashen-search-1.svg)
 

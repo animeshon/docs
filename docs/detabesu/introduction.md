@@ -25,7 +25,6 @@ Given an Anime, it's possible to get the related companies to the companies invo
 
 Detabesu, along with it's [GraphQL](/docs/detabesu/graphql/quickstart) intefaces, gives to the user and developer complete power about what data and how to retrieve information, offering a powerfull, fast and declarative tool capable of accept, manage and query very complex and tightly interconnected data structures.
 
--------
 ## Take a tour of Detabesu
 
 [Quickstart](quickstart)   

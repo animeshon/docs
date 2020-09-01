@@ -5,7 +5,7 @@ title: Introduction
 
 ## Welcome to Ashen, the Sauce's source
 
-***Ashen*** is an image and video index system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/). The resulting [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) algorithm poweres a **reverse search by image *and* video**. 
+***Ashen*** is an image and video index system built on top of the [Perceptual Hashing](https://en.wikipedia.org/wiki/Perceptual_hashing) algorithm rewriting and optimizing the implementation developed by [trace.moe](https://trace.moe/). The resulting [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) algorithm poweres [Oracolo](/docs/search-engine/introduction)'s **reverse search by image *and* video** component. 
 
 Ashen's development state is shown in [Ashen Roadmap](/docs/ashen/roadmap).
 
@@ -17,7 +17,7 @@ Given its potetial the application domain might be extended to `Visual Novels`, 
 
 Until now the Japanese Multimedia Community had to rely on algorithms which, given a file, generates a fingerprint based on the physical state of the bytes of the file itself. One frame edit or even one byte corruption results in a completely different fingerprint.
 
-Ashen do the oposite: generating a `Perceptual Hash Signature` for each frame in the file, it is capable of index not the file but the content.
+Ashen does the oposite: generating a `Perceptual Hash Signature` for each frame in the file, it is capable of index not the file but the content.
 No matter the resolution, hard subtitles, censorship, edits or localization, Ashen is able to detect any previusly indexed video and return metadata information about the source content.
 
 
