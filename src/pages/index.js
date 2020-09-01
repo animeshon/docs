@@ -5,11 +5,12 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Lottie from 'react-lottie';
 
 const features = [
   {
     title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    animation: require('../../static/lotties/use'),
     description: (
       <>
         Animeshon was designed to provide foundation tools and services. 
@@ -19,7 +20,7 @@ const features = [
   },
   {
     title: <>Easy to Integrate</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    animation: require('../../static/lotties/integrate'),
     description: (
       <>
         All our components are designed to be easily integrated by third-party systems. 
@@ -28,8 +29,8 @@ const features = [
     ),
   },
   {
-    title: <>Easy.</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Easy</>,
+    animation: require('../../static/lotties/easy'),
     description: (
       <>
         Reinvent the way of consume, organize, syncronize, search, play and discover the Japanese Mulltimedia Culture.
@@ -39,10 +40,30 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, animation}) {
   const imgUrl = useBaseUrl(imageUrl);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation,
+    rendererSettings: {
+      //hideOnTransparent:true,
+      preserveAspectRatio: "YMidxMid meet"
+    }
+  };
+
   return (
     <div className={clsx('col col--4', styles.feature)}>
+      {animation && (
+          <div className="text--center">
+            <Lottie  
+            options={defaultOptions}
+            title={title}
+            height={200}
+            />
+        </div>
+      )}
+
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -57,6 +78,7 @@ function Feature({imageUrl, title, description}) {
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+
   return (
     <Layout
       title={`Animeshon Docs`}
