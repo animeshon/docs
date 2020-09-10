@@ -12,8 +12,8 @@ Ashen development state is shown in the [Ashen Roadmap](/docs/ashen/roadmap).
 
 :::note
 
-Ashen is currently providing core funtionalities for image and video search only for `Anime` episodes.
-Further development in other domains such as `Visual Novels`, `Light Novels`, `Cosplay` and `Fan-Arts` is planned for future releases.
+Ashen is currently providing core funtionalities for image and video search only for `Anime` episodes.  
+Further development in other domains such as `Visual Novels`, `Light Novels`, `Cosplay` and `Fan-Arts` is planned for future releases.  
 For `Manga` and `Doujinshi` reverse image search please visit [Ashen Grey](https://docs.animeshon.com/docs/ecosystem/roadmap).
 
 :::
@@ -30,23 +30,27 @@ Ashen is the right product if you want to answer one of the following questions:
 
 - Which Anime (or episode) was this screenshot taken from?
 - Which Anime (or episode) was this video clip taken from?
-- Which Anime are depicted in this AMV (Anime Music Video)?
-- I have a collection of video files, how can I group them by Anime?
-- I have a large number of images / videos, how can I extract metadata in a quick way (>10 req/s)?
-- I have a streaming service, how can I prevent copyrighted material from being uploaded there?
+- Which Anime (or episodes) are depicted in this AMV (Anime Music Video)?
+- I have a collection of video files, can I group them by Anime?
+- I have a large number of images / videos, can I extract their metadata in a quick way (>10 req/s)?
+- I have a streaming service, can I prevent copyrighted material from being uploaded there?
 
 Ashen might not be the best choice for the following queries:
 
-- I have this heavily edited image, what Anime (or episode) was it taken from? `try [trace.moe](https://trace.moe/) if image lookup fails on Ashen`
-- I have this meme (e.g. a cropped image with text), what Anime (or episode) was it taken from? `try Google or Yandex if image lookup fails on Ashen`
+- I have this heavily edited image, what Anime (or episode) was it taken from?
+  - try [trace.moe](https://trace.moe/) if image lookup fails on Ashen
+- I have this meme (e.g. a cropped image with text), what Anime (or episode) was it taken from?
+  - try Google or Yandex if image lookup fails on Ashen
 
 Ashen will support the following use-cases in future versions:
 
-- Where was this fanart taken from? `use [saucenao.com](saucenao.com) for the moment`
+- Where was this fanart taken from?
+  - *use [saucenao.com](saucenao.com) for the moment*
 - Which Anime / character(s) are depicted in this fanart? Who is its author?
 - Where was this cosplay taken from?
 - Which Anime / character(s) are represented in this cosplay? Who is the cosplayer / photographer?
-- Which Manga / Doujinshi / Light Novel / Visual Novel was this picture taken from? `for Manga and Doujinshi please refer to [Ashen Grey](https://docs.animeshon.com/docs/ecosystem/roadmap)`
+- Which Manga / Doujinshi / Light Novel / Visual Novel was this picture taken from?
+  - *for Manga and Doujinshi please refer to [Ashen Grey](https://docs.animeshon.com/docs/ecosystem/roadmap)*
 
 ## Take a tour of Ashen
 
