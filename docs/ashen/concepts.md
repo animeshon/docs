@@ -5,9 +5,9 @@ title: Concepts
 
 ## Perceptual hashing
 
-Ashen manipulates and elaborates images by extrapolating their features through a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) algorithm which relies on the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135). The extracted features are then serialized and flattened into a signature (or fingerprint) that identifies the processed image or video.
+Ashen manipulates and elaborates images by extrapolating their features through a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) algorithm which relies on the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135). The extracted features are then serialized and flattened into a signature (or fingerprint) that identifies the processed image or video frames.
 
-Perceptual Hashing does not rely on all the features of an image but rather on its general context, it is therefore resilient to minor crops, edits and alteration of the image itself. As a result, Ashen finds way more interesting and reliable uses in real wolrd scenarios than traditional hashing algorithms.
+Perceptual hashing algorithms do not rely on all the single features of an image but rather on its general context, it is therefore resilient to minor crops, edits, and alterations. As a result, Ashen finds way more interesting and reliable use cases in real world scenarios than traditional hashing algorithms.
 
 ## Internal process
 An high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.

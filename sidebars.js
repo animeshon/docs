@@ -44,6 +44,7 @@ module.exports = {
                   label: 'REST Resources',
                   items: [
                     'ashen/reference/rest/v1beta2/search.image',
+                    'ashen/reference/rest/v1beta2/search.video',
                     'ashen/reference/rest/v1beta2/search.signature',
                     'ashen/reference/rest/v1beta2/upload',
                   ],
