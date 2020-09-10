@@ -13,8 +13,8 @@ The roadmap provided might be subject to changes.
 
 | Category | Type | Status | Component | Scheduled Release |
 | --- | --- | --- | --- | --- |
-| Anime | Image | [Beta Version (Pre-GA)](http://localhost:3000/docs/developers/release-lifecycles#beta-version-pre-ga) | Ashen | [v1beta2](/docs/ashen/reference/rest/v1beta2/introduction) |
-| Anime | Video | [Beta Version (Pre-GA)](http://localhost:3000/docs/developers/release-lifecycles#beta-version-pre-ga) | Ashen | [v1beta2](/docs/ashen/reference/rest/v1beta2/introduction) |
+| Anime | Image | [Beta Version (Pre-GA)](/docs/developers/release-lifecycles#beta-version-pre-ga) | Ashen | [v1beta2](/docs/ashen/reference/rest/v1beta2/introduction) |
+| Anime | Video | [Beta Version (Pre-GA)](/docs/developers/release-lifecycles#beta-version-pre-ga) | Ashen | [v1beta2](/docs/ashen/reference/rest/v1beta2/introduction) |
 | Anime | Audio | Evaluation¹ | Ashen | - |
 | Visual Novels | Image | Evaluation¹ | Ashen | - |
 | Light Novels | Image | Planned² | Ashen | - |
