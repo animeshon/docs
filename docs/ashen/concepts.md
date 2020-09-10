@@ -3,16 +3,16 @@ id: concepts
 title: Concepts
 ---
 
-## Ashen's Perceptual Hashing
-Ashen's Perceptual Hashing algorithm manipulates and elaborates images extrapolating the identifining characteristic performing a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) on the [ MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135) to generate a `signature` which indenfies the digested image(s) or video(s).
+## Perceptual hashing
 
-Perceptual Hashing does not rely on all the feature of the image but just on it's context, is therefore resilient to crops, edits and alteration of the image itself. Therefore the Perceptual Hashing Algorithm finds way more interesting and reliable application in real wolrd scenarios.
+Ashen manipulates and elaborates images by extrapolating their features through a [Locality-sensitive hashing](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) algorithm which relies on the [MPEG-7 color layout descriptor](https://ieeexplore.ieee.org/document/959135). The extracted features are then serialized and flattened into a signature (or fingerprint) that identifies the processed image or video.
 
+Perceptual Hashing does not rely on all the features of an image but rather on its general context, it is therefore resilient to minor crops, edits and alteration of the image itself. As a result, Ashen finds way more interesting and reliable uses in real wolrd scenarios than traditional hashing algorithms.
 
-## Ashen Internal Process
+## Internal process
 An high level explaination of the process behind **Ashen** will be provided. The process applies both to `Images` and `Video`, with the difference that the video files are segmented in sequence of frames using an algorythm developed by Animeshon's Research Department.
 
-### Content Indexing
+### Content indexing
 The following process shows how Ashen indexes `Images` and `Video` and creates a **signature database** capable of recognize partial, entire, edited and corrupted video or image files.
 
 ![Ashen Indexing Step 1](assets/ashen-index-1.svg)
@@ -44,7 +44,7 @@ Ashen finally generates an **Unique Identifier** used as `signature` to itentify
 See [Ashen's Perceptual Hashing](/docs/ashen/concepts#ashens-perceptual-hashing) for a detailed explaination about the `signature` generation process.
 :::
 
-### Reverse Search by Image / Video
+### Reverse search by image or video
 Performing a search by `Image` or `Video` against [Ashen](/docs/ashen/introduction)'s database can be performed in 2 different ways:
 
 * *Upload* the content and let Ashen handle the generation of the `signature` and matching process.  
@@ -60,8 +60,8 @@ The `signature` provided (no matter if it was provided by the client or after an
 
 The candidate which better match the provided `signature` is finally returned along with metadata informations of the original contents.
 
-## Image Preprocessing
+## Image preprocessing
 
-#### Work in Progress
+#### Work in progress
 
 More informations will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
