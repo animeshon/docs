@@ -29,6 +29,20 @@ The roadmap provided might be subject to changes.
 
 ## Features
 
-## Performance
+| Component | Feature | Status | Scheduled Release |
+| --- | --- | --- | --- | --- |
+| GUI | Image Search | [Beta Version (Pre-GA)](/docs/developers/release-lifecycles#beta-version-pre-ga) | [v1beta2](/docs/ashen/reference/overview) |
+| GUI | Video Search | Testing⁴ | [v1beta2](/docs/ashen/reference/overview) |
+| GUI | Integration with Animeshon Encyclopedia | Planned² | - |
+| GUI | Preview of search results | Planned² | - |
+| GUI | Multiple search results | Planned² | - |
+| Storage | Integration with Elasticsearch | Early development³ | - |
+| Storage | Additional indexing via CNN (Artificial Intelligence) | Evaluation¹ | - |
+| Storage | Fallback to external search engine | Evaluation¹ | - |
+| API | Integration with GraphQL | Planned² | - |
+| API | Integration with gRPC | Evaluation¹ | - |
 
-## Integrations
+*(¹) Evaluation: Support for this content has been discussed but is not planned yet.*  
+*(²) Planned: Support for this content is planned but development has not started yet.*  
+*(³) Early development: Development has started but no proof-of-concept has been approved yet.*  
+*(⁴) Testing: Development is near completion and tests are being carried out.*  
