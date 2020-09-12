@@ -62,6 +62,6 @@ The candidate which better match the provided `signature` is finally returned al
 
 ## Image preprocessing
 
-#### Work in progress
+### Work in progress
 
 More informations will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
