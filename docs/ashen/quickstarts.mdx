@@ -16,42 +16,42 @@ import TabItem from '@theme/TabItem';
     {label: 'NodeJS', value: 'node'},
   ]}>
   <TabItem value="golang">
-  **NOTE: don't forget to change `image.jpg` to your image path and `image/jpeg` to the correct content type.**
-```golang
-package main
+    **NOTE: don't forget to change `image.jpg` to your image path and `image/jpeg` to the correct content type.**
 
-import (
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-)
+    ```golang
+    package main
 
-func main() {
-	image, err := ioutil.ReadFile("image.jpg")
-	if err != nil {
-		log.Panic(err)
-	}
+    import (
+      "bytes"
+      "io/ioutil"
+      "log"
+      "net/http"
+    )
 
-	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/image", "image/jpeg", bytes.NewBuffer(image))
-	if err != nil {
-		log.Panic(err)
-	}
-	defer resp.Body.Close()
+    func main() {
+      image, err := ioutil.ReadFile("image.jpg")
+      if err != nil {
+        log.Panic(err)
+      }
 
-	if resp.StatusCode != 200 {
-		log.Panicf("returned status code is %d", resp.StatusCode)
-	}
+      resp, err := http.Post("https://source.animeapis.com/v1beta2/search/image", "image/jpeg", bytes.NewBuffer(image))
+      if err != nil {
+        log.Panic(err)
+      }
+      defer resp.Body.Close()
 
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Panic(err)
-	}
+      if resp.StatusCode != 200 {
+        log.Panicf("returned status code is %d", resp.StatusCode)
+      }
 
-	log.Print(string(body))
-}
+      body, err := ioutil.ReadAll(resp.Body)
+      if err != nil {
+        log.Panic(err)
+      }
 
-```
+      log.Print(string(body))
+    }
+    ```
   </TabItem>
   <TabItem value="node">Work in progress.</TabItem>
 </Tabs>
@@ -66,41 +66,42 @@ func main() {
     {label: 'NodeJS', value: 'node'},
   ]}>
   <TabItem value="golang">
-  **NOTE: don't forget to change `video.webm` to your video path and `video/webm` to the correct content type.**
-```golang
-package main
+    **NOTE: don't forget to change `video.webm` to your video path and `video/webm` to the correct content type.**
 
-import (
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-)
+    ```golang
+    package main
 
-func main() {
-	video, err := ioutil.ReadFile("video.webm")
-	if err != nil {
-		log.Panic(err)
-	}
+    import (
+      "bytes"
+      "io/ioutil"
+      "log"
+      "net/http"
+    )
 
-	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/video", "video/webm", bytes.NewBuffer(video))
-	if err != nil {
-		log.Panic(err)
-	}
-	defer resp.Body.Close()
+    func main() {
+      video, err := ioutil.ReadFile("video.webm")
+      if err != nil {
+        log.Panic(err)
+      }
 
-	if resp.StatusCode != 200 {
-		log.Panicf("returned status code is %d", resp.StatusCode)
-	}
+      resp, err := http.Post("https://source.animeapis.com/v1beta2/search/video", "video/webm", bytes.NewBuffer(video))
+      if err != nil {
+        log.Panic(err)
+      }
+      defer resp.Body.Close()
 
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Panic(err)
-	}
+      if resp.StatusCode != 200 {
+        log.Panicf("returned status code is %d", resp.StatusCode)
+      }
 
-	log.Print(string(body))
-}
-```
+      body, err := ioutil.ReadAll(resp.Body)
+      if err != nil {
+        log.Panic(err)
+      }
+
+      log.Print(string(body))
+    }
+    ```
   </TabItem>
   <TabItem value="node">Work in progress.</TabItem>
 </Tabs>
@@ -115,38 +116,39 @@ func main() {
     {label: 'NodeJS', value: 'node'},
   ]}>
   <TabItem value="golang">
-  **NOTE: A tutorial about extracting the signature via `Ashen DSK` is in progress.**
-```golang
-package main
+    **NOTE: A tutorial about extracting the signature via `Ashen DSK` is in progress.**
 
-import (
-	"bytes"
-	"io/ioutil"
-	"log"
-	"net/http"
-)
+    ```golang
+    package main
 
-func main() {
-	signature := []byte(`{"signature": "FQYHDg4ODwcQEhAPDg8SEBYPEQ8QEBEgDw8QEBEeEBAODxA="}`)
+    import (
+      "bytes"
+      "io/ioutil"
+      "log"
+      "net/http"
+    )
 
-	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/signature", "application/json", bytes.NewBuffer(signature))
-	if err != nil {
-		log.Panic(err)
-	}
-	defer resp.Body.Close()
+    func main() {
+      signature := []byte(`{"signature": "FQYHDg4ODwcQEhAPDg8SEBYPEQ8QEBEgDw8QEBEeEBAODxA="}`)
 
-  if resp.StatusCode != 200 {
-		log.Panicf("returned status code is %d", resp.StatusCode)
-	}
+      resp, err := http.Post("https://source.animeapis.com/v1beta2/search/signature", "application/json", bytes.NewBuffer(signature))
+      if err != nil {
+        log.Panic(err)
+      }
+      defer resp.Body.Close()
 
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Panic(err)
-	}
+      if resp.StatusCode != 200 {
+        log.Panicf("returned status code is %d", resp.StatusCode)
+      }
 
-	log.Print(string(body))
-}
-```
+      body, err := ioutil.ReadAll(resp.Body)
+      if err != nil {
+        log.Panic(err)
+      }
+
+      log.Print(string(body))
+    }
+    ```
 </TabItem>
   <TabItem value="node">Work in progress.</TabItem>
 </Tabs>
