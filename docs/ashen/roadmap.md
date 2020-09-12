@@ -30,7 +30,7 @@ The roadmap provided might be subject to changes.
 ## Features
 
 | Component | Feature | Status | Scheduled Release |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | GUI | Image Search | [Beta Version (Pre-GA)](/docs/developers/release-lifecycles#beta-version-pre-ga) | [v1beta2](/docs/ashen/reference/overview) |
 | GUI | Video Search | Testing⁴ | [v1beta2](/docs/ashen/reference/overview) |
 | GUI | Integration with Animeshon Encyclopedia | Planned² | - |

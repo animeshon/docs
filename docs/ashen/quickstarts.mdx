@@ -1,0 +1,177 @@
+---
+id: quickstarts
+title: Quickstarts
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Image request
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="golang"
+  values={[
+    {label: 'Golang', value: 'golang'},
+    {label: 'NodeJS', value: 'node'},
+  ]}>
+  <TabItem value="golang">
+  **NOTE: don't forget to change `image.jpg` to your image path and `image/jpeg` to the correct content type.**
+```golang
+package main
+
+import (
+	"bytes"
+	"io/ioutil"
+	"log"
+	"net/http"
+)
+
+func main() {
+	image, err := ioutil.ReadFile("image.jpg")
+	if err != nil {
+		log.Panic(err)
+	}
+
+	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/image", "image/jpeg", bytes.NewBuffer(image))
+	if err != nil {
+		log.Panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		log.Panicf("returned status code is %d", resp.StatusCode)
+	}
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	log.Print(string(body))
+}
+
+```
+  </TabItem>
+  <TabItem value="node">Work in progress.</TabItem>
+</Tabs>
+
+## Video request
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="golang"
+  values={[
+    {label: 'Golang', value: 'golang'},
+    {label: 'NodeJS', value: 'node'},
+  ]}>
+  <TabItem value="golang">
+  **NOTE: don't forget to change `video.webm` to your video path and `video/webm` to the correct content type.**
+```golang
+package main
+
+import (
+	"bytes"
+	"io/ioutil"
+	"log"
+	"net/http"
+)
+
+func main() {
+	video, err := ioutil.ReadFile("video.webm")
+	if err != nil {
+		log.Panic(err)
+	}
+
+	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/video", "video/webm", bytes.NewBuffer(video))
+	if err != nil {
+		log.Panic(err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		log.Panicf("returned status code is %d", resp.StatusCode)
+	}
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	log.Print(string(body))
+}
+```
+  </TabItem>
+  <TabItem value="node">Work in progress.</TabItem>
+</Tabs>
+
+## Signature request
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="golang"
+  values={[
+    {label: 'Golang', value: 'golang'},
+    {label: 'NodeJS', value: 'node'},
+  ]}>
+  <TabItem value="golang">
+  **NOTE: A tutorial about extracting the signature via `Ashen DSK` is in progress.**
+```golang
+package main
+
+import (
+	"bytes"
+	"io/ioutil"
+	"log"
+	"net/http"
+)
+
+func main() {
+	signature := []byte(`{"signature": "FQYHDg4ODwcQEhAPDg8SEBYPEQ8QEBEgDw8QEBEeEBAODxA="}`)
+
+	resp, err := http.Post("https://source.animeapis.com/v1beta2/search/signature", "application/json", bytes.NewBuffer(signature))
+	if err != nil {
+		log.Panic(err)
+	}
+	defer resp.Body.Close()
+
+  if resp.StatusCode != 200 {
+		log.Panicf("returned status code is %d", resp.StatusCode)
+	}
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	log.Print(string(body))
+}
+```
+</TabItem>
+  <TabItem value="node">Work in progress.</TabItem>
+</Tabs>
+
+## Example: Index video files
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="golang"
+  values={[
+    {label: 'Golang', value: 'golang'},
+    {label: 'NodeJS', value: 'node'},
+  ]}>
+  <TabItem value="golang">Work in progress.</TabItem>
+  <TabItem value="node">Work in progress.</TabItem>
+</Tabs>
+
+## Example: Search Engine
+
+<Tabs
+  groupId="programming-languages"
+  defaultValue="golang"
+  values={[
+    {label: 'NodeJS', value: 'node'},
+  ]}>
+  <TabItem value="golang">Work in progress.</TabItem>
+  <TabItem value="node">Work in progress.</TabItem>
+</Tabs>
