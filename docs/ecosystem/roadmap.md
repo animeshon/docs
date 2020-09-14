@@ -31,7 +31,7 @@ The roadmap provided might be subject to changes.
 | [Animeshon Encyclopedia](/docs/encyclopedia/introduction) | [Detabesu](/docs/detabesu/roadmap) | [Pre-Alpha]() | November 2020 |
 | [Animeshon Encyclopedia](/docs/encyclopedia/introduction) | [Detabesu Import](/docs/detabesu/roadmap) | [Pre-Alpha]() | TBD³ |
 | [Animeshon Encyclopedia](/docs/encyclopedia/introduction) | [GUI](/docs/encyclopedia/roadmap) | [Pre-Alpha]() | November 2020 |
-| [Animeshon Search](/docs/search-engine/introduction) | [Ashen](/docs/ashen/roadmpa) | [v1beta2]() | |
+| [Animeshon Search](/docs/search-engine/introduction) | [Ashen](/docs/ashen/roadmap) | [v1beta2]() | |
 | [Animeshon Search](/docs/search-engine/introduction) | [Ashen Grey](/docs/ashen/roadmap) | Early development¹ | TBD³ |
 | [Animeshon Search](/docs/search-engine/introduction) | [Oracolo](/docs/oracolo/roadmap) | [Pre-Alpha]() | January 2021 |
 | [Animeshon Accounts](/docs/oauth2/introduction) | [OAuth 2.0](/docs/oauth2/introduction) | [Pre-Alpha]() | Q1 2020 |

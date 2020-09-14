@@ -63,7 +63,7 @@ Ashen will support the following use-cases in future versions:
 
 ## Take a tour of Ashen
 
-[Quickstarts](quickstart)   
+[Quickstarts](quickstarts)   
 Get started with Ashen functionalities and try out a new way of getting sources.
 
 [Roadmap](roadmap)   

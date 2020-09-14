@@ -123,8 +123,8 @@ module.exports = {
       type: 'category',
       label: 'Animeshon Social',
       items: [
-        'social/introduction',
-        'social/roadmap',
+        'social-platform/introduction',
+        'social-platform/roadmap',
       ],
     },
   ],
