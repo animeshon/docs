@@ -63,10 +63,10 @@ Animeshon plans to expand and improve the services provided to the user communit
 
 A more detailed [Roadmap](/docs/ecosystem/roadmap) is available in the [Ecosystem](/docs/ecosystem/introduction) section.
 
-[Detabesu](/docs/detabesu/introduction)   
+[Detabesu](/docs/detabesu/introduction)  
 A Graph-Knowledge Base containing as much information as possible about a large variety of content types of the Japanese Multimedia Industry. The information is strongly consolidated and linked together giving to users and developers the chance to traverse the content in a new, fancy, and powerful way.
 
-[Detabesu Import](/docs/detabesu/roadmap)
+[Detabesu Import](/docs/detabesu/roadmap)  
 An integrable pipeline to allow external data sources to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), increasing the number of cross-references and improving integrability with the ecosystem.
 
 [Encyclopedia](/docs/encyclopedia/introduction)   
