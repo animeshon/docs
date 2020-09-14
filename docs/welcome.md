@@ -78,7 +78,7 @@ A full-text search engine for accessing the [Detabesu](/docs/detabesu/introducti
 [Ashen](/docs/ashen/roadmap)   
 Ashen provides index and search functionalities for `Anime`, `Fan-Arts`, `Cosplays`, and `Visual Novels` through a reverse image search engine.
 
-[Ashen Grey](/docs/ecosystem/roadmap)   
+[Ashen Grey](/docs/ashen/roadmap)   
 Ashen Grey will provide index and search functionalities for `Manga`, `Doujinshi`, and `Light Novels` through a reverse image search engine.
 
 [Search Engine](/docs/search-engine/introduction)  
