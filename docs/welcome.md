@@ -38,7 +38,7 @@ If you ever encountered one of the following questions and you couldn't find a c
 * I love this voice actress/voice actor; can I find all the content she/he appears in?
 
 
-## Animeshon core interfaces
+## Interfaces
 
 [GraphQL](/docs/detabesu/graphql/quickstarts)   
 Get started with our GraphQL interfaces and explore our [Detabesu](/docs/detabesu/introduction).
@@ -49,7 +49,7 @@ Integrate [Ashen](/docs/ashen/introduction) functionalities using our REST API i
 [OAuth 2.0](/docs/oauth2/introduction)  
 Authenticate and Authorize against our infrastructure through OAuth 2.0. One account to manage them all.
 
-## Our Community
+## Community
 Animeshon is improved every day by the growing community and contributors from all over the world.
 
 [Discourse](https://discuss.animeshon.com/)  
@@ -58,7 +58,7 @@ Discuss Animeshon on our official Discourse platform.
 [Discord](https://discord.com/invite/WvNsjtR)  
 Join Animeshon on our official Discord server.
 
-## Roadmap & Further Development
+## Roadmap
 Animeshon plans to expand and improve the services provided to the user community and the developer community. Our mission is to create an environment that promotes an **open access to information** and an **easy integration** by third-party systems supporting the creation of a new **360° inclusive experience** for all enthusiasts of this culture.
 
 A more detailed [Roadmap](/docs/ecosystem/roadmap) is available in the [Ecosystem](/docs/ecosystem/introduction) section.
