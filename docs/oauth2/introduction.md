@@ -11,7 +11,7 @@ This product is currently available in [Pre-Alpha Version](developers/release-li
 
 :::caution
 
-This product has not reached [General Availability (GA)](developers/release-lifecycles) and future releases might potentally introduce **breaking changes**.
+This product has not reached [General Availability (GA)](developers/release-lifecycles) and future releases might potentially introduce **breaking changes**.
 
 :::
 

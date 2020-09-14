@@ -9,83 +9,83 @@ export const Highlight = ({children, color}) => (
       backgroundColor: color,
       borderRadius: '2px',
       color: '#fff',
-      padding: '0.2rem',
+      padding: '0.3rem 0.6rem',
     }}>
     {children}
   </span>
 );
 
 ### Welcome to the official Animeshon Documentation
-<Highlight color="#f42555">Designed by Japanese Multimedia Content's enthusiasts for Japanese Multimedia Content's enthusiasts.</Highlight>
+<Highlight color="#f42555">Animeshon, designed by enthusiasts for enthusiasts.</Highlight>
 
 <br />
 <br />
 
-This documentation will provide explainations, tutorials and examples to use and integrate the `foundation toolset` developed for the Japanese Multimedia Community.
+This documentation will provide definitions, concepts, and tutorials of how to use and integrate the `foundation toolset` developed by Animeshon for the Japanese Multimedia Community.
 
-The Japanese Multimedia Culture is charaterized by a deep link between contents and multmiedia support, but the consumption and consultation of the related information is not as easy as it should be to fully enjoy what this industry can offer us. Informations, guides, reflections and reviews are spread across the internet and enthusiast have often to spend hours in order to fully understand or consume the content they love.
+<!-- The Japanese Multimedia Culture is characterized by a deep link between contents and multimedia support, but the consumption and reference of the related information are not as easy as it should be to fully enjoy what this industry can offer us. Information, guides, reflections, and reviews are disseminated across the internet and enthusiast have often to spend hours to fully understand or consume the content they love. -->
 
+The foundation toolset Animeshon plans to release aims toward the consolidation of the information spread across the internet, ultimately exposing it through a transparent and simple integration layer.  
 
-The foundation toolset Animeshon plans to release aims consolidate the information spread across the internet and expose them thought a trasparent and simple integration layer.  
+If you ever encountered one of the following questions and you couldn't find a complete and appropriate answer, then you are in the right place:
 
-If you ever stepped on one of the following question and you coulnd't find the answer, you are in right place:
-
-* I found this image / meme, which content is it?
+* I found this video/image/text, where does it come from?
 * Are there other content of this franchise? Maybe on different multimedia support?
-* Is this the correct order to consume this content?
-* Where can I consume this content?
+* Is this the correct order to read/watch this content?
+* Where can I read/watch this content?
 * Are there any similar content I may like?
 * Should I consume some other particular content to fully enjoy the story?
-* I love this Voice Acress/Actor, can I find all the content she/he appears in?
+* I love this voice actress/voice actor; can I find all the content she/he appears in?
 
 
-
-## Using Animeshon's foundation components
+## Animeshon core interfaces
 
 [GraphQL](/docs/detabesu/graphql/quickstarts)   
-Get Started with our GraphQL interfaces and start explore our [Detabesu](/docs/detabesu/introduction).
+Get started with our GraphQL interfaces and explore our [Detabesu](/docs/detabesu/introduction).
 
 [Ashen REST API](/docs/ashen/reference/overview)  
-Integrate [Ashen](/docs/ashen/introduction)'s functionalities using our REST API intefaces.
+Integrate [Ashen](/docs/ashen/introduction) functionalities using our REST API interfaces.
 
-[OAuth 2.0](/docs/oauth2/introduction)   
-Improve Authorization and Authentication in your system using Animeshon's OAuth 2.0 APIs. One account to manage them all.
+[OAuth 2.0](/docs/oauth2/introduction)  
+Authenticate and Authorize against our infrastructure through OAuth 2.0. One account to manage them all.
 
 ## Our Community
-Animeshon is made better every day by the growing community and the contributors all over the world.
+Animeshon is improved every day by the growing community and contributors from all over the world.
 
-[Community](https://discuss.animeshon.com/)   
-Discuss Animeshon on the official community.
+[Discourse](https://discuss.animeshon.com/)  
+Discuss Animeshon on our official Discourse platform.
 
-[Discord](https://discord.com/invite/WvNsjtR)   
-Join Animeshon Discord community.
+[Discord](https://discord.com/invite/WvNsjtR)  
+Join Animeshon on our official Discord server.
 
 ## Roadmap & Further Development
-Animeshon plans to expand and improve the services provided to the user community and the developer community. Our mission is to create an environment which promotes **free circulation of information**, **easy integration** by third-party systems and promote the birth of a new **360° inclusive experience** for all enthusiasts of the Japanese Multimedia Culture.
+Animeshon plans to expand and improve the services provided to the user community and the developer community. Our mission is to create an environment that promotes an **open access to information** and an **easy integration** by third-party systems supporting the creation of a new **360° inclusive experience** for all enthusiasts of this culture.
 
 A more detailed [Roadmap](/docs/ecosystem/roadmap) is available in the [Ecosystem](/docs/ecosystem/introduction) section.
 
 [Detabesu](/docs/detabesu/introduction)   
-A Graph-Knowladge Base containing as many information as possible about a large variety of content types of the Japanese Multimedia Industry. The informations are strongly consolidated and linked toghether giving to users and developers the chance to traverse the content in a new, fancy and powerfull way.
+A Graph-Knowledge Base containing as much information as possible about a large variety of content types of the Japanese Multimedia Industry. The information is strongly consolidated and linked together giving to users and developers the chance to traverse the content in a new, fancy, and powerful way.
 
-[Open source Encyclopedia](/docs/encyclopedia/introduction)   
-New, responsive, open source Encyclopedia to easily consult, rate and discuss your favourite content.
+[Detabesu Import](/docs/detabesu/roadmap)
+An integrable pipeline to allow external data sources to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), increasing the number of cross-references and improving integrability with the ecosystem.
 
-[Community contribution to Detabesu](/docs/ecosystem/roadmap) to Detabesu   
-After testing the stability of the KB (knowledge base) and infrastructure itself, we will allow the members of the community to edit, add and mantain the informations.
+[Encyclopedia](/docs/encyclopedia/introduction)   
+A new, responsive, open-source Encyclopedia to easily consult, rate and discuss your favourite content.
 
-[Mass Import into Detabesu (Wormhole Pipeline)](/docs/ecosystem/roadmap) of External Datasources   
-An integrable pipeline to allow external data source to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), creating more crossreferences and integrability in the ecosystem.
+[Oracolo](/docs/oracolo/introduction)   
+A full-text search engine for accessing the [Detabesu](/docs/detabesu/introduction) dataset through *fully integrable interfaces*.
 
-[Oracolo](/docs/search-engine/introduction)   
-Simple access to the [Detabesu](/docs/detabesu/introduction)'s data thought an **integrable search engine*. GraphQL and REST API integrations will be provided to developers of third-party systems.
-
-[Ashen Official Clients](/docs/ecosystem/roadmap)   
-Official clients of [Ashen](/docs/ashen/introduction) to integrate Ashen's functionalities in your application and start indexing video and images against [Detabesu](/docs/detabesu/introduction)'s data.
+[Ashen](/docs/ashen/roadmap)   
+Ashen provides index and search functionalities for `Anime`, `Fan-Arts`, `Cosplays`, and `Visual Novels` through a reverse image search engine.
 
 [Ashen Grey](/docs/ecosystem/roadmap)   
-The first index engine for **black & white** image in the world. Ashen Grey will provide functionalities to index and search `Manga` and `Doujinshi` content using portion of pages exploiting the [Perceptual Hash Technology](https://en.wikipedia.org/wiki/Perceptual_hashing).
+Ashen Grey will provide index and search functionalities for `Manga`, `Doujinshi`, and `Light Novels` through a reverse image search engine.
 
-[Content Share Platform](/docs/ecosystem/roadmap)   
-A Platform which allows Enthusiasts, Community Translators and Japanese Artist to cooperate directly giving birth to the first `Platform-Enconomy` in the Japanese Multimedia landscape.  
-Our dream is to let each segment interact directly with the other, generating values and gains for everyone.
+[Search Engine](/docs/search-engine/introduction)  
+A search engine for the entire Animeshon platform, which includes all functionalities already exposed by Oracolo, Ashen, and Ashen Grey.
+
+[Media Platform](/docs/media-platform/roadmap)   
+A platform which allows Enthusiasts, Community Translators, and Artists to cooperate, giving birth to the first `Platform-Economy` in the Japanese Multimedia landscape. Our dream is to provide a place where a direct interaction between all segements is possible.
+
+[Social Platform](/docs/social-platform/roadmap)
+A platform for sharing opinions, reviews, and feedback.

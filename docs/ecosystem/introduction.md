@@ -18,10 +18,10 @@ This phase is ment to disrupt the way in which **new content** is ***produced, d
 
 We are currentrly developing the components required to create the `foundation toolset` addressed to the worldwide Community, prioritizing the user experience, enjoyment and discovery of the content.
 
-## Animeshon's Ecosystem in detail.
+## The Ecosystem
 ![Animeshon's Ecosystem](assets/ecosystem.svg)
 
-#### Detabesu 
+### Detabesu 
 As shown in the above diagram, the core of our Ecosystem is [Detabesu](/docs/detabesu/introduction), a Graph-Knowledge Base containing virtually all existing information about the Japanese Multimedia Industry. **Detabesu** has been designed to be expanded and kept up-to-date in two different ways:
 
 * A [Community contribution to Detabesu](/docs/ecosystem/roadmap) system similar to Wikipedia and other existing project.
@@ -31,23 +31,23 @@ We expect Detabesu to become a *stable and self-updating* **source of truth** fo
 
 The entire dataset is exposed by a powerful [GraphQL Interface](/docs/detabesu/graphql/quickstarts) which allows third-party systems to traverse the Knowledge Base without constraints or restrictions.
 
-#### Oracolo
-[Oracolo](/docs/search-engine/introduction) provides search capabilities against Databesu's data.
+### Oracolo
+[Oracolo](/docs/oracolo/introduction) provides search capabilities against Databesu's data.
 It will be a powerful entrypoint capable of **text search** as well as **reverse image / video search**. 
 
 Oracolo will expose both `REST APIs` and `GraphQL` interfaces to allow the direct integration of the search capability of this component by third-party services.
 
-#### OAuth 2.0 Layer
+### OAuth 2.0
 TODO CHRISTIAN
 
-#### Open Source Encyclopedia
+### Open-Source Encyclopedia
 Animeshon plans to develop an [open source Encyclopedia](/docs/encyclopedia/introduction) designed to visualize and interact directly with the Detabesu's data. The **Encyclopedia** will be our official gateway to consult, navigate, discuss, rate and discover the informations Animeshon provides to the public.  
 
 :::note
 This component targets only the final user, not developers and third-party systems directly.
 :::
 
-#### Content Share Platform
-The last component of the Ecosystem is a [Content Share Platform](/docs/ecosystem/roadmap) driven by our `Platform-Economy` concept.
+### Media Platform
+The last component of the Ecosystem is a [Media Platform](/docs/media-platform/roadmap) driven by our `Platform-Economy` concept.
 
 Given the complexity and requirement of this component, we expect it to be developed and released after the stabilization of the other components.

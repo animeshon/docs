@@ -9,32 +9,32 @@ import Lottie from 'react-lottie';
 
 const features = [
   {
-    title: <>Easy to Use</>,
+    title: <>Open to Contribution</>,
     animation: require('../../static/lotties/use'),
     description: (
       <>
-        Animeshon was designed to provide foundation tools and services. 
-        Simple but essentials functionalities to spend less time searching and more enjoying the Japanese Multmedia Culture.
+        Animeshon was designed to provide core tools and services. 
+        Help us improve the industry through an open collaboration and contribution to Animeshon products.
       </>
     ),
   },
   {
-    title: <>Easy to Integrate</>,
+    title: <>Integrate with Animeshon</>,
     animation: require('../../static/lotties/integrate'),
     description: (
       <>
-        All our components are designed to be easily integrated by third-party systems. 
-        Focus on your idea an leave the rest to Animeshon.
+        All of our components were designed to be easily integrated by third-party applications. 
+        Focus on your idea and leave the rest to Animeshon.
       </>
     ),
   },
   {
-    title: <>Easy</>,
+    title: <>Evolve the Ecosystem</>,
     animation: require('../../static/lotties/easy'),
     description: (
       <>
-        Reinvent the way of consume, organize, syncronize, search, play and discover the Japanese Mulltimedia Culture.
-        Let's create togheter a new Ecosystem powered by direct interaction with the content and with other enthusiasts.
+        Reinvent the way you consume, organize, search, and discover the Japanese Multimedia Culture.
+        Let's create together a new Ecosystem powered by a direct interaction between the content creators and the users.
       </>
     ),
   },
