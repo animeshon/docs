@@ -52,10 +52,6 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/WvNsjtR',
-            },
-            {
               label: 'Discourse',
               href: 'https://discuss.animeshon.com/',
             },
@@ -63,22 +59,9 @@ module.exports = {
               label: 'Reddit',
               href: 'https://www.reddit.com/r/animeshon/',
             },
-          ],
-        },
-        {
-          title: 'Social',
-          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/AnimeshonSNS',
-            },
-            {
-              label: 'Facebook',
-              href: 'https://facebook.com/AnimeshonSNS',
-            },
-            {
-              label: 'Instagram',
-              href: 'https://instagram.com/animeshon.official',
             },
           ],
         },

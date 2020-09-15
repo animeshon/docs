@@ -55,8 +55,8 @@ Animeshon is improved every day by the growing community and contributors from a
 [Discourse](https://discuss.animeshon.com/)  
 Discuss Animeshon on our official Discourse platform.
 
-[Discord](https://discord.com/invite/WvNsjtR)  
-Join Animeshon on our official Discord server.
+[Reddit](https://www.reddit.com/r/animeshon/)  
+Join Animeshon on our official subreddit.
 
 ## Roadmap
 Animeshon plans to expand and improve the services provided to the user community and the developer community. Our mission is to create an environment that promotes an **open access to information** and an **easy integration** by third-party systems supporting the creation of a new **360° inclusive experience** for all enthusiasts of this culture.
