@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="400" viewBox="0 0 780 400">
   <defs>
     <clipPath id="clip-path">
-      <path id="Path_151" data-name="Path 151" d="M0,0H60.273V60.273H0Z" fill="none"/>
+      <path id="Tracciato_151" data-name="Tracciato 151" d="M0,0H60.273V60.273H0Z" fill="none"/>
     </clipPath>
     <clipPath id="clip-Artboard_11">
       <rect width="780" height="400"/>
@@ -10,61 +10,60 @@
   </defs>
   <g id="Artboard_11" data-name="Artboard – 11" clip-path="url(#clip-Artboard_11)">
     <rect width="780" height="400" fill="#fff"/>
-    <path id="Path_299" data-name="Path 299" d="M158.443,390H671.682" transform="translate(-14.98 -107)" fill="none" stroke="#c0c0c8" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" stroke-width="4" fill-rule="evenodd"/>
-    <path id="Path_305" data-name="Path 305" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(174 -105)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Tracciato_299" data-name="Tracciato 299" d="M158.443,390H671.682" transform="translate(-14.98 -107)" fill="none" stroke="#c0c0c8" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" stroke-width="4" fill-rule="evenodd"/>
+    <path id="Tracciato_305" data-name="Tracciato 305" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(174 -105)" fill="#fff" fill-rule="evenodd"/>
     <text id="_4_Step" data-name="4° Step" transform="translate(111 330)" fill="#c0c0c8" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">4° Step</tspan></text>
-    <path id="Path_480" data-name="Path 480" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="#fff" fill-rule="evenodd"/>
-    <path id="Path_481" data-name="Path 481" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
-    <path id="Path_302" data-name="Path 302" d="M134.443,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,134.443,390Z" transform="translate(-2.443 -107)" fill="#ef0c40" fill-rule="evenodd"/>
+    <path id="Tracciato_480" data-name="Tracciato 480" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Tracciato_481" data-name="Tracciato 481" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
+    <path id="Tracciato_302" data-name="Tracciato 302" d="M134.443,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,134.443,390Z" transform="translate(-2.443 -107)" fill="#ef0c40" fill-rule="evenodd"/>
     <text id="_4" data-name="4" transform="translate(138 290)" fill="#fff" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">4</tspan></text>
-    <path id="Path_482" data-name="Path 482" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
-    <text id="Candidates_identification" data-name="Candidates identification" transform="translate(364 99)" fill="#444" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Candidates identification</tspan></text>
-    <text id="Generated_Signatures_are_matched_against_Ashen_s_database_and_perceptually_similar_candidates_are_selected." data-name="Generated Signatures are matched
-against Ashen&apos;s database and
-perceptually similar candidates are
-selected." transform="translate(364 125)" fill="#858591" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Generated </tspan><tspan y="0" font-family="Roboto-Bold, Roboto" font-weight="700">Signatures </tspan><tspan y="0">are matched</tspan><tspan x="0" y="19">against Ashen&apos;s database and</tspan><tspan fill="#ef0c40" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="38">perceptually similar</tspan><tspan y="38" xml:space="preserve" fill="#858591" font-family="Roboto-Regular, Roboto" font-weight="400"> candidates are</tspan></tspan><tspan x="0" y="57">selected.</tspan></text>
-    <path id="Path_305-2" data-name="Path 305" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="#fff" fill-rule="evenodd"/>
-    <path id="Path_306" data-name="Path 306" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
+    <path id="Tracciato_482" data-name="Tracciato 482" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(-336 -107)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
+    <text id="Candidates_matching" data-name="Candidates matching" transform="translate(390 95)" fill="#444" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Candidates matching</tspan></text>
+    <text id="The_generated_signature_is_matched_against_the_database_and_perceptually_similar_candidates_are_selected." data-name="The generated signature is matched
+against the database and perceptually
+similar candidates are selected." transform="translate(391 123)" fill="#858591" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">The generated </tspan><tspan y="0" font-family="Roboto-Bold, Roboto" font-weight="700">signature</tspan><tspan y="0" xml:space="preserve"> is matched</tspan><tspan x="0" y="21">against the database and </tspan><tspan y="21" fill="#ef0c40" font-family="Roboto-Bold, Roboto" font-weight="700">perceptually</tspan><tspan fill="#ef0c40" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="42">similar</tspan><tspan y="42" xml:space="preserve" fill="#858591" font-family="Roboto-Regular, Roboto" font-weight="400"> candidates are selected.</tspan></tspan></text>
+    <path id="Tracciato_305-2" data-name="Tracciato 305" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Tracciato_306" data-name="Tracciato 306" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
     <text id="_5_Step" data-name="5° Step" transform="translate(605 332)" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">5° Step</tspan></text>
-    <path id="Path_479" data-name="Path 479" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
-    <path id="Path_399" data-name="Path 399" d="M636.36,237.462h60.284v75.087H636.36Z" transform="translate(-427 -83)" fill="#d9ead3" fill-rule="evenodd"/>
-    <path id="Path_400" data-name="Path 400" d="M636.36,237.462h60.284v75.087H636.36Z" transform="translate(-427 -83)" fill="none" stroke="#6aa84f" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" fill-rule="evenodd"/>
-    <path id="Path_401" data-name="Path 401" d="M713.874,159.094h60.283v75.087H713.874Z" transform="translate(-427 -83)" fill="#d9ead3" fill-rule="evenodd"/>
-    <path id="Path_402" data-name="Path 402" d="M713.874,159.094h60.283v75.087H713.874Z" transform="translate(-427 -83)" fill="none" stroke="#6aa84f" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" fill-rule="evenodd"/>
-    <path id="Path_436" data-name="Path 436" d="M558.856,166.5h60.273v60.273H558.856Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_18" data-name="Group 18" transform="translate(131.856 83.501)">
-      <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
-        <use id="Rectangle_2" data-name="Rectangle 2" xlink:href="#image"/>
+    <path id="Tracciato_479" data-name="Tracciato 479" d="M468,390h0a12,12,0,0,1,12-12h0a12,12,0,0,1,12,12h0a12,12,0,0,1-12,12h0A12,12,0,0,1,468,390Z" transform="translate(157 -105)" fill="none" stroke="#c0c0c8" stroke-miterlimit="800" stroke-width="2.667" fill-rule="evenodd"/>
+    <path id="Tracciato_399" data-name="Tracciato 399" d="M636.36,237.462h60.284v75.087H636.36Z" transform="translate(-427 -86)" fill="#d9ead3" fill-rule="evenodd"/>
+    <path id="Tracciato_400" data-name="Tracciato 400" d="M636.36,237.462h60.284v75.087H636.36Z" transform="translate(-427 -86)" fill="none" stroke="#6aa84f" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" fill-rule="evenodd"/>
+    <path id="Tracciato_401" data-name="Tracciato 401" d="M713.874,159.094h60.283v75.087H713.874Z" transform="translate(-427 -86)" fill="#d9ead3" fill-rule="evenodd"/>
+    <path id="Tracciato_402" data-name="Tracciato 402" d="M713.874,159.094h60.283v75.087H713.874Z" transform="translate(-427 -86)" fill="none" stroke="#6aa84f" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" fill-rule="evenodd"/>
+    <path id="Tracciato_436" data-name="Tracciato 436" d="M558.856,166.5h60.273v60.273H558.856Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_18" data-name="Raggruppa 18" transform="translate(131.856 80.501)">
+      <g id="Raggruppa_3" data-name="Raggruppa 3" clip-path="url(#clip-path)">
+        <use id="Rettangolo_2" data-name="Rettangolo 2" xlink:href="#image"/>
       </g>
     </g>
-    <path id="Path_437" data-name="Path 437" d="M636.365,166.5h60.273v60.273H636.365Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_19" data-name="Group 19" transform="translate(209.365 83.501)">
-      <g id="Group_5" data-name="Group 5" clip-path="url(#clip-path)">
-        <use id="Rectangle_3" data-name="Rectangle 3" xlink:href="#image"/>
+    <path id="Tracciato_437" data-name="Tracciato 437" d="M636.365,166.5h60.273v60.273H636.365Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_19" data-name="Raggruppa 19" transform="translate(209.365 80.501)">
+      <g id="Raggruppa_5" data-name="Raggruppa 5" clip-path="url(#clip-path)">
+        <use id="Rettangolo_3" data-name="Rettangolo 3" xlink:href="#image"/>
       </g>
     </g>
-    <path id="Path_438" data-name="Path 438" d="M713.874,166.5h60.273v60.273H713.874Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_20" data-name="Group 20" transform="translate(286.874 83.501)">
-      <g id="Group_7" data-name="Group 7" clip-path="url(#clip-path)">
-        <use id="Rectangle_4" data-name="Rectangle 4" xlink:href="#image"/>
+    <path id="Tracciato_438" data-name="Tracciato 438" d="M713.874,166.5h60.273v60.273H713.874Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_20" data-name="Raggruppa 20" transform="translate(286.874 80.501)">
+      <g id="Raggruppa_7" data-name="Raggruppa 7" clip-path="url(#clip-path)">
+        <use id="Rettangolo_4" data-name="Rettangolo 4" xlink:href="#image"/>
       </g>
     </g>
-    <path id="Path_439" data-name="Path 439" d="M558.856,244.869h60.273v60.273H558.856Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_21" data-name="Group 21" transform="translate(131.856 161.869)">
-      <g id="Group_9" data-name="Group 9" clip-path="url(#clip-path)">
-        <use id="Rectangle_5" data-name="Rectangle 5" xlink:href="#image"/>
+    <path id="Tracciato_439" data-name="Tracciato 439" d="M558.856,244.869h60.273v60.273H558.856Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_21" data-name="Raggruppa 21" transform="translate(131.856 158.869)">
+      <g id="Raggruppa_9" data-name="Raggruppa 9" clip-path="url(#clip-path)">
+        <use id="Rettangolo_5" data-name="Rettangolo 5" xlink:href="#image"/>
       </g>
     </g>
-    <path id="Path_440" data-name="Path 440" d="M636.365,244.869h60.273v60.273H636.365Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_22" data-name="Group 22" transform="translate(209.365 161.869)">
-      <g id="Group_11" data-name="Group 11" clip-path="url(#clip-path)">
-        <use id="Rectangle_6" data-name="Rectangle 6" xlink:href="#image"/>
+    <path id="Tracciato_440" data-name="Tracciato 440" d="M636.365,244.869h60.273v60.273H636.365Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_22" data-name="Raggruppa 22" transform="translate(209.365 158.869)">
+      <g id="Raggruppa_11" data-name="Raggruppa 11" clip-path="url(#clip-path)">
+        <use id="Rettangolo_6" data-name="Rettangolo 6" xlink:href="#image"/>
       </g>
     </g>
-    <path id="Path_441" data-name="Path 441" d="M713.874,244.869h60.273v60.273H713.874Z" transform="translate(-427 -83)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
-    <g id="Group_23" data-name="Group 23" transform="translate(286.874 161.869)">
-      <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
-        <use id="Rectangle_7" data-name="Rectangle 7" xlink:href="#image"/>
+    <path id="Tracciato_441" data-name="Tracciato 441" d="M713.874,244.869h60.273v60.273H713.874Z" transform="translate(-427 -86)" fill="rgba(0,0,0,0)" fill-rule="evenodd"/>
+    <g id="Raggruppa_23" data-name="Raggruppa 23" transform="translate(286.874 158.869)">
+      <g id="Raggruppa_13" data-name="Raggruppa 13" clip-path="url(#clip-path)">
+        <use id="Rettangolo_7" data-name="Rettangolo 7" xlink:href="#image"/>
       </g>
     </g>
   </g>

@@ -6,85 +6,85 @@
   </defs>
   <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
     <rect width="740" height="427" fill="#fff"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(-23 -15)">
-      <line id="Line_1" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_1" data-name="Raggruppa 1" transform="translate(-23 -15)">
+      <line id="Linea_1" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <g id="Group_4" data-name="Group 4" transform="translate(313 72)">
-      <line id="Line_1-2" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-2" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_4" data-name="Raggruppa 4" transform="translate(313 72)">
+      <line id="Linea_1-2" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-2" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <g id="Group_6" data-name="Group 6" transform="matrix(-0.391, -0.921, 0.921, -0.391, 320.621, 594.705)">
-      <line id="Line_1-3" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-3" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_6" data-name="Raggruppa 6" transform="matrix(-0.391, -0.921, 0.921, -0.391, 320.621, 594.705)">
+      <line id="Linea_1-3" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-3" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <g id="Group_5" data-name="Group 5" transform="translate(176.043 337.979) rotate(-57)">
-      <line id="Line_1-4" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-4" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_5" data-name="Raggruppa 5" transform="translate(176.043 337.979) rotate(-57)">
+      <line id="Linea_1-4" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-4" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <g id="Group_2" data-name="Group 2" transform="translate(-159.957 250.979) rotate(-57)">
-      <line id="Line_1-5" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-5" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_2" data-name="Raggruppa 2" transform="translate(-159.957 250.979) rotate(-57)">
+      <line id="Linea_1-5" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-5" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <circle id="Ellipse_1" data-name="Ellipse 1" cx="20" cy="20" r="20" transform="translate(178 141)" fill="#00a41b"/>
-    <line id="Line_1-6" data-name="Line 1" y1="62" x2="37" transform="matrix(0.485, -0.875, 0.875, 0.485, 528.274, 129.663)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="2"/>
-    <circle id="Ellipse_3" data-name="Ellipse 3" cx="20" cy="20" r="20" transform="translate(88 141)" fill="#00a41b"/>
-    <g id="Group_7" data-name="Group 7" transform="translate(365 -9)">
-      <line id="Line_1-7" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-6" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <circle id="Ellisse_1" data-name="Ellisse 1" cx="20" cy="20" r="20" transform="translate(178 141)" fill="#00a41b"/>
+    <line id="Linea_1-6" data-name="Linea 1" y1="62" x2="37" transform="matrix(0.485, -0.875, 0.875, 0.485, 528.274, 129.663)" fill="none" stroke="#707070" stroke-width="2" stroke-dasharray="2"/>
+    <circle id="Ellisse_3" data-name="Ellisse 3" cx="20" cy="20" r="20" transform="translate(88 141)" fill="#00a41b"/>
+    <g id="Raggruppa_7" data-name="Raggruppa 7" transform="translate(365 -9)">
+      <line id="Linea_1-7" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-6" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <g id="Group_8" data-name="Group 8" transform="translate(216.043 250.979) rotate(-57)">
-      <line id="Line_1-8" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-7" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(216.043 250.979) rotate(-57)">
+      <line id="Linea_1-8" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-7" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <circle id="Ellipse_4" data-name="Ellipse 4" cx="20" cy="20" r="20" transform="translate(39 215)" fill="#00a41b"/>
-    <circle id="Ellipse_5" data-name="Ellipse 5" cx="20" cy="20" r="20" transform="translate(514 227)" fill="#00a41b"/>
-    <circle id="Ellipse_6" data-name="Ellipse 6" cx="20" cy="20" r="20" transform="translate(464 311)" fill="#0082a4"/>
-    <circle id="Ellipse_7" data-name="Ellipse 7" cx="20" cy="20" r="20" transform="translate(424 227)" fill="#00a41b"/>
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="20" cy="20" r="20" transform="translate(375 301)" fill="#00a41b"/>
-    <circle id="Ellipse_9" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(566 146)" fill="#ef9207"/>
-    <circle id="Ellipse_10" data-name="Ellipse 10" cx="20" cy="20" r="20" transform="translate(464 140)" fill="#ef9207"/>
-    <circle id="Ellipse_11" data-name="Ellipse 11" cx="20" cy="20" r="20" transform="translate(514 54)" fill="#ef240c"/>
-    <g id="Group_3" data-name="Group 3" transform="matrix(-0.391, -0.921, 0.921, -0.391, -15.379, 507.705)">
-      <line id="Line_1-9" data-name="Line 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
-      <g id="Polygon_1-8" data-name="Polygon 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
+    <circle id="Ellisse_4" data-name="Ellisse 4" cx="20" cy="20" r="20" transform="translate(39 215)" fill="#00a41b"/>
+    <circle id="Ellisse_5" data-name="Ellisse 5" cx="20" cy="20" r="20" transform="translate(514 227)" fill="#00a41b"/>
+    <circle id="Ellisse_6" data-name="Ellisse 6" cx="20" cy="20" r="20" transform="translate(464 311)" fill="#0082a4"/>
+    <circle id="Ellisse_7" data-name="Ellisse 7" cx="20" cy="20" r="20" transform="translate(424 227)" fill="#00a41b"/>
+    <circle id="Ellisse_8" data-name="Ellisse 8" cx="20" cy="20" r="20" transform="translate(375 301)" fill="#00a41b"/>
+    <circle id="Ellisse_9" data-name="Ellisse 9" cx="20" cy="20" r="20" transform="translate(566 146)" fill="#ef9207"/>
+    <circle id="Ellisse_10" data-name="Ellisse 10" cx="20" cy="20" r="20" transform="translate(464 140)" fill="#ef9207"/>
+    <circle id="Ellisse_11" data-name="Ellisse 11" cx="20" cy="20" r="20" transform="translate(514 54)" fill="#ef240c"/>
+    <g id="Raggruppa_3" data-name="Raggruppa 3" transform="matrix(-0.391, -0.921, 0.921, -0.391, -15.379, 507.705)">
+      <line id="Linea_1-9" data-name="Linea 1" y1="62" x2="37" transform="translate(171.5 198.5)" fill="none" stroke="#707070" stroke-width="2"/>
+      <g id="Poligono_1-8" data-name="Poligono 1" transform="translate(207.627 190.419) rotate(28)" fill="#707070">
         <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
         <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
       </g>
     </g>
-    <circle id="Ellipse_2" data-name="Ellipse 2" cx="20" cy="20" r="20" transform="translate(128 225)" fill="#0082a4"/>
-    <g id="Polygon_1-9" data-name="Polygon 1" transform="translate(538.721 94.148) rotate(-33)" fill="#707070">
+    <circle id="Ellisse_2" data-name="Ellisse 2" cx="20" cy="20" r="20" transform="translate(128 225)" fill="#0082a4"/>
+    <g id="Poligono_1-9" data-name="Poligono 1" transform="translate(538.721 94.148) rotate(-33)" fill="#707070">
       <path d="M 8.145074844360352 7.5 L 0.8549256324768066 7.5 L 4.5 1.019867777824402 L 8.145074844360352 7.5 Z" stroke="none"/>
       <path d="M 4.5 2.039735317230225 L 1.709851264953613 7 L 7.290148735046387 7 L 4.5 2.039735317230225 M 4.5 0 L 9 8 L 0 8 L 4.5 0 Z" stroke="none" fill="#707070"/>
     </g>
-    <line id="Line_2" data-name="Line 2" x1="286" transform="translate(386.5 118.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
-    <text id="Entry-Node" transform="translate(106 292)" fill="#707070" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Entry-Node</tspan></text>
-    <text id="Outgoing_Edges" data-name="Outgoing Edges" transform="translate(178 218)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Outgoing Edges</tspan></text>
-    <text id="_1-Step_linked_Nodes" data-name="1-Step linked Nodes" transform="translate(49 129)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1-Step linked Nodes</tspan></text>
-    <text id="Entry-Node-2" data-name="Entry-Node" transform="translate(436 381)" fill="#707070" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Entry-Node</tspan></text>
-    <text id="_1-Step_linked_Nodes-2" data-name="1-Step linked Nodes" transform="translate(576 260)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1-Step linked Nodes</tspan></text>
-    <text id="_2-Step_linked_Nodes" data-name="2-Step linked Nodes" transform="translate(576 138)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2-Step linked Nodes</tspan></text>
-    <text id="N-Step_linked_Nodes" data-name="N-Step linked Nodes" transform="translate(574 50)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">N-Step linked Nodes</tspan></text>
+    <line id="Linea_2" data-name="Linea 2" x1="286" transform="translate(386.5 118.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="3"/>
+    <text id="Entry-node" transform="translate(106 292)" fill="#707070" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Entry-node</tspan></text>
+    <text id="Outgoing_edges" data-name="Outgoing edges" transform="translate(186 219)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Outgoing edges</tspan></text>
+    <text id="_1-level_depth_nodes" data-name="1-level depth nodes" transform="translate(49 125)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1-level depth nodes</tspan></text>
+    <text id="Entry-node-2" data-name="Entry-node" transform="translate(436 381)" fill="#707070" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Entry-node</tspan></text>
+    <text id="_1-level_depth_nodes-2" data-name="1-level depth nodes" transform="translate(576 260)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">1-level depth nodes</tspan></text>
+    <text id="_2-level_depth_nodes" data-name="2-level depth nodes" transform="translate(582 138)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2-level depth nodes</tspan></text>
+    <text id="N-level_depth_nodes" data-name="N-level depth nodes" transform="translate(574 50)" fill="#707070" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">N-level depth nodes</tspan></text>
   </g>
 </svg>
