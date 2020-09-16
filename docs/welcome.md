@@ -40,7 +40,7 @@ If you ever encountered one of the following questions and you couldn't find a c
 
 ## Interfaces
 
-[GraphQL](/docs/detabesu/graphql/quickstarts)   
+[GraphQL](/docs/detabesu/graphql/quickstarts)  
 Get started with our GraphQL interfaces and explore our [Detabesu](/docs/detabesu/introduction).
 
 [Ashen REST API](/docs/ashen/reference/overview)  
@@ -69,23 +69,23 @@ A Graph-Knowledge Base containing as much information as possible about a large 
 [Detabesu Import](/docs/detabesu/roadmap)  
 An integrable pipeline to allow external data sources to import and consolidate their data into [Detabesu](/docs/detabesu/introduction), increasing the number of cross-references and improving integrability with the ecosystem.
 
-[Encyclopedia](/docs/encyclopedia/introduction)   
+[Encyclopedia](/docs/encyclopedia/introduction)  
 A new, responsive, open-source Encyclopedia to easily consult, rate and discuss your favourite content.
 
-[Oracolo](/docs/oracolo/introduction)   
+[Oracolo](/docs/oracolo/introduction)  
 A full-text search engine for accessing the [Detabesu](/docs/detabesu/introduction) dataset through *fully integrable interfaces*.
 
-[Ashen](/docs/ashen/roadmap)   
+[Ashen](/docs/ashen/roadmap)  
 Ashen provides index and search functionalities for `Anime`, `Fan-Arts`, `Cosplays`, and `Visual Novels` through a reverse image search engine.
 
-[Ashen Grey](/docs/ashen/roadmap)   
+[Ashen Grey](/docs/ashen/roadmap)  
 Ashen Grey will provide index and search functionalities for `Manga`, `Doujinshi`, and `Light Novels` through a reverse image search engine.
 
 [Search Engine](/docs/search-engine/introduction)  
 A search engine for the entire Animeshon platform, which includes all functionalities already exposed by Oracolo, Ashen, and Ashen Grey.
 
-[Media Platform](/docs/media-platform/roadmap)   
+[Media Platform](/docs/media-platform/roadmap)  
 A platform which allows Enthusiasts, Community Translators, and Artists to cooperate, giving birth to the first `Platform-Economy` in the Japanese Multimedia landscape. Our dream is to provide a place where a direct interaction between all segements is possible.
 
-[Social Platform](/docs/social-platform/roadmap)
+[Social Platform](/docs/social-platform/roadmap)  
 A platform for sharing opinions, reviews, and feedback.
