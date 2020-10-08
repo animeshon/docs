@@ -77,18 +77,26 @@ module.exports = {
         {
           title: 'More',
           items: [
+            // {
+            //   label: 'Status',
+            //   to: 'https://status.animeshon.com',
+            // },
             {
               label: 'Animeshon',
-              to: 'https://animeshon.com',
-            },
-            {
-              label: 'Blog',
-              to: '/blog',
+              href: 'https://animeshon.com',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/animeshon/docs',
             },
+            {
+              label: 'Ashen',
+              href: 'https://source.animeshon.com',
+            },
+            // {
+            //   label: 'Animeshon for Developers',
+            //   to: 'https://developers.animeshon.com',
+            // },
           ],
         },
         {
