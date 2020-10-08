@@ -20,7 +20,16 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://www.reddit.com/r/animeshon/',
+          label: 'Reddit',
+          position: 'left'
+        },
+        {
+          href: 'https://discuss.animeshon.com/',
+          label: 'Discourse',
+          position: 'left'
+        },
         {
           href: 'https://github.com/animeshon/docs',
           label: 'GitHub',
@@ -112,7 +121,7 @@ module.exports = {
           homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:  
+          editUrl:
             'https://github.com/animeshon/docs/edit/master/website/',
         },
         blog: {
