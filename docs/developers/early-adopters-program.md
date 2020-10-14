@@ -29,3 +29,4 @@ Early Adopters can request access to any of our products through this [Google Fo
 The following organizations have been granted early-access to one or more of our products:
 
 - Shoko Anime - [shokoanime.com](https://shokoanime.com/)
+- Visual-Novel.Info - [visual-novel.info](https://visual-novel.info/)
