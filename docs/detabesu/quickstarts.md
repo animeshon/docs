@@ -95,7 +95,7 @@ Fortunately Detabesu provides some directives to avoid and work around those lim
 :::
 
 
-### The right query at the right Time
+### The right query at the right time
 Graph database are very smart and quick at performing **well designed** queries, but can become quite lazy and slow if what we ask is asked in a **non-optimal** language.
 
 For instance, it's like asking the waiter to read the entire menu, plus all wines, while you feel like you want a *Tiramisu*.
