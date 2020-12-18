@@ -1,0 +1,49 @@
+---
+id: soundtrack-filter
+title: SoundtrackFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type SoundtrackFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  soundTrackType: SoundTrackType_hash
+  trackVersion: SongVersionType_hash
+  has: SoundtrackHasFilter
+  and: [SoundtrackFilter]
+  or: [SoundtrackFilter]
+  not: SoundtrackFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `soundTrackType` ([`SoundTrackType_hash`](/docs/schema/inputs/sound-track-type-hash))
+
+#### `trackVersion` ([`SongVersionType_hash`](/docs/schema/inputs/song-version-type-hash))
+
+#### `has` ([`SoundtrackHasFilter`](/docs/schema/enums/soundtrack-has-filter))
+
+#### `and` ([`[SoundtrackFilter]`](/docs/schema/inputs/soundtrack-filter))
+
+#### `or` ([`[SoundtrackFilter]`](/docs/schema/inputs/soundtrack-filter))
+
+#### `not` ([`SoundtrackFilter`](/docs/schema/inputs/soundtrack-filter))

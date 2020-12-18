@@ -1,0 +1,34 @@
+---
+id: content-relation-order
+title: ContentRelationOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ContentRelationOrder {
+  asc: ContentRelationOrderable
+  desc: ContentRelationOrderable
+  then: ContentRelationOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ContentRelationOrderable`](/docs/schema/enums/content-relation-orderable))
+
+#### `desc` ([`ContentRelationOrderable`](/docs/schema/enums/content-relation-orderable))
+
+#### `then` ([`ContentRelationOrder`](/docs/schema/inputs/content-relation-order))

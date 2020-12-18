@@ -1,0 +1,49 @@
+---
+id: organization-filter
+title: OrganizationFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrganizationFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  foundation: DateTimeFilter
+  contentFocus: ContentFocus_hash
+  has: OrganizationHasFilter
+  and: [OrganizationFilter]
+  or: [OrganizationFilter]
+  not: OrganizationFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `foundation` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `contentFocus` ([`ContentFocus_hash`](/docs/schema/inputs/content-focus-hash))
+
+#### `has` ([`OrganizationHasFilter`](/docs/schema/enums/organization-has-filter))
+
+#### `and` ([`[OrganizationFilter]`](/docs/schema/inputs/organization-filter))
+
+#### `or` ([`[OrganizationFilter]`](/docs/schema/inputs/organization-filter))
+
+#### `not` ([`OrganizationFilter`](/docs/schema/inputs/organization-filter))

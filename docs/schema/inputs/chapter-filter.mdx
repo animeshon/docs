@@ -1,0 +1,52 @@
+---
+id: chapter-filter
+title: ChapterFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ChapterFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  type: ChapterType_hash
+  identifier: StringHashFilter
+  releaseDate: DateTimeFilter
+  has: ChapterHasFilter
+  and: [ChapterFilter]
+  or: [ChapterFilter]
+  not: ChapterFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `type` ([`ChapterType_hash`](/docs/schema/inputs/chapter-type-hash))
+
+#### `identifier` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `releaseDate` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `has` ([`ChapterHasFilter`](/docs/schema/enums/chapter-has-filter))
+
+#### `and` ([`[ChapterFilter]`](/docs/schema/inputs/chapter-filter))
+
+#### `or` ([`[ChapterFilter]`](/docs/schema/inputs/chapter-filter))
+
+#### `not` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))

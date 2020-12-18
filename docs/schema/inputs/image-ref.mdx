@@ -1,0 +1,54 @@
+---
+id: image-ref
+title: ImageRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ImageRef {
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  files: [FileRef!]
+  width: Int
+  height: Int
+  aspectRatio: AspectRatio
+}
+```
+
+### Fields
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `files` ([`[FileRef!]`](/docs/schema/inputs/file-ref))
+
+#### `width` ([`Int`](/docs/schema/scalars/int))
+
+#### `height` ([`Int`](/docs/schema/scalars/int))
+
+#### `aspectRatio` ([`AspectRatio`](/docs/schema/enums/aspect-ratio))
+
+16:9, 4:3, ...

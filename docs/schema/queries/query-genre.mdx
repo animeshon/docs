@@ -1,0 +1,42 @@
+---
+id: query-genre
+title: queryGenre
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryGenre(
+  filter: GenreFilter
+  order: GenreOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Genre]
+
+```
+
+### Arguments
+
+#### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+#### `order` ([`GenreOrder`](/docs/schema/inputs/genre-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Genre`](/docs/schema/objects/genre)

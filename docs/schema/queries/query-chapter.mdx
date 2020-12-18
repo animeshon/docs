@@ -1,0 +1,42 @@
+---
+id: query-chapter
+title: queryChapter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryChapter(
+  filter: ChapterFilter
+  order: ChapterOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Chapter]
+
+```
+
+### Arguments
+
+#### `filter` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))
+
+#### `order` ([`ChapterOrder`](/docs/schema/inputs/chapter-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Chapter`](/docs/schema/objects/chapter)

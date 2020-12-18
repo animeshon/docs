@@ -1,0 +1,34 @@
+---
+id: video-order
+title: VideoOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VideoOrder {
+  asc: VideoOrderable
+  desc: VideoOrderable
+  then: VideoOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`VideoOrderable`](/docs/schema/enums/video-orderable))
+
+#### `desc` ([`VideoOrderable`](/docs/schema/enums/video-orderable))
+
+#### `then` ([`VideoOrder`](/docs/schema/inputs/video-order))

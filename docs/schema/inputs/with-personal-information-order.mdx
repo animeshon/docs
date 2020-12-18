@@ -1,0 +1,34 @@
+---
+id: with-personal-information-order
+title: WithPersonalInformationOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithPersonalInformationOrder {
+  asc: WithPersonalInformationOrderable
+  desc: WithPersonalInformationOrderable
+  then: WithPersonalInformationOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`WithPersonalInformationOrderable`](/docs/schema/enums/with-personal-information-orderable))
+
+#### `desc` ([`WithPersonalInformationOrderable`](/docs/schema/enums/with-personal-information-orderable))
+
+#### `then` ([`WithPersonalInformationOrder`](/docs/schema/inputs/with-personal-information-order))

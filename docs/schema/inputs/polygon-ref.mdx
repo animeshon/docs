@@ -1,0 +1,28 @@
+---
+id: polygon-ref
+title: PolygonRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type PolygonRef {
+  coordinates: [PointListRef!]!
+}
+```
+
+### Fields
+
+#### `coordinates` ([`[PointListRef!]!`](/docs/schema/inputs/point-list-ref))

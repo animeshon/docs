@@ -1,0 +1,31 @@
+---
+id: restriction-type-hash
+title: RestrictionType_hash
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RestrictionType_hash {
+  eq: RestrictionType!
+  in: [RestrictionType!]
+}
+```
+
+### Fields
+
+#### `eq` ([`RestrictionType!`](/docs/schema/enums/restriction-type))
+
+#### `in` ([`[RestrictionType!]`](/docs/schema/enums/restriction-type))

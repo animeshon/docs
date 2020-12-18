@@ -1,0 +1,34 @@
+---
+id: image-order
+title: ImageOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ImageOrder {
+  asc: ImageOrderable
+  desc: ImageOrderable
+  then: ImageOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ImageOrderable`](/docs/schema/enums/image-orderable))
+
+#### `desc` ([`ImageOrderable`](/docs/schema/enums/image-orderable))
+
+#### `then` ([`ImageOrder`](/docs/schema/inputs/image-order))

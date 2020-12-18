@@ -1,0 +1,37 @@
+---
+id: with-genre-filter
+title: WithGenreFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithGenreFilter {
+  has: WithGenreHasFilter
+  and: [WithGenreFilter]
+  or: [WithGenreFilter]
+  not: WithGenreFilter
+}
+```
+
+### Fields
+
+#### `has` ([`WithGenreHasFilter`](/docs/schema/enums/with-genre-has-filter))
+
+#### `and` ([`[WithGenreFilter]`](/docs/schema/inputs/with-genre-filter))
+
+#### `or` ([`[WithGenreFilter]`](/docs/schema/inputs/with-genre-filter))
+
+#### `not` ([`WithGenreFilter`](/docs/schema/inputs/with-genre-filter))

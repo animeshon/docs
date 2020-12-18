@@ -1,0 +1,37 @@
+---
+id: role-filter
+title: RoleFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RoleFilter {
+  has: RoleHasFilter
+  and: [RoleFilter]
+  or: [RoleFilter]
+  not: RoleFilter
+}
+```
+
+### Fields
+
+#### `has` ([`RoleHasFilter`](/docs/schema/enums/role-has-filter))
+
+#### `and` ([`[RoleFilter]`](/docs/schema/inputs/role-filter))
+
+#### `or` ([`[RoleFilter]`](/docs/schema/inputs/role-filter))
+
+#### `not` ([`RoleFilter`](/docs/schema/inputs/role-filter))

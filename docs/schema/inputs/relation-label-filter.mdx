@@ -1,0 +1,43 @@
+---
+id: relation-label-filter
+title: RelationLabelFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RelationLabelFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: RelationLabelHasFilter
+  and: [RelationLabelFilter]
+  or: [RelationLabelFilter]
+  not: RelationLabelFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`RelationLabelHasFilter`](/docs/schema/enums/relation-label-has-filter))
+
+#### `and` ([`[RelationLabelFilter]`](/docs/schema/inputs/relation-label-filter))
+
+#### `or` ([`[RelationLabelFilter]`](/docs/schema/inputs/relation-label-filter))
+
+#### `not` ([`RelationLabelFilter`](/docs/schema/inputs/relation-label-filter))

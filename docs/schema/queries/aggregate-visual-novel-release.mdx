@@ -1,0 +1,33 @@
+---
+id: aggregate-visual-novel-release
+title: aggregateVisualNovelRelease
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateVisualNovelRelease(
+  filter: VisualNovelReleaseFilter
+): VisualNovelReleaseAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`VisualNovelReleaseFilter`](/docs/schema/inputs/visual-novel-release-filter))
+
+### Type
+
+#### [`VisualNovelReleaseAggregateResult`](/docs/schema/objects/visual-novel-release-aggregate-result)

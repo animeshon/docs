@@ -1,0 +1,46 @@
+---
+id: string-exact-filter
+title: StringExactFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type StringExactFilter {
+  eq: String
+  in: [String]
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  between: StringRange
+}
+```
+
+### Fields
+
+#### `eq` ([`String`](/docs/schema/scalars/string))
+
+#### `in` ([`[String]`](/docs/schema/scalars/string))
+
+#### `le` ([`String`](/docs/schema/scalars/string))
+
+#### `lt` ([`String`](/docs/schema/scalars/string))
+
+#### `ge` ([`String`](/docs/schema/scalars/string))
+
+#### `gt` ([`String`](/docs/schema/scalars/string))
+
+#### `between` ([`StringRange`](/docs/schema/inputs/string-range))

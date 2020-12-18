@@ -1,0 +1,33 @@
+---
+id: get-volume
+title: getVolume
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getVolume(
+  id: String!
+): Volume
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`Volume`](/docs/schema/objects/volume)

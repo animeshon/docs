@@ -1,3 +1,5 @@
+const schemaDoc = require("./docs/schema/sidebar-schema");
+
 module.exports = {
   docs: [
     'welcome',
@@ -15,7 +17,16 @@ module.exports = {
     {
       type: 'category',
       label: 'GraphQL',
-      items: ['graphql/quickstarts', 'graphql/tutorials', 'graphql/tips-and-tricks'],
+      items: [
+        'graphql/quickstarts', 
+        'graphql/tutorials', 
+        'graphql/tips-and-tricks', 
+        {
+          type: 'category',
+          label: 'Schema',
+          items: [...schemaDoc.schemaSidebar],
+        }
+      ],
     },
     {
       type: 'category',

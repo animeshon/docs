@@ -1,0 +1,33 @@
+---
+id: get-anime
+title: getAnime
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getAnime(
+  id: String!
+): Anime
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`Anime`](/docs/schema/objects/anime)

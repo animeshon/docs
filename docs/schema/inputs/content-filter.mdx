@@ -1,0 +1,40 @@
+---
+id: content-filter
+title: ContentFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ContentFilter {
+  status: ContentStatus_hash
+  has: ContentHasFilter
+  and: [ContentFilter]
+  or: [ContentFilter]
+  not: ContentFilter
+}
+```
+
+### Fields
+
+#### `status` ([`ContentStatus_hash`](/docs/schema/inputs/content-status-hash))
+
+#### `has` ([`ContentHasFilter`](/docs/schema/enums/content-has-filter))
+
+#### `and` ([`[ContentFilter]`](/docs/schema/inputs/content-filter))
+
+#### `or` ([`[ContentFilter]`](/docs/schema/inputs/content-filter))
+
+#### `not` ([`ContentFilter`](/docs/schema/inputs/content-filter))

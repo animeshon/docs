@@ -1,0 +1,58 @@
+---
+id: visual-novel-release-filter
+title: VisualNovelReleaseFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VisualNovelReleaseFilter {
+  censorship: CensorshipType_hash
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  type: GameReleaseType_hash
+  voicedDegree: GameVoicedDegree_hash
+  animationStoryDegree: GameAnimatonDegree_hash
+  animationEroDegree: GameAnimatonDegree_hash
+  has: VisualNovelReleaseHasFilter
+  and: [VisualNovelReleaseFilter]
+  or: [VisualNovelReleaseFilter]
+  not: VisualNovelReleaseFilter
+}
+```
+
+### Fields
+
+#### `censorship` ([`CensorshipType_hash`](/docs/schema/inputs/censorship-type-hash))
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `type` ([`GameReleaseType_hash`](/docs/schema/inputs/game-release-type-hash))
+
+#### `voicedDegree` ([`GameVoicedDegree_hash`](/docs/schema/inputs/game-voiced-degree-hash))
+
+#### `animationStoryDegree` ([`GameAnimatonDegree_hash`](/docs/schema/inputs/game-animaton-degree-hash))
+
+#### `animationEroDegree` ([`GameAnimatonDegree_hash`](/docs/schema/inputs/game-animaton-degree-hash))
+
+#### `has` ([`VisualNovelReleaseHasFilter`](/docs/schema/enums/visual-novel-release-has-filter))
+
+#### `and` ([`[VisualNovelReleaseFilter]`](/docs/schema/inputs/visual-novel-release-filter))
+
+#### `or` ([`[VisualNovelReleaseFilter]`](/docs/schema/inputs/visual-novel-release-filter))
+
+#### `not` ([`VisualNovelReleaseFilter`](/docs/schema/inputs/visual-novel-release-filter))

@@ -1,0 +1,37 @@
+---
+id: with-age-rating-filter
+title: WithAgeRatingFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithAgeRatingFilter {
+  has: WithAgeRatingHasFilter
+  and: [WithAgeRatingFilter]
+  or: [WithAgeRatingFilter]
+  not: WithAgeRatingFilter
+}
+```
+
+### Fields
+
+#### `has` ([`WithAgeRatingHasFilter`](/docs/schema/enums/with-age-rating-has-filter))
+
+#### `and` ([`[WithAgeRatingFilter]`](/docs/schema/inputs/with-age-rating-filter))
+
+#### `or` ([`[WithAgeRatingFilter]`](/docs/schema/inputs/with-age-rating-filter))
+
+#### `not` ([`WithAgeRatingFilter`](/docs/schema/inputs/with-age-rating-filter))

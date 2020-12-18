@@ -1,0 +1,33 @@
+---
+id: get-convention
+title: getConvention
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getConvention(
+  id: String!
+): Convention
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`Convention`](/docs/schema/objects/convention)

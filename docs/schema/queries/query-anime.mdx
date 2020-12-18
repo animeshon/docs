@@ -1,0 +1,42 @@
+---
+id: query-anime
+title: queryAnime
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryAnime(
+  filter: AnimeFilter
+  order: AnimeOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Anime]
+
+```
+
+### Arguments
+
+#### `filter` ([`AnimeFilter`](/docs/schema/inputs/anime-filter))
+
+#### `order` ([`AnimeOrder`](/docs/schema/inputs/anime-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Anime`](/docs/schema/objects/anime)

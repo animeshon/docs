@@ -1,0 +1,42 @@
+---
+id: query-circle
+title: queryCircle
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryCircle(
+  filter: CircleFilter
+  order: CircleOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Circle]
+
+```
+
+### Arguments
+
+#### `filter` ([`CircleFilter`](/docs/schema/inputs/circle-filter))
+
+#### `order` ([`CircleOrder`](/docs/schema/inputs/circle-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Circle`](/docs/schema/objects/circle)

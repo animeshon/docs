@@ -1,0 +1,37 @@
+---
+id: string-full-text-filter-string-term-filter
+title: StringFullTextFilter_StringTermFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type StringFullTextFilter_StringTermFilter {
+  alloftext: String
+  anyoftext: String
+  allofterms: String
+  anyofterms: String
+}
+```
+
+### Fields
+
+#### `alloftext` ([`String`](/docs/schema/scalars/string))
+
+#### `anyoftext` ([`String`](/docs/schema/scalars/string))
+
+#### `allofterms` ([`String`](/docs/schema/scalars/string))
+
+#### `anyofterms` ([`String`](/docs/schema/scalars/string))

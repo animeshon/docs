@@ -1,0 +1,49 @@
+---
+id: script-filter
+title: ScriptFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ScriptFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  code: StringHashFilter
+  number: IntFilter
+  has: ScriptHasFilter
+  and: [ScriptFilter]
+  or: [ScriptFilter]
+  not: ScriptFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `code` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `number` ([`IntFilter`](/docs/schema/inputs/int-filter))
+
+#### `has` ([`ScriptHasFilter`](/docs/schema/enums/script-has-filter))
+
+#### `and` ([`[ScriptFilter]`](/docs/schema/inputs/script-filter))
+
+#### `or` ([`[ScriptFilter]`](/docs/schema/inputs/script-filter))
+
+#### `not` ([`ScriptFilter`](/docs/schema/inputs/script-filter))

@@ -1,0 +1,34 @@
+---
+id: person-order
+title: PersonOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type PersonOrder {
+  asc: PersonOrderable
+  desc: PersonOrderable
+  then: PersonOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`PersonOrderable`](/docs/schema/enums/person-orderable))
+
+#### `desc` ([`PersonOrderable`](/docs/schema/enums/person-orderable))
+
+#### `then` ([`PersonOrder`](/docs/schema/inputs/person-order))

@@ -1,0 +1,431 @@
+---
+id: manga
+title: Manga
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Manga implements Metadata, Generic, Starring, WithStaff, WithGenre, Canonizable, Content, WithAgeRating, Releasable, WithChapter, WithRestriction {
+  restrictions(
+    filter: RestrictionFilter
+    order: RestrictionOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Restriction!]!
+  chapters(
+    filter: ChapterFilter
+    order: ChapterOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Chapter!]!
+  releases(
+    filter: ReleaseFilter
+    order: ReleaseOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Release!]
+  ageRatings(
+    filter: AgeRatingFilter
+    order: AgeRatingOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [AgeRating!]!
+  status: ContentStatus!
+  relations(
+    filter: ContentRelationFilter
+    order: ContentRelationOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [ContentRelation!]!
+  partOfCanonicals(
+    filter: CanonicalFilter
+    order: CanonicalOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Canonical!]!
+  genres(
+    filter: GenreFilter
+    order: GenreOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Genre!]!
+  staff(
+    filter: CollaborationFilter
+    order: CollaborationOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Collaboration!]!
+  starring(
+    filter: CastFilter
+    order: CastOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Cast!]!
+  names(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  aliases(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  descriptions(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  images(
+    filter: ImageWrapperFilter
+    order: ImageWrapperOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [ImageWrapper!]!
+  crossrefs(
+    filter: CrossReferenceFilter
+    order: CrossReferenceOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [CrossReference!]!
+  websites(
+    filter: WebAddressFilter
+    order: WebAddressOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [WebAddress!]!
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  type: MangaType
+  volumes(
+    filter: VolumeFilter
+    order: VolumeOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Volume!]
+  runnings(
+    filter: RunningFilter
+    order: RunningOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Running!]!
+  restrictionsAggregate(filter: RestrictionFilter): RestrictionAggregateResult
+  chaptersAggregate(filter: ChapterFilter): ChapterAggregateResult
+  releasesAggregate(filter: ReleaseFilter): ReleaseAggregateResult
+  ageRatingsAggregate(filter: AgeRatingFilter): AgeRatingAggregateResult
+  relationsAggregate(
+    filter: ContentRelationFilter
+  ): ContentRelationAggregateResult
+  partOfCanonicalsAggregate(filter: CanonicalFilter): CanonicalAggregateResult
+  genresAggregate(filter: GenreFilter): GenreAggregateResult
+  staffAggregate(filter: CollaborationFilter): CollaborationAggregateResult
+  starringAggregate(filter: CastFilter): CastAggregateResult
+  namesAggregate(filter: TextFilter): TextAggregateResult
+  aliasesAggregate(filter: TextFilter): TextAggregateResult
+  descriptionsAggregate(filter: TextFilter): TextAggregateResult
+  imagesAggregate(filter: ImageWrapperFilter): ImageWrapperAggregateResult
+  crossrefsAggregate(
+    filter: CrossReferenceFilter
+  ): CrossReferenceAggregateResult
+  websitesAggregate(filter: WebAddressFilter): WebAddressAggregateResult
+  volumesAggregate(filter: VolumeFilter): VolumeAggregateResult
+  runningsAggregate(filter: RunningFilter): RunningAggregateResult
+}
+```
+
+### Fields
+
+#### `restrictions` ([`[Restriction!]!`](/docs/schema/objects/restriction))
+
+- ##### `filter` ([`RestrictionFilter`](/docs/schema/inputs/restriction-filter))
+
+- ##### `order` ([`RestrictionOrder`](/docs/schema/inputs/restriction-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `chapters` ([`[Chapter!]!`](/docs/schema/objects/chapter))
+
+- ##### `filter` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))
+
+- ##### `order` ([`ChapterOrder`](/docs/schema/inputs/chapter-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `releases` ([`[Release!]`](/docs/schema/interfaces/release))
+
+- ##### `filter` ([`ReleaseFilter`](/docs/schema/inputs/release-filter))
+
+- ##### `order` ([`ReleaseOrder`](/docs/schema/inputs/release-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `ageRatings` ([`[AgeRating!]!`](/docs/schema/objects/age-rating))
+
+- ##### `filter` ([`AgeRatingFilter`](/docs/schema/inputs/age-rating-filter))
+
+- ##### `order` ([`AgeRatingOrder`](/docs/schema/inputs/age-rating-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `status` ([`ContentStatus!`](/docs/schema/enums/content-status))
+
+#### `relations` ([`[ContentRelation!]!`](/docs/schema/objects/content-relation))
+
+- ##### `filter` ([`ContentRelationFilter`](/docs/schema/inputs/content-relation-filter))
+
+- ##### `order` ([`ContentRelationOrder`](/docs/schema/inputs/content-relation-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `partOfCanonicals` ([`[Canonical!]!`](/docs/schema/objects/canonical))
+
+- ##### `filter` ([`CanonicalFilter`](/docs/schema/inputs/canonical-filter))
+
+- ##### `order` ([`CanonicalOrder`](/docs/schema/inputs/canonical-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `genres` ([`[Genre!]!`](/docs/schema/objects/genre))
+
+- ##### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+- ##### `order` ([`GenreOrder`](/docs/schema/inputs/genre-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `staff` ([`[Collaboration!]!`](/docs/schema/objects/collaboration))
+
+- ##### `filter` ([`CollaborationFilter`](/docs/schema/inputs/collaboration-filter))
+
+- ##### `order` ([`CollaborationOrder`](/docs/schema/inputs/collaboration-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `starring` ([`[Cast!]!`](/docs/schema/objects/cast))
+
+- ##### `filter` ([`CastFilter`](/docs/schema/inputs/cast-filter))
+
+- ##### `order` ([`CastOrder`](/docs/schema/inputs/cast-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `names` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `aliases` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `descriptions` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `images` ([`[ImageWrapper!]!`](/docs/schema/objects/image-wrapper))
+
+- ##### `filter` ([`ImageWrapperFilter`](/docs/schema/inputs/image-wrapper-filter))
+
+- ##### `order` ([`ImageWrapperOrder`](/docs/schema/inputs/image-wrapper-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `crossrefs` ([`[CrossReference!]!`](/docs/schema/objects/cross-reference))
+
+- ##### `filter` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))
+
+- ##### `order` ([`CrossReferenceOrder`](/docs/schema/inputs/cross-reference-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `websites` ([`[WebAddress!]!`](/docs/schema/objects/web-address))
+
+- ##### `filter` ([`WebAddressFilter`](/docs/schema/inputs/web-address-filter))
+
+- ##### `order` ([`WebAddressOrder`](/docs/schema/inputs/web-address-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `type` ([`MangaType`](/docs/schema/enums/manga-type))
+
+#### `volumes` ([`[Volume!]`](/docs/schema/objects/volume))
+
+- ##### `filter` ([`VolumeFilter`](/docs/schema/inputs/volume-filter))
+
+- ##### `order` ([`VolumeOrder`](/docs/schema/inputs/volume-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `runnings` ([`[Running!]!`](/docs/schema/objects/running))
+
+- ##### `filter` ([`RunningFilter`](/docs/schema/inputs/running-filter))
+
+- ##### `order` ([`RunningOrder`](/docs/schema/inputs/running-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `restrictionsAggregate` ([`RestrictionAggregateResult`](/docs/schema/objects/restriction-aggregate-result))
+
+- ##### `filter` ([`RestrictionFilter`](/docs/schema/inputs/restriction-filter))
+
+#### `chaptersAggregate` ([`ChapterAggregateResult`](/docs/schema/objects/chapter-aggregate-result))
+
+- ##### `filter` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))
+
+#### `releasesAggregate` ([`ReleaseAggregateResult`](/docs/schema/objects/release-aggregate-result))
+
+- ##### `filter` ([`ReleaseFilter`](/docs/schema/inputs/release-filter))
+
+#### `ageRatingsAggregate` ([`AgeRatingAggregateResult`](/docs/schema/objects/age-rating-aggregate-result))
+
+- ##### `filter` ([`AgeRatingFilter`](/docs/schema/inputs/age-rating-filter))
+
+#### `relationsAggregate` ([`ContentRelationAggregateResult`](/docs/schema/objects/content-relation-aggregate-result))
+
+- ##### `filter` ([`ContentRelationFilter`](/docs/schema/inputs/content-relation-filter))
+
+#### `partOfCanonicalsAggregate` ([`CanonicalAggregateResult`](/docs/schema/objects/canonical-aggregate-result))
+
+- ##### `filter` ([`CanonicalFilter`](/docs/schema/inputs/canonical-filter))
+
+#### `genresAggregate` ([`GenreAggregateResult`](/docs/schema/objects/genre-aggregate-result))
+
+- ##### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+#### `staffAggregate` ([`CollaborationAggregateResult`](/docs/schema/objects/collaboration-aggregate-result))
+
+- ##### `filter` ([`CollaborationFilter`](/docs/schema/inputs/collaboration-filter))
+
+#### `starringAggregate` ([`CastAggregateResult`](/docs/schema/objects/cast-aggregate-result))
+
+- ##### `filter` ([`CastFilter`](/docs/schema/inputs/cast-filter))
+
+#### `namesAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `aliasesAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `descriptionsAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `imagesAggregate` ([`ImageWrapperAggregateResult`](/docs/schema/objects/image-wrapper-aggregate-result))
+
+- ##### `filter` ([`ImageWrapperFilter`](/docs/schema/inputs/image-wrapper-filter))
+
+#### `crossrefsAggregate` ([`CrossReferenceAggregateResult`](/docs/schema/objects/cross-reference-aggregate-result))
+
+- ##### `filter` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))
+
+#### `websitesAggregate` ([`WebAddressAggregateResult`](/docs/schema/objects/web-address-aggregate-result))
+
+- ##### `filter` ([`WebAddressFilter`](/docs/schema/inputs/web-address-filter))
+
+#### `volumesAggregate` ([`VolumeAggregateResult`](/docs/schema/objects/volume-aggregate-result))
+
+- ##### `filter` ([`VolumeFilter`](/docs/schema/inputs/volume-filter))
+
+#### `runningsAggregate` ([`RunningAggregateResult`](/docs/schema/objects/running-aggregate-result))
+
+- ##### `filter` ([`RunningFilter`](/docs/schema/inputs/running-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)
+
+#### [`Generic`](/docs/schema/interfaces/generic)
+
+#### [`Starring`](/docs/schema/interfaces/starring)
+
+#### [`WithStaff`](/docs/schema/interfaces/with-staff)
+
+#### [`WithGenre`](/docs/schema/interfaces/with-genre)
+
+#### [`Canonizable`](/docs/schema/interfaces/canonizable)
+
+#### [`Content`](/docs/schema/interfaces/content)
+
+#### [`WithAgeRating`](/docs/schema/interfaces/with-age-rating)
+
+#### [`Releasable`](/docs/schema/interfaces/releasable)
+
+#### [`WithChapter`](/docs/schema/interfaces/with-chapter)
+
+#### [`WithRestriction`](/docs/schema/interfaces/with-restriction)

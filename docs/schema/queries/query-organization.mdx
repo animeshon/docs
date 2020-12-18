@@ -1,0 +1,42 @@
+---
+id: query-organization
+title: queryOrganization
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryOrganization(
+  filter: OrganizationFilter
+  order: OrganizationOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Organization]
+
+```
+
+### Arguments
+
+#### `filter` ([`OrganizationFilter`](/docs/schema/inputs/organization-filter))
+
+#### `order` ([`OrganizationOrder`](/docs/schema/inputs/organization-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Organization`](/docs/schema/objects/organization)

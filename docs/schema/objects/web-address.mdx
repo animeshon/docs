@@ -1,0 +1,64 @@
+---
+id: web-address
+title: WebAddress
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WebAddress implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  formattedAddress: String!
+  host(filter: HostFilter): Host!
+  path: String
+  query: String
+  fragment: String
+  lastSeenAvailable: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `formattedAddress` ([`String!`](/docs/schema/scalars/string))
+
+#### `host` ([`Host!`](/docs/schema/objects/host))
+
+- ##### `filter` ([`HostFilter`](/docs/schema/inputs/host-filter))
+
+#### `path` ([`String`](/docs/schema/scalars/string))
+
+#### `query` ([`String`](/docs/schema/scalars/string))
+
+#### `fragment` ([`String`](/docs/schema/scalars/string))
+
+#### `lastSeenAvailable` ([`DateTime`](/docs/schema/scalars/date-time))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

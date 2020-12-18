@@ -1,0 +1,52 @@
+---
+id: custom-http
+title: CustomHTTP
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CustomHTTP {
+  url: String!
+  method: HTTPMethod!
+  body: String
+  graphql: String
+  mode: Mode
+  forwardHeaders: [String!]
+  secretHeaders: [String!]
+  introspectionHeaders: [String!]
+  skipIntrospection: Boolean
+}
+```
+
+### Fields
+
+#### `url` ([`String!`](/docs/schema/scalars/string))
+
+#### `method` ([`HTTPMethod!`](/docs/schema/enums/http-method))
+
+#### `body` ([`String`](/docs/schema/scalars/string))
+
+#### `graphql` ([`String`](/docs/schema/scalars/string))
+
+#### `mode` ([`Mode`](/docs/schema/enums/mode))
+
+#### `forwardHeaders` ([`[String!]`](/docs/schema/scalars/string))
+
+#### `secretHeaders` ([`[String!]`](/docs/schema/scalars/string))
+
+#### `introspectionHeaders` ([`[String!]`](/docs/schema/scalars/string))
+
+#### `skipIntrospection` ([`Boolean`](/docs/schema/scalars/boolean))

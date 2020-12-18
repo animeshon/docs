@@ -1,0 +1,72 @@
+---
+id: soundtrack
+title: Soundtrack
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Soundtrack implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  content: Audible!
+  song(filter: SongFilter): Song!
+  soundTrackType: SoundTrackType!
+  trackVersion: SongVersionType!
+  localization(filter: LocalizationFilter): Localization!
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `content` ([`Audible!`](/docs/schema/interfaces/audible))
+
+Anime, Episode, ....
+
+#### `song` ([`Song!`](/docs/schema/objects/song))
+
+- ##### `filter` ([`SongFilter`](/docs/schema/inputs/song-filter))
+
+#### `soundTrackType` ([`SoundTrackType!`](/docs/schema/enums/sound-track-type))
+
+Opening, Ending, Sound
+
+#### `trackVersion` ([`SongVersionType!`](/docs/schema/enums/song-version-type))
+
+Normal, Instrumental, ...
+
+#### `localization` ([`Localization!`](/docs/schema/objects/localization))
+
+Different localization have different soundtracks (Opening for example)
+If the song appears in every localization, use tag mul
+
+- ##### `filter` ([`LocalizationFilter`](/docs/schema/inputs/localization-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

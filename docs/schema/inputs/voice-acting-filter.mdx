@@ -1,0 +1,46 @@
+---
+id: voice-acting-filter
+title: VoiceActingFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VoiceActingFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  isPrimary: Boolean
+  has: VoiceActingHasFilter
+  and: [VoiceActingFilter]
+  or: [VoiceActingFilter]
+  not: VoiceActingFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `isPrimary` ([`Boolean`](/docs/schema/scalars/boolean))
+
+#### `has` ([`VoiceActingHasFilter`](/docs/schema/enums/voice-acting-has-filter))
+
+#### `and` ([`[VoiceActingFilter]`](/docs/schema/inputs/voice-acting-filter))
+
+#### `or` ([`[VoiceActingFilter]`](/docs/schema/inputs/voice-acting-filter))
+
+#### `not` ([`VoiceActingFilter`](/docs/schema/inputs/voice-acting-filter))

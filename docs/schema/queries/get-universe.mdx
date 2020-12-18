@@ -1,0 +1,33 @@
+---
+id: get-universe
+title: getUniverse
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getUniverse(
+  id: String!
+): Universe
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`Universe`](/docs/schema/objects/universe)

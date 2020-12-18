@@ -1,0 +1,54 @@
+---
+id: music-collection-track-ref
+title: MusicCollectionTrackRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MusicCollectionTrackRef {
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  musicCollection: MusicCollectionRef
+  song: SongRef
+  trackVersion: SongVersionType
+  identifier: String
+}
+```
+
+### Fields
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `musicCollection` ([`MusicCollectionRef`](/docs/schema/inputs/music-collection-ref))
+
+#### `song` ([`SongRef`](/docs/schema/inputs/song-ref))
+
+#### `trackVersion` ([`SongVersionType`](/docs/schema/enums/song-version-type))
+
+Normal, Karaoke, ...
+
+#### `identifier` ([`String`](/docs/schema/scalars/string))

@@ -1,0 +1,116 @@
+---
+id: with-personal-information
+title: WithPersonalInformation
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface WithPersonalInformation {
+  birthdayFallback: String
+  birthPlaceFallback(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  hometownFallback(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  birthday: DateTime
+  birthPlace(filter: AddressFilter): Address
+  hometown(filter: AddressFilter): Address
+  gender: GenderType
+  bloodType: BloodType
+  cupSize: CupSize
+  age: Int
+  height: Int
+  weight: Int
+  bust: Int
+  waist: Int
+  hips: Int
+  birthPlaceFallbackAggregate(filter: TextFilter): TextAggregateResult
+  hometownFallbackAggregate(filter: TextFilter): TextAggregateResult
+}
+```
+
+### Fields
+
+#### `birthdayFallback` ([`String`](/docs/schema/scalars/string))
+
+Free text field for non-standard birthdays
+
+#### `birthPlaceFallback` ([`[Text!]!`](/docs/schema/objects/text))
+
+Free text field for non-standard birthplace
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `hometownFallback` ([`[Text!]!`](/docs/schema/objects/text))
+
+Free text field for non-standard hometown
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `birthday` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `birthPlace` ([`Address`](/docs/schema/objects/address))
+
+- ##### `filter` ([`AddressFilter`](/docs/schema/inputs/address-filter))
+
+#### `hometown` ([`Address`](/docs/schema/objects/address))
+
+- ##### `filter` ([`AddressFilter`](/docs/schema/inputs/address-filter))
+
+#### `gender` ([`GenderType`](/docs/schema/enums/gender-type))
+
+#### `bloodType` ([`BloodType`](/docs/schema/enums/blood-type))
+
+#### `cupSize` ([`CupSize`](/docs/schema/enums/cup-size))
+
+#### `age` ([`Int`](/docs/schema/scalars/int))
+
+#### `height` ([`Int`](/docs/schema/scalars/int))
+
+#### `weight` ([`Int`](/docs/schema/scalars/int))
+
+#### `bust` ([`Int`](/docs/schema/scalars/int))
+
+#### `waist` ([`Int`](/docs/schema/scalars/int))
+
+#### `hips` ([`Int`](/docs/schema/scalars/int))
+
+#### `birthPlaceFallbackAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `hometownFallbackAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))

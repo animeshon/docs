@@ -1,0 +1,43 @@
+---
+id: collaboration-filter
+title: CollaborationFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CollaborationFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: CollaborationHasFilter
+  and: [CollaborationFilter]
+  or: [CollaborationFilter]
+  not: CollaborationFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`CollaborationHasFilter`](/docs/schema/enums/collaboration-has-filter))
+
+#### `and` ([`[CollaborationFilter]`](/docs/schema/inputs/collaboration-filter))
+
+#### `or` ([`[CollaborationFilter]`](/docs/schema/inputs/collaboration-filter))
+
+#### `not` ([`CollaborationFilter`](/docs/schema/inputs/collaboration-filter))

@@ -1,0 +1,49 @@
+---
+id: content-status
+title: ContentStatus
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+enum ContentStatus {
+  UNKNOWN
+  CANCELED
+  COMPLETED
+  INTERRUPTED
+  ONGOING
+  SCHEDULED
+  SUSPENDED
+  WORK_IN_PROGRESS
+}
+```
+
+### Values
+
+#### `UNKNOWN`
+
+#### `CANCELED`
+
+#### `COMPLETED`
+
+#### `INTERRUPTED`
+
+#### `ONGOING`
+
+#### `SCHEDULED`
+
+#### `SUSPENDED`
+
+#### `WORK_IN_PROGRESS`

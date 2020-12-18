@@ -1,0 +1,46 @@
+---
+id: anime-filter
+title: AnimeFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AnimeFilter {
+  status: ContentStatus_hash
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: AnimeHasFilter
+  and: [AnimeFilter]
+  or: [AnimeFilter]
+  not: AnimeFilter
+}
+```
+
+### Fields
+
+#### `status` ([`ContentStatus_hash`](/docs/schema/inputs/content-status-hash))
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`AnimeHasFilter`](/docs/schema/enums/anime-has-filter))
+
+#### `and` ([`[AnimeFilter]`](/docs/schema/inputs/anime-filter))
+
+#### `or` ([`[AnimeFilter]`](/docs/schema/inputs/anime-filter))
+
+#### `not` ([`AnimeFilter`](/docs/schema/inputs/anime-filter))

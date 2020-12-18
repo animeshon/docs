@@ -1,0 +1,37 @@
+---
+id: auth-rule
+title: AuthRule
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AuthRule {
+  and: [AuthRule]
+  or: [AuthRule]
+  not: AuthRule
+  rule: String
+}
+```
+
+### Fields
+
+#### `and` ([`[AuthRule]`](/docs/schema/inputs/auth-rule))
+
+#### `or` ([`[AuthRule]`](/docs/schema/inputs/auth-rule))
+
+#### `not` ([`AuthRule`](/docs/schema/inputs/auth-rule))
+
+#### `rule` ([`String`](/docs/schema/scalars/string))

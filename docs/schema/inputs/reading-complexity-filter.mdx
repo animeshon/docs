@@ -1,0 +1,49 @@
+---
+id: reading-complexity-filter
+title: ReadingComplexityFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReadingComplexityFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  level: LanguageComplexity_hash
+  system: WritingSystem_hash
+  has: ReadingComplexityHasFilter
+  and: [ReadingComplexityFilter]
+  or: [ReadingComplexityFilter]
+  not: ReadingComplexityFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `level` ([`LanguageComplexity_hash`](/docs/schema/inputs/language-complexity-hash))
+
+#### `system` ([`WritingSystem_hash`](/docs/schema/inputs/writing-system-hash))
+
+#### `has` ([`ReadingComplexityHasFilter`](/docs/schema/enums/reading-complexity-has-filter))
+
+#### `and` ([`[ReadingComplexityFilter]`](/docs/schema/inputs/reading-complexity-filter))
+
+#### `or` ([`[ReadingComplexityFilter]`](/docs/schema/inputs/reading-complexity-filter))
+
+#### `not` ([`ReadingComplexityFilter`](/docs/schema/inputs/reading-complexity-filter))

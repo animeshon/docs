@@ -1,0 +1,58 @@
+---
+id: language-ref
+title: LanguageRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LanguageRef {
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  names: [TextRef!]
+  code: String
+  alpha2: String
+  alpha3t: String
+  alpha3b: String
+  parent: MacroLanguageRef
+}
+```
+
+### Fields
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `names` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `code` ([`String`](/docs/schema/scalars/string))
+
+#### `alpha2` ([`String`](/docs/schema/scalars/string))
+
+#### `alpha3t` ([`String`](/docs/schema/scalars/string))
+
+#### `alpha3b` ([`String`](/docs/schema/scalars/string))
+
+#### `parent` ([`MacroLanguageRef`](/docs/schema/inputs/macro-language-ref))

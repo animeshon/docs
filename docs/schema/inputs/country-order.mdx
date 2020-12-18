@@ -1,0 +1,34 @@
+---
+id: country-order
+title: CountryOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CountryOrder {
+  asc: CountryOrderable
+  desc: CountryOrderable
+  then: CountryOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`CountryOrderable`](/docs/schema/enums/country-orderable))
+
+#### `desc` ([`CountryOrderable`](/docs/schema/enums/country-orderable))
+
+#### `then` ([`CountryOrder`](/docs/schema/inputs/country-order))

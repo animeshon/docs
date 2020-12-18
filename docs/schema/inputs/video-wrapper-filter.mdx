@@ -1,0 +1,46 @@
+---
+id: video-wrapper-filter
+title: VideoWrapperFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VideoWrapperFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  type: VideoType_hash
+  has: VideoWrapperHasFilter
+  and: [VideoWrapperFilter]
+  or: [VideoWrapperFilter]
+  not: VideoWrapperFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `type` ([`VideoType_hash`](/docs/schema/inputs/video-type-hash))
+
+#### `has` ([`VideoWrapperHasFilter`](/docs/schema/enums/video-wrapper-has-filter))
+
+#### `and` ([`[VideoWrapperFilter]`](/docs/schema/inputs/video-wrapper-filter))
+
+#### `or` ([`[VideoWrapperFilter]`](/docs/schema/inputs/video-wrapper-filter))
+
+#### `not` ([`VideoWrapperFilter`](/docs/schema/inputs/video-wrapper-filter))

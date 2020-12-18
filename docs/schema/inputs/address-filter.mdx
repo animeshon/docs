@@ -1,0 +1,79 @@
+---
+id: address-filter
+title: AddressFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AddressFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  formattedAddress: StringHashFilter
+  addressLine1: StringHashFilter
+  addressLine2: StringHashFilter
+  administrativeAreaLevel1: StringHashFilter
+  administrativeAreaLevel2: StringHashFilter
+  locality: StringHashFilter
+  postalCode: StringHashFilter
+  route: StringHashFilter
+  streetNumber: StringHashFilter
+  lat: FloatFilter
+  lng: FloatFilter
+  googleMapsPlaceId: StringTermFilter
+  has: AddressHasFilter
+  and: [AddressFilter]
+  or: [AddressFilter]
+  not: AddressFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `formattedAddress` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `addressLine1` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `addressLine2` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `administrativeAreaLevel1` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `administrativeAreaLevel2` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `locality` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `postalCode` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `route` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `streetNumber` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `lat` ([`FloatFilter`](/docs/schema/inputs/float-filter))
+
+#### `lng` ([`FloatFilter`](/docs/schema/inputs/float-filter))
+
+#### `googleMapsPlaceId` ([`StringTermFilter`](/docs/schema/inputs/string-term-filter))
+
+#### `has` ([`AddressHasFilter`](/docs/schema/enums/address-has-filter))
+
+#### `and` ([`[AddressFilter]`](/docs/schema/inputs/address-filter))
+
+#### `or` ([`[AddressFilter]`](/docs/schema/inputs/address-filter))
+
+#### `not` ([`AddressFilter`](/docs/schema/inputs/address-filter))

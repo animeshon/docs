@@ -1,0 +1,33 @@
+---
+id: aggregate-canonical
+title: aggregateCanonical
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateCanonical(
+  filter: CanonicalFilter
+): CanonicalAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`CanonicalFilter`](/docs/schema/inputs/canonical-filter))
+
+### Type
+
+#### [`CanonicalAggregateResult`](/docs/schema/objects/canonical-aggregate-result)

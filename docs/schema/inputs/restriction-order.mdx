@@ -1,0 +1,34 @@
+---
+id: restriction-order
+title: RestrictionOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RestrictionOrder {
+  asc: RestrictionOrderable
+  desc: RestrictionOrderable
+  then: RestrictionOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`RestrictionOrderable`](/docs/schema/enums/restriction-orderable))
+
+#### `desc` ([`RestrictionOrderable`](/docs/schema/enums/restriction-orderable))
+
+#### `then` ([`RestrictionOrder`](/docs/schema/inputs/restriction-order))

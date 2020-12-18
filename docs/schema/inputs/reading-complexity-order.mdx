@@ -1,0 +1,34 @@
+---
+id: reading-complexity-order
+title: ReadingComplexityOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReadingComplexityOrder {
+  asc: ReadingComplexityOrderable
+  desc: ReadingComplexityOrderable
+  then: ReadingComplexityOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ReadingComplexityOrderable`](/docs/schema/enums/reading-complexity-orderable))
+
+#### `desc` ([`ReadingComplexityOrderable`](/docs/schema/enums/reading-complexity-orderable))
+
+#### `then` ([`ReadingComplexityOrder`](/docs/schema/inputs/reading-complexity-order))

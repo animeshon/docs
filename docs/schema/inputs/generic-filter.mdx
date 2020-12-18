@@ -1,0 +1,37 @@
+---
+id: generic-filter
+title: GenericFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type GenericFilter {
+  has: GenericHasFilter
+  and: [GenericFilter]
+  or: [GenericFilter]
+  not: GenericFilter
+}
+```
+
+### Fields
+
+#### `has` ([`GenericHasFilter`](/docs/schema/enums/generic-has-filter))
+
+#### `and` ([`[GenericFilter]`](/docs/schema/inputs/generic-filter))
+
+#### `or` ([`[GenericFilter]`](/docs/schema/inputs/generic-filter))
+
+#### `not` ([`GenericFilter`](/docs/schema/inputs/generic-filter))

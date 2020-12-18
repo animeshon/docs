@@ -1,0 +1,52 @@
+---
+id: cross-reference-filter
+title: CrossReferenceFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CrossReferenceFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  kind: StringHashFilter
+  externalID: StringHashFilter
+  namespace: StringHashFilter
+  has: CrossReferenceHasFilter
+  and: [CrossReferenceFilter]
+  or: [CrossReferenceFilter]
+  not: CrossReferenceFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `kind` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `externalID` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `namespace` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`CrossReferenceHasFilter`](/docs/schema/enums/cross-reference-has-filter))
+
+#### `and` ([`[CrossReferenceFilter]`](/docs/schema/inputs/cross-reference-filter))
+
+#### `or` ([`[CrossReferenceFilter]`](/docs/schema/inputs/cross-reference-filter))
+
+#### `not` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))

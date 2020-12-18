@@ -1,0 +1,34 @@
+---
+id: release-order
+title: ReleaseOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReleaseOrder {
+  asc: ReleaseOrderable
+  desc: ReleaseOrderable
+  then: ReleaseOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ReleaseOrderable`](/docs/schema/enums/release-orderable))
+
+#### `desc` ([`ReleaseOrderable`](/docs/schema/enums/release-orderable))
+
+#### `then` ([`ReleaseOrder`](/docs/schema/inputs/release-order))

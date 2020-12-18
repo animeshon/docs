@@ -1,0 +1,49 @@
+---
+id: convention-filter
+title: ConventionFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ConventionFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  from: DateTimeFilter
+  to: DateTimeFilter
+  has: ConventionHasFilter
+  and: [ConventionFilter]
+  or: [ConventionFilter]
+  not: ConventionFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `from` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `to` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `has` ([`ConventionHasFilter`](/docs/schema/enums/convention-has-filter))
+
+#### `and` ([`[ConventionFilter]`](/docs/schema/inputs/convention-filter))
+
+#### `or` ([`[ConventionFilter]`](/docs/schema/inputs/convention-filter))
+
+#### `not` ([`ConventionFilter`](/docs/schema/inputs/convention-filter))

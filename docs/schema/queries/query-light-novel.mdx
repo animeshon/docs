@@ -1,0 +1,42 @@
+---
+id: query-light-novel
+title: queryLightNovel
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryLightNovel(
+  filter: LightNovelFilter
+  order: LightNovelOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [LightNovel]
+
+```
+
+### Arguments
+
+#### `filter` ([`LightNovelFilter`](/docs/schema/inputs/light-novel-filter))
+
+#### `order` ([`LightNovelOrder`](/docs/schema/inputs/light-novel-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`LightNovel`](/docs/schema/objects/light-novel)

@@ -1,0 +1,381 @@
+---
+id: visual-novel-release
+title: VisualNovelRelease
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VisualNovelRelease implements Metadata, Generic, Starring, WithStaff, WithAgeRating, Release, WithRestriction {
+  restrictions(
+    filter: RestrictionFilter
+    order: RestrictionOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Restriction!]!
+  contents(first: Int = 0, offset: Int = 0): [Releasable!]!
+  languages(
+    filter: LanguageFilter
+    order: LanguageOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Language!]!
+  releaseDate: DateTime
+  medium(
+    filter: MediumFilter
+    order: MediumOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Medium!]!
+  censorship: CensorshipType!
+  ean10: String
+  upce: String
+  upca: String
+  ean13: String
+  sku: String
+  ageRatings(
+    filter: AgeRatingFilter
+    order: AgeRatingOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [AgeRating!]!
+  staff(
+    filter: CollaborationFilter
+    order: CollaborationOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Collaboration!]!
+  starring(
+    filter: CastFilter
+    order: CastOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Cast!]!
+  names(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  aliases(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  descriptions(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  images(
+    filter: ImageWrapperFilter
+    order: ImageWrapperOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [ImageWrapper!]!
+  crossrefs(
+    filter: CrossReferenceFilter
+    order: CrossReferenceOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [CrossReference!]!
+  websites(
+    filter: WebAddressFilter
+    order: WebAddressOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [WebAddress!]!
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  resX: Int!
+  resY: Int!
+  isPatch: Boolean!
+  isFree: Boolean!
+  isDoujinshi: Boolean!
+  isUncensored: Boolean!
+  type: GameReleaseType!
+  voicedDegree: GameVoicedDegree!
+  animationStoryDegree: GameAnimatonDegree!
+  animationEroDegree: GameAnimatonDegree!
+  engine: String!
+  platforms(first: Int = 0, offset: Int = 0): [GamePlatform!]!
+  restrictionsAggregate(filter: RestrictionFilter): RestrictionAggregateResult
+  contentsAggregate: ReleasableAggregateResult
+  languagesAggregate(filter: LanguageFilter): LanguageAggregateResult
+  mediumAggregate(filter: MediumFilter): MediumAggregateResult
+  ageRatingsAggregate(filter: AgeRatingFilter): AgeRatingAggregateResult
+  staffAggregate(filter: CollaborationFilter): CollaborationAggregateResult
+  starringAggregate(filter: CastFilter): CastAggregateResult
+  namesAggregate(filter: TextFilter): TextAggregateResult
+  aliasesAggregate(filter: TextFilter): TextAggregateResult
+  descriptionsAggregate(filter: TextFilter): TextAggregateResult
+  imagesAggregate(filter: ImageWrapperFilter): ImageWrapperAggregateResult
+  crossrefsAggregate(
+    filter: CrossReferenceFilter
+  ): CrossReferenceAggregateResult
+  websitesAggregate(filter: WebAddressFilter): WebAddressAggregateResult
+}
+```
+
+### Fields
+
+#### `restrictions` ([`[Restriction!]!`](/docs/schema/objects/restriction))
+
+- ##### `filter` ([`RestrictionFilter`](/docs/schema/inputs/restriction-filter))
+
+- ##### `order` ([`RestrictionOrder`](/docs/schema/inputs/restriction-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `contents` ([`[Releasable!]!`](/docs/schema/interfaces/releasable))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `languages` ([`[Language!]!`](/docs/schema/objects/language))
+
+- ##### `filter` ([`LanguageFilter`](/docs/schema/inputs/language-filter))
+
+- ##### `order` ([`LanguageOrder`](/docs/schema/inputs/language-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `releaseDate` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `medium` ([`[Medium!]!`](/docs/schema/objects/medium))
+
+- ##### `filter` ([`MediumFilter`](/docs/schema/inputs/medium-filter))
+
+- ##### `order` ([`MediumOrder`](/docs/schema/inputs/medium-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `censorship` ([`CensorshipType!`](/docs/schema/enums/censorship-type))
+
+#### `ean10` ([`String`](/docs/schema/scalars/string))
+
+#### `upce` ([`String`](/docs/schema/scalars/string))
+
+#### `upca` ([`String`](/docs/schema/scalars/string))
+
+#### `ean13` ([`String`](/docs/schema/scalars/string))
+
+#### `sku` ([`String`](/docs/schema/scalars/string))
+
+#### `ageRatings` ([`[AgeRating!]!`](/docs/schema/objects/age-rating))
+
+- ##### `filter` ([`AgeRatingFilter`](/docs/schema/inputs/age-rating-filter))
+
+- ##### `order` ([`AgeRatingOrder`](/docs/schema/inputs/age-rating-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `staff` ([`[Collaboration!]!`](/docs/schema/objects/collaboration))
+
+- ##### `filter` ([`CollaborationFilter`](/docs/schema/inputs/collaboration-filter))
+
+- ##### `order` ([`CollaborationOrder`](/docs/schema/inputs/collaboration-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `starring` ([`[Cast!]!`](/docs/schema/objects/cast))
+
+- ##### `filter` ([`CastFilter`](/docs/schema/inputs/cast-filter))
+
+- ##### `order` ([`CastOrder`](/docs/schema/inputs/cast-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `names` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `aliases` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `descriptions` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `images` ([`[ImageWrapper!]!`](/docs/schema/objects/image-wrapper))
+
+- ##### `filter` ([`ImageWrapperFilter`](/docs/schema/inputs/image-wrapper-filter))
+
+- ##### `order` ([`ImageWrapperOrder`](/docs/schema/inputs/image-wrapper-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `crossrefs` ([`[CrossReference!]!`](/docs/schema/objects/cross-reference))
+
+- ##### `filter` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))
+
+- ##### `order` ([`CrossReferenceOrder`](/docs/schema/inputs/cross-reference-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `websites` ([`[WebAddress!]!`](/docs/schema/objects/web-address))
+
+- ##### `filter` ([`WebAddressFilter`](/docs/schema/inputs/web-address-filter))
+
+- ##### `order` ([`WebAddressOrder`](/docs/schema/inputs/web-address-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `resX` ([`Int!`](/docs/schema/scalars/int))
+
+#### `resY` ([`Int!`](/docs/schema/scalars/int))
+
+#### `isPatch` ([`Boolean!`](/docs/schema/scalars/boolean))
+
+#### `isFree` ([`Boolean!`](/docs/schema/scalars/boolean))
+
+#### `isDoujinshi` ([`Boolean!`](/docs/schema/scalars/boolean))
+
+#### `isUncensored` ([`Boolean!`](/docs/schema/scalars/boolean))
+
+#### `type` ([`GameReleaseType!`](/docs/schema/enums/game-release-type))
+
+#### `voicedDegree` ([`GameVoicedDegree!`](/docs/schema/enums/game-voiced-degree))
+
+#### `animationStoryDegree` ([`GameAnimatonDegree!`](/docs/schema/enums/game-animaton-degree))
+
+#### `animationEroDegree` ([`GameAnimatonDegree!`](/docs/schema/enums/game-animaton-degree))
+
+#### `engine` ([`String!`](/docs/schema/scalars/string))
+
+#### `platforms` ([`[GamePlatform!]!`](/docs/schema/enums/game-platform))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `restrictionsAggregate` ([`RestrictionAggregateResult`](/docs/schema/objects/restriction-aggregate-result))
+
+- ##### `filter` ([`RestrictionFilter`](/docs/schema/inputs/restriction-filter))
+
+#### `contentsAggregate` ([`ReleasableAggregateResult`](/docs/schema/objects/releasable-aggregate-result))
+
+#### `languagesAggregate` ([`LanguageAggregateResult`](/docs/schema/objects/language-aggregate-result))
+
+- ##### `filter` ([`LanguageFilter`](/docs/schema/inputs/language-filter))
+
+#### `mediumAggregate` ([`MediumAggregateResult`](/docs/schema/objects/medium-aggregate-result))
+
+- ##### `filter` ([`MediumFilter`](/docs/schema/inputs/medium-filter))
+
+#### `ageRatingsAggregate` ([`AgeRatingAggregateResult`](/docs/schema/objects/age-rating-aggregate-result))
+
+- ##### `filter` ([`AgeRatingFilter`](/docs/schema/inputs/age-rating-filter))
+
+#### `staffAggregate` ([`CollaborationAggregateResult`](/docs/schema/objects/collaboration-aggregate-result))
+
+- ##### `filter` ([`CollaborationFilter`](/docs/schema/inputs/collaboration-filter))
+
+#### `starringAggregate` ([`CastAggregateResult`](/docs/schema/objects/cast-aggregate-result))
+
+- ##### `filter` ([`CastFilter`](/docs/schema/inputs/cast-filter))
+
+#### `namesAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `aliasesAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `descriptionsAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+#### `imagesAggregate` ([`ImageWrapperAggregateResult`](/docs/schema/objects/image-wrapper-aggregate-result))
+
+- ##### `filter` ([`ImageWrapperFilter`](/docs/schema/inputs/image-wrapper-filter))
+
+#### `crossrefsAggregate` ([`CrossReferenceAggregateResult`](/docs/schema/objects/cross-reference-aggregate-result))
+
+- ##### `filter` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))
+
+#### `websitesAggregate` ([`WebAddressAggregateResult`](/docs/schema/objects/web-address-aggregate-result))
+
+- ##### `filter` ([`WebAddressFilter`](/docs/schema/inputs/web-address-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)
+
+#### [`Generic`](/docs/schema/interfaces/generic)
+
+#### [`Starring`](/docs/schema/interfaces/starring)
+
+#### [`WithStaff`](/docs/schema/interfaces/with-staff)
+
+#### [`WithAgeRating`](/docs/schema/interfaces/with-age-rating)
+
+#### [`Release`](/docs/schema/interfaces/release)
+
+#### [`WithRestriction`](/docs/schema/interfaces/with-restriction)

@@ -1,0 +1,28 @@
+---
+id: magazine-aggregate-result
+title: MagazineAggregateResult
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MagazineAggregateResult {
+  count: Int
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/docs/schema/scalars/int))

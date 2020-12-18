@@ -1,0 +1,42 @@
+---
+id: query-episode
+title: queryEpisode
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryEpisode(
+  filter: EpisodeFilter
+  order: EpisodeOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Episode]
+
+```
+
+### Arguments
+
+#### `filter` ([`EpisodeFilter`](/docs/schema/inputs/episode-filter))
+
+#### `order` ([`EpisodeOrder`](/docs/schema/inputs/episode-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Episode`](/docs/schema/objects/episode)

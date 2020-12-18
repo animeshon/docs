@@ -1,0 +1,31 @@
+---
+id: episode-type-hash
+title: EpisodeType_hash
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type EpisodeType_hash {
+  eq: EpisodeType!
+  in: [EpisodeType!]
+}
+```
+
+### Fields
+
+#### `eq` ([`EpisodeType!`](/docs/schema/enums/episode-type))
+
+#### `in` ([`[EpisodeType!]`](/docs/schema/enums/episode-type))

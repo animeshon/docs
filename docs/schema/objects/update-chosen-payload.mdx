@@ -1,0 +1,28 @@
+---
+id: update-chosen-payload
+title: UpdateChosenPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UpdateChosenPayload {
+  numUids: Int
+}
+```
+
+### Fields
+
+#### `numUids` ([`Int`](/docs/schema/scalars/int))

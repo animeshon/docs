@@ -1,0 +1,37 @@
+---
+id: with-relation-filter
+title: WithRelationFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithRelationFilter {
+  has: WithRelationHasFilter
+  and: [WithRelationFilter]
+  or: [WithRelationFilter]
+  not: WithRelationFilter
+}
+```
+
+### Fields
+
+#### `has` ([`WithRelationHasFilter`](/docs/schema/enums/with-relation-has-filter))
+
+#### `and` ([`[WithRelationFilter]`](/docs/schema/inputs/with-relation-filter))
+
+#### `or` ([`[WithRelationFilter]`](/docs/schema/inputs/with-relation-filter))
+
+#### `not` ([`WithRelationFilter`](/docs/schema/inputs/with-relation-filter))

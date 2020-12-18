@@ -1,0 +1,33 @@
+---
+id: aggregate-genre
+title: aggregateGenre
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateGenre(
+  filter: GenreFilter
+): GenreAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+### Type
+
+#### [`GenreAggregateResult`](/docs/schema/objects/genre-aggregate-result)

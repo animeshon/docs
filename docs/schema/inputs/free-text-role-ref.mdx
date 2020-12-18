@@ -1,0 +1,55 @@
+---
+id: free-text-role-ref
+title: FreeTextRoleRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type FreeTextRoleRef {
+  description: [TextRef!]
+  in: [CollaborationRef!]
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  names: [TextRef!]
+  aliases: [TextRef!]
+  tag: String
+}
+```
+
+### Fields
+
+#### `description` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `in` ([`[CollaborationRef!]`](/docs/schema/inputs/collaboration-ref))
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `names` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `aliases` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `tag` ([`String`](/docs/schema/scalars/string))

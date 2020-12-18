@@ -1,0 +1,33 @@
+---
+id: aggregate-circle
+title: aggregateCircle
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateCircle(
+  filter: CircleFilter
+): CircleAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`CircleFilter`](/docs/schema/inputs/circle-filter))
+
+### Type
+
+#### [`CircleAggregateResult`](/docs/schema/objects/circle-aggregate-result)

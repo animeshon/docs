@@ -1,0 +1,76 @@
+---
+id: song-ref
+title: SongRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type SongRef {
+  genres: [GenreRef!]
+  staff: [CollaborationRef!]
+  names: [TextRef!]
+  aliases: [TextRef!]
+  descriptions: [TextRef!]
+  images: [ImageWrapperRef!]
+  crossrefs: [CrossReferenceRef!]
+  websites: [WebAddressRef!]
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  audio: AudioRef
+  usedIn: [SoundtrackRef!]
+  trackIn: [MusicCollectionTrackRef!]
+  releaseDate: DateTime
+}
+```
+
+### Fields
+
+#### `genres` ([`[GenreRef!]`](/docs/schema/inputs/genre-ref))
+
+#### `staff` ([`[CollaborationRef!]`](/docs/schema/inputs/collaboration-ref))
+
+#### `names` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `aliases` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `descriptions` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `images` ([`[ImageWrapperRef!]`](/docs/schema/inputs/image-wrapper-ref))
+
+#### `crossrefs` ([`[CrossReferenceRef!]`](/docs/schema/inputs/cross-reference-ref))
+
+#### `websites` ([`[WebAddressRef!]`](/docs/schema/inputs/web-address-ref))
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `audio` ([`AudioRef`](/docs/schema/inputs/audio-ref))
+
+#### `usedIn` ([`[SoundtrackRef!]`](/docs/schema/inputs/soundtrack-ref))
+
+#### `trackIn` ([`[MusicCollectionTrackRef!]`](/docs/schema/inputs/music-collection-track-ref))
+
+#### `releaseDate` ([`DateTime`](/docs/schema/scalars/date-time))
