@@ -3,7 +3,27 @@ id: roadmap
 title: Roadmap
 ---
 
-## Work in progress
+:::caution
 
-More information will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
+The roadmap provided might be subject to changes.
 
+:::
+
+## Services
+
+| Service | Status | Scheduled Release |
+| --- | --- | --- | 
+| Revamp of Ashen | Early development¹ | TBD³ |
+| Federation of the services | Early development¹ | February 2021 |
+| Federation of Oracolo with [Detabesu](/docs/detabesu/introduction) | Early development¹ | February 2021 |
+
+*(¹) Early development: Development has started but no proof-of-concept has been approved yet.*  
+*(²) Evaluation: Support for this content has been discussed but is not planned yet.*  
+*(³) TBD: The timeline or release schedule for this product is still to be decided.*  
+
+
+:::info
+
+With the term **federation** we mean the incapsulation of each service's functionality in a single *gateway* which will expose all the resources through single GraphQL interface, hiding a lot of bolerplate logic from the user/developer.
+
+:::

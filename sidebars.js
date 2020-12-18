@@ -14,6 +14,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'GraphQL',
+      items: ['graphql/quickstarts', 'graphql/tutorials', 'graphql/tips-and-tricks'],
+    },
+    {
+      type: 'category',
       label: 'Animeshon Accounts',
       items: [
         'accounts/introduction',
@@ -38,11 +43,7 @@ module.exports = {
             'detabesu/introduction',
             'detabesu/roadmap',
             'detabesu/concepts',
-            {
-              type: 'category',
-              label: 'GraphQL',
-              items: ['detabesu/graphql/quickstarts', 'detabesu/graphql/tutorials'],
-            },
+            'detabesu/quickstarts',
           ],
         },
       ],

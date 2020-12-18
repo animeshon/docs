@@ -29,7 +29,7 @@ As shown in the above diagram, the core of our Ecosystem is [Detabesu](/docs/det
 
 We expect Detabesu to become a *stable and self-updating* **source of truth** for every user, developer and third-party systems.
 
-The entire dataset is exposed by a powerful [GraphQL Interface](/docs/detabesu/graphql/quickstarts) which allows third-party systems to traverse the Knowledge Base without constraints or restrictions.
+The entire dataset is exposed by a powerful [GraphQL Interface](/docs/graphql/quickstarts) which allows third-party systems to traverse the Knowledge Base without constraints or restrictions.
 
 ### Oracolo
 [Oracolo](/docs/oracolo/introduction) provides search capabilities against Databesu's data.

@@ -1,6 +1,6 @@
 ---
-id: concepts
-title: Concepts
+id: tips-and-tricks
+title: Tips and Tricks
 ---
 
 ## Work in progress

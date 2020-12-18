@@ -5,7 +5,13 @@ title: Introduction
 
 :::warning
 
-Oracolo is still under development. At the moment only one-third of the search capabilities are available through [Ashen](/docs/ashen/introduction).
+Oracolo is still under development. At the moment only two-third of the search capabilities are available through [Ashen](/docs/ashen/introduction) and a **Full-text search** consumable through Animeshon's [GraphQL Interface](/docs/graphql/quickstarts).
+
+:::
+
+:::warning
+
+Oracolo's components are currently not federated and therefore treaten as different services. Consult Oracolo's [Roadmap](/docs/oracolo/roadmap) for more information.
 
 :::
 

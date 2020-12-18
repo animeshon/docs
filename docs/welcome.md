@@ -40,7 +40,7 @@ If you ever encountered one of the following questions and you couldn't find a c
 
 ## Interfaces
 
-[GraphQL](/docs/detabesu/graphql/quickstarts)  
+[GraphQL](/docs/graphql/quickstarts)  
 Get started with our GraphQL interfaces and explore our [Detabesu](/docs/detabesu/introduction).
 
 [Ashen REST API](/docs/ashen/reference/overview)  
