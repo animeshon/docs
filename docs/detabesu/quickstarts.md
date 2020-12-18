@@ -228,7 +228,7 @@ Example of `Generic` are:
 ### Content
 ```
 interface Content {
-  status: ContentStatus! @search
+  status: ContentStatus!
   relations: [ContentRelation!]! 
 }
 ```
