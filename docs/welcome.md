@@ -1,6 +1,7 @@
 ---
 id: welcome
 title: Welcome
+slug: /
 ---
 
 export const Highlight = ({children, color}) => (
