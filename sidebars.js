@@ -21,6 +21,8 @@ module.exports = {
         'graphql/quickstarts', 
         'graphql/tutorials', 
         'graphql/tips-and-tricks', 
+        'graphql/rate-limits', 
+        'graphql/roadmap', 
         {
           type: 'category',
           label: 'Schema',

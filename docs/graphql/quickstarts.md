@@ -133,7 +133,6 @@ query {
 ```
 At this point the integrating client has to deserialize the response before using it
 
-#### Example
 
 <Tabs
   defaultValue="js"
@@ -143,7 +142,7 @@ At this point the integrating client has to deserialize the response before usin
 }>
 <TabItem value="js">
 
-```js
+```js title="Example"
 import { gql } from '@apollo/client';
 
 // const client = ...

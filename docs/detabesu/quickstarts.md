@@ -17,7 +17,7 @@ While traversing the graph it's possible to inspect, filter and manipulate only 
 EG:
 
 Given a basic schema where we have
-```
+```graphql
 // structure which holds anime's informations
 AnimeNode {
     ....
@@ -44,14 +44,14 @@ Let's pretend that we want to retreive all `FEMALE` characters for a given anime
 
 #### Relational solution
 If we were working with a relational database, we would come out with something like
-```
+```plsql
 SELECT * from character c, starring s, anime a, WHERE a.id = SOME_ANIME_ID, s.animeID = a.id, c.id = s.characterID, c.gender = "FEMALE";
 ```
 we all are familiar with this kind of syntax and it's quite trivial how to filter the results of the query by a field which is 3 level deep in our relation chain (Anime > Starring > Character). The huge problem is that we are merging 3 differnt tables using 4 different fields, which could be acceptable for small dataset and small relation chains, but will definitelly underperform if one of those 2 variable grows.
 
 #### Graph solution
 Using Detabesu, and more preciselly GraphQL to communicate the underlying graph database, the query will look quite different
-```
+```graphql
 {
     getAnime(id: SOME_ANIME_ID) {
         starring {
@@ -69,7 +69,7 @@ Once we enter the **Entry Node** identified by `SOME_ANIME_ID` we are only follo
 
 This shows how the Graph Database don't allow the client to ask for resources based on **nested node's properties**.
 Something like
-```
+```graphql
 {
     getAnime(id: SOME_ANIME_ID) {
         starring (filter: {character.gender: {eq: "FEMALE"}}){
@@ -105,7 +105,7 @@ Of course at some point the waiter will reach the dessert section, but the whole
 Let's show this concept with a more practical example:
 
 Given the previous schema
-```
+```graphql
 // structure which holds anime's informations
 AnimeNode {
     ....
@@ -131,7 +131,7 @@ CharacterNode {
 let's say `we want all Animes whith a character named "Sakura"`.
 
 You might be tempted in creating a query like
-```
+```graphql
 {
     getAnimes() {
         ... whatever field i need
@@ -151,7 +151,7 @@ By doing so we are asking the database to check **all** AnimeNodes, follow the `
 By looking better at out problem: `let's say we want all Animes whith a character named "Sakura"` it's clear that what we already know is the `name` of the `character`, which reduces the possible character to a very small subset. By reversing the question we could ask to the database 
 `given the subset of all characters named "Sakura", tell me all the Animes in which them appear`:
 
-```
+```graphql
 {
     getCharacters(filter: {name: {eq: "Sakura"}}) {
         castIn {
@@ -189,7 +189,7 @@ For a more complete insight of the `interfaces` in Detabesu, consult the GraphQL
 :::
 
 ### Metadata
-```
+```graphql
 interface Metadata {
   id: String! @id
   selfLink: String!
@@ -204,7 +204,7 @@ It describes metainformation about the entity. Every entity in Detabesu implemen
 
 
 ### Generic
-```
+```graphql
 interface Generic {
   names: [Text!]!
   aliases: [Text!]!
@@ -226,7 +226,7 @@ Example of `Generic` are:
  * ....
 
 ### Content
-```
+```graphql
 interface Content {
   status: ContentStatus!
   relations: [ContentRelation!]! 
@@ -251,7 +251,7 @@ As the amount of content digested in Detebesu grows, more and and new `Content` 
 :::
 
 ### Release
-```
+```graphql
 interface Release {
   contents: [Releasable!]!
   languages: [Language!]!
@@ -298,7 +298,7 @@ Example of `Content` are:
  * Music Collection
 
 ### Releasable
-```
+```graphql
 interface Releasable {
   releases: [Release!]
 }

@@ -13,10 +13,10 @@ The roadmap provided might be subject to changes.
 
 | Service | Status | Scheduled Release |
 | --- | --- | --- | 
-| User registration & login | Early development¹ | February 2021 |
-| Content ranking | Early development¹ | February 2021 |
-| Tracking-lists | Early development¹ | February 2021 |
-| Third-party tracking-list import | Early development¹ | February 2021 |
+| User registration & login | Early development¹ | March 2021 |
+| Content ranking | Early development¹ | March 2021 |
+| Tracking-lists | Early development¹ | March 2021 |
+| Third-party tracking-list import | Early development¹ | March 2021 |
 | User contribution | Evaluation² | TBD³ |
 | User feed | Evaluation² | TBD³ |
 | Recommendation | Evaluation² | TBD³ |
