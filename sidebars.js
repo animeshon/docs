@@ -52,9 +52,9 @@ module.exports = {
           label: 'Detabesu',
           items: [
             'detabesu/introduction',
-            'detabesu/roadmap',
-            'detabesu/concepts',
             'detabesu/quickstarts',
+            'detabesu/concepts',
+            'detabesu/roadmap',
           ],
         },
       ],
