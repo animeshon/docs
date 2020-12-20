@@ -5,9 +5,11 @@ title: Rate Limits
 
 :::info
 
-Rate limits described might be subject to changes.
+Limits described might be subject to changes.
 
 :::
+
+## Rate Limits
 
 | Query | Description | Limit | Window |
 |- | - | - | - |
@@ -15,3 +17,8 @@ Rate limits described might be subject to changes.
 | get* | All queries starting with `get` | 20 | 1s |
 | query* | All queries starting with `query` | 10 | 30s |
 | aggregate* | All queries starting with `aggregate` | 10 | 30s |
+
+## Nesting Limit
+|Limit| Description |
+| - | - |
+| 7 | The maximum depth of nested fields allowed |
