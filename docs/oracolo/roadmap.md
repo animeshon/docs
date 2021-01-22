@@ -14,8 +14,8 @@ The roadmap provided might be subject to changes.
 | Service | Status | Scheduled Release |
 | --- | --- | --- | 
 | Revamp of Ashen | Early development¹ | TBD³ |
-| Federation of the services | Early development¹ | February 2021 |
-| Federation of Oracolo with [Detabesu](/docs/detabesu/introduction) | Early development¹ | February 2021 |
+| GraphQL Federation of Ashen / Full-Text Search | Early development¹ | February 2021 |
+| GraphQL Federation of Detabesu | Early development¹ | February 2021 |
 
 *(¹) Early development: Development has started but no proof-of-concept has been approved yet.*  
 *(²) Evaluation: Support for this content has been discussed but is not planned yet.*  
@@ -24,6 +24,6 @@ The roadmap provided might be subject to changes.
 
 :::info
 
-With the term **federation** we mean the incapsulation of each service's functionality in a single *gateway* which will expose all the resources through single GraphQL interface, hiding a lot of bolerplate logic from the user/developer.
+The GraphQL Federation will allow developers to access all search functionalities directly through a single *GraphQL* gateway. In a federated environment it is possible to access information from Detabesu directly from the search results without having to deal with two separate queries.
 
 :::

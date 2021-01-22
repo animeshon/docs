@@ -44,8 +44,8 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://discuss.animeshon.com/',
-          label: 'Discourse',
+          href: 'https://discord.gg/WvNsjtR',
+          label: 'Discord',
           position: 'left'
         },
         {
@@ -79,8 +79,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discourse',
-              href: 'https://discuss.animeshon.com/',
+              label: 'Discord',
+              href: 'https://discord.gg/WvNsjtR',
             },
             {
               label: 'Reddit',

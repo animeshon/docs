@@ -14,11 +14,11 @@ It's possible to filter only once we reach the node containing the field we want
 
 :::warning
 
-The following example is purelly madeup by scratch
+The following example shows a basic example of how the @cascade directive could be used.
 
 :::
 
-`Let's pretend that we want to retreive all FEMALE characters for a given anime.` 
+`Lets suppose that you want to retreive all FEMALE characters for a given anime.` 
 
 ```graphql title="Query"
 {
@@ -27,7 +27,7 @@ The following example is purelly madeup by scratch
             character (filter: {gender: {eq: "FEMALE"}}){
                 name
                 gender
-                ... whatever field i need
+                ... other required fields ...
             }
         }
     }
@@ -64,7 +64,7 @@ The following example is purelly madeup by scratch
 }
 ```
 
-As shown by the higlighted line, we get some empty character, representing the MALE character. To avoid this behaviour is possible to use `@cascade` to prune the undesired empty results:
+As shown by the highlighted block in the previous result, the result contains empty characters, which represent MALE characters. In order to avoid such a behaviour it is possible to use the `@cascade` directive to prune the undesired empty results:
 
 ```graphql title="Query with cascade"
 {
@@ -105,5 +105,7 @@ As shown by the higlighted line, we get some empty character, representing the M
 }
 ```
 
-The second `cascade` tells the server to discard and remove `character` which do not have the field name (and because of the filter, we know that all **MALE** character are not returned with a name), while the first `cascade` tells the server to prune all results `starring` which do not have the field `character` (and because of the first, all `starring` containing **MALE** character do not have the `character` field).
+The second `cascade` tells the server to discard and remove `character` which do not have the field `name` (because of the filter we apply, we already know that all **MALE** characters are returned withouth a name)
+
+The first `cascade` tells the server to prune all results `starring` which do not have the field `character` (and because of the first `cascade` filter we applied, all `starring` containing **MALE** characters won't have the `character` field).
 

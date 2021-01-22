@@ -5,17 +5,17 @@ title: Introduction
 
 :::warning
 
-Oracolo is still under development. At the moment only two-third of the search capabilities are available through [Ashen](/docs/ashen/introduction) and a **Full-text search** consumable through Animeshon's [GraphQL Interface](/docs/graphql/quickstarts).
+Oracolo is still under development. At the current stage only two-third of its search capabilities are available through [Ashen](/docs/ashen/introduction) and the **Full-Text Search** which is accessible through [GraphQL](/docs/graphql/quickstarts).
 
 :::
 
 :::warning
 
-Oracolo's components are currently not federated and therefore treaten as different services. Consult Oracolo's [Roadmap](/docs/oracolo/roadmap) for more information.
+The components of Oracolo are currently not federated and therefore must be accessed through different services, this will change in the future. Stay up-to-date by consulting our [Roadmap](/docs/oracolo/roadmap) for more information.
 
 :::
 
-Oracolo provides a range of **search capabilities** to the Animeshon [Ecosystem](/docs/ecosystem/introduction).
+Oracolo provides a large range of **search capabilities** to the Animeshon [Ecosystem](/docs/ecosystem/introduction).
 
 It allows users to perform advanced searches about all resources available in [Detabesu](/docs/detabesu/introduction). Oracolo exposes powerful and complete REST APIs as well as GraphQL interfaces for third-party systems integration.
 

@@ -7,31 +7,33 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-GraphQL is planned to be the only and main Gateway to access Animeshon's functionalities.
-This section will cover the setup, the usage and the best practice to connect and start benefit from **Animeshon GraphQL endpoints**.
+GraphQL is planned to be the only API Gateway available to developers for accessing Animeshon functionalities.
+This section will cover the setup, basic use and best practices of the **Animeshon GraphQL APIs**.
 
 ## Introduction
-Animeshon's GraphQL endpoint points to a gateway which forwards all the queries to the right services.
-The clien will always contact the same endpoint to perform any kind of operation, reducing the complexity of applications which integrate our ecosystem.
+The GraphQL APIs of Animeshon are exposed through a gateway which forwards all the queries to the right services.
+
+The client will always have to contact the same endpoint in order to perform any kind of operation, reducing the complexity of applications and services which are integrating with the Animeshon Ecosystem.
 
 :::warning
 
-Right now the Gateway acts as a dispatcher, which means that different service's answer have to be manually handled to continue the resolution in other service.
-EG:
-When searching a content using [Oracolo](/docs/orcaolo/introduction)'s full-text search query `querySearch`, the client has to manually process the response and query [Detabesu](/docs/detabesu/introduction)'s queries to get the information.
+Right now the Gateway acts as a dispatcher, which means that the answers from different services have to be manually handled to continue the resolution of the resources in other services.
 
-Following the [Roadmap](/docs/graphql/roadmap) the gateway will become a federated schema, hiding this extra step from the client and allowing it to build complete queries.
+Example:
+While searching a content using [Oracolo](/docs/orcaolo/introduction) Full-Text Search query `querySearch`, the client has to manually process the response and query [Detabesu](/docs/detabesu/introduction) to fetch more useful information about the search results.
+
+As stated in the [Roadmap](/docs/graphql/roadmap), the gateway will become a federated schema, therefore hiding this extra step from the client and allowing it to build complete queries in a single request.
 
 ::: 
 
 ### Recommended reading
 1. If you are not familiar with GraphQL we suggest you to read the [How To GraphQL](https://www.howtographql.com/) to get a better insight of the technology.
-2. Being a big portion of our infrastructure built on top of [Dgraph](https://dgraph.io/), we suggest you to read their [documentation](https://dgraph.io/docs/graphql/) to lear more in depth about their specifications, directives, and best practice.
+2. As a big portion of our infrastructure is built on top of [Dgraph](https://dgraph.io/), we suggest you to read their [documentation](https://dgraph.io/docs/graphql/) as well in order to learn about their definitions, directives, and best practices more in details.
 
 ### Schema documentation
-The schema is self documented and the documentation is available through any *Playground* service or application:
+The schema is self-documented and the documentation is available through any GraphQL client that support introspection and generated documentation:
 
-* [Animeshon Playground](https://api.animeshon.com/graphql)
+* [Animeshon Playground](https://play.animeshon.com/)
 * [Insomnia](https://insomnia.rest/)
 * [Postman](https://www.postman.com/)
 
@@ -39,20 +41,20 @@ We also provide a [standalone documentation](/docs/schema/schema).
 
 :::caution
 
-The standalone documentation might be removed at any time, not being essential and quite messy
+The standalone documentation might be removed in the future, not being essential and sometimes even confusing.
 
 ::: 
 
 ------
 
 ## Test on Playground
-The easiest way to get hands on our GraphQL interface and starting familiarize with them is to navigate to our [GraphQL Playground](https://api.animeshon.com/graphql) and get started building some queries.
+The easiest way to get familiar with our GraphQL APIs is to visit our [GraphQL Playground](https://play.animeshon.com/) and play with GraphQL queries from there.
 
 ## Get Started
 It's possible to connect to the GraphQL endpoint `https://api.animeshon.com/graphql` using whatever GraphQL client you are familiar with. 
 
 ### HTTP Rerquest
-GraphQL queries are simply POST request to the endpoint and is therefore possible to send query and get data even without a client by senting plain HTTP request:
+GraphQL queries are simple POST requests to an endpoint and it is therefore possible to send queries and fetch data even without a client by sending plain HTTP request:
 
 ```js
 curl \
@@ -63,8 +65,9 @@ https://api.animeshon.com/graphql
 ```
 
 ### Using a client
-There are planty of Clients available in the GraphQL ecosystem, each programming language has it's own implementation nad therefore is impossible to cover them all.
-Regardless your thecnological stack, the process is always the same: get the client, provide `https://api.animeshon.com/graphql` as endpoint where to connect, start querying.
+There are planty of clients available in the GraphQL ecosystem, each programming language has its own implementation and therefore it is impossible to cover them all.
+
+The good news is that regardless of your thecnological stack, the process is always the same: get the client, provide `https://api.animeshon.com/graphql` as the endpoint, and start querying.
 
 
 Example list of clients:
@@ -74,8 +77,8 @@ Example list of clients:
 
 :::warning
 
-The list is not a recommendetion, just a showcase of existing clients. The list might be modified in the future.
-Not listed client are **perfectly compatible**!
+The list is not a recommendation, just a showcase of existing clients. The list might be modified in the future.
+GraphQL clients not available in the list are potentially **fully compatible** with Animeshon!
 
 :::
 
@@ -87,8 +90,8 @@ As soon as the [Authentication and Authorization](/docs/oauth2/introduction) inf
 
 
 ## Query response
-When sending a query, the endpoint answer with a data structure which match the provided query structure.
-Is then responsability of the consuming application deserialize the response in some meaningful structure.
+After sending a query, the endpoint answers with a data structure which match the provided query structure.
+Is the responsability of the consumer client to deserialize the response into a meaningful structure.
 
 
 ```graphql title="Query"
@@ -131,7 +134,8 @@ query {
   }
 }
 ```
-At this point the integrating client has to deserialize the response before using it
+
+At this point the client has to deserialize the response before consuming the output:
 
 
 <Tabs
@@ -162,12 +166,12 @@ const data = client
     }
     `
   })
-  // apollo returns a structure result.INNER_QUERY_NAME(in this case queryAnime).data.[...]
+  // apollo returns a structure result.<INNER_QUERY_NAME>(in this case queryAnime).data.[...]
   .then(result => return result.queryAnime.data);
 
    // decompose the variable
    const {names: {text}, descriptions: {text}} = result;
-   // do things
+   // ... do things ...
 
 ```
 
@@ -176,6 +180,6 @@ const data = client
 
 :::info
 
-SDKs will be soon available
+An SDK for different languages will be automatically generated in the future, for the moment you will need to implement the types required by your application or service.
 
 :::

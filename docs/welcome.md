@@ -53,8 +53,8 @@ Authenticate and Authorize against our infrastructure through OAuth 2.0. One acc
 ## Community
 Animeshon is improved every day by the growing community and contributors from all over the world.
 
-[Discourse](https://discuss.animeshon.com/)  
-Discuss Animeshon on our official Discourse platform.
+[Discord](https://discord.gg/WvNsjtR)  
+Discuss Animeshon on our official Discord platform.
 
 [Reddit](https://www.reddit.com/r/animeshon/)  
 Join Animeshon on our official subreddit.

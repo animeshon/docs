@@ -19,7 +19,7 @@ The roadmap provided might be subject to changes.
 | Third-party tracking-list import | Early development¹ | March 2021 |
 | User contribution | Evaluation² | TBD³ |
 | User feed | Evaluation² | TBD³ |
-| Recommendation | Evaluation² | TBD³ |
+| Recommendations | Evaluation² | TBD³ |
 
 *(¹) Early development: Development has started but no proof-of-concept has been approved yet.*  
 *(²) Evaluation: Support for this content has been discussed but is not planned yet.*  

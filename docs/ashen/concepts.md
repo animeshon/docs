@@ -72,4 +72,4 @@ The candidate which results in the best match is returned along with metadata in
 
 ### Work in progress
 
-More informations will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues. -->
+More informations will be made available on [GitHub](https://github.com/animeshon) as development continues. -->
