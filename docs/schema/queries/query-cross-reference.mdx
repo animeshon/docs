@@ -1,0 +1,42 @@
+---
+id: query-cross-reference
+title: queryCrossReference
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryCrossReference(
+  filter: CrossReferenceFilter
+  order: CrossReferenceOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [CrossReference]
+
+```
+
+### Arguments
+
+#### `filter` ([`CrossReferenceFilter`](/docs/schema/inputs/cross-reference-filter))
+
+#### `order` ([`CrossReferenceOrder`](/docs/schema/inputs/cross-reference-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`CrossReference`](/docs/schema/objects/cross-reference)

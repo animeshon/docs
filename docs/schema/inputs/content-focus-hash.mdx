@@ -1,0 +1,31 @@
+---
+id: content-focus-hash
+title: ContentFocus_hash
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ContentFocus_hash {
+  eq: ContentFocus
+  in: [ContentFocus]
+}
+```
+
+### Fields
+
+#### `eq` ([`ContentFocus`](/docs/schema/enums/content-focus))
+
+#### `in` ([`[ContentFocus]`](/docs/schema/enums/content-focus))

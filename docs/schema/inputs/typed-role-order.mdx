@@ -1,0 +1,34 @@
+---
+id: typed-role-order
+title: TypedRoleOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type TypedRoleOrder {
+  asc: TypedRoleOrderable
+  desc: TypedRoleOrderable
+  then: TypedRoleOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`TypedRoleOrderable`](/docs/schema/enums/typed-role-orderable))
+
+#### `desc` ([`TypedRoleOrderable`](/docs/schema/enums/typed-role-orderable))
+
+#### `then` ([`TypedRoleOrder`](/docs/schema/inputs/typed-role-order))

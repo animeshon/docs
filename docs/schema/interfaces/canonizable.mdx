@@ -1,0 +1,46 @@
+---
+id: canonizable
+title: Canonizable
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface Canonizable {
+  partOfCanonicals(
+    filter: CanonicalFilter
+    order: CanonicalOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Canonical!]!
+  partOfCanonicalsAggregate(filter: CanonicalFilter): CanonicalAggregateResult
+}
+```
+
+### Fields
+
+#### `partOfCanonicals` ([`[Canonical!]!`](/docs/schema/objects/canonical))
+
+- ##### `filter` ([`CanonicalFilter`](/docs/schema/inputs/canonical-filter))
+
+- ##### `order` ([`CanonicalOrder`](/docs/schema/inputs/canonical-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `partOfCanonicalsAggregate` ([`CanonicalAggregateResult`](/docs/schema/objects/canonical-aggregate-result))
+
+- ##### `filter` ([`CanonicalFilter`](/docs/schema/inputs/canonical-filter))

@@ -1,0 +1,34 @@
+---
+id: image-wrapper-order
+title: ImageWrapperOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ImageWrapperOrder {
+  asc: ImageWrapperOrderable
+  desc: ImageWrapperOrderable
+  then: ImageWrapperOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ImageWrapperOrderable`](/docs/schema/enums/image-wrapper-orderable))
+
+#### `desc` ([`ImageWrapperOrderable`](/docs/schema/enums/image-wrapper-orderable))
+
+#### `then` ([`ImageWrapperOrder`](/docs/schema/inputs/image-wrapper-order))

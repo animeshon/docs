@@ -1,0 +1,34 @@
+---
+id: episode-order
+title: EpisodeOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type EpisodeOrder {
+  asc: EpisodeOrderable
+  desc: EpisodeOrderable
+  then: EpisodeOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`EpisodeOrderable`](/docs/schema/enums/episode-orderable))
+
+#### `desc` ([`EpisodeOrderable`](/docs/schema/enums/episode-orderable))
+
+#### `then` ([`EpisodeOrder`](/docs/schema/inputs/episode-order))

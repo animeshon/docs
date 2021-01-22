@@ -1,0 +1,43 @@
+---
+id: audio-filter
+title: AudioFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AudioFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: AudioHasFilter
+  and: [AudioFilter]
+  or: [AudioFilter]
+  not: AudioFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`AudioHasFilter`](/docs/schema/enums/audio-has-filter))
+
+#### `and` ([`[AudioFilter]`](/docs/schema/inputs/audio-filter))
+
+#### `or` ([`[AudioFilter]`](/docs/schema/inputs/audio-filter))
+
+#### `not` ([`AudioFilter`](/docs/schema/inputs/audio-filter))

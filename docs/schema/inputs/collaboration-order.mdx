@@ -1,0 +1,34 @@
+---
+id: collaboration-order
+title: CollaborationOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CollaborationOrder {
+  asc: CollaborationOrderable
+  desc: CollaborationOrderable
+  then: CollaborationOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`CollaborationOrderable`](/docs/schema/enums/collaboration-orderable))
+
+#### `desc` ([`CollaborationOrderable`](/docs/schema/enums/collaboration-orderable))
+
+#### `then` ([`CollaborationOrder`](/docs/schema/inputs/collaboration-order))

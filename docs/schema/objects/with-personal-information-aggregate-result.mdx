@@ -1,0 +1,28 @@
+---
+id: with-personal-information-aggregate-result
+title: WithPersonalInformationAggregateResult
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithPersonalInformationAggregateResult {
+  count: Int
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/docs/schema/scalars/int))

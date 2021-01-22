@@ -1,0 +1,24 @@
+---
+id: query-pagination-int
+title: QueryPaginationInt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+The QueryPaginationInt scalar represent the maximum amount of
+entities a query can retreive per call
+From 1 to 10
+
+```graphql
+scalar QueryPaginationInt
+```

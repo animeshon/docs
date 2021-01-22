@@ -1,0 +1,45 @@
+---
+id: query-search
+title: querySearch
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+querySearch(
+  queryTerm: String!
+  filter: [SearchFilterType!] = []
+  first: SearchPaginationInt!
+  offset: Int!
+  minScore: Int = 0
+): SearchQueryResult!
+
+```
+
+### Arguments
+
+#### `queryTerm` ([`String!`](/docs/schema/scalars/string))
+
+#### `filter` ([`[SearchFilterType!]`](/docs/schema/enums/search-filter-type))
+
+#### `first` ([`SearchPaginationInt!`](/docs/schema/scalars/search-pagination-int))
+
+#### `offset` ([`Int!`](/docs/schema/scalars/int))
+
+#### `minScore` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`SearchQueryResult`](/docs/schema/objects/search-query-result)

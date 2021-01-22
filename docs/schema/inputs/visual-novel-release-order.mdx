@@ -1,0 +1,34 @@
+---
+id: visual-novel-release-order
+title: VisualNovelReleaseOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VisualNovelReleaseOrder {
+  asc: VisualNovelReleaseOrderable
+  desc: VisualNovelReleaseOrderable
+  then: VisualNovelReleaseOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`VisualNovelReleaseOrderable`](/docs/schema/enums/visual-novel-release-orderable))
+
+#### `desc` ([`VisualNovelReleaseOrderable`](/docs/schema/enums/visual-novel-release-orderable))
+
+#### `then` ([`VisualNovelReleaseOrder`](/docs/schema/inputs/visual-novel-release-order))

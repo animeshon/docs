@@ -1,0 +1,49 @@
+---
+id: running-ref
+title: RunningRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RunningRef {
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  from: DateTime
+  to: DateTime
+  localization: LocalizationRef
+}
+```
+
+### Fields
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `from` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `to` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `localization` ([`LocalizationRef`](/docs/schema/inputs/localization-ref))

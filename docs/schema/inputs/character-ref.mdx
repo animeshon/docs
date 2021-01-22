@@ -1,0 +1,115 @@
+---
+id: character-ref
+title: CharacterRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CharacterRef {
+  relations: [RelationRef!]
+  birthdayFallback: String
+  birthPlaceFallback: [TextRef!]
+  hometownFallback: [TextRef!]
+  birthday: DateTime
+  birthPlace: AddressRef
+  hometown: AddressRef
+  gender: GenderType
+  bloodType: BloodType
+  cupSize: CupSize
+  age: Int
+  height: Int
+  weight: Int
+  bust: Int
+  waist: Int
+  hips: Int
+  voices: [VoiceActingRef!]
+  names: [TextRef!]
+  aliases: [TextRef!]
+  descriptions: [TextRef!]
+  images: [ImageWrapperRef!]
+  crossrefs: [CrossReferenceRef!]
+  websites: [WebAddressRef!]
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  appearance: [CastRef!]
+  guiseOf: [CharacterRef!]
+}
+```
+
+### Fields
+
+#### `relations` ([`[RelationRef!]`](/docs/schema/inputs/relation-ref))
+
+#### `birthdayFallback` ([`String`](/docs/schema/scalars/string))
+
+#### `birthPlaceFallback` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `hometownFallback` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `birthday` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `birthPlace` ([`AddressRef`](/docs/schema/inputs/address-ref))
+
+#### `hometown` ([`AddressRef`](/docs/schema/inputs/address-ref))
+
+#### `gender` ([`GenderType`](/docs/schema/enums/gender-type))
+
+#### `bloodType` ([`BloodType`](/docs/schema/enums/blood-type))
+
+#### `cupSize` ([`CupSize`](/docs/schema/enums/cup-size))
+
+#### `age` ([`Int`](/docs/schema/scalars/int))
+
+#### `height` ([`Int`](/docs/schema/scalars/int))
+
+#### `weight` ([`Int`](/docs/schema/scalars/int))
+
+#### `bust` ([`Int`](/docs/schema/scalars/int))
+
+#### `waist` ([`Int`](/docs/schema/scalars/int))
+
+#### `hips` ([`Int`](/docs/schema/scalars/int))
+
+#### `voices` ([`[VoiceActingRef!]`](/docs/schema/inputs/voice-acting-ref))
+
+#### `names` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `aliases` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `descriptions` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `images` ([`[ImageWrapperRef!]`](/docs/schema/inputs/image-wrapper-ref))
+
+#### `crossrefs` ([`[CrossReferenceRef!]`](/docs/schema/inputs/cross-reference-ref))
+
+#### `websites` ([`[WebAddressRef!]`](/docs/schema/inputs/web-address-ref))
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `appearance` ([`[CastRef!]`](/docs/schema/inputs/cast-ref))
+
+#### `guiseOf` ([`[CharacterRef!]`](/docs/schema/inputs/character-ref))

@@ -1,0 +1,34 @@
+---
+id: visual-novel-order
+title: VisualNovelOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VisualNovelOrder {
+  asc: VisualNovelOrderable
+  desc: VisualNovelOrderable
+  then: VisualNovelOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`VisualNovelOrderable`](/docs/schema/enums/visual-novel-orderable))
+
+#### `desc` ([`VisualNovelOrderable`](/docs/schema/enums/visual-novel-orderable))
+
+#### `then` ([`VisualNovelOrder`](/docs/schema/inputs/visual-novel-order))

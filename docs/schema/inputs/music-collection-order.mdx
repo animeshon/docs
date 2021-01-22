@@ -1,0 +1,34 @@
+---
+id: music-collection-order
+title: MusicCollectionOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MusicCollectionOrder {
+  asc: MusicCollectionOrderable
+  desc: MusicCollectionOrderable
+  then: MusicCollectionOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`MusicCollectionOrderable`](/docs/schema/enums/music-collection-orderable))
+
+#### `desc` ([`MusicCollectionOrderable`](/docs/schema/enums/music-collection-orderable))
+
+#### `then` ([`MusicCollectionOrder`](/docs/schema/inputs/music-collection-order))

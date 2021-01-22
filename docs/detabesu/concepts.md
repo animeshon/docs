@@ -16,4 +16,4 @@ As long as 2 nodes are linked with *N-Step Edges*, it's possible to build a **O(
 
 ![Traverse a Graph](assets/graph-traverse.svg)
 
-The flexibility of the Graph Databases well synergizes with `declarative query languages` like GraphQL. Detabesu offers a rich [GraphQL Interface](/docs/detabesu/graphql/quickstarts) which reflects completelly the **underlying satabase schema**, allowing developers to traverse the knowledge base as they please.
+The flexibility of the Graph Databases well synergizes with `declarative query languages` like GraphQL. Detabesu offers a rich [GraphQL Interface](/docs/graphql/quickstarts) which reflects completelly the **underlying satabase schema**, allowing developers to traverse the knowledge base as they please.

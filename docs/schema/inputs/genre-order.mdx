@@ -1,0 +1,34 @@
+---
+id: genre-order
+title: GenreOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type GenreOrder {
+  asc: GenreOrderable
+  desc: GenreOrderable
+  then: GenreOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`GenreOrderable`](/docs/schema/enums/genre-orderable))
+
+#### `desc` ([`GenreOrderable`](/docs/schema/enums/genre-orderable))
+
+#### `then` ([`GenreOrder`](/docs/schema/inputs/genre-order))

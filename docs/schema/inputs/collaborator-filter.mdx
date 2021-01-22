@@ -1,0 +1,37 @@
+---
+id: collaborator-filter
+title: CollaboratorFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CollaboratorFilter {
+  has: CollaboratorHasFilter
+  and: [CollaboratorFilter]
+  or: [CollaboratorFilter]
+  not: CollaboratorFilter
+}
+```
+
+### Fields
+
+#### `has` ([`CollaboratorHasFilter`](/docs/schema/enums/collaborator-has-filter))
+
+#### `and` ([`[CollaboratorFilter]`](/docs/schema/inputs/collaborator-filter))
+
+#### `or` ([`[CollaboratorFilter]`](/docs/schema/inputs/collaborator-filter))
+
+#### `not` ([`CollaboratorFilter`](/docs/schema/inputs/collaborator-filter))

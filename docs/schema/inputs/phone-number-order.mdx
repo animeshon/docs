@@ -1,0 +1,34 @@
+---
+id: phone-number-order
+title: PhoneNumberOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type PhoneNumberOrder {
+  asc: PhoneNumberOrderable
+  desc: PhoneNumberOrderable
+  then: PhoneNumberOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`PhoneNumberOrderable`](/docs/schema/enums/phone-number-orderable))
+
+#### `desc` ([`PhoneNumberOrderable`](/docs/schema/enums/phone-number-orderable))
+
+#### `then` ([`PhoneNumberOrder`](/docs/schema/inputs/phone-number-order))

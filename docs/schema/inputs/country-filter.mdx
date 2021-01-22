@@ -1,0 +1,49 @@
+---
+id: country-filter
+title: CountryFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CountryFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  code: StringTermFilter
+  alpha2: StringTermFilter
+  has: CountryHasFilter
+  and: [CountryFilter]
+  or: [CountryFilter]
+  not: CountryFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `code` ([`StringTermFilter`](/docs/schema/inputs/string-term-filter))
+
+#### `alpha2` ([`StringTermFilter`](/docs/schema/inputs/string-term-filter))
+
+#### `has` ([`CountryHasFilter`](/docs/schema/enums/country-has-filter))
+
+#### `and` ([`[CountryFilter]`](/docs/schema/inputs/country-filter))
+
+#### `or` ([`[CountryFilter]`](/docs/schema/inputs/country-filter))
+
+#### `not` ([`CountryFilter`](/docs/schema/inputs/country-filter))

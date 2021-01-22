@@ -1,0 +1,75 @@
+---
+id: audio
+title: Audio
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Audio implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  files(
+    filter: FileFilter
+    order: FileOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [File!]!
+  bitrate: Int!
+  duration: Int!
+  filesAggregate(filter: FileFilter): FileAggregateResult
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `files` ([`[File!]!`](/docs/schema/objects/file))
+
+- ##### `filter` ([`FileFilter`](/docs/schema/inputs/file-filter))
+
+- ##### `order` ([`FileOrder`](/docs/schema/inputs/file-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `bitrate` ([`Int!`](/docs/schema/scalars/int))
+
+bit/s
+
+#### `duration` ([`Int!`](/docs/schema/scalars/int))
+
+seconds
+
+#### `filesAggregate` ([`FileAggregateResult`](/docs/schema/objects/file-aggregate-result))
+
+- ##### `filter` ([`FileFilter`](/docs/schema/inputs/file-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

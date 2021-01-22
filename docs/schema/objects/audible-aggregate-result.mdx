@@ -1,0 +1,28 @@
+---
+id: audible-aggregate-result
+title: AudibleAggregateResult
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AudibleAggregateResult {
+  count: Int
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/docs/schema/scalars/int))

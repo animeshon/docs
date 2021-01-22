@@ -1,0 +1,51 @@
+---
+id: content
+title: Content
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface Content {
+  status: ContentStatus!
+  relations(
+    filter: ContentRelationFilter
+    order: ContentRelationOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [ContentRelation!]!
+  relationsAggregate(
+    filter: ContentRelationFilter
+  ): ContentRelationAggregateResult
+}
+```
+
+### Fields
+
+#### `status` ([`ContentStatus!`](/docs/schema/enums/content-status))
+
+#### `relations` ([`[ContentRelation!]!`](/docs/schema/objects/content-relation))
+
+- ##### `filter` ([`ContentRelationFilter`](/docs/schema/inputs/content-relation-filter))
+
+- ##### `order` ([`ContentRelationOrder`](/docs/schema/inputs/content-relation-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `relationsAggregate` ([`ContentRelationAggregateResult`](/docs/schema/objects/content-relation-aggregate-result))
+
+- ##### `filter` ([`ContentRelationFilter`](/docs/schema/inputs/content-relation-filter))

@@ -1,0 +1,55 @@
+---
+id: language-filter
+title: LanguageFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LanguageFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  code: StringHashFilter
+  alpha2: StringHashFilter
+  alpha3t: StringHashFilter
+  alpha3b: StringHashFilter
+  has: LanguageHasFilter
+  and: [LanguageFilter]
+  or: [LanguageFilter]
+  not: LanguageFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `code` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `alpha2` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `alpha3t` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `alpha3b` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`LanguageHasFilter`](/docs/schema/enums/language-has-filter))
+
+#### `and` ([`[LanguageFilter]`](/docs/schema/inputs/language-filter))
+
+#### `or` ([`[LanguageFilter]`](/docs/schema/inputs/language-filter))
+
+#### `not` ([`LanguageFilter`](/docs/schema/inputs/language-filter))

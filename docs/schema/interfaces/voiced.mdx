@@ -1,0 +1,46 @@
+---
+id: voiced
+title: Voiced
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface Voiced {
+  voices(
+    filter: VoiceActingFilter
+    order: VoiceActingOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [VoiceActing!]!
+  voicesAggregate(filter: VoiceActingFilter): VoiceActingAggregateResult
+}
+```
+
+### Fields
+
+#### `voices` ([`[VoiceActing!]!`](/docs/schema/objects/voice-acting))
+
+- ##### `filter` ([`VoiceActingFilter`](/docs/schema/inputs/voice-acting-filter))
+
+- ##### `order` ([`VoiceActingOrder`](/docs/schema/inputs/voice-acting-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `voicesAggregate` ([`VoiceActingAggregateResult`](/docs/schema/objects/voice-acting-aggregate-result))
+
+- ##### `filter` ([`VoiceActingFilter`](/docs/schema/inputs/voice-acting-filter))

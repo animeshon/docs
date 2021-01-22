@@ -1,0 +1,34 @@
+---
+id: age-rating-order
+title: AgeRatingOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AgeRatingOrder {
+  asc: AgeRatingOrderable
+  desc: AgeRatingOrderable
+  then: AgeRatingOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`AgeRatingOrderable`](/docs/schema/enums/age-rating-orderable))
+
+#### `desc` ([`AgeRatingOrderable`](/docs/schema/enums/age-rating-orderable))
+
+#### `then` ([`AgeRatingOrder`](/docs/schema/inputs/age-rating-order))

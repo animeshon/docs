@@ -1,0 +1,52 @@
+---
+id: email-address
+title: EmailAddress
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type EmailAddress implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  username: String!
+  domain(filter: HostFilter): Host!
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `username` ([`String!`](/docs/schema/scalars/string))
+
+#### `domain` ([`Host!`](/docs/schema/objects/host))
+
+- ##### `filter` ([`HostFilter`](/docs/schema/inputs/host-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

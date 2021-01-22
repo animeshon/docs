@@ -1,0 +1,42 @@
+---
+id: query-age-rating
+title: queryAgeRating
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryAgeRating(
+  filter: AgeRatingFilter
+  order: AgeRatingOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [AgeRating]
+
+```
+
+### Arguments
+
+#### `filter` ([`AgeRatingFilter`](/docs/schema/inputs/age-rating-filter))
+
+#### `order` ([`AgeRatingOrder`](/docs/schema/inputs/age-rating-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`AgeRating`](/docs/schema/objects/age-rating)

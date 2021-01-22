@@ -1,3 +1,5 @@
+const schemaDoc = require("./docs/schema/sidebar-schema");
+
 module.exports = {
   docs: [
     'welcome',
@@ -11,6 +13,22 @@ module.exports = {
       type: 'category',
       label: 'Ecosystem',
       items: ['ecosystem/introduction', 'ecosystem/roadmap'],
+    },
+    {
+      type: 'category',
+      label: 'GraphQL',
+      items: [
+        'graphql/quickstarts', 
+        'graphql/tutorials', 
+        'graphql/tips-and-tricks', 
+        'graphql/rate-limits', 
+        'graphql/roadmap', 
+        {
+          type: 'category',
+          label: 'Schema',
+          items: [...schemaDoc.schemaSidebar],
+        }
+      ],
     },
     {
       type: 'category',
@@ -36,13 +54,9 @@ module.exports = {
           label: 'Detabesu',
           items: [
             'detabesu/introduction',
-            'detabesu/roadmap',
+            'detabesu/quickstarts',
             'detabesu/concepts',
-            {
-              type: 'category',
-              label: 'GraphQL',
-              items: ['detabesu/graphql/quickstarts', 'detabesu/graphql/tutorials'],
-            },
+            'detabesu/roadmap',
           ],
         },
       ],

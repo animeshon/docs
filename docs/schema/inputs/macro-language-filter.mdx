@@ -1,0 +1,43 @@
+---
+id: macro-language-filter
+title: MacroLanguageFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MacroLanguageFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: MacroLanguageHasFilter
+  and: [MacroLanguageFilter]
+  or: [MacroLanguageFilter]
+  not: MacroLanguageFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`MacroLanguageHasFilter`](/docs/schema/enums/macro-language-has-filter))
+
+#### `and` ([`[MacroLanguageFilter]`](/docs/schema/inputs/macro-language-filter))
+
+#### `or` ([`[MacroLanguageFilter]`](/docs/schema/inputs/macro-language-filter))
+
+#### `not` ([`MacroLanguageFilter`](/docs/schema/inputs/macro-language-filter))

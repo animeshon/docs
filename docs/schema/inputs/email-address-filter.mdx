@@ -1,0 +1,43 @@
+---
+id: email-address-filter
+title: EmailAddressFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type EmailAddressFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: EmailAddressHasFilter
+  and: [EmailAddressFilter]
+  or: [EmailAddressFilter]
+  not: EmailAddressFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`EmailAddressHasFilter`](/docs/schema/enums/email-address-has-filter))
+
+#### `and` ([`[EmailAddressFilter]`](/docs/schema/inputs/email-address-filter))
+
+#### `or` ([`[EmailAddressFilter]`](/docs/schema/inputs/email-address-filter))
+
+#### `not` ([`EmailAddressFilter`](/docs/schema/inputs/email-address-filter))

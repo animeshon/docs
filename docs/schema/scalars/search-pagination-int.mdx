@@ -1,0 +1,24 @@
+---
+id: search-pagination-int
+title: SearchPaginationInt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+The SearchPaginationInt scalar represent the maximum amount of
+entities a search can retreive per call
+From 1 to 20
+
+```graphql
+scalar SearchPaginationInt
+```

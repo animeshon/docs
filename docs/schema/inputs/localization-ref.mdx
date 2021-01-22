@@ -1,0 +1,54 @@
+---
+id: localization-ref
+title: LocalizationRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocalizationRef {
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  tag: String
+  country: CountryRef
+  language: LanguageRef
+  script: ScriptRef
+}
+```
+
+### Fields
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `tag` ([`String`](/docs/schema/scalars/string))
+
+eng, jpn, jpn-Latn (aka romaji), ita, deu, ...
+
+#### `country` ([`CountryRef`](/docs/schema/inputs/country-ref))
+
+#### `language` ([`LanguageRef`](/docs/schema/inputs/language-ref))
+
+#### `script` ([`ScriptRef`](/docs/schema/inputs/script-ref))

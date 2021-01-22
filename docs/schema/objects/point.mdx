@@ -1,0 +1,31 @@
+---
+id: point
+title: Point
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Point {
+  longitude: Float!
+  latitude: Float!
+}
+```
+
+### Fields
+
+#### `longitude` ([`Float!`](/docs/schema/scalars/float))
+
+#### `latitude` ([`Float!`](/docs/schema/scalars/float))

@@ -1,0 +1,55 @@
+---
+id: host-filter
+title: HostFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type HostFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  IP: StringHashFilter
+  eTLD: StringHashFilter
+  domain: StringHashFilter
+  subdomains: StringHashFilter
+  has: HostHasFilter
+  and: [HostFilter]
+  or: [HostFilter]
+  not: HostFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `IP` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `eTLD` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `domain` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `subdomains` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`HostHasFilter`](/docs/schema/enums/host-has-filter))
+
+#### `and` ([`[HostFilter]`](/docs/schema/inputs/host-filter))
+
+#### `or` ([`[HostFilter]`](/docs/schema/inputs/host-filter))
+
+#### `not` ([`HostFilter`](/docs/schema/inputs/host-filter))

@@ -1,0 +1,43 @@
+---
+id: content-focus
+title: ContentFocus
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+enum ContentFocus {
+  UNKNOWN
+  ANIME
+  GAME
+  LIGHT_NOVEL
+  MANGA
+  OTHER
+}
+```
+
+### Values
+
+#### `UNKNOWN`
+
+#### `ANIME`
+
+#### `GAME`
+
+#### `LIGHT_NOVEL`
+
+#### `MANGA`
+
+#### `OTHER`

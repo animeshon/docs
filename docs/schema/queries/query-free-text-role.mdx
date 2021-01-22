@@ -1,0 +1,42 @@
+---
+id: query-free-text-role
+title: queryFreeTextRole
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryFreeTextRole(
+  filter: FreeTextRoleFilter
+  order: FreeTextRoleOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [FreeTextRole]
+
+```
+
+### Arguments
+
+#### `filter` ([`FreeTextRoleFilter`](/docs/schema/inputs/free-text-role-filter))
+
+#### `order` ([`FreeTextRoleOrder`](/docs/schema/inputs/free-text-role-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`FreeTextRole`](/docs/schema/objects/free-text-role)

@@ -1,6 +1,7 @@
 ---
 id: welcome
 title: Welcome
+slug: /
 ---
 
 export const Highlight = ({children, color}) => (
@@ -40,7 +41,7 @@ If you ever encountered one of the following questions and you couldn't find a c
 
 ## Interfaces
 
-[GraphQL](/docs/detabesu/graphql/quickstarts)  
+[GraphQL](/docs/graphql/quickstarts)  
 Get started with our GraphQL interfaces and explore our [Detabesu](/docs/detabesu/introduction).
 
 [Ashen REST API](/docs/ashen/reference/overview)  
@@ -52,8 +53,8 @@ Authenticate and Authorize against our infrastructure through OAuth 2.0. One acc
 ## Community
 Animeshon is improved every day by the growing community and contributors from all over the world.
 
-[Discourse](https://discuss.animeshon.com/)  
-Discuss Animeshon on our official Discourse platform.
+[Discord](https://discord.gg/WvNsjtR)  
+Discuss Animeshon on our official Discord platform.
 
 [Reddit](https://www.reddit.com/r/animeshon/)  
 Join Animeshon on our official subreddit.

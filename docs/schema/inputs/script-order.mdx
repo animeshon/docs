@@ -1,0 +1,34 @@
+---
+id: script-order
+title: ScriptOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ScriptOrder {
+  asc: ScriptOrderable
+  desc: ScriptOrderable
+  then: ScriptOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`ScriptOrderable`](/docs/schema/enums/script-orderable))
+
+#### `desc` ([`ScriptOrderable`](/docs/schema/enums/script-orderable))
+
+#### `then` ([`ScriptOrder`](/docs/schema/inputs/script-order))

@@ -1,0 +1,37 @@
+---
+id: polygon-geo-filter
+title: PolygonGeoFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type PolygonGeoFilter {
+  near: NearFilter
+  within: WithinFilter
+  contains: ContainsFilter
+  intersects: IntersectsFilter
+}
+```
+
+### Fields
+
+#### `near` ([`NearFilter`](/docs/schema/inputs/near-filter))
+
+#### `within` ([`WithinFilter`](/docs/schema/inputs/within-filter))
+
+#### `contains` ([`ContainsFilter`](/docs/schema/inputs/contains-filter))
+
+#### `intersects` ([`IntersectsFilter`](/docs/schema/inputs/intersects-filter))

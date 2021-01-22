@@ -1,0 +1,42 @@
+---
+id: query-restriction
+title: queryRestriction
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryRestriction(
+  filter: RestrictionFilter
+  order: RestrictionOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Restriction]
+
+```
+
+### Arguments
+
+#### `filter` ([`RestrictionFilter`](/docs/schema/inputs/restriction-filter))
+
+#### `order` ([`RestrictionOrder`](/docs/schema/inputs/restriction-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Restriction`](/docs/schema/objects/restriction)

@@ -1,0 +1,43 @@
+---
+id: localized-text-wrapper-filter
+title: LocalizedTextWrapperFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocalizedTextWrapperFilter {
+  text_id: StringHashFilter
+  localization_id: StringHashFilter
+  RFC_5646: StringHashFilter
+  and: LocalizedTextWrapperFilter
+  or: LocalizedTextWrapperFilter
+  not: LocalizedTextWrapperFilter
+}
+```
+
+### Fields
+
+#### `text_id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `localization_id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `RFC_5646` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `and` ([`LocalizedTextWrapperFilter`](/docs/schema/inputs/localized-text-wrapper-filter))
+
+#### `or` ([`LocalizedTextWrapperFilter`](/docs/schema/inputs/localized-text-wrapper-filter))
+
+#### `not` ([`LocalizedTextWrapperFilter`](/docs/schema/inputs/localized-text-wrapper-filter))

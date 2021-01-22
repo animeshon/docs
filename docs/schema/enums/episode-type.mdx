@@ -1,0 +1,49 @@
+---
+id: episode-type
+title: EpisodeType
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+enum EpisodeType {
+  UNKNOWN
+  OTHER
+  OPENING_ENDING
+  PARODY
+  PROMO
+  RECAP
+  REGULAR
+  SPECIAL
+}
+```
+
+### Values
+
+#### `UNKNOWN`
+
+#### `OTHER`
+
+#### `OPENING_ENDING`
+
+#### `PARODY`
+
+#### `PROMO`
+
+#### `RECAP`
+
+#### `REGULAR`
+
+#### `SPECIAL`

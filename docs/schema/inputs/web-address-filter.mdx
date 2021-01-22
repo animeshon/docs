@@ -1,0 +1,46 @@
+---
+id: web-address-filter
+title: WebAddressFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WebAddressFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  lastSeenAvailable: DateTimeFilter
+  has: WebAddressHasFilter
+  and: [WebAddressFilter]
+  or: [WebAddressFilter]
+  not: WebAddressFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `lastSeenAvailable` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `has` ([`WebAddressHasFilter`](/docs/schema/enums/web-address-has-filter))
+
+#### `and` ([`[WebAddressFilter]`](/docs/schema/inputs/web-address-filter))
+
+#### `or` ([`[WebAddressFilter]`](/docs/schema/inputs/web-address-filter))
+
+#### `not` ([`WebAddressFilter`](/docs/schema/inputs/web-address-filter))

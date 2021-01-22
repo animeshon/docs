@@ -1,0 +1,34 @@
+---
+id: voice-over-order
+title: VoiceOverOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VoiceOverOrder {
+  asc: VoiceOverOrderable
+  desc: VoiceOverOrderable
+  then: VoiceOverOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`VoiceOverOrderable`](/docs/schema/enums/voice-over-orderable))
+
+#### `desc` ([`VoiceOverOrderable`](/docs/schema/enums/voice-over-orderable))
+
+#### `then` ([`VoiceOverOrder`](/docs/schema/inputs/voice-over-order))

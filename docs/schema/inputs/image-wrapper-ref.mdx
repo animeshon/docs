@@ -1,0 +1,60 @@
+---
+id: image-wrapper-ref
+title: ImageWrapperRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ImageWrapperRef {
+  restrictions: [RestrictionRef!]
+  ageRatings: [AgeRatingRef!]
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  image: ImageRef
+  thumbnails: [ImageRef!]
+  type: ImageType
+  localization: LocalizationRef
+}
+```
+
+### Fields
+
+#### `restrictions` ([`[RestrictionRef!]`](/docs/schema/inputs/restriction-ref))
+
+#### `ageRatings` ([`[AgeRatingRef!]`](/docs/schema/inputs/age-rating-ref))
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `image` ([`ImageRef`](/docs/schema/inputs/image-ref))
+
+#### `thumbnails` ([`[ImageRef!]`](/docs/schema/inputs/image-ref))
+
+#### `type` ([`ImageType`](/docs/schema/enums/image-type))
+
+PAGE, BANNER, PROFILE, PREVIEW, OFFICIAL, FANART, ...
+
+#### `localization` ([`LocalizationRef`](/docs/schema/inputs/localization-ref))

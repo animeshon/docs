@@ -1,0 +1,97 @@
+---
+id: visual-novel-ref
+title: VisualNovelRef
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VisualNovelRef {
+  restrictions: [RestrictionRef!]
+  soundtracks: [SoundtrackRef!]
+  voiceActings: [VoiceActingRef!]
+  ageRatings: [AgeRatingRef!]
+  status: ContentStatus
+  relations: [ContentRelationRef!]
+  partOfCanonicals: [CanonicalRef!]
+  genres: [GenreRef!]
+  staff: [CollaborationRef!]
+  starring: [CastRef!]
+  names: [TextRef!]
+  aliases: [TextRef!]
+  descriptions: [TextRef!]
+  images: [ImageWrapperRef!]
+  crossrefs: [CrossReferenceRef!]
+  websites: [WebAddressRef!]
+  id: String
+  selfLink: String
+  createdAt: DateTime
+  modifiedAt: DateTime
+  version: String
+  videos: [VideoWrapperRef!]
+  length: VisualNovelLength
+  releaseDate: DateTime
+}
+```
+
+### Fields
+
+#### `restrictions` ([`[RestrictionRef!]`](/docs/schema/inputs/restriction-ref))
+
+#### `soundtracks` ([`[SoundtrackRef!]`](/docs/schema/inputs/soundtrack-ref))
+
+#### `voiceActings` ([`[VoiceActingRef!]`](/docs/schema/inputs/voice-acting-ref))
+
+#### `ageRatings` ([`[AgeRatingRef!]`](/docs/schema/inputs/age-rating-ref))
+
+#### `status` ([`ContentStatus`](/docs/schema/enums/content-status))
+
+#### `relations` ([`[ContentRelationRef!]`](/docs/schema/inputs/content-relation-ref))
+
+#### `partOfCanonicals` ([`[CanonicalRef!]`](/docs/schema/inputs/canonical-ref))
+
+#### `genres` ([`[GenreRef!]`](/docs/schema/inputs/genre-ref))
+
+#### `staff` ([`[CollaborationRef!]`](/docs/schema/inputs/collaboration-ref))
+
+#### `starring` ([`[CastRef!]`](/docs/schema/inputs/cast-ref))
+
+#### `names` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `aliases` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `descriptions` ([`[TextRef!]`](/docs/schema/inputs/text-ref))
+
+#### `images` ([`[ImageWrapperRef!]`](/docs/schema/inputs/image-wrapper-ref))
+
+#### `crossrefs` ([`[CrossReferenceRef!]`](/docs/schema/inputs/cross-reference-ref))
+
+#### `websites` ([`[WebAddressRef!]`](/docs/schema/inputs/web-address-ref))
+
+#### `id` ([`String`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String`](/docs/schema/scalars/string))
+
+#### `videos` ([`[VideoWrapperRef!]`](/docs/schema/inputs/video-wrapper-ref))
+
+#### `length` ([`VisualNovelLength`](/docs/schema/enums/visual-novel-length))
+
+#### `releaseDate` ([`DateTime`](/docs/schema/scalars/date-time))

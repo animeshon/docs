@@ -1,0 +1,34 @@
+---
+id: running-order
+title: RunningOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type RunningOrder {
+  asc: RunningOrderable
+  desc: RunningOrderable
+  then: RunningOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`RunningOrderable`](/docs/schema/enums/running-orderable))
+
+#### `desc` ([`RunningOrderable`](/docs/schema/enums/running-orderable))
+
+#### `then` ([`RunningOrder`](/docs/schema/inputs/running-order))

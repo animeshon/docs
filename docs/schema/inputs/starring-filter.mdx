@@ -1,0 +1,37 @@
+---
+id: starring-filter
+title: StarringFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type StarringFilter {
+  has: StarringHasFilter
+  and: [StarringFilter]
+  or: [StarringFilter]
+  not: StarringFilter
+}
+```
+
+### Fields
+
+#### `has` ([`StarringHasFilter`](/docs/schema/enums/starring-has-filter))
+
+#### `and` ([`[StarringFilter]`](/docs/schema/inputs/starring-filter))
+
+#### `or` ([`[StarringFilter]`](/docs/schema/inputs/starring-filter))
+
+#### `not` ([`StarringFilter`](/docs/schema/inputs/starring-filter))

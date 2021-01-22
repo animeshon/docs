@@ -1,0 +1,42 @@
+---
+id: query-doujinshi
+title: queryDoujinshi
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryDoujinshi(
+  filter: DoujinshiFilter
+  order: DoujinshiOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Doujinshi]
+
+```
+
+### Arguments
+
+#### `filter` ([`DoujinshiFilter`](/docs/schema/inputs/doujinshi-filter))
+
+#### `order` ([`DoujinshiOrder`](/docs/schema/inputs/doujinshi-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Doujinshi`](/docs/schema/objects/doujinshi)

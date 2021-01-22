@@ -1,0 +1,46 @@
+---
+id: circle-filter
+title: CircleFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CircleFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  foundation: DateTimeFilter
+  has: CircleHasFilter
+  and: [CircleFilter]
+  or: [CircleFilter]
+  not: CircleFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `foundation` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `has` ([`CircleHasFilter`](/docs/schema/enums/circle-has-filter))
+
+#### `and` ([`[CircleFilter]`](/docs/schema/inputs/circle-filter))
+
+#### `or` ([`[CircleFilter]`](/docs/schema/inputs/circle-filter))
+
+#### `not` ([`CircleFilter`](/docs/schema/inputs/circle-filter))

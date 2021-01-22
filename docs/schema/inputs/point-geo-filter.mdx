@@ -1,0 +1,31 @@
+---
+id: point-geo-filter
+title: PointGeoFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type PointGeoFilter {
+  near: NearFilter
+  within: WithinFilter
+}
+```
+
+### Fields
+
+#### `near` ([`NearFilter`](/docs/schema/inputs/near-filter))
+
+#### `within` ([`WithinFilter`](/docs/schema/inputs/within-filter))

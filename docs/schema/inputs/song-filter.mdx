@@ -1,0 +1,46 @@
+---
+id: song-filter
+title: SongFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type SongFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  releaseDate: DateTimeFilter
+  has: SongHasFilter
+  and: [SongFilter]
+  or: [SongFilter]
+  not: SongFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `releaseDate` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `has` ([`SongHasFilter`](/docs/schema/enums/song-has-filter))
+
+#### `and` ([`[SongFilter]`](/docs/schema/inputs/song-filter))
+
+#### `or` ([`[SongFilter]`](/docs/schema/inputs/song-filter))
+
+#### `not` ([`SongFilter`](/docs/schema/inputs/song-filter))

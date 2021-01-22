@@ -1,0 +1,49 @@
+---
+id: music-collection-track-filter
+title: MusicCollectionTrackFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MusicCollectionTrackFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  trackVersion: SongVersionType_hash
+  identifier: StringHashFilter
+  has: MusicCollectionTrackHasFilter
+  and: [MusicCollectionTrackFilter]
+  or: [MusicCollectionTrackFilter]
+  not: MusicCollectionTrackFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `trackVersion` ([`SongVersionType_hash`](/docs/schema/inputs/song-version-type-hash))
+
+#### `identifier` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`MusicCollectionTrackHasFilter`](/docs/schema/enums/music-collection-track-has-filter))
+
+#### `and` ([`[MusicCollectionTrackFilter]`](/docs/schema/inputs/music-collection-track-filter))
+
+#### `or` ([`[MusicCollectionTrackFilter]`](/docs/schema/inputs/music-collection-track-filter))
+
+#### `not` ([`MusicCollectionTrackFilter`](/docs/schema/inputs/music-collection-track-filter))

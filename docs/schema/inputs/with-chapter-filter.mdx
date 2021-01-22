@@ -1,0 +1,37 @@
+---
+id: with-chapter-filter
+title: WithChapterFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type WithChapterFilter {
+  has: WithChapterHasFilter
+  and: [WithChapterFilter]
+  or: [WithChapterFilter]
+  not: WithChapterFilter
+}
+```
+
+### Fields
+
+#### `has` ([`WithChapterHasFilter`](/docs/schema/enums/with-chapter-has-filter))
+
+#### `and` ([`[WithChapterFilter]`](/docs/schema/inputs/with-chapter-filter))
+
+#### `or` ([`[WithChapterFilter]`](/docs/schema/inputs/with-chapter-filter))
+
+#### `not` ([`WithChapterFilter`](/docs/schema/inputs/with-chapter-filter))

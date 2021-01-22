@@ -1,0 +1,62 @@
+---
+id: music-collection-track
+title: MusicCollectionTrack
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MusicCollectionTrack implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  musicCollection(filter: MusicCollectionFilter): MusicCollection!
+  song(filter: SongFilter): Song!
+  trackVersion: SongVersionType!
+  identifier: String
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `musicCollection` ([`MusicCollection!`](/docs/schema/objects/music-collection))
+
+- ##### `filter` ([`MusicCollectionFilter`](/docs/schema/inputs/music-collection-filter))
+
+#### `song` ([`Song!`](/docs/schema/objects/song))
+
+- ##### `filter` ([`SongFilter`](/docs/schema/inputs/song-filter))
+
+#### `trackVersion` ([`SongVersionType!`](/docs/schema/enums/song-version-type))
+
+Normal, Karaoke, ...
+
+#### `identifier` ([`String`](/docs/schema/scalars/string))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

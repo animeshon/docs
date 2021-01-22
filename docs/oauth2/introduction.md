@@ -17,5 +17,5 @@ This product has not reached [General Availability (GA)](/docs/developers/releas
 
 ## Work in progress
 
-This page is under construction and will be released according to the [OAuth 2.0 Roadmap](roadmap). More information will be made available on [Discuss](https://discuss.animeshon.com) and [GitHub](https://github.com/animeshon) as development continues.
+This page is under construction and will be released according to the [OAuth 2.0 Roadmap](roadmap). More information will be made available on [GitHub](https://github.com/animeshon) as development continues.
 

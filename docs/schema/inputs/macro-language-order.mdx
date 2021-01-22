@@ -1,0 +1,34 @@
+---
+id: macro-language-order
+title: MacroLanguageOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MacroLanguageOrder {
+  asc: MacroLanguageOrderable
+  desc: MacroLanguageOrderable
+  then: MacroLanguageOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`MacroLanguageOrderable`](/docs/schema/enums/macro-language-orderable))
+
+#### `desc` ([`MacroLanguageOrderable`](/docs/schema/enums/macro-language-orderable))
+
+#### `then` ([`MacroLanguageOrder`](/docs/schema/inputs/macro-language-order))

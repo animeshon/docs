@@ -1,0 +1,125 @@
+---
+id: text
+title: Text
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Text implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  text: String!
+  localization(filter: LocalizationFilter): Localization!
+  nameOfGeneric(first: Int = 0, offset: Int = 0): [Generic!]!
+  nameOfGenre(
+    filter: GenreFilter
+    order: GenreOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Genre!]!
+  nameOfVoiceOver(
+    filter: VoiceOverFilter
+    order: VoiceOverOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [VoiceOver!]!
+  nameOfRole(
+    filter: FreeTextRoleFilter
+    order: FreeTextRoleOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [FreeTextRole!]!
+  nameOfGenericAggregate: GenericAggregateResult
+  nameOfGenreAggregate(filter: GenreFilter): GenreAggregateResult
+  nameOfVoiceOverAggregate(filter: VoiceOverFilter): VoiceOverAggregateResult
+  nameOfRoleAggregate(filter: FreeTextRoleFilter): FreeTextRoleAggregateResult
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `text` ([`String!`](/docs/schema/scalars/string))
+
+#### `localization` ([`Localization!`](/docs/schema/objects/localization))
+
+- ##### `filter` ([`LocalizationFilter`](/docs/schema/inputs/localization-filter))
+
+#### `nameOfGeneric` ([`[Generic!]!`](/docs/schema/interfaces/generic))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `nameOfGenre` ([`[Genre!]!`](/docs/schema/objects/genre))
+
+- ##### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+- ##### `order` ([`GenreOrder`](/docs/schema/inputs/genre-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `nameOfVoiceOver` ([`[VoiceOver!]!`](/docs/schema/objects/voice-over))
+
+- ##### `filter` ([`VoiceOverFilter`](/docs/schema/inputs/voice-over-filter))
+
+- ##### `order` ([`VoiceOverOrder`](/docs/schema/inputs/voice-over-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `nameOfRole` ([`[FreeTextRole!]!`](/docs/schema/objects/free-text-role))
+
+- ##### `filter` ([`FreeTextRoleFilter`](/docs/schema/inputs/free-text-role-filter))
+
+- ##### `order` ([`FreeTextRoleOrder`](/docs/schema/inputs/free-text-role-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `nameOfGenericAggregate` ([`GenericAggregateResult`](/docs/schema/objects/generic-aggregate-result))
+
+#### `nameOfGenreAggregate` ([`GenreAggregateResult`](/docs/schema/objects/genre-aggregate-result))
+
+- ##### `filter` ([`GenreFilter`](/docs/schema/inputs/genre-filter))
+
+#### `nameOfVoiceOverAggregate` ([`VoiceOverAggregateResult`](/docs/schema/objects/voice-over-aggregate-result))
+
+- ##### `filter` ([`VoiceOverFilter`](/docs/schema/inputs/voice-over-filter))
+
+#### `nameOfRoleAggregate` ([`FreeTextRoleAggregateResult`](/docs/schema/objects/free-text-role-aggregate-result))
+
+- ##### `filter` ([`FreeTextRoleFilter`](/docs/schema/inputs/free-text-role-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

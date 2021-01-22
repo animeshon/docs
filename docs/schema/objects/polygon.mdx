@@ -1,0 +1,28 @@
+---
+id: polygon
+title: Polygon
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Polygon {
+  coordinates: [PointList!]!
+}
+```
+
+### Fields
+
+#### `coordinates` ([`[PointList!]!`](/docs/schema/objects/point-list))

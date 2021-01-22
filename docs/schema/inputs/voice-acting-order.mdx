@@ -1,0 +1,34 @@
+---
+id: voice-acting-order
+title: VoiceActingOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VoiceActingOrder {
+  asc: VoiceActingOrderable
+  desc: VoiceActingOrderable
+  then: VoiceActingOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`VoiceActingOrderable`](/docs/schema/enums/voice-acting-orderable))
+
+#### `desc` ([`VoiceActingOrderable`](/docs/schema/enums/voice-acting-orderable))
+
+#### `then` ([`VoiceActingOrder`](/docs/schema/inputs/voice-acting-order))

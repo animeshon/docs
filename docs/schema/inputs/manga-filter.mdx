@@ -1,0 +1,46 @@
+---
+id: manga-filter
+title: MangaFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MangaFilter {
+  status: ContentStatus_hash
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: MangaHasFilter
+  and: [MangaFilter]
+  or: [MangaFilter]
+  not: MangaFilter
+}
+```
+
+### Fields
+
+#### `status` ([`ContentStatus_hash`](/docs/schema/inputs/content-status-hash))
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`MangaHasFilter`](/docs/schema/enums/manga-has-filter))
+
+#### `and` ([`[MangaFilter]`](/docs/schema/inputs/manga-filter))
+
+#### `or` ([`[MangaFilter]`](/docs/schema/inputs/manga-filter))
+
+#### `not` ([`MangaFilter`](/docs/schema/inputs/manga-filter))

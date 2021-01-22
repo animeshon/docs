@@ -1,0 +1,46 @@
+---
+id: with-chapter
+title: WithChapter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface WithChapter {
+  chapters(
+    filter: ChapterFilter
+    order: ChapterOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Chapter!]!
+  chaptersAggregate(filter: ChapterFilter): ChapterAggregateResult
+}
+```
+
+### Fields
+
+#### `chapters` ([`[Chapter!]!`](/docs/schema/objects/chapter))
+
+- ##### `filter` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))
+
+- ##### `order` ([`ChapterOrder`](/docs/schema/inputs/chapter-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `chaptersAggregate` ([`ChapterAggregateResult`](/docs/schema/objects/chapter-aggregate-result))
+
+- ##### `filter` ([`ChapterFilter`](/docs/schema/inputs/chapter-filter))

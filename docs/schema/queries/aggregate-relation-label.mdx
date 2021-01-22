@@ -1,0 +1,33 @@
+---
+id: aggregate-relation-label
+title: aggregateRelationLabel
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateRelationLabel(
+  filter: RelationLabelFilter
+): RelationLabelAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`RelationLabelFilter`](/docs/schema/inputs/relation-label-filter))
+
+### Type
+
+#### [`RelationLabelAggregateResult`](/docs/schema/objects/relation-label-aggregate-result)

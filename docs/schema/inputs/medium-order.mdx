@@ -1,0 +1,34 @@
+---
+id: medium-order
+title: MediumOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type MediumOrder {
+  asc: MediumOrderable
+  desc: MediumOrderable
+  then: MediumOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`MediumOrderable`](/docs/schema/enums/medium-orderable))
+
+#### `desc` ([`MediumOrderable`](/docs/schema/enums/medium-orderable))
+
+#### `then` ([`MediumOrder`](/docs/schema/inputs/medium-order))

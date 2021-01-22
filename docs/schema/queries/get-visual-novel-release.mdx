@@ -1,0 +1,33 @@
+---
+id: get-visual-novel-release
+title: getVisualNovelRelease
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getVisualNovelRelease(
+  id: String!
+): VisualNovelRelease
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`VisualNovelRelease`](/docs/schema/objects/visual-novel-release)

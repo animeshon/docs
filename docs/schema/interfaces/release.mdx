@@ -1,0 +1,108 @@
+---
+id: release
+title: Release
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+interface Release {
+  contents(first: Int = 0, offset: Int = 0): [Releasable!]!
+  languages(
+    filter: LanguageFilter
+    order: LanguageOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Language!]!
+  releaseDate: DateTime
+  medium(
+    filter: MediumFilter
+    order: MediumOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Medium!]!
+  censorship: CensorshipType!
+  ean10: String
+  upce: String
+  upca: String
+  ean13: String
+  sku: String
+  contentsAggregate: ReleasableAggregateResult
+  languagesAggregate(filter: LanguageFilter): LanguageAggregateResult
+  mediumAggregate(filter: MediumFilter): MediumAggregateResult
+}
+```
+
+### Fields
+
+#### `contents` ([`[Releasable!]!`](/docs/schema/interfaces/releasable))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `languages` ([`[Language!]!`](/docs/schema/objects/language))
+
+- ##### `filter` ([`LanguageFilter`](/docs/schema/inputs/language-filter))
+
+- ##### `order` ([`LanguageOrder`](/docs/schema/inputs/language-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `releaseDate` ([`DateTime`](/docs/schema/scalars/date-time))
+
+#### `medium` ([`[Medium!]!`](/docs/schema/objects/medium))
+
+- ##### `filter` ([`MediumFilter`](/docs/schema/inputs/medium-filter))
+
+- ##### `order` ([`MediumOrder`](/docs/schema/inputs/medium-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `censorship` ([`CensorshipType!`](/docs/schema/enums/censorship-type))
+
+#### `ean10` ([`String`](/docs/schema/scalars/string))
+
+EAN10 ISBN10, all barcodes with 10 digits
+
+#### `upce` ([`String`](/docs/schema/scalars/string))
+
+UPCE 6 digit barcodes
+
+#### `upca` ([`String`](/docs/schema/scalars/string))
+
+UPCA 12 digit barcodes
+
+#### `ean13` ([`String`](/docs/schema/scalars/string))
+
+EAN13 JAN/ISBN13, all barcodes with 13 digits
+
+#### `sku` ([`String`](/docs/schema/scalars/string))
+
+SKU / catalog number
+
+#### `contentsAggregate` ([`ReleasableAggregateResult`](/docs/schema/objects/releasable-aggregate-result))
+
+#### `languagesAggregate` ([`LanguageAggregateResult`](/docs/schema/objects/language-aggregate-result))
+
+- ##### `filter` ([`LanguageFilter`](/docs/schema/inputs/language-filter))
+
+#### `mediumAggregate` ([`MediumAggregateResult`](/docs/schema/objects/medium-aggregate-result))
+
+- ##### `filter` ([`MediumFilter`](/docs/schema/inputs/medium-filter))

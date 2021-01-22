@@ -1,0 +1,33 @@
+---
+id: aggregate-manga
+title: aggregateManga
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateManga(
+  filter: MangaFilter
+): MangaAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`MangaFilter`](/docs/schema/inputs/manga-filter))
+
+### Type
+
+#### [`MangaAggregateResult`](/docs/schema/objects/manga-aggregate-result)

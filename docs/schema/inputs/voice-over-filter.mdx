@@ -1,0 +1,43 @@
+---
+id: voice-over-filter
+title: VoiceOverFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type VoiceOverFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: VoiceOverHasFilter
+  and: [VoiceOverFilter]
+  or: [VoiceOverFilter]
+  not: VoiceOverFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`VoiceOverHasFilter`](/docs/schema/enums/voice-over-has-filter))
+
+#### `and` ([`[VoiceOverFilter]`](/docs/schema/inputs/voice-over-filter))
+
+#### `or` ([`[VoiceOverFilter]`](/docs/schema/inputs/voice-over-filter))
+
+#### `not` ([`VoiceOverFilter`](/docs/schema/inputs/voice-over-filter))

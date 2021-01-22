@@ -1,0 +1,42 @@
+---
+id: query-universe
+title: queryUniverse
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+queryUniverse(
+  filter: UniverseFilter
+  order: UniverseOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Universe]
+
+```
+
+### Arguments
+
+#### `filter` ([`UniverseFilter`](/docs/schema/inputs/universe-filter))
+
+#### `order` ([`UniverseOrder`](/docs/schema/inputs/universe-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Universe`](/docs/schema/objects/universe)

@@ -1,0 +1,46 @@
+---
+id: character-filter
+title: CharacterFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CharacterFilter {
+  birthday: DateTimeFilter
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  has: CharacterHasFilter
+  and: [CharacterFilter]
+  or: [CharacterFilter]
+  not: CharacterFilter
+}
+```
+
+### Fields
+
+#### `birthday` ([`DateTimeFilter`](/docs/schema/inputs/date-time-filter))
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`CharacterHasFilter`](/docs/schema/enums/character-has-filter))
+
+#### `and` ([`[CharacterFilter]`](/docs/schema/inputs/character-filter))
+
+#### `or` ([`[CharacterFilter]`](/docs/schema/inputs/character-filter))
+
+#### `not` ([`CharacterFilter`](/docs/schema/inputs/character-filter))

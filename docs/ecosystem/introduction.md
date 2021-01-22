@@ -29,7 +29,7 @@ As shown in the above diagram, the core of our Ecosystem is [Detabesu](/docs/det
 
 We expect Detabesu to become a *stable and self-updating* **source of truth** for every user, developer and third-party systems.
 
-The entire dataset is exposed by a powerful [GraphQL Interface](/docs/detabesu/graphql/quickstarts) which allows third-party systems to traverse the Knowledge Base without constraints or restrictions.
+The entire dataset is exposed by a powerful [GraphQL Interface](/docs/graphql/quickstarts) which allows third-party systems to traverse the Knowledge Base without constraints or restrictions.
 
 ### Oracolo
 [Oracolo](/docs/oracolo/introduction) provides search capabilities against Databesu's data.
@@ -38,7 +38,7 @@ It will be a powerful entrypoint capable of **text search** as well as **reverse
 Oracolo will expose both `REST APIs` and `GraphQL` interfaces to allow the direct integration of the search capability of this component by third-party services.
 
 ### OAuth 2.0
-TODO CHRISTIAN
+This section is not available yet.
 
 ### Open-Source Encyclopedia
 Animeshon plans to develop an [open source Encyclopedia](/docs/encyclopedia/introduction) designed to visualize and interact directly with the Detabesu's data. The **Encyclopedia** will be our official gateway to consult, navigate, discuss, rate and discover the informations Animeshon provides to the public.  

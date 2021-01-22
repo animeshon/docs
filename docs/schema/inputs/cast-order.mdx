@@ -1,0 +1,34 @@
+---
+id: cast-order
+title: CastOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CastOrder {
+  asc: CastOrderable
+  desc: CastOrderable
+  then: CastOrder
+}
+```
+
+### Fields
+
+#### `asc` ([`CastOrderable`](/docs/schema/enums/cast-orderable))
+
+#### `desc` ([`CastOrderable`](/docs/schema/enums/cast-orderable))
+
+#### `then` ([`CastOrder`](/docs/schema/inputs/cast-order))

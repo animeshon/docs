@@ -1,0 +1,33 @@
+---
+id: get-light-novel
+title: getLightNovel
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+getLightNovel(
+  id: String!
+): LightNovel
+
+```
+
+### Arguments
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+### Type
+
+#### [`LightNovel`](/docs/schema/objects/light-novel)

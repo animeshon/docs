@@ -1,0 +1,31 @@
+---
+id: censorship-type-hash
+title: CensorshipType_hash
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CensorshipType_hash {
+  eq: CensorshipType!
+  in: [CensorshipType!]
+}
+```
+
+### Fields
+
+#### `eq` ([`CensorshipType!`](/docs/schema/enums/censorship-type))
+
+#### `in` ([`[CensorshipType!]`](/docs/schema/enums/censorship-type))

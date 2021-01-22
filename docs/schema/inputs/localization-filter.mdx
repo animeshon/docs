@@ -1,0 +1,46 @@
+---
+id: localization-filter
+title: LocalizationFilter
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocalizationFilter {
+  id: StringHashFilter
+  selfLink: StringHashFilter
+  tag: StringHashFilter
+  has: LocalizationHasFilter
+  and: [LocalizationFilter]
+  or: [LocalizationFilter]
+  not: LocalizationFilter
+}
+```
+
+### Fields
+
+#### `id` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `selfLink` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `tag` ([`StringHashFilter`](/docs/schema/inputs/string-hash-filter))
+
+#### `has` ([`LocalizationHasFilter`](/docs/schema/enums/localization-has-filter))
+
+#### `and` ([`[LocalizationFilter]`](/docs/schema/inputs/localization-filter))
+
+#### `or` ([`[LocalizationFilter]`](/docs/schema/inputs/localization-filter))
+
+#### `not` ([`LocalizationFilter`](/docs/schema/inputs/localization-filter))

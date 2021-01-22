@@ -1,0 +1,71 @@
+---
+id: script
+title: Script
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Script implements Metadata {
+  id: String!
+  selfLink: String!
+  createdAt: DateTime!
+  modifiedAt: DateTime!
+  version: String!
+  names(
+    filter: TextFilter
+    order: TextOrder
+    first: Int = 0
+    offset: Int = 0
+  ): [Text!]!
+  code: String!
+  number: Int!
+  namesAggregate(filter: TextFilter): TextAggregateResult
+}
+```
+
+### Fields
+
+#### `id` ([`String!`](/docs/schema/scalars/string))
+
+#### `selfLink` ([`String!`](/docs/schema/scalars/string))
+
+#### `createdAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `modifiedAt` ([`DateTime!`](/docs/schema/scalars/date-time))
+
+#### `version` ([`String!`](/docs/schema/scalars/string))
+
+#### `names` ([`[Text!]!`](/docs/schema/objects/text))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+- ##### `order` ([`TextOrder`](/docs/schema/inputs/text-order))
+
+- ##### `first` ([`Int`](/docs/schema/scalars/int))
+
+- ##### `offset` ([`Int`](/docs/schema/scalars/int))
+
+#### `code` ([`String!`](/docs/schema/scalars/string))
+
+#### `number` ([`Int!`](/docs/schema/scalars/int))
+
+#### `namesAggregate` ([`TextAggregateResult`](/docs/schema/objects/text-aggregate-result))
+
+- ##### `filter` ([`TextFilter`](/docs/schema/inputs/text-filter))
+
+### Interfaces
+
+#### [`Metadata`](/docs/schema/interfaces/metadata)

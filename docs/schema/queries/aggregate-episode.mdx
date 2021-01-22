@@ -1,0 +1,33 @@
+---
+id: aggregate-episode
+title: aggregateEpisode
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+aggregateEpisode(
+  filter: EpisodeFilter
+): EpisodeAggregateResult
+
+```
+
+### Arguments
+
+#### `filter` ([`EpisodeFilter`](/docs/schema/inputs/episode-filter))
+
+### Type
+
+#### [`EpisodeAggregateResult`](/docs/schema/objects/episode-aggregate-result)

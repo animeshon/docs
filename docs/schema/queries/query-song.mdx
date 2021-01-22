@@ -1,0 +1,42 @@
+---
+id: query-song
+title: querySong
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+querySong(
+  filter: SongFilter
+  order: SongOrder
+  first: QueryPaginationInt!
+  offset: Int = 0
+): [Song]
+
+```
+
+### Arguments
+
+#### `filter` ([`SongFilter`](/docs/schema/inputs/song-filter))
+
+#### `order` ([`SongOrder`](/docs/schema/inputs/song-order))
+
+#### `first` ([`QueryPaginationInt!`](/docs/schema/scalars/query-pagination-int))
+
+#### `offset` ([`Int`](/docs/schema/scalars/int))
+
+### Type
+
+#### [`Song`](/docs/schema/objects/song)
