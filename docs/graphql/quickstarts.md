@@ -20,7 +20,7 @@ The client will always have to contact the same endpoint in order to perform any
 Right now the Gateway acts as a dispatcher, which means that the answers from different services have to be manually handled to continue the resolution of the resources in other services.
 
 Example:
-While searching a content using [Oracolo](/docs/orcaolo/introduction) Full-Text Search query `querySearch`, the client has to manually process the response and query [Detabesu](/docs/detabesu/introduction) to fetch more useful information about the search results.
+While searching a content using [Oracolo](/docs/oracolo/introduction) Full-Text Search query `querySearch`, the client has to manually process the response and query [Detabesu](/docs/detabesu/introduction) to fetch more useful information about the search results.
 
 As stated in the [Roadmap](/docs/graphql/roadmap), the gateway will become a federated schema, therefore hiding this extra step from the client and allowing it to build complete queries in a single request.
 

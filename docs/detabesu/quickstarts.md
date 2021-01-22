@@ -4,7 +4,7 @@ title: Quickstarts
 ---
 
 The following section will cover some high-level aspect of **Detabesu**'s architecture and design patterns.
-For more technical and practical information consult to the [GraphQL](/docs/graphql/quickstart) section.
+For more technical and practical information consult to the [GraphQL](/docs/graphql/quickstarts) section.
 
 ## Think in Graph
 Detabesu is powered by the experimental [Dgraph](https://dgraph.io/) *graph database*. As for every other graph database, it comes with very different paradigmes copared to a more "traditional" environment where developers interfaces with relational databases and RestAPIs interfaces. For more information abou the concept behind a Graph database, consult Detabesu [Concepts](/docs/detabesu/concepts) section. 
