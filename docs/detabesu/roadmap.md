@@ -14,11 +14,11 @@ The roadmap provided might be subject to changes.
 | Feature | Status | Scheduled Release |
 | --- | --- | --- | 
 | Permissioning and Authentication | Early development¹ | TBD³ |
-| Rate limit | Early development¹ | TBD³ |
+| Rate limit | Beta version | TBD³ |
 | Custom resolvers (community-driven) | Evaluation² | TBD³ |
-| Universe generation | Early development¹ | January 2021 |
-| Canonicals generation | Early development¹ | January 2021 |
-| Federation of Detabesu with [Oracolo](/docs/oracolo/introduction) | Early development¹ | FebMarchruary 2021 |
+| Universe generation | Beta version | January 2021 |
+| Canonicals generation | Beta version | January 2021 |
+| Federation of Detabesu with [Oracolo](/docs/oracolo/introduction) | Beta version | February 2021 |
 
 *(¹) Early development: Development has started but no proof-of-concept has been approved yet.*  
 *(²) Evaluation: Support for this content has been discussed but is not planned yet.*  

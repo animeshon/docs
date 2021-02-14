@@ -6,24 +6,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'animeshon',
   projectName: 'docs',
-  plugins: [
-    [
-      // to make it work on windows
-      // 0. renderer.js of the library
-      //    fix regex with (line 57)
-      //    /(?<category>[A-z][A-z0-9-]*)\\(?<pageId>[A-z][A-z0-9-]*).mdx?$/,
-      // 1. open sidebar-schema.js
-      //    substitute '\\' with '/'
-      // 2. substitute all '\' with '/' in schema folder
-      // 3. substitute all '](/' with '](/docs/' in schema folder
-      "@edno/docusaurus2-graphql-doc-generator",
-      {
-        schema: "https://api.animeshon.com/graphql",
-        baseURL: "schema",
-        rootPath: "./docs",
-      },
-    ],
-  ],
   themeConfig: {
     navbar: {
       title: 'Animeshon',

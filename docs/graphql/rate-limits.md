@@ -15,8 +15,8 @@ Limits described might be subject to changes.
 |- | - | - | - |
 | querySearch | The query to perform a Full-text search in [Oracolo](/docs/oracolo/introduction) | 20 | 1s |
 | get(*) | All queries starting with `get` | 20 | 1s |
-| query(*) | All queries starting with `query` | 10 | 30s |
-| aggregate(*) | All queries starting with `aggregate` | 10 | 30s |
+| query(*) | All queries starting with `query` | 10 | 1s |
+| aggregate(*) | All queries starting with `aggregate` | 10 | 1s |
 
 ## Query Depth Limits
 |Limit| Description |

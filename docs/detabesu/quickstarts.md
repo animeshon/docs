@@ -184,7 +184,7 @@ In the above picture is shown the hierarchy of the main `interfaces` you will en
 
 :::info
 
-For a more complete insight of the `interfaces` in Detabesu, consult the GraphQL [Schema](/docs/schema/schema) page.
+For a more complete insight of the `interfaces` in Detabesu, consult the GraphQL [Schema](/docs/graphql/schema-documentation) page.
 
 :::
 
