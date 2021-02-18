@@ -84,7 +84,7 @@ is not possible, if not trough a custom resolver, which has to be designed and i
 
 :::info
 
-We are open to the eventual implementation of some custom resolvers, if the community need them and makes request through our official [Discuss](https://discuss.animeshon.com)
+We are open to the eventual implementation of some custom resolvers, if the community need them and makes request through our official [Discord](https://discord.gg/WvNsjtR)
 
 :::
 
