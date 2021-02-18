@@ -84,7 +84,7 @@ is not possible, if not trough a custom resolver, which has to be designed and i
 
 :::info
 
-We are open to the eventual implementation of some custom resolvers, if the community need them and makes request through our official [Discuss](https://discuss.animeshon.com)
+We are open to the eventual implementation of some custom resolvers, if the community need them and makes request through our official [Discord](https://discord.gg/WvNsjtR)
 
 :::
 
@@ -184,7 +184,7 @@ In the above picture is shown the hierarchy of the main `interfaces` you will en
 
 :::info
 
-For a more complete insight of the `interfaces` in Detabesu, consult the GraphQL [Schema](/docs/schema/schema) page.
+For a more complete insight of the `interfaces` in Detabesu, consult the GraphQL [Schema](/docs/graphql/schema-documentation) page.
 
 :::
 

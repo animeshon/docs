@@ -15,14 +15,12 @@ The GraphQL APIs of Animeshon are exposed through a gateway which forwards all t
 
 The client will always have to contact the same endpoint in order to perform any kind of operation, reducing the complexity of applications and services which are integrating with the Animeshon Ecosystem.
 
-:::warning
+:::info
 
-Right now the Gateway acts as a dispatcher, which means that the answers from different services have to be manually handled to continue the resolution of the resources in other services.
+Federation between [Oracolo](/docs/oracolo/introduction) and [Detabesu](/docs/detabesu/introduction) is currently in Beta version.
 
-Example:
-While searching a content using [Oracolo](/docs/oracolo/introduction) Full-Text Search query `querySearch`, the client has to manually process the response and query [Detabesu](/docs/detabesu/introduction) to fetch more useful information about the search results.
-
-As stated in the [Roadmap](/docs/graphql/roadmap), the gateway will become a federated schema, therefore hiding this extra step from the client and allowing it to build complete queries in a single request.
+The Gateway serves a single Datagraph and the clients are able to traverse it without client-side additiona logic.
+We are monitoring performances and bugs and the federation will be improved in the next development cycles.
 
 ::: 
 
@@ -37,13 +35,6 @@ The schema is self-documented and the documentation is available through any Gra
 * [Insomnia](https://insomnia.rest/)
 * [Postman](https://www.postman.com/)
 
-We also provide a [standalone documentation](/docs/schema/schema).
-
-:::caution
-
-The standalone documentation might be removed in the future, not being essential and sometimes even confusing.
-
-::: 
 
 ------
 

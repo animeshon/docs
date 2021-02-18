@@ -3,8 +3,9 @@ id: tips-and-tricks
 title: Tips and Tricks
 ---
 
-## @cascade directive for smart filters
-The `@cascade` directive is a built-in directive of [Dgraph](https://dgraph.io/) ([Link to Doc](https://dgraph.io/docs/graphql/queries/cascade)).
+<!-- ## @cascade directive for smart filters -->
+### Refactor in progress after Beta v21.02.0 Release
+<!-- The `@cascade` directive is a built-in directive of [Dgraph](https://dgraph.io/) ([Link to Doc](https://dgraph.io/docs/graphql/queries/cascade)).
 It allows to prune all results which do not satisfy some costraints.
 
 It's very usefull to solve the "problem" described in the [Detabesu Quickstarts](/docs/detabesu/quickstarts#local-scope-lookup).
@@ -107,5 +108,5 @@ As shown by the highlighted block in the previous result, the result contains em
 
 The second `cascade` tells the server to discard and remove `character` which do not have the field `name` (because of the filter we apply, we already know that all **MALE** characters are returned withouth a name)
 
-The first `cascade` tells the server to prune all results `starring` which do not have the field `character` (and because of the first `cascade` filter we applied, all `starring` containing **MALE** characters won't have the `character` field).
+The first `cascade` tells the server to prune all results `starring` which do not have the field `character` (and because of the first `cascade` filter we applied, all `starring` containing **MALE** characters won't have the `character` field). -->
 

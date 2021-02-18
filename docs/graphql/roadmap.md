@@ -13,7 +13,7 @@ The roadmap provided might be subject to changes.
 
 | Feature | Status | Scheduled Release |
 | --- | --- | --- | 
-| Federation | Early development¹ | February 2021 |
+| Federation | Beta version | February 2021 |
 | Authentication and Authorization | Early development¹ | March 2021 |
 
 *(¹) Early development: Development has started but no proof-of-concept has been approved yet.*  

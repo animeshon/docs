@@ -16,10 +16,6 @@ Access comes with no guarantees and might be revoked at any point in time.
 :::
 
 
-## Requirements
-
-Early Adopters **must be registered** on our [Discourse](https://discuss.animeshon.com/) before requesting access.
-
 ## Registration
 
 Early Adopters can request access to any of our products through this [Google Form](https://forms.gle/fUYCHYW3xvTDnY4d6).
