@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Christian Roggia",
+    "title": "Co-Founder & CEO",
+    "image_url": "https://avatars.githubusercontent.com/u/6957360?v=4",
+    "social_links": [
+      "https://github.com/christian-roggia",
+      "https://linkedin.com/in/christian-roggia/",
+      "https://twitter.com/ChristianRoggia",
+      "https://discordapp.com/users/246903811656908800/"
+    ]
+  },
+  {
+    "name": "Matteo Roggia",
+    "title": "Co-Founder & CTO",
+    "image_url": "https://avatars.githubusercontent.com/u/24476025?v=4",
+    "social_links": [
+      "https://github.com/Luscha",
+      "https://linkedin.com/in/matteo-roggia-45b466174/",
+      "https://discordapp.com/users/197767252618117120/"
+    ]
+  }
+]
