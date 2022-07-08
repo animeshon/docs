@@ -9,7 +9,7 @@ export default function Team() {
       <div className='hero'>
         <div className='container'>
           <div className='text--center margin-bottom--lg'>
-            <h1 className='hero__title margin--none'>Wiki Team</h1>
+            <h1 className='hero__title margin--none'>Team</h1>
           </div>
           <div className='row'>
             {config &&
