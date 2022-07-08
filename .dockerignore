@@ -1,7 +1,6 @@
 .cache
 .dockerignore
 .docusaurus
-.git
 .github
 .gitignore
 .vscode
@@ -11,6 +10,8 @@
 /Dockerfile
 /helm
 /node_modules
+
+# NOTE: The .git folder is needed while building with docusaurus.
 
 # Yarn
 .pnp.*

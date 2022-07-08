@@ -3,7 +3,7 @@
 ################################################################################
 FROM node:17-alpine AS dependencies
 
-WORKDIR /build
+WORKDIR /workspace
 
 COPY package.json package.json
 COPY yarn.lock yarn.lock
@@ -28,12 +28,12 @@ RUN yarn install
 ################################################################################
 FROM node:17-alpine as builder
 
-WORKDIR /build
+WORKDIR /workspace
 
 RUN apk add --no-cache git
 
 COPY . .
-COPY --from=dependencies /build /build
+COPY --from=dependencies /workspace .
 
 ENV LIBRARIES go/documentation
 ENV PRODUCTS image/documentation
@@ -48,10 +48,8 @@ FROM nginx:alpine
 ENV PORT 8080
 ENV HOST 0.0.0.0
 
-COPY --from=builder /build/build /usr/share/nginx/html
+COPY --from=builder /workspace/build /usr/share/nginx/html
 
-COPY docker/nginx/default.conf /etc/nginx/conf.d/default.template
-COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
-ENTRYPOINT [ "/docker-entrypoint.sh" ]
 CMD [ "nginx", "-g", "daemon off;" ]
