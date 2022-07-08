@@ -1,0 +1,7 @@
+# Values strictly related to the [production] environment.
+
+# Setup the Istio Virtual Services.
+istio:
+  ui:
+    gateways: [istio-system/gateway-external--https]
+    hosts: [docs.animeshon.com]

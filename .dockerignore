@@ -1,11 +1,22 @@
 .cache
 .dockerignore
+.docusaurus
 .git
+.github
 .gitignore
 .vscode
 /*.md
 /build
 /dist
 /Dockerfile
+/helm
 /node_modules
-/terraform
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

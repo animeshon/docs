@@ -1,0 +1,11 @@
+# Values strictly related to the [development] environment.
+
+# Set the development image registry.
+image:
+  repository: gcr.io/animeshon-services--devel/web-ui/docs
+
+# Setup the Istio Virtual Services.
+istio:
+  ui:
+    gateways: [istio-system/gateway-external--https]
+    hosts: [docs.animeshon.dev]

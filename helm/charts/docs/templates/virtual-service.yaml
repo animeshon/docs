@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ include "docs.fullname" . }}-ui
+spec:
+  hosts:
+    {{ toYaml .Values.istio.ui.hosts | nindent 4 }}
+  gateways:
+    {{ toYaml .Values.istio.ui.gateways | nindent 4 }}
+  http:
+  - match:
+    - uri: { prefix: {{ .Values.istio.ui.uri }} }
+    route:
+    - destination:
+        port:
+          number: {{ .Values.service.port }}
+        host: {{ include "docs.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
