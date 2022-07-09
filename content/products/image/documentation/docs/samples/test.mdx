@@ -1,0 +1,47 @@
+---
+title: Test
+description: This is a test.
+---
+
+import CodeBlock from '@theme/CodeBlock';
+import TestGo from '!!raw-loader!./../../../samples/test/test.go';
+import TestTypescript from '!!raw-loader!./../../../samples/test/test.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {label: 'Node.js', value: 'nodejs'},
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {TestGo}
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {TestTypescript}
+    </CodeBlock>
+  </TabItem>
+</Tabs>
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {label: 'Node.js', value: 'nodejs'},
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {TestGo}
+    </CodeBlock>
+  </TabItem>
+  <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {TestTypescript}
+    </CodeBlock>
+  </TabItem>
+</Tabs>

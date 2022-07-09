@@ -9,7 +9,7 @@ description: Image API
 
 The Service name `image.animeapis.com` is needed to create RPC client stubs.
 
-## [Image](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image)
+## [animeshon.image.v1alpha1.Image](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image)
 
 | Method Name | Description |
 | ----------- | ------------|
@@ -26,7 +26,7 @@ The Service name `image.animeapis.com` is needed to create RPC client stubs.
 
 <a name="animeshon.image.v1alpha1.ImageRouter"></a>
 
-## [ImageRouter](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.ImageRouter)
+## [animeshon.image.v1alpha1.ImageRouter](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.ImageRouter)
 
 | Methods | Description |
 | ----------- | ------------|

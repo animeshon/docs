@@ -5,4 +5,4 @@ description: This is a test.
 
 # Image Service Level Agreement (SLA)
 
-Not yet provided.
+This product is currently in _alpha release_ and therefore is not covered by SLA.

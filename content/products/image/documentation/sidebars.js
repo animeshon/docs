@@ -43,6 +43,16 @@ module.exports = {
             'reference/rpc/animeshon.image.v1alpha1',
           ],
         },
+        {
+          type: 'category',
+          label: 'IAM reference',
+          collapsed: true,
+          items: [
+            'reference/iam',
+            'reference/iam/roles',
+            'reference/iam/permissions',
+          ],
+        },
       ],
     },
     {
@@ -60,6 +70,7 @@ module.exports = {
       collapsed: true,
       items: [
         'resources',
+        'pricing',
         'quotas',
         'release-notes',
         'issues',

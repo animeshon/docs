@@ -30,17 +30,6 @@ module.exports = {
         //         }
         //     },
         // ]
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // ! NOTE: currently OpenAPI 3.x is not well supported.
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // [
-        //     'docusaurus-plugin-openapi',
-        //     {
-        //       id: 'image-v1alpha1',
-        //       path: path.resolve(__dirname, 'v1alpha1/openapi.yaml'),
-        //       routeBasePath: 'image/docs/reference/rest/v1alpha1',
-        //     }
-        // ]
     ],
     staticDirectories: [path.resolve(__dirname, 'static')],
 };

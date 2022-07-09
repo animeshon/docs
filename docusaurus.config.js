@@ -63,7 +63,9 @@ module.exports = {
     //   videoPlaceholder: '/img/infographics/video-placeholder.png',
     // },
     prism: {
-      additionalLanguages: ['java', 'rust', 'solidity', 'toml'],
+      additionalLanguages: [],
+      theme: require('prism-react-renderer/themes/vsLight'),
+      darkTheme: require('prism-react-renderer/themes/vsDark'),
     },
     cards: [
       {
