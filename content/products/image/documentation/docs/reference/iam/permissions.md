@@ -1,6 +1,6 @@
 ---
 title: Permissions
-description: Image API
+description: Image IAM permissions.
 ---
 
 # Image IAM permissions

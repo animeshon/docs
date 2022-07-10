@@ -1,6 +1,6 @@
 ---
 title: Release notes
-description: This is a test.
+description: Details about updates to Image.
 ---
 
 # Image release notes
@@ -9,4 +9,4 @@ This page documents production updates to Image. You can periodically check this
 
 ## August 01, 2022
 
-FEATURE: Image (fully managed) Alpha release.
+FEATURE: Image Alpha release.

@@ -1,6 +1,6 @@
 ---
 title: Support
-description: This is a test.
+description: How to get additional help with Image.
 ---
 
 # Image support

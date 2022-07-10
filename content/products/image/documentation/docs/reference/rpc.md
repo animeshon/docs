@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Image API
+description: Image RPC API reference.
 ---
 
 # Image API

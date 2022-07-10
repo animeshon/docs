@@ -1,6 +1,6 @@
 ---
 title: All Image code samples
-description: Test
+description: All Image code samples.
 ---
 
 # All Image code samples

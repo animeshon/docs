@@ -1,6 +1,6 @@
 ---
 title: Roles
-description: Image API
+description: Image IAM roles.
 ---
 
 # Image IAM roles

@@ -1,6 +1,6 @@
 ---
 title: Service Level Agreement
-description: This is a test.
+description: The service level agreement (SLA) for Image.
 ---
 
 # Image Service Level Agreement (SLA)

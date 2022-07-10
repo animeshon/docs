@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Image API
+description: Image IAM reference.
 ---
 
 # IAM reference

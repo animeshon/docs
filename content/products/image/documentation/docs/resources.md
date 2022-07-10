@@ -1,6 +1,6 @@
 ---
 title: All resources
-description: Test
+description: All Image resources.
 ---
 
 # Resources

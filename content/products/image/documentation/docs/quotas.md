@@ -1,6 +1,6 @@
 ---
 title: Quotas and limits
-description: This is a test.
+description: Usage policies for your Image resources.
 ---
 
 # Image Quotas and Limits

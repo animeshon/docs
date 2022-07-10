@@ -1,6 +1,6 @@
 ---
 title: Known issues
-description: This is a test.
+description: Known issues and limitations for Image.
 ---
 
 # Known Issues for Image
