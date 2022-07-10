@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "Vision",
+    "ProductName": "vision",
+    "API": "vision.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}

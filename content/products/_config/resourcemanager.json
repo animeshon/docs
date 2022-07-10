@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "Resource Manager",
+    "ProductName": "resourcemanager",
+    "API": "resourcemanager.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}

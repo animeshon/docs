@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "Product",
+    "ProductName": "product",
+    "API": "product.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}

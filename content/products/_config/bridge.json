@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "Bridge",
+    "ProductName": "bridge",
+    "API": "bridge.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}

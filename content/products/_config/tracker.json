@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "Tracker",
+    "ProductName": "tracker",
+    "API": "tracker.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}

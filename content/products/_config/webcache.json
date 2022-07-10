@@ -1,0 +1,8 @@
+{
+  "Service": {
+    "Name": "WebCache",
+    "ProductName": "webcache",
+    "API": "webcache.animeapis.com",
+    "ReleaseDate": "August 01, 2022"
+  }
+}
