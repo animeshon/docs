@@ -5067,6 +5067,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bridge@workspace:content/products/bridge/documentation":
+  version: 0.0.0-use.local
+  resolution: "bridge@workspace:content/products/bridge/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "brorand@npm:^1.0.1, brorand@npm:^1.1.0":
   version: 1.1.0
   resolution: "brorand@npm:1.1.0"
@@ -6266,6 +6277,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"credentials@workspace:content/products/credentials/documentation":
+  version: 0.0.0-use.local
+  resolution: "credentials@workspace:content/products/credentials/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "cross-fetch@npm:^3.1.5":
   version: 3.1.5
   resolution: "cross-fetch@npm:3.1.5"
@@ -6285,6 +6307,17 @@ __metadata:
   checksum: 671cc7c7288c3a8406f3c69a3ae2fc85555c04169e9d611def9a675635472614f1c0ed0ef80955d5b6d4e724f6ced67f0ad1bb006c2ea643488fcfef994d7f52
   languageName: node
   linkType: hard
+
+"crossrefs@workspace:content/products/crossrefs/documentation":
+  version: 0.0.0-use.local
+  resolution: "crossrefs@workspace:content/products/crossrefs/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "crypto-browserify@npm:^3.11.0":
   version: 3.12.0
@@ -9237,6 +9270,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iam@workspace:content/products/iam/documentation":
+  version: 0.0.0-use.local
+  resolution: "iam@workspace:content/products/iam/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -9263,6 +9307,17 @@ __metadata:
   checksum: 5c324d283552b1269cfc13a503aaaa172a280f914e5b81544f3803bc6f06a3b585fb79f66f7c771a2c052db7982c18bf92d001e3b47282e3abbbb4c4cc488d68
   languageName: node
   linkType: hard
+
+"identity@workspace:content/products/identity/documentation":
+  version: 0.0.0-use.local
+  resolution: "identity@workspace:content/products/identity/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "ieee754@npm:^1.1.13, ieee754@npm:^1.1.4, ieee754@npm:^1.2.1":
   version: 1.2.1
@@ -10373,6 +10428,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"knowledge@workspace:content/products/knowledge/documentation":
+  version: 0.0.0-use.local
+  resolution: "knowledge@workspace:content/products/knowledge/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "latest-version@npm:^5.1.0":
   version: 5.1.0
   resolution: "latest-version@npm:5.1.0"
@@ -10404,6 +10470,17 @@ __metadata:
   resolution: "libraries-1e98c4@workspace:content/libraries"
   dependencies:
     require-glob: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
+"library@workspace:content/products/library/documentation":
+  version: 0.0.0-use.local
+  resolution: "library@workspace:content/products/library/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
   languageName: unknown
   linkType: soft
 
@@ -11601,6 +11678,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"multimedia@workspace:content/products/multimedia/documentation":
+  version: 0.0.0-use.local
+  resolution: "multimedia@workspace:content/products/multimedia/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "mustache@npm:^4.2.0":
   version: 4.2.0
   resolution: "mustache@npm:4.2.0"
@@ -12578,6 +12666,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"payment@workspace:content/products/payment/documentation":
+  version: 0.0.0-use.local
+  resolution: "payment@workspace:content/products/payment/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "pbkdf2@npm:^3.0.3":
   version: 3.1.2
   resolution: "pbkdf2@npm:3.1.2"
@@ -13241,6 +13340,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   checksum: bfcce49814f7d172a6e6a14d5fa3ac92cc3d0c3b9feb1279774708a719e19acd673995226351a082a9ae99978254e320ccda4240ddc474ba31a76c79491ca7c3
   languageName: node
   linkType: hard
+
+"product@workspace:content/products/product/documentation":
+  version: 0.0.0-use.local
+  resolution: "product@workspace:content/products/product/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "products-3cac24@workspace:content/products":
   version: 0.0.0-use.local
@@ -14217,6 +14327,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   languageName: node
   linkType: hard
 
+"release@workspace:content/products/release/documentation":
+  version: 0.0.0-use.local
+  resolution: "release@workspace:content/products/release/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "remark-admonitions@npm:^1.2.1":
   version: 1.2.1
   resolution: "remark-admonitions@npm:1.2.1"
@@ -14513,6 +14634,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   checksum: 4bf9f4f8a458607af90518ff73c67a4bc1a38b5a23fef2bb0ccbd45e8be89820a1639b637b0ba377eb2be9eedfb1739a84cde24fe4cd670c8207d8fea922b011
   languageName: node
   linkType: hard
+
+"resourcemanager@workspace:content/products/resourcemanager/documentation":
+  version: 0.0.0-use.local
+  resolution: "resourcemanager@workspace:content/products/resourcemanager/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "responselike@npm:^1.0.2":
   version: 1.0.2
@@ -16166,6 +16298,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   languageName: node
   linkType: hard
 
+"tracker@workspace:content/products/tracker/documentation":
+  version: 0.0.0-use.local
+  resolution: "tracker@workspace:content/products/tracker/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "trim-lines@npm:^3.0.0":
   version: 3.0.1
   resolution: "trim-lines@npm:3.0.1"
@@ -17032,6 +17175,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   languageName: node
   linkType: hard
 
+"vision@workspace:content/products/vision/documentation":
+  version: 0.0.0-use.local
+  resolution: "vision@workspace:content/products/vision/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
 "vm-browserify@npm:^1.0.1":
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
@@ -17114,6 +17268,17 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   checksum: 5149842ccbfbc56fe4f8758957b3f8c8616a281874a5bb84aa1b305e4436a9bad853d21c629a7b8f174902449e1489c7a6c724fccf60965077c5636bd8aed42b
   languageName: node
   linkType: hard
+
+"webcache@workspace:content/products/webcache/documentation":
+  version: 0.0.0-use.local
+  resolution: "webcache@workspace:content/products/webcache/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
@@ -17315,6 +17480,28 @@ plugin-image-zoom@flexanalytics/plugin-image-zoom:
   checksum: 214a734b1d4d391eb8271ed1b11085f0efe6831e93f641229b292abfd6fea871422dce121612511c17ae8047522be6d65c1a2666cabb396c79549816a3612338
   languageName: node
   linkType: hard
+
+"webpage@workspace:content/products/webpage/documentation":
+  version: 0.0.0-use.local
+  resolution: "webpage@workspace:content/products/webpage/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
+
+"websearch@workspace:content/products/websearch/documentation":
+  version: 0.0.0-use.local
+  resolution: "websearch@workspace:content/products/websearch/documentation"
+  dependencies:
+    "@iota-community/iota-wiki-cli": "iota-community/iota-wiki-cli#v2"
+    remark-code-import: ^0.3.0
+    remark-import-partial: ^0.0.2
+    remark-remove-comments: ^0.2.0
+  languageName: unknown
+  linkType: soft
 
 "websocket-driver@npm:>=0.5.1, websocket-driver@npm:^0.7.4":
   version: 0.7.4

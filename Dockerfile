@@ -36,7 +36,7 @@ COPY . .
 COPY --from=dependencies /workspace .
 
 ENV LIBRARIES go/documentation
-ENV PRODUCTS image/documentation
+ENV PRODUCTS bridge/documentation,credentials/documentation,crossrefs/documentation,iam/documentation,identity/documentation,image/documentation,knowledge/documentation,library/documentation,multimedia/documentation,payment/documentation,product/documentation,release/documentation,resourcemanager/documentation,tracker/documentation,vision/documentation,webcache/documentation,webpage/documentation,websearch/documentation
 
 RUN yarn build
 

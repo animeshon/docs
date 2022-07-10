@@ -1,0 +1,12 @@
+---
+title: Release notes
+description: Details about updates to Credentials.
+---
+
+# Credentials release notes
+
+This page documents production updates to Credentials. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
+
+## August 01, 2022
+
+FEATURE: Credentials service Alpha release.

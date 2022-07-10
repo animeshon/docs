@@ -10,7 +10,7 @@ declare -a products=(
   "crossrefs"
   "iam"
   "identity"
-  "image"
+  # "image"
   "knowledge"
   "library"
   "multimedia"
@@ -30,7 +30,7 @@ do
   gotemplate run \
     --import ./_config/${i}.json \
     --source ./_template \
-    --target ./${i}/documentation/docs \
+    --target ./${i}/documentation \
     --base \
     --overwrite \
     $(cd _template && find . -type f)

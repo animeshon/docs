@@ -9,4 +9,4 @@ This page documents production updates to {{ .Service.Name }}. You can periodica
 
 ## {{ .Service.ReleaseDate }}
 
-FEATURE: {{ .Service.Name }} Alpha release.
+FEATURE: {{ .Service.Name }} service Alpha release.
