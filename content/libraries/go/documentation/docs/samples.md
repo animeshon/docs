@@ -1,6 +1,6 @@
 ---
 title: Go samples
-description: Test
+description: TODO
 ---
 
 # Go samples

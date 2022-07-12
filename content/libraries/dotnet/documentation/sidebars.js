@@ -1,5 +1,5 @@
 module.exports = {
-  go: [
+  dotnet: [
     'index',
     {
       type: 'category',

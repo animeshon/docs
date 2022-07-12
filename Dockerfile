@@ -15,7 +15,12 @@ COPY content/build/package.json content/build/package.json
 # Libraries
 COPY content/libraries/package.json content/libraries/package.json
 
+COPY content/libraries/dotnet/documentation/package.json content/libraries/dotnet/documentation/package.json
 COPY content/libraries/go/documentation/package.json content/libraries/go/documentation/package.json
+COPY content/libraries/java/documentation/package.json content/libraries/java/documentation/package.json
+COPY content/libraries/nodejs/documentation/package.json content/libraries/nodejs/documentation/package.json
+COPY content/libraries/php/documentation/package.json content/libraries/php/documentation/package.json
+COPY content/libraries/python/documentation/package.json content/libraries/python/documentation/package.json
 
 # Products
 COPY content/products/package.json content/products/package.json
@@ -60,7 +65,7 @@ RUN apk add --no-cache git
 COPY . .
 COPY --from=dependencies /workspace .
 
-ENV LIBRARIES go/documentation
+ENV LIBRARIES dotnet/documentation,go/documentation,java/documentation,nodejs/documentation,php/documentation,python/documentation
 ENV PRODUCTS bridge/documentation,credentials/documentation,crossrefs/documentation,iam/documentation,identity/documentation,image/documentation,knowledge/documentation,library/documentation,multimedia/documentation,payment/documentation,product/documentation,release/documentation,resourcemanager/documentation,tracker/documentation,vision/documentation,webcache/documentation,webpage/documentation,websearch/documentation
 
 RUN yarn build

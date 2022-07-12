@@ -1,5 +1,5 @@
 module.exports = {
-  go: [
+  {{ .Service.ProductName }}: [
     'index',
     {
       type: 'category',

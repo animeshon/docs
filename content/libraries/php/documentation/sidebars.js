@@ -1,5 +1,5 @@
 module.exports = {
-  go: [
+  php: [
     'index',
     {
       type: 'category',

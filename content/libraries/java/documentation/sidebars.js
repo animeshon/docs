@@ -1,5 +1,5 @@
 module.exports = {
-  go: [
+  java: [
     'index',
     {
       type: 'category',
