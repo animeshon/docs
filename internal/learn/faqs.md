@@ -1,6 +1,6 @@
 ---
-title: Frequently Asked Questions (FAQs)
-description: TODO.
+title: Frequently Asked Questions
+description: TODO
 ---
 
-TODO.
+There are currently no FAQs.

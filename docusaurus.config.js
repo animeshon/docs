@@ -111,8 +111,8 @@ module.exports = {
           layout: [
             '0 1 2 3',
             '0 1 2 3',
-            '4 1 2 3',
-            '4 1 2 .',
+            '. 1 2 3',
+            '. 1 2 .',
           ],
           items_: [
             {
@@ -123,7 +123,7 @@ module.exports = {
                   sublabel: 'Animeshon development basics',
                   to: 'build/welcome',
                   icon: '\ue902',
-                  activeBaseRegex: '^/build/.*',
+                  activeBaseRegex: '^/build.*',
                 },
               ],
             },
@@ -195,18 +195,6 @@ module.exports = {
                   to: 'policies/quotas',
                   icon: '\ue909',
                   activeBaseRegex: '^/policies/quotas.*',
-                },
-              ],
-            },
-            {
-              label: 'Early-Access',
-              items: [
-                {
-                  label: 'Explore',
-                  sublabel: 'Discover experimental features and services',
-                  to: 'early-access/welcome',
-                  icon: '\ue90c',
-                  activeBaseRegex: '^/early-access/.*',
                 },
               ],
             },
@@ -441,9 +429,8 @@ module.exports = {
                 {
                   label: 'gRBAC',
                   sublabel: 'Graph Role-Based Access Control',
-                  to: 'grbac/docs',
+                  href: 'https://github.com/grbac/grbac',
                   icon: '\ue90a',
-                  activeBaseRegex: '^/grbac/.*',
                 },
               ],
             },
@@ -466,10 +453,10 @@ module.exports = {
               label: 'Libraries',
               to: 'libraries/welcome',
             },
-            {
-              label: 'Applications',
-              to: 'applications/welcome',
-            },
+            // {
+            //   label: 'Applications',
+            //   to: 'applications/welcome',
+            // },
             {
               label: 'Protocols',
               to: 'protocols/welcome',
@@ -671,6 +658,57 @@ module.exports = {
         path: 'internal/build',
         routeBasePath: 'build',
         sidebarPath: require.resolve('./internal/build/sidebars.ts'),
+
+        // General config
+        editUrl: 'https://github.com/animeshon/docs/edit/master/',
+        remarkPlugins: [
+          require('remark-code-import'),
+          require('remark-import-partial'),
+        ],
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'protocols',
+        path: 'internal/protocols',
+        routeBasePath: 'protocols',
+        sidebarPath: require.resolve('./internal/protocols/sidebars.ts'),
+
+        // General config
+        editUrl: 'https://github.com/animeshon/docs/edit/master/',
+        remarkPlugins: [
+          require('remark-code-import'),
+          require('remark-import-partial'),
+        ],
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'policies',
+        path: 'internal/policies',
+        routeBasePath: 'policies',
+        sidebarPath: require.resolve('./internal/policies/sidebars.ts'),
+
+        // General config
+        editUrl: 'https://github.com/animeshon/docs/edit/master/',
+        remarkPlugins: [
+          require('remark-code-import'),
+          require('remark-import-partial'),
+        ],
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'authentication',
+        path: 'internal/authentication',
+        routeBasePath: 'authentication',
+        sidebarPath: require.resolve('./internal/authentication/sidebars.ts'),
 
         // General config
         editUrl: 'https://github.com/animeshon/docs/edit/master/',

@@ -347,3 +347,11 @@ ul ul .table-of-contents__link {
 .theme-doc-sidebar-container {
   margin-right: 1rem;
 }
+
+/* Animeshon */
+.beta-superscript {
+  color: #ff5f5f;
+  position: relative;
+  top: -0.5em;
+  font-size: 60%
+}
