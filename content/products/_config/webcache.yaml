@@ -1,0 +1,8 @@
+name: WebCache
+domain: webcache
+api: webcache.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: WebCache service Alpha release.

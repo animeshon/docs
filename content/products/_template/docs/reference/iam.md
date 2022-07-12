@@ -1,9 +1,9 @@
 ---
 title: Overview
-description: {{ .Service.Name }} IAM reference.
+description: {{ .name }} IAM reference.
 ---
 
 # IAM reference
 
-- [IAM roles](/{{ .Service.ProductName }}/docs/reference/iam/roles)
-- [IAM permissions](/{{ .Service.ProductName }}/docs/reference/iam/permissions)
+- [IAM roles](/{{ .domain }}/docs/reference/iam/roles)
+- [IAM permissions](/{{ .domain }}/docs/reference/iam/permissions)

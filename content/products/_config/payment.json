@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "Payment",
-    "ProductName": "payment",
-    "API": "payment.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

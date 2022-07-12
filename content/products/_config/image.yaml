@@ -1,0 +1,130 @@
+name: Image
+domain: image
+api: image.animeapis.com
+
+permissionGroups:
+  - name: Albums
+    permissions:
+      - name: image.albums.get
+        description: View albums, excluding IAM policies.
+      - name: image.albums.list
+        description: List albums.
+      - name: image.albums.create
+        description: Create new albums.
+      - name: image.albums.update
+        description: Updated existing albums.
+      - name: image.albums.delete
+        description: Delete albums.
+      - name: image.albums.getSettings
+        description: View album settings.
+      - name: image.albums.updateSettings
+        description: Update album settings.
+      - name: image.albums.getIamPolicy
+        description: Get an IAM policy.
+      - name: image.albums.setIamPolicy
+        description: Set an IAM policy.
+  - name: Images
+    permissions:
+      - name: image.images.get
+        description: View images.
+      - name: image.images.list
+        description: List images.
+      - name: image.images.upload
+        description: Upload new images.
+      - name: image.images.import
+        description: Import remotely accessible images.
+      - name: image.images.delete
+        description: Delete images.
+
+quotas:
+  - resource: Image
+    description: Maximum image size, in MiB
+    limit: "12"
+    incrementabile: false
+    scope: per request
+  - resource: Image
+    description: Maximum image size, in pixels
+    limit: "3840 x 2160 (4K UHD)"
+    incrementabile: false
+    scope: per request
+
+roles:
+  - id: image.settingsAdmin
+    title: Image Settings Admin
+    description: Administrator of album settings.
+    permissions:
+      - image.albums.getSettings
+      - image.albums.updateSettings
+  - id: image.admin
+    title: Image Admin
+    description: Full access to albums and images.
+    permissions:
+      - image.images.get
+      - image.images.list
+      - image.images.upload
+      - image.images.import
+      - image.images.delete
+      - image.albums.get
+      - image.albums.list
+      - image.albums.create
+      - image.albums.update
+      - image.albums.delete
+      - image.albums.getIamPolicy
+      - image.albums.setIamPolicy
+  - id: image.editor
+    title: Image Editor
+    description: Edit access to albums and images.
+    permissions:
+      - image.images.get
+      - image.images.list
+      - image.images.upload
+      - image.images.import
+      - image.albums.get
+      - image.albums.list
+      - image.albums.create
+      - image.albums.update
+      - image.albums.getIamPolicy
+  - id: image.viewer
+    title: Image Viewer
+    description: View access to albums and images.
+    permissions:
+      - image.images.get
+      - image.images.list
+      - image.albums.get
+      - image.albums.list
+      - image.albums.getIamPolicy
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Image service Alpha release.
+
+rpcServices:
+  - package: animeshon.image.v1alpha1
+    name: Image
+    methods:
+      - name: UploadImage
+        description: Uploads an image through the request HttpBody.
+      - name: ImportImage
+        description: Imports an image from a remote web address.
+      - name: GetImage
+        description: Gets an image in binary representation with the format and size requested.
+      - name: GetAlbum
+        description: Gets an image album.
+      - name: ListAlbums
+        description: Lists image albums with pagination.
+      - name: CreateAlbum
+        description: Creates a new image album.
+      - name: DeleteAlbum
+        description: Deletes an existing image album.
+      - name: GetAlbumSettings
+        description: Gets the settings of an image album.
+      - name: UpdateAlbumSettings
+        description: Updates the settings of an image album.
+  - package: animeshon.image.v1alpha1
+    name: ImageRouter
+    methods:
+      - name: GetImageRoute
+        description: Gets the image public link address that is used to fetch images via CDN.
+      - name: RouteImage
+        description: Routes a raw request received by a CDN host to its target image.

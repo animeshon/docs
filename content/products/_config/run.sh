@@ -10,7 +10,7 @@ declare -a products=(
   "crossrefs"
   "iam"
   "identity"
-  # "image"
+  "image"
   "knowledge"
   "library"
   "multimedia"
@@ -28,7 +28,7 @@ declare -a products=(
 for i in "${products[@]}"
 do
   gotemplate run \
-    --import ./_config/${i}.json \
+    --import ./_config/${i}.yaml \
     --source ./_template \
     --target ./${i}/documentation \
     --base \

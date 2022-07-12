@@ -1,13 +1,13 @@
 ---
 title: All resources
-description: All {{ .Service.Name }} resources.
+description: All {{ .name }} resources.
 ---
 
 # Resources
 
-- [Pricing](/{{ .Service.ProductName }}/pricing)
-- [Quotas and Limits](/{{ .Service.ProductName }}/quotas)
-- [Release Notes for {{ .Service.Name }}](/{{ .Service.ProductName }}/release-notes)
-- [Known issues for {{ .Service.Name }}](/{{ .Service.ProductName }}/issues)
-- [Support](/{{ .Service.ProductName }}/support)
-- [Service Level Agreement](/{{ .Service.ProductName }}/sla)
+- [Pricing](/{{ .domain }}/pricing)
+- [Quotas and Limits](/{{ .domain }}/quotas)
+- [Release Notes for {{ .name }}](/{{ .domain }}/release-notes)
+- [Known issues for {{ .name }}](/{{ .domain }}/issues)
+- [Support](/{{ .domain }}/support)
+- [Service Level Agreement](/{{ .domain }}/sla)

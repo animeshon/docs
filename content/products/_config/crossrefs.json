@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "Cross-Reference",
-    "ProductName": "crossrefs",
-    "API": "crossrefs.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

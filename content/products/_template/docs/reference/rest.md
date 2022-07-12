@@ -1,8 +1,8 @@
 ---
 title: Overview
-description: {{ .Service.Name }} REST API reference.
+description: {{ .name }} REST API reference.
 ---
 
-# {{ .Service.Name }} API
+# {{ .name }} API
 
-## Service: {{ .Service.API }}
+## Service: {{ .api }}

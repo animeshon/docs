@@ -1,0 +1,8 @@
+name: Cross-Reference
+domain: crossrefs
+api: crossrefs.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Cross-Reference service Alpha release.

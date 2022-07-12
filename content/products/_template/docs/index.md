@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Overview for {{ .Service.Name }}.
+description: Overview for {{ .name }}.
 ---
 
-# {{ .Service.Name }} documentation
+# {{ .name }} documentation

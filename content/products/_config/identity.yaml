@@ -1,0 +1,8 @@
+name: Identity
+domain: identity
+api: identity.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Identity service Alpha release.

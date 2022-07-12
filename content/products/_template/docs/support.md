@@ -1,16 +1,16 @@
 ---
 title: Support
-description: How to get additional help with {{ .Service.Name }}.
+description: How to get additional help with {{ .name }}.
 ---
 
-# {{ .Service.Name }} support
+# {{ .name }} support
 
 ## Before you report issues
 
 Before you report issues, read and follow the suggestions on these pages:
 
-- [Known issues](/{{ .Service.ProductName }}/docs/issues)
-- [Troubleshooting for {{ .Service.Name }}](/{{ .Service.ProductName }}/docs/troubleshooting)
+- [Known issues](/{{ .domain }}/docs/issues)
+- [Troubleshooting for {{ .name }}](/{{ .domain }}/docs/troubleshooting)
 
 ## Get support from the community
 
@@ -18,7 +18,7 @@ You can ask a question on Stack Overflow and receive responses from the Stack Ov
 
 | Product | Stack Overflow tag |
 | --- | --- |
-| [{{ .Service.Name }}](https://stackoverflow.com/questions/tagged/animeshon-{{ .Service.ProductName }}) | animeshon-{{ .Service.ProductName }} |
+| [{{ .name }}](https://stackoverflow.com/questions/tagged/animeshon-{{ .domain }}) | animeshon-{{ .domain }} |
 
 ## Issue tracker
 

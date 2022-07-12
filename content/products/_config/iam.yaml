@@ -1,0 +1,8 @@
+name: Identity and Access Management
+domain: iam
+api: iam.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Identity and Access Management service Alpha release.

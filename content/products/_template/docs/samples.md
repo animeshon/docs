@@ -1,6 +1,6 @@
 ---
-title: All {{ .Service.Name }} code samples
-description: All {{ .Service.Name }} code samples.
+title: All {{ .name }} code samples
+description: All {{ .name }} code samples.
 ---
 
-# All {{ .Service.Name }} code samples
+# All {{ .name }} code samples

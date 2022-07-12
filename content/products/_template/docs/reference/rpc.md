@@ -1,10 +1,22 @@
 ---
 title: Overview
-description: {{ .Service.Name }} RPC API reference.
+description: {{ .name }} RPC API reference.
 ---
 
-# {{ .Service.Name }} API
+# {{ .name }} API
 
-## Service: {{ .Service.API }}
+## Service: {{ .api }}
 
-The Service name `{{ .Service.API }}` is needed to create RPC client stubs.
+The Service name `{{ .api }}` is needed to create RPC client stubs.
+{{- range $service := .rpcServices }}
+
+<a name="{{ $service.package }}.{{ $service.name }}"></a>
+
+## [{{ $service.package }}.{{ $service.name }}](/image/docs/reference/rpc/{{ $service.package }}#{{ $service.package }}.{{ $service.name }})
+
+| Methods | Description |
+| ----------- | ------------|
+{{- range $method := $service.methods }}
+| [{{ $method.name }}](/image/docs/reference/rpc/{{ $service.package }}#{{ $service.package }}.{{ $service.name }}.{{ $method.name }}) | {{ $method.description }} |
+{{- end }}
+{{- end }}

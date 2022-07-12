@@ -9,9 +9,11 @@ description: Image RPC API reference.
 
 The Service name `image.animeapis.com` is needed to create RPC client stubs.
 
+<a name="animeshon.image.v1alpha1.Image"></a>
+
 ## [animeshon.image.v1alpha1.Image](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image)
 
-| Method Name | Description |
+| Methods | Description |
 | ----------- | ------------|
 | [UploadImage](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image.UploadImage) | Uploads an image through the request HttpBody. |
 | [ImportImage](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image.ImportImage) | Imports an image from a remote web address. |
@@ -22,7 +24,6 @@ The Service name `image.animeapis.com` is needed to create RPC client stubs.
 | [DeleteAlbum](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image.DeleteAlbum) | Deletes an existing image album. |
 | [GetAlbumSettings](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image.GetAlbumSettings) | Gets the settings of an image album. |
 | [UpdateAlbumSettings](/image/docs/reference/rpc/animeshon.image.v1alpha1#animeshon.image.v1alpha1.Image.UpdateAlbumSettings) | Updates the settings of an image album. |
-
 
 <a name="animeshon.image.v1alpha1.ImageRouter"></a>
 

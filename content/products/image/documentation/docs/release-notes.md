@@ -9,4 +9,4 @@ This page documents production updates to Image. You can periodically check this
 
 ## August 01, 2022
 
-FEATURE: Image Alpha release.
+FEATURE: Image service Alpha release.

@@ -1,13 +1,18 @@
 ---
 title: Permissions
-description: {{ .Service.Name }} IAM permissions.
+description: {{ .name }} IAM permissions.
 ---
 
-# {{ .Service.Name }} IAM permissions
+# {{ .name }} IAM permissions
 
-The following tables list the Identity and Access Management (IAM) permissions that are associated with {{ .Service.Name }}.
+The following tables list the Identity and Access Management (IAM) permissions that are associated with {{ .name }}.
+{{- range $group := .permissionGroups }}
 
-## [RESOURCE NAME]
+## {{ $group.name }}
 
 | Permission | Description |
 | --- | --- |
+{{- range $i := $group.permissions }}
+| {{ $i.name }} | {{ $i.description }} |
+{{- end }}
+{{- end }}

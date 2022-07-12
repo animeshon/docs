@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "WebSearch",
-    "ProductName": "websearch",
-    "API": "websearch.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

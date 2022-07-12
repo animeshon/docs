@@ -1,0 +1,8 @@
+name: Release
+domain: release
+api: release.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Release service Alpha release.

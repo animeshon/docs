@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "Identity",
-    "ProductName": "identity",
-    "API": "identity.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

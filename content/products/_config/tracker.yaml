@@ -1,0 +1,8 @@
+name: Tracker
+domain: tracker
+api: tracker.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Tracker service Alpha release.

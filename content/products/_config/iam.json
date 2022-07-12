@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "Identity and Access Management",
-    "ProductName": "iam",
-    "API": "iam.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

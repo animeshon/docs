@@ -5,9 +5,9 @@ module.exports = {
         [
             '@docusaurus/plugin-content-docs',
             {
-                id: '{{ .Service.ProductName }}',
+                id: '{{ .domain }}',
                 path: path.resolve(__dirname, 'docs'),
-                routeBasePath: '{{ .Service.ProductName }}/docs',
+                routeBasePath: '{{ .domain }}/docs',
                 sidebarPath: path.resolve(__dirname, 'sidebars.js'),
                 editUrl: 'https://github.com/animeapis/animeapis/edit/master/documentation',
                 remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],

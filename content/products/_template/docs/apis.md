@@ -1,6 +1,6 @@
 ---
 title: APIs and references
-description: {{ .Service.Name }} APIs and references.
+description: {{ .name }} APIs and references.
 ---
 
 # APIs and references

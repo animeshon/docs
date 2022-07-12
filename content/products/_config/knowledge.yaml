@@ -1,0 +1,8 @@
+name: Knowledge
+domain: knowledge
+api: knowledge.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Knowledge service Alpha release.

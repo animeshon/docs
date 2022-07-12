@@ -1,6 +1,6 @@
 ---
 title: All quickstarts
-description: All {{ .Service.Name }} quickstarts.
+description: All {{ .name }} quickstarts.
 ---
 
 # Quickstarts

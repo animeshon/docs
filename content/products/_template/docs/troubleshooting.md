@@ -1,10 +1,10 @@
 ---
 title: Troubleshoot
-description: Troubleshooting for {{ .Service.Name }}.
+description: Troubleshooting for {{ .name }}.
 ---
 
-# Troubleshoot {{ .Service.Name }} issues
+# Troubleshoot {{ .name }} issues
 
-This page shows you how to resolve issues with {{ .Service.Name }}.
+This page shows you how to resolve issues with {{ .name }}.
 
 **There are currently no known issues.**

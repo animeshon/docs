@@ -1,11 +1,11 @@
 ---
 title: Known issues
-description: Known issues and limitations for {{ .Service.Name }}.
+description: Known issues and limitations for {{ .name }}.
 ---
 
-# Known Issues for {{ .Service.Name }}
+# Known Issues for {{ .name }}
 
-This page lists known issues for {{ .Service.Name }}.
+This page lists known issues for {{ .name }}.
 
 You can also check for existing issues or open new issues in the [public issue trackers](https://github.com/animeshon/issue-tracker).
 

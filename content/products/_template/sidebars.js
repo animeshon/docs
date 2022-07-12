@@ -1,5 +1,5 @@
 module.exports = {
-  {{ .Service.ProductName }}: [
+  {{ .domain }}: [
     'index',
     {
       type: 'category',

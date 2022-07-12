@@ -1,8 +1,0 @@
-{
-  "Service": {
-    "Name": "Knowledge",
-    "ProductName": "knowledge",
-    "API": "knowledge.animeapis.com",
-    "ReleaseDate": "August 01, 2022"
-  }
-}

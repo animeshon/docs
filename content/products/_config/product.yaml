@@ -1,0 +1,8 @@
+name: Product
+domain: product
+api: product.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Product service Alpha release.

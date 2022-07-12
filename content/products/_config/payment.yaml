@@ -1,0 +1,8 @@
+name: Payment
+domain: payment
+api: payment.animeapis.com
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: Payment service Alpha release.

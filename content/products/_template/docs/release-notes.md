@@ -1,12 +1,14 @@
 ---
 title: Release notes
-description: Details about updates to {{ .Service.Name }}.
+description: Details about updates to {{ .name }}.
 ---
 
-# {{ .Service.Name }} release notes
+# {{ .name }} release notes
 
-This page documents production updates to {{ .Service.Name }}. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
+This page documents production updates to {{ .name }}. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
+{{- range $i := .releases }}
 
-## {{ .Service.ReleaseDate }}
+## {{ $i.date }}
 
-FEATURE: {{ .Service.Name }} service Alpha release.
+{{ $i.changelog }}
+{{- end }}
