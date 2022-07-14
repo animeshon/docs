@@ -6,3 +6,28 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: WebCache service Alpha release.
+
+rpc:
+  remote:
+    prefix: webcache
+    documents:
+      - animeshon.webcache.v1alpha1.md
+  services:
+    - package: animeshon.webcache.v1alpha1
+      name: WebCache
+      methods:
+        - name: CreateCache
+          description:
+        - name: ListCaches
+          description:
+        - name: GetCache
+          description: See https://google.aip.dev/162#referencing-revisions for more information.
+        - name: DeleteCache
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.webcache.v1alpha1
+  samples: []

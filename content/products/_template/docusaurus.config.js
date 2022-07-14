@@ -1,5 +1,15 @@
 const path = require('path');
 
+const modifyContent = (filename, content) => {
+    return {
+        content: `---
+title: ${path.parse(filename).name}
+---
+
+${content}`
+    }
+};
+
 module.exports = {
     plugins: [
         [
@@ -13,6 +23,18 @@ module.exports = {
                 remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],
             }
         ],
+        {{- if .rpc.remote }}
+        [
+            "docusaurus-plugin-remote-content",
+            {
+                name: "{{ .domain }}-reference-rpc",
+                sourceBaseUrl: "https://raw.githubusercontent.com/animeapis/reference-markdown/master/rpc/animeshon/{{ .rpc.remote.prefix }}/",
+                outDir: "content/products/{{ .domain }}/documentation/docs/reference/rpc",
+                documents: {{ toJson .rpc.remote.documents }},
+                modifyContent,
+            },
+        ],
+        {{- end }}
     ],
     staticDirectories: [path.resolve(__dirname, 'static')],
 };

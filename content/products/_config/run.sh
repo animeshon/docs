@@ -32,6 +32,7 @@ do
     --source ./_template \
     --target ./${i}/documentation \
     --base \
+    --sprig \
     --overwrite \
     $(cd _template && find . -type f)
 done

@@ -1,5 +1,3 @@
-// const openapi = require('./docs/reference/rest/v1alpha1/sidebar.js')
-
 module.exports = {
   image: [
     'index',
@@ -10,6 +8,7 @@ module.exports = {
       items: [
         'quickstarts',
         'quickstarts/test',
+        'troubleshooting',
       ],
     },
     {
@@ -24,14 +23,6 @@ module.exports = {
           collapsed: true,
           items: [
             'reference/rest',
-            // {
-            //   type: 'category',
-            //   label: 'v1alpha1',
-            //   collapsed: true,
-            //   items: [
-            //     ...openapi,
-            //   ],
-            // },
           ],
         },
         {

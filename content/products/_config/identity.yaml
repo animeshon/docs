@@ -6,3 +6,52 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Identity service Alpha release.
+
+rpc:
+  remote:
+    prefix: identity
+    documents:
+      - animeshon.identity.v1alpha1.md
+  services:
+  - package: animeshon.identity.v1alpha1
+    name: Identity
+    methods:
+      - name: GetUserProfile
+        description: 
+      - name: GetUser
+        description: 
+      - name: ListUsers
+        description: 
+      - name: CreateUser
+        description: 
+      - name: UpdateUser
+        description: 
+      - name: DeleteUser
+        description: 
+      - name: GetUserSettings
+        description: 
+      - name: UpdateUserSettings
+        description: 
+      - name: GetUserNotifications
+        description: 
+      - name: UpdateUserNotifications
+        description: 
+      - name: GetUserDefaults
+        description: 
+      - name: GetGroup
+        description: 
+      - name: ListGroups
+        description: 
+      - name: CreateGroup
+        description: 
+      - name: UpdateGroup
+        description: 
+      - name: DeleteGroup
+        description: 
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.identity.v1alpha1
+  samples: []

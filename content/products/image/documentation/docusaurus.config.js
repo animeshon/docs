@@ -1,5 +1,15 @@
 const path = require('path');
 
+const modifyContent = (filename, content) => {
+    return {
+        content: `---
+title: ${path.parse(filename).name}
+---
+
+${content}`
+    }
+};
+
 module.exports = {
     plugins: [
         [
@@ -13,23 +23,16 @@ module.exports = {
                 remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],
             }
         ],
-
-        // [
-        //     'docusaurus-plugin-openapi-docs',
-        //     {
-        //         id: "image-openapi-v1alpha1",
-        //         docsPluginId: "classic",
-        //         config: {
-        //             image: {
-        //                 specPath: "https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/image/v1alpha1/openapi.yaml",
-        //                 outputDir: "docs/reference/rest/v1alpha1",
-        //                 sidebarOptions: {
-        //                     groupPathsBy: "tag",
-        //                 },
-        //             }
-        //         }
-        //     },
-        // ]
+        [
+            "docusaurus-plugin-remote-content",
+            {
+                name: "image-reference-rpc",
+                sourceBaseUrl: "https://raw.githubusercontent.com/animeapis/reference-markdown/master/rpc/animeshon/image/",
+                outDir: "content/products/image/documentation/docs/reference/rpc",
+                documents: ["animeshon.image.v1alpha1.md"],
+                modifyContent,
+            },
+        ],
     ],
     staticDirectories: [path.resolve(__dirname, 'static')],
 };

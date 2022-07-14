@@ -6,3 +6,30 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Product service Alpha release.
+
+rpc:
+  remote:
+    prefix: product
+    documents:
+      - animeshon.product.v1alpha1.md
+  services:
+    - package: animeshon.product.v1alpha1
+      name: ChapterService
+      methods:
+        - name: GetChapter
+          description:
+        - name: ListChapters
+          description:
+        - name: CreateChapter
+          description:
+        - name: UpdateChapter
+          description:
+        - name: DeleteChapter
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.product.v1alpha1
+  samples: []

@@ -2,7 +2,7 @@ name: Resource Manager
 domain: resourcemanager
 api: resourcemanager.animeapis.com
 
-releases:
-  - date: August 01, 2022
-    changelog: |
-      FEATURE: Resource Manager service Alpha release.
+# releases:
+#   - date: August 01, 2022
+#     changelog: |
+#       FEATURE: Resource Manager service Alpha release.

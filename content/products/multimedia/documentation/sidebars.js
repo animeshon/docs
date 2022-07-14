@@ -30,6 +30,7 @@ module.exports = {
           collapsed: true,
           items: [
             'reference/rpc',
+            'reference/rpc/animeshon.multimedia.v1alpha1',
           ],
         },
         {

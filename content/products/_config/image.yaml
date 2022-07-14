@@ -99,32 +99,46 @@ releases:
     changelog: |
       FEATURE: Image service Alpha release.
 
-rpcServices:
-  - package: animeshon.image.v1alpha1
-    name: Image
-    methods:
-      - name: UploadImage
-        description: Uploads an image through the request HttpBody.
-      - name: ImportImage
-        description: Imports an image from a remote web address.
-      - name: GetImage
-        description: Gets an image in binary representation with the format and size requested.
-      - name: GetAlbum
-        description: Gets an image album.
-      - name: ListAlbums
-        description: Lists image albums with pagination.
-      - name: CreateAlbum
-        description: Creates a new image album.
-      - name: DeleteAlbum
-        description: Deletes an existing image album.
-      - name: GetAlbumSettings
-        description: Gets the settings of an image album.
-      - name: UpdateAlbumSettings
-        description: Updates the settings of an image album.
-  - package: animeshon.image.v1alpha1
-    name: ImageRouter
-    methods:
-      - name: GetImageRoute
-        description: Gets the image public link address that is used to fetch images via CDN.
-      - name: RouteImage
-        description: Routes a raw request received by a CDN host to its target image.
+rpc:
+  remote:
+    prefix: image
+    documents:
+      - animeshon.image.v1alpha1.md
+  services:
+    - package: animeshon.image.v1alpha1
+      name: Image
+      methods:
+        - name: UploadImage
+          description: Uploads an image through the request HttpBody.
+        - name: ImportImage
+          description: Imports an image from a remote web address.
+        - name: GetImage
+          description: Gets an image in binary representation with the format and size requested.
+        - name: GetAlbum
+          description: Gets an image album.
+        - name: ListAlbums
+          description: Lists image albums with pagination.
+        - name: CreateAlbum
+          description: Creates a new image album.
+        - name: DeleteAlbum
+          description: Deletes an existing image album.
+        - name: GetAlbumSettings
+          description: Gets the settings of an image album.
+        - name: UpdateAlbumSettings
+          description: Updates the settings of an image album.
+    - package: animeshon.image.v1alpha1
+      name: ImageRouter
+      methods:
+        - name: GetImageRoute
+          description: Gets the image public link address that is used to fetch images via CDN.
+        - name: RouteImage
+          description: Routes a raw request received by a CDN host to its target image.
+
+toc:
+  guides:
+    - path: quickstarts/test
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.image.v1alpha1
+  samples:
+    - path: samples/test

@@ -6,3 +6,39 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Library service Alpha release.
+
+rpc:
+  remote:
+    prefix: library
+    documents:
+      - animeshon.library.v1alpha1.md
+  services:
+    - package: animeshon.library.v1alpha1
+      name: Library
+      methods:
+        - name: GetPlaylist
+          description:
+        - name: ListPlaylists
+          description:
+        - name: CreatePlaylist
+          description:
+        - name: UpdatePlaylist
+          description:
+        - name: DeletePlaylist
+          description:
+        - name: ListPlaylistItems
+          description:
+        - name: CreatePlaylistItem
+          description:
+        - name: BatchCreatePlaylistItems
+          description:
+        - name: DeletePlaylistItem
+          description:
+scription: 
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.library.v1alpha1
+  samples: []

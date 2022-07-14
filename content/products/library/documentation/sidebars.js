@@ -30,6 +30,7 @@ module.exports = {
           collapsed: true,
           items: [
             'reference/rpc',
+            'reference/rpc/animeshon.library.v1alpha1',
           ],
         },
         {

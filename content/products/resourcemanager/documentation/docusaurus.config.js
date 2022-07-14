@@ -1,5 +1,15 @@
 const path = require('path');
 
+const modifyContent = (filename, content) => {
+    return {
+        content: `---
+title: ${path.parse(filename).name}
+---
+
+${content}`
+    }
+};
+
 module.exports = {
     plugins: [
         [

@@ -6,3 +6,38 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Vision service Alpha release.
+
+rpc:
+  remote:
+    prefix: vision
+    documents:
+      - animeshon.vision.v1alpha1.md
+  services:
+    - package: animeshon.vision.v1alpha1
+      name: ImageAnnotator
+      methods:
+        - name: AnalyzeImage
+          description:
+        - name: ListImageAnalyses
+          description:
+        - name: GetImageAnalysis
+          description: 'Note: to fetch the latest available report use "latest" as report id.'
+        - name: DeleteImageAnalysis
+          description:
+        - name: CreateImageAnnotation
+          description:
+        - name: ListImageAnnotations
+          description:
+        - name: GetImageAnnotation
+          description:
+        - name: UpdateImageAnnotation
+          description:
+        - name: DeleteImageAnnotation
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.vision.v1alpha1
+  samples: []

@@ -7,6 +7,9 @@ module.exports = {
       collapsed: true,
       items: [
         'quickstarts',
+{{- range $i := .toc.guides }}
+        '{{ $i.path }}',
+{{- end }}
         'troubleshooting',
       ],
     },
@@ -30,6 +33,9 @@ module.exports = {
           collapsed: true,
           items: [
             'reference/rpc',
+{{- range $i := .toc.reference.rpc }}
+            '{{ $i.path }}',
+{{- end }}
           ],
         },
         {
@@ -50,6 +56,9 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+{{- range $i := .toc.samples }}
+        '{{ $i.path }}',
+{{- end }}
       ],
     },
     {

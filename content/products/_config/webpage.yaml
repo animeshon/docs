@@ -2,7 +2,7 @@ name: WebPage
 domain: webpage
 api: webpage.animeapis.com
 
-releases:
-  - date: August 01, 2022
-    changelog: |
-      FEATURE: WebPage service Alpha release.
+# releases:
+#   - date: August 01, 2022
+#     changelog: |
+#       FEATURE: WebPage service Alpha release.

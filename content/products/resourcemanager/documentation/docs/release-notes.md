@@ -6,7 +6,3 @@ description: Details about updates to Resource Manager.
 # Resource Manager release notes
 
 This page documents production updates to Resource Manager. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
-
-## August 01, 2022
-
-FEATURE: Resource Manager service Alpha release.

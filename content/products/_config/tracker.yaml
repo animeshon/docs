@@ -6,3 +6,38 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Tracker service Alpha release.
+
+rpc:
+  remote:
+    prefix: tracker
+    documents:
+      - animeshon.tracker.v1alpha1.md
+  services:
+    - package: animeshon.tracker.v1alpha1
+      name: TrackerService
+      methods:
+        - name: GetTracker
+          description: 'Get a tracker by its unique identifier. To fetch a tracker by the resource, use `ListTrackers` instead with an appropriate filter. Example: `filter = "resource:animes/1245678"`.'
+        - name: ListTrackers
+          description: "TODO: add documentation about supported filters."
+        - name: CreateTracker
+          description:
+        - name: UpdateTracker
+          description:
+        - name: DeleteTracker
+          description:
+        - name: ImportTrackers
+          description:
+        - name: ExportTrackers
+          description:
+        - name: CreateActivity
+          description:
+        - name: DeleteActivity
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.tracker.v1alpha1
+  samples: []

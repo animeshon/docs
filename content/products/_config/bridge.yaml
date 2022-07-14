@@ -2,7 +2,7 @@ name: Bridge
 domain: bridge
 api: bridge.animeapis.com
 
-releases:
-  - date: August 01, 2022
-    changelog: |
-      FEATURE: Bridge service Alpha release.
+# releases:
+#   - date: August 01, 2022
+#     changelog: |
+#       FEATURE: Bridge service Alpha release.

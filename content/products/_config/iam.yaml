@@ -6,3 +6,50 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Identity and Access Management service Alpha release.
+
+rpc:
+  remote:
+    prefix: iam/admin
+    documents:
+      - animeshon.iam.admin.v1alpha1.md
+  services:
+    - package: animeshon.iam.admin.v1alpha1
+      name: IAM
+      methods:
+        - name: GetServiceAccount
+          description:
+        - name: ListServiceAccounts
+          description:
+        - name: CreateServiceAccount
+          description:
+        - name: UpdateServiceAccount
+          description:
+        - name: DeleteServiceAccount
+          description:
+        - name: GetRole
+          description:
+        - name: ListRoles
+          description:
+        - name: CreateRole
+          description:
+        - name: UpdateRole
+          description:
+        - name: DeleteRole
+          description:
+        - name: GetPermission
+          description:
+        - name: ListPermissions
+          description:
+        - name: CreatePermission
+          description:
+        - name: UpdatePermission
+          description:
+        - name: DeletePermission
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.iam.admin.v1alpha1
+  samples: []

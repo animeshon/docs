@@ -6,3 +6,111 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Multimedia service Alpha release.
+
+rpc:
+  remote:
+    prefix: multimedia
+    documents:
+      - animeshon.multimedia.v1alpha1.md
+  services:
+    - package: animeshon.multimedia.v1alpha1
+      name: AnimeService
+      methods:
+        - name: GetAnime
+          description:
+        - name: ListAnimes
+          description:
+        - name: CreateAnime
+          description:
+        - name: UpdateAnime
+          description:
+        - name: DeleteAnime
+          description:
+        - name: ReconcileAnimes
+          description: Reconcile animes with the search and knowledge base.
+    - package: animeshon.multimedia.v1alpha1
+      name: ChapterService
+      methods:
+        - name: GetChapter
+          description:
+        - name: ListChapters
+          description:
+        - name: CreateChapter
+          description:
+        - name: BatchCreateChapters
+          description:
+        - name: UpdateChapter
+          description:
+        - name: DeleteChapter
+          description:
+        - name: ReconcileChapters
+          description: Reconcile chapters with the search and knowledge base.
+    - package: animeshon.multimedia.v1alpha1
+      name: EpisodeService
+      methods:
+        - name: GetEpisode
+          description:
+        - name: ListEpisodes
+          description:
+        - name: CreateEpisode
+          description:
+        - name: BatchCreateEpisodes
+          description:
+        - name: UpdateEpisode
+          description:
+        - name: DeleteEpisode
+          description:
+        - name: ReconcileEpisodes
+          description: Reconcile episodes with the search and knowledge base.
+    - package: animeshon.multimedia.v1alpha1
+      name: GraphicNovelService
+      methods:
+        - name: GetGraphicNovel
+          description:
+        - name: ListGraphicNovels
+          description:
+        - name: CreateGraphicNovel
+          description:
+        - name: UpdateGraphicNovel
+          description:
+        - name: DeleteGraphicNovel
+          description:
+        - name: ReconcileGraphicNovels
+          description: Reconcile graphic novels with the search and knowledge base.
+    - package: animeshon.multimedia.v1alpha1
+      name: VisualNovelService
+      methods:
+        - name: GetVisualNovel
+          description:
+        - name: ListVisualNovels
+          description:
+        - name: CreateVisualNovel
+          description:
+        - name: UpdateVisualNovel
+          description:
+        - name: DeleteVisualNovel
+          description:
+        - name: ReconcileVisualNovels
+          description: Reconcile visual novels with the search and knowledge base.
+    - package: animeshon.multimedia.v1alpha1
+      name: LightNovelService
+      methods:
+        - name: GetLightNovel
+          description:
+        - name: ListLightNovels
+          description:
+        - name: CreateLightNovel
+          description:
+        - name: UpdateLightNovel
+          description:
+        - name: DeleteLightNovel
+          description:
+        - name: ReconcileLightNovels
+          description: Reconcile light novels with the search and knowledge base.
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.multimedia.v1alpha1
+  samples: []
