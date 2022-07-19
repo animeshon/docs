@@ -21,6 +21,10 @@ module.exports = {
                 sidebarPath: path.resolve(__dirname, 'sidebars.js'),
                 editUrl: 'https://github.com/animeapis/animeapis/edit/master/documentation',
                 remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],
+                {{- if .rest.versions }}
+                docLayoutComponent: "@theme/DocPage",
+                docItemComponent: "@theme/ApiItem",
+                {{- end }}
             }
         ],
         {{- if .rpc.remote }}
@@ -32,6 +36,25 @@ module.exports = {
                 outDir: "content/products/{{ .domain }}/documentation/docs/reference/rpc",
                 documents: {{ toJson .rpc.remote.documents }},
                 modifyContent,
+            },
+        ],
+        {{- end }}
+        {{- range $i := .rest.versions }}
+        [
+            'docusaurus-plugin-openapi-docs',
+            {
+                id: "{{ $.domain }}-reference-rest",
+                docsPluginId: "classic",
+                config: {
+                    {{ $.domain }}: {
+                        specPath: "{{ $i.path }}",
+                        outputDir: "content/products/{{ $.domain }}/documentation/docs/reference/rest/{{ $i.version }}",
+                        sidebarOptions: {
+                            groupPathsBy: "tag",
+                            sidebarCollapsible: false,
+                        },
+                    }
+                }
             },
         ],
         {{- end }}

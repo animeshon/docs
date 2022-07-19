@@ -33,3 +33,8 @@ toc:
     rpc:
       - path: reference/rpc/animeshon.product.v1alpha1
   samples: []
+
+rest:
+  versions:
+    - version: v1alpha1
+      path: https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/product/v1alpha1/openapi.yaml

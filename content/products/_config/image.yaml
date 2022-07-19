@@ -142,3 +142,8 @@ toc:
       - path: reference/rpc/animeshon.image.v1alpha1
   samples:
     - path: samples/test
+
+rest:
+  versions:
+    - version: v1alpha1
+      path: https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/image/v1alpha1/openapi.yaml

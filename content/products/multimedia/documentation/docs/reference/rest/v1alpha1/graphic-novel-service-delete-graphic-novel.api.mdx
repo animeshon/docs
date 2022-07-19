@@ -1,0 +1,35 @@
+---
+id: graphic-novel-service-delete-graphic-novel
+sidebar_label: GraphicNovelService_DeleteGraphicNovel
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["GraphicNovelService"],"operationId":"GraphicNovelService_DeleteGraphicNovel","parameters":[{"name":"graphicNovel","in":"path","description":"The graphicNovel id.","required":true,"schema":{"type":"string"}}],"responses":{"200":{"description":"OK","content":{}},"default":{"description":"Default error response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"integer","description":"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].","format":"int32"},"message":{"type":"string","description":"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."},"details":{"type":"array","items":{"type":"object","properties":{"@type":{"type":"string","description":"The type of the serialized message."}},"additionalProperties":true,"description":"Contains an arbitrary serialized message along with a @type that describes the type of the serialized message."},"description":"A list of messages that carry the error details.  There is a common set of message types for APIs to use."}},"description":"The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors)."}}}}},"description":"GraphicNovelService_DeleteGraphicNovel","method":"delete","path":"/v1alpha1/graphicNovels/{graphicNovel}","servers":[{"url":"https://multimedia.animeapis.com"}],"info":{"title":"animeshon.multimedia","version":"v1alpha1"},"postman":{"name":"Graphic Novel Service Delete Graphic Novel","description":{"type":"text/plain"},"url":{"path":["v1alpha1","graphicNovels",":graphicNovel"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) The graphicNovel id.","type":"text/plain"},"type":"any","value":"","key":"graphicNovel"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"DELETE"}}
+sidebar_class_name: "delete api-method"
+info_path: content/products/multimedia/documentation/docs/reference/rest/v1alpha1/animeshon-multimedia
+---
+
+import ParamsItem from "@theme/ParamsItem";
+import SchemaItem from "@theme/SchemaItem"
+import ApiTabs from "@theme/ApiTabs";
+import TabItem from "@theme/TabItem";
+
+## GraphicNovelService_DeleteGraphicNovel
+
+
+
+GraphicNovelService_DeleteGraphicNovel
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"graphicNovel","in":"path","description":"The graphicNovel id.","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Default error response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={false} schemaDescription={"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code]."} schemaName={"int32"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={false} schemaDescription={"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}}><summary style={{}}><strong>details</strong><span style={{"opacity":"0.6"}}> object[]</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+A list of messages that carry the error details.  There is a common set of message types for APIs to use.
+
+</div><ul><SchemaItem collapsible={false} name={"@type"} required={false} schemaDescription={"The type of the serialized message."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></div></details></SchemaItem></ul></details></div></TabItem></ApiTabs></div>
+      

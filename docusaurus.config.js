@@ -732,7 +732,7 @@ module.exports = {
     ...tutorials.staticDirectories,
   ],
   themes: [
-    // 'docusaurus-theme-openapi-docs',
+    'docusaurus-theme-openapi-docs',
   ],
 };
 

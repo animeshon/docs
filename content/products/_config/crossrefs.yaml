@@ -6,3 +6,15 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Cross-Reference service Alpha release.
+
+# toc:
+#   guides: []
+#   reference:
+#     rpc:
+#       - path: reference/rpc/animeshon.crossrefs.v1alpha1
+#   samples: []
+
+rest:
+  versions:
+    - version: v1alpha1
+      path: https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/crossrefs/v1alpha1/openapi.yaml

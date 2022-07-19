@@ -21,6 +21,8 @@ module.exports = {
                 sidebarPath: path.resolve(__dirname, 'sidebars.js'),
                 editUrl: 'https://github.com/animeapis/animeapis/edit/master/documentation',
                 remarkPlugins: [require('remark-code-import'), require('remark-import-partial'), require('remark-remove-comments')],
+                docLayoutComponent: "@theme/DocPage",
+                docItemComponent: "@theme/ApiItem",
             }
         ],
         [
@@ -31,6 +33,23 @@ module.exports = {
                 outDir: "content/products/tracker/documentation/docs/reference/rpc",
                 documents: ["animeshon.tracker.v1alpha1.md"],
                 modifyContent,
+            },
+        ],
+        [
+            'docusaurus-plugin-openapi-docs',
+            {
+                id: "tracker-reference-rest",
+                docsPluginId: "classic",
+                config: {
+                    tracker: {
+                        specPath: "https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/tracker/v1alpha1/openapi.yaml",
+                        outputDir: "content/products/tracker/documentation/docs/reference/rest/v1alpha1",
+                        sidebarOptions: {
+                            groupPathsBy: "tag",
+                            sidebarCollapsible: false,
+                        },
+                    }
+                }
             },
         ],
     ],

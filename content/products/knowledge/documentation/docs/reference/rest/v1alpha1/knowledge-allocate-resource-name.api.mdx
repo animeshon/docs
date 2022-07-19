@@ -1,0 +1,36 @@
+---
+id: knowledge-allocate-resource-name
+sidebar_label: Knowledge_AllocateResourceName
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Knowledge"],"description":"AllocateResourceName reserves a new resource name for entities which are not already part of\n Animeshon's Encyclopedia","operationId":"Knowledge_AllocateResourceName","parameters":[{"name":"kind","in":"query","description":"The resource kind of the resource to migrate.","schema":{"type":"string"}}],"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{"name":{"readOnly":true,"type":"string","description":"The resource name of the resource to migrate."}}}}}},"default":{"description":"Default error response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"integer","description":"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].","format":"int32"},"message":{"type":"string","description":"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."},"details":{"type":"array","items":{"type":"object","properties":{"@type":{"type":"string","description":"The type of the serialized message."}},"additionalProperties":true,"description":"Contains an arbitrary serialized message along with a @type that describes the type of the serialized message."},"description":"A list of messages that carry the error details.  There is a common set of message types for APIs to use."}},"description":"The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors)."}}}}},"method":"get","path":"/v1alpha1/contributions:allocateResourceName","servers":[{"url":"https://knowledge.animeapis.com"}],"info":{"title":"animeshon.knowledge","version":"v1alpha1"}}
+sidebar_class_name: "get api-method"
+info_path: content/products/knowledge/documentation/docs/reference/rest/v1alpha1/animeshon-knowledge
+---
+
+import ParamsItem from "@theme/ParamsItem";
+import SchemaItem from "@theme/SchemaItem"
+import ApiTabs from "@theme/ApiTabs";
+import TabItem from "@theme/TabItem";
+
+## Knowledge_AllocateResourceName
+
+
+
+AllocateResourceName reserves a new resource name for entities which are not already part of
+ Animeshon&#39;s Encyclopedia
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"kind","in":"query","description":"The resource kind of the resource to migrate.","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={false} schemaDescription={"The resource name of the resource to migrate."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Default error response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={false} schemaDescription={"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code]."} schemaName={"int32"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={false} schemaDescription={"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}}><summary style={{}}><strong>details</strong><span style={{"opacity":"0.6"}}> object[]</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+A list of messages that carry the error details.  There is a common set of message types for APIs to use.
+
+</div><ul><SchemaItem collapsible={false} name={"@type"} required={false} schemaDescription={"The type of the serialized message."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></div></details></SchemaItem></ul></details></div></TabItem></ApiTabs></div>
+      

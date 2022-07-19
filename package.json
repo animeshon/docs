@@ -14,7 +14,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint": "eslint --cache --fix src",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "generate:openapi": "yarn docusaurus gen-api-docs all"
   },
   "dependencies": {
     "@algolia/client-search": "^4.9.1",

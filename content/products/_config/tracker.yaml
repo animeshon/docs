@@ -41,3 +41,8 @@ toc:
     rpc:
       - path: reference/rpc/animeshon.tracker.v1alpha1
   samples: []
+
+rest:
+  versions:
+    - version: v1alpha1
+      path: https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/tracker/v1alpha1/openapi.yaml
