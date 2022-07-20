@@ -6,38 +6,40 @@ releases:
   - date: August 01, 2022
     changelog: |
       FEATURE: Knowledge service Alpha release.
-rpc:
-  remote:
-    prefix: knowledge
-    documents:
-      - animeshon.knowledge.v1alpha1.md
-  services:
-    - package: animeshon.knowledge.v1alpha1
-      name: Knowledge
-      methods:
-        - name: GetContribution
-          description:
-        - name: ListContributions
-          description:
-        - name: CreateContribution
-          description:
-        - name: GetContributionChanges
-          description:
-        - name: ReviewContribution
-          description:
-        - name: ApproveContribution
-          description:
-        - name: RejectContribution
-          description:
-        - name: AllocateResourceName
-          description:
 
-toc:
-  guides: []
-  reference:
-    rpc:
-      - path: reference/rpc/animeshon.knowledge.v1alpha1
-  samples: []
+# TODO: fix issue with unescaped HTML tags.
+# rpc:
+#   remote:
+#     prefix: knowledge
+#     documents:
+#       - animeshon.knowledge.v1alpha1.md
+#   services:
+#     - package: animeshon.knowledge.v1alpha1
+#       name: Knowledge
+#       methods:
+#         - name: GetContribution
+#           description:
+#         - name: ListContributions
+#           description:
+#         - name: CreateContribution
+#           description:
+#         - name: GetContributionChanges
+#           description:
+#         - name: ReviewContribution
+#           description:
+#         - name: ApproveContribution
+#           description:
+#         - name: RejectContribution
+#           description:
+#         - name: AllocateResourceName
+#           description:
+
+# toc:
+#   guides: []
+#   reference:
+#     rpc:
+#       - path: reference/rpc/animeshon.knowledge.v1alpha1
+#   samples: []
 
 rest:
   versions:

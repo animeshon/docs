@@ -26,16 +26,6 @@ module.exports = {
             }
         ],
         [
-            "docusaurus-plugin-remote-content",
-            {
-                name: "knowledge-reference-rpc",
-                sourceBaseUrl: "https://raw.githubusercontent.com/animeapis/reference-markdown/master/rpc/animeshon/knowledge/",
-                outDir: "content/products/knowledge/documentation/docs/reference/rpc",
-                documents: ["animeshon.knowledge.v1alpha1.md"],
-                modifyContent,
-            },
-        ],
-        [
             'docusaurus-plugin-openapi-docs',
             {
                 id: "knowledge-reference-rest",
