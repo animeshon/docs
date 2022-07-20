@@ -7,12 +7,56 @@ releases:
     changelog: |
       FEATURE: Cross-Reference service Alpha release.
 
-# toc:
-#   guides: []
-#   reference:
-#     rpc:
-#       - path: reference/rpc/animeshon.crossrefs.v1alpha1
-#   samples: []
+rpc:
+  remote:
+    prefix: crossrefs
+    documents:
+      - animeshon.crossrefs.v1alpha1.md
+  services:
+    - package: animeshon.crossrefs.v1alpha1
+      name: Referrer
+      methods:
+        - name: GetCrossRef
+          description: 
+        - name: ListCrossRefs
+          description: 
+        - name: CreateCrossRef
+          description: 
+        - name: BatchCreateCrossRefs
+          description: 
+        - name: UpdateCrossRef
+          description: 
+        - name: CountCrossRefs
+          description: 
+        - name: AnalyzeCrossRefs
+          description: 
+        - name: ImportCrossRefs
+          description: 
+        - name: ExportCrossRefs
+          description: 
+        - name: InitializeCrossRefs
+          description: 
+        - name: AnalyzeParodies
+          description: 
+        - name: ExportParodies
+          description: 
+        - name: GetUniverse
+          description: 
+        - name: UpdateUniverse
+          description: 
+        - name: ExpandUniverse
+          description: 
+        - name: GetWormhole
+          description: 
+        - name: ListWormholeCrossRefs
+          description: 
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.crossrefs.v1alpha1
+  samples: []
 
 rest:
   versions:

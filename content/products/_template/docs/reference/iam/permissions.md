@@ -13,6 +13,6 @@ The following tables list the Identity and Access Management (IAM) permissions t
 | Permission | Description |
 | --- | --- |
 {{- range $i := $group.permissions }}
-| {{ $i.name }} | {{ $i.description }} |
+| {{ $i.id }} | {{ $i.description }} |
 {{- end }}
 {{- end }}

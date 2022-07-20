@@ -2,6 +2,95 @@ name: Identity and Access Management
 domain: iam
 api: iam.animeapis.com
 
+permissionGroups:
+  - name: Permissions
+    permissions:
+      - id: iam.permissions.get
+        description: View permissions, excluding IAM policies.
+      - id: iam.permissions.list
+        description: List permissions.
+      - id: iam.permissions.create
+        description: Create new permissions.
+      - id: iam.permissions.update
+        description: Updated existing permissions.
+      - id: iam.permissions.delete
+        description: Delete permissions.
+  - name: Roles
+    permissions:
+      - id: iam.roles.get
+        description: View roles, excluding IAM policies.
+      - id: iam.roles.list
+        description: List roles.
+      - id: iam.roles.create
+        description: Create new roles.
+      - id: iam.roles.update
+        description: Updated existing roles.
+      - id: iam.roles.delete
+        description: Delete roles.
+  - name: Service Accounts
+    permissions:
+      - id: iam.serviceAccounts.get
+        description: View service accounts, excluding IAM policies.
+      - id: iam.serviceAccounts.list
+        description: List service accounts.
+      - id: iam.serviceAccounts.create
+        description: Create new service accounts.
+      - id: iam.serviceAccounts.update
+        description: Updated existing service accounts.
+      - id: iam.serviceAccounts.delete
+        description: Delete service accounts.
+      - id: iam.serviceAccounts.getIamPolicy
+        description: Get an IAM policy.
+      - id: iam.serviceAccounts.setIamPolicy
+        description: Set an IAM policy.
+
+roles:
+  - id: iam.admin
+    title: IAM Admin
+    description: "Full access to permissions and roles."
+    permissions:
+      - iam.permissions.get
+      - iam.permissions.list
+      - iam.permissions.create
+      - iam.permissions.update
+      - iam.permissions.delete
+      - iam.roles.get
+      - iam.roles.list
+      - iam.roles.create
+      - iam.roles.update
+      - iam.roles.delete
+  - id: iam.editor
+    title: IAM Editor
+    description: "Edit access to permissions and roles."
+    permissions:
+      - iam.permissions.get
+      - iam.permissions.list
+      - iam.permissions.create
+      - iam.permissions.update
+      - iam.roles.get
+      - iam.roles.list
+      - iam.roles.create
+      - iam.roles.update
+  - id: iam.viewer
+    title: IAM Viewer
+    description: "View access to permissions and roles."
+    permissions:
+      - iam.permissions.get
+      - iam.permissions.list
+      - iam.roles.get
+      - iam.roles.list
+  - id: iam.serviceAccountAdmin
+    title: Service Account Admin
+    description: "Full access to service accounts."
+    permissions:
+      - iam.serviceAccounts.get
+      - iam.serviceAccounts.list
+      - iam.serviceAccounts.create
+      - iam.serviceAccounts.update
+      - iam.serviceAccounts.delete
+      - iam.serviceAccounts.getIamPolicy
+      - iam.serviceAccounts.setIamPolicy
+
 releases:
   - date: August 01, 2022
     changelog: |

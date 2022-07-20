@@ -58,6 +58,7 @@ module.exports = {
           collapsed: true,
           items: [
             'reference/rpc',
+            'reference/rpc/animeshon.crossrefs.v1alpha1',
           ],
         },
         {

@@ -2,6 +2,41 @@ name: WebCache
 domain: webcache
 api: webcache.animeapis.com
 
+permissionGroups:
+  - name: Caches
+    permissions:
+      - id: webcache.caches.get
+        description: View caches, excluding IAM policies.
+      - id: webcache.caches.list
+        description: List caches.
+      - id: webcache.caches.create
+        description: Create new caches.
+      - id: webcache.caches.delete
+        description: Delete caches.
+
+roles:
+  - id: webcache.admin
+    title: WebCache Admin
+    description: "Full access to caches."
+    permissions:
+      - webcache.caches.get
+      - webcache.caches.list
+      - webcache.caches.create
+      - webcache.caches.delete
+  - id: webcache.editor
+    title: WebCache Editor
+    description: "Edit access to caches."
+    permissions:
+      - webcache.caches.get
+      - webcache.caches.list
+      - webcache.caches.create
+  - id: webcache.viewer
+    title: WebCache Viewer
+    description: "View access to caches."
+    permissions:
+      - webcache.caches.get
+      - webcache.caches.list
+
 releases:
   - date: August 01, 2022
     changelog: |

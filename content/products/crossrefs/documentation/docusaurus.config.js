@@ -26,6 +26,16 @@ module.exports = {
             }
         ],
         [
+            "docusaurus-plugin-remote-content",
+            {
+                name: "crossrefs-reference-rpc",
+                sourceBaseUrl: "https://raw.githubusercontent.com/animeapis/reference-markdown/master/rpc/animeshon/crossrefs/",
+                outDir: "content/products/crossrefs/documentation/docs/reference/rpc",
+                documents: ["animeshon.crossrefs.v1alpha1.md"],
+                modifyContent,
+            },
+        ],
+        [
             'docusaurus-plugin-openapi-docs',
             {
                 id: "crossrefs-reference-rest",

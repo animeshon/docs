@@ -5,48 +5,36 @@ api: image.animeapis.com
 permissionGroups:
   - name: Albums
     permissions:
-      - name: image.albums.get
+      - id: image.albums.get
         description: View albums, excluding IAM policies.
-      - name: image.albums.list
+      - id: image.albums.list
         description: List albums.
-      - name: image.albums.create
+      - id: image.albums.create
         description: Create new albums.
-      - name: image.albums.update
+      - id: image.albums.update
         description: Updated existing albums.
-      - name: image.albums.delete
+      - id: image.albums.delete
         description: Delete albums.
-      - name: image.albums.getSettings
+      - id: image.albums.getSettings
         description: View album settings.
-      - name: image.albums.updateSettings
+      - id: image.albums.updateSettings
         description: Update album settings.
-      - name: image.albums.getIamPolicy
+      - id: image.albums.getIamPolicy
         description: Get an IAM policy.
-      - name: image.albums.setIamPolicy
+      - id: image.albums.setIamPolicy
         description: Set an IAM policy.
   - name: Images
     permissions:
-      - name: image.images.get
+      - id: image.images.get
         description: View images.
-      - name: image.images.list
+      - id: image.images.list
         description: List images.
-      - name: image.images.upload
+      - id: image.images.upload
         description: Upload new images.
-      - name: image.images.import
+      - id: image.images.import
         description: Import remotely accessible images.
-      - name: image.images.delete
+      - id: image.images.delete
         description: Delete images.
-
-quotas:
-  - resource: Image
-    description: Maximum image size, in MiB
-    limit: "12"
-    incrementabile: false
-    scope: per request
-  - resource: Image
-    description: Maximum image size, in pixels
-    limit: "3840 x 2160 (4K UHD)"
-    incrementabile: false
-    scope: per request
 
 roles:
   - id: image.settingsAdmin
@@ -93,6 +81,18 @@ roles:
       - image.albums.get
       - image.albums.list
       - image.albums.getIamPolicy
+
+quotas:
+  - resource: Image
+    description: Maximum image size, in MiB
+    limit: "12"
+    incrementabile: false
+    scope: per request
+  - resource: Image
+    description: Maximum image size, in pixels
+    limit: "3840 x 2160 (4K UHD)"
+    incrementabile: false
+    scope: per request
 
 releases:
   - date: August 01, 2022

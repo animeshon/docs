@@ -7,6 +7,53 @@ releases:
     changelog: |
       FEATURE: Library service Alpha release.
 
+permissionGroups:
+  - name: Playlists
+    permissions:
+      - id: library.playlists.get
+        description: View playlists, excluding IAM policies.
+      - id: library.playlists.list
+        description: List playlists.
+      - id: library.playlists.create
+        description: Create new playlists.
+      - id: library.playlists.update
+        description: Updated existing playlists.
+      - id: library.playlists.delete
+        description: Delete playlists.
+      - id: library.playlists.getIamPolicy
+        description: Get an IAM policy.
+      - id: library.playlists.setIamPolicy
+        description: Set an IAM policy.
+
+roles:
+  - id: library.admin
+    title: Library Admin
+    description: "Full access to playlists."
+    permissions:
+      - library.playlists.get
+      - library.playlists.list
+      - library.playlists.create
+      - library.playlists.update
+      - library.playlists.delete
+      - library.playlists.getIamPolicy
+      - library.playlists.setIamPolicy
+  - id: library.editor
+    title: Library Editor
+    description: "Edit access to playlists."
+    permissions:
+      - library.playlists.get
+      - library.playlists.list
+      - library.playlists.create
+      - library.playlists.update
+      - library.playlists.getIamPolicy
+  - id: library.viewer
+    title: Library Viewer
+    description: "View access to playlists."
+    permissions:
+      - library.playlists.get
+      - library.playlists.list
+      - library.playlists.getIamPolicy
+
 rpc:
   remote:
     prefix: library
@@ -34,7 +81,7 @@ rpc:
           description:
         - name: DeletePlaylistItem
           description:
-scription: 
+scription:
 
 toc:
   guides: []

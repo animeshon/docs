@@ -7,47 +7,137 @@ releases:
     changelog: |
       FEATURE: Identity service Alpha release.
 
+permissionGroups:
+  - name: Users
+    permissions:
+      - id: identity.users.get
+        description: View users, excluding IAM policies.
+      - id: identity.users.list
+        description: List users.
+      - id: identity.users.create
+        description: Create new users.
+      - id: identity.users.update
+        description: Updated existing users.
+      - id: identity.users.delete
+        description: Delete users.
+      - id: identity.users.getSettings
+        description: View user settings.
+      - id: identity.users.updateSettings
+        description: Update user settings.
+      - id: identity.users.getDefaults
+        description: View user defaults.
+      - id: identity.users.getIamPolicy
+        description: Get an IAM policy.
+      - id: identity.users.setIamPolicy
+        description: Set an IAM policy.
+  - name: Groups
+    permissions:
+      - id: identity.groups.get
+        description: View groups, excluding IAM policies.
+      - id: identity.groups.list
+        description: List groups.
+      - id: identity.groups.create
+        description: Create new groups.
+      - id: identity.groups.update
+        description: Updated existing groups.
+      - id: identity.groups.delete
+        description: Delete groups.
+      - id: identity.groups.getIamPolicy
+        description: Get an IAM policy.
+      - id: identity.groups.setIamPolicy
+        description: Set an IAM policy.
+
+roles:
+  - id: identity.settingsAdmin
+    title: Identity Settings Admin
+    description: "Administrator of user settings."
+    permissions:
+      - identity.users.getSettings
+      - identity.users.updateSettings
+  - id: identity.admin
+    title: Identity Admin
+    description: "Full access to users and groups."
+    permissions:
+      - identity.users.get
+      - identity.users.list
+      - identity.users.create
+      - identity.users.update
+      - identity.users.delete
+      - identity.users.getIamPolicy
+      - identity.users.setIamPolicy
+      - identity.groups.get
+      - identity.groups.list
+      - identity.groups.create
+      - identity.groups.update
+      - identity.groups.delete
+      - identity.groups.getIamPolicy
+      - identity.groups.setIamPolicy
+  - id: identity.editor
+    title: Identity Editor
+    description: "Edit access to users and groups."
+    permissions:
+      - identity.users.get
+      - identity.users.list
+      - identity.users.create
+      - identity.users.update
+      - identity.users.getIamPolicy
+      - identity.groups.get
+      - identity.groups.list
+      - identity.groups.create
+      - identity.groups.update
+      - identity.groups.getIamPolicy
+  - id: identity.viewer
+    title: Identity Viewer
+    description: "View access to users and groups."
+    permissions:
+      - identity.users.get
+      - identity.users.list
+      - identity.users.getIamPolicy
+      - identity.groups.get
+      - identity.groups.list
+      - identity.groups.getIamPolicy
+
 rpc:
   remote:
     prefix: identity
     documents:
       - animeshon.identity.v1alpha1.md
   services:
-  - package: animeshon.identity.v1alpha1
-    name: Identity
-    methods:
-      - name: GetUserProfile
-        description: 
-      - name: GetUser
-        description: 
-      - name: ListUsers
-        description: 
-      - name: CreateUser
-        description: 
-      - name: UpdateUser
-        description: 
-      - name: DeleteUser
-        description: 
-      - name: GetUserSettings
-        description: 
-      - name: UpdateUserSettings
-        description: 
-      - name: GetUserNotifications
-        description: 
-      - name: UpdateUserNotifications
-        description: 
-      - name: GetUserDefaults
-        description: 
-      - name: GetGroup
-        description: 
-      - name: ListGroups
-        description: 
-      - name: CreateGroup
-        description: 
-      - name: UpdateGroup
-        description: 
-      - name: DeleteGroup
-        description: 
+    - package: animeshon.identity.v1alpha1
+      name: Identity
+      methods:
+        - name: GetUserProfile
+          description:
+        - name: GetUser
+          description:
+        - name: ListUsers
+          description:
+        - name: CreateUser
+          description:
+        - name: UpdateUser
+          description:
+        - name: DeleteUser
+          description:
+        - name: GetUserSettings
+          description:
+        - name: UpdateUserSettings
+          description:
+        - name: GetUserNotifications
+          description:
+        - name: UpdateUserNotifications
+          description:
+        - name: GetUserDefaults
+          description:
+        - name: GetGroup
+          description:
+        - name: ListGroups
+          description:
+        - name: CreateGroup
+          description:
+        - name: UpdateGroup
+          description:
+        - name: DeleteGroup
+          description:
 
 toc:
   guides: []
