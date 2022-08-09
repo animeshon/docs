@@ -137,11 +137,13 @@ rpc:
 toc:
   guides:
     - path: quickstarts/test
+      title: Test
   reference:
     rpc:
       - path: reference/rpc/animeshon.image.v1alpha1
   samples:
     - path: samples/test
+      title: Test
 
 rest:
   versions:

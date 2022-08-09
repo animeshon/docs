@@ -4,3 +4,4 @@ description: All Image quickstarts.
 ---
 
 # Quickstarts
+- [Test](quickstarts/test)
