@@ -1,0 +1,50 @@
+---
+title: Import an Image
+description: TODO
+---
+
+# Import an Image
+
+This page describes how to programmatically import an image from a remote location such as a public web URL.
+The import might fail for multiple reasons, including internal throttling and rate limiting.
+In case of failure the response will include the remotely returned status code and details about the failure.
+
+## Sample
+
+The following sample shows how to import a remotely accessible image with default caching options.
+
+Replace `[ALBUM]` with the resource name of the album where the imported image should be uploaded to, e.g. `users/123/albums/456`.
+
+Replace `[IMAGE-URL]` with any valid and publicly accessible remote address, e.g. `https://avatars.githubusercontent.com/u/48774482`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/image/import-image/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/image/import-image/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/image/import-image/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

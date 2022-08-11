@@ -1,0 +1,47 @@
+---
+title: List Albums
+description: TODO
+---
+
+# List Albums
+
+This page describes how to programmatically request a list of albums.
+Iterator pagination is built-in and transparently managed by the API client.
+
+## Sample
+
+The following sample shows how to request the list of albums from an user or organization with no filters applied.
+
+Replace `[USER-OR-ORGANIZATION]` with the resource name of the user or organization that the albums belong to, e.g. `users/123` or `organizations/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/image/list-albums/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/image/list-albums/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/image/list-albums/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

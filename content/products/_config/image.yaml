@@ -142,8 +142,16 @@ toc:
     rpc:
       - path: reference/rpc/animeshon.image.v1alpha1
   samples:
-    - path: samples/test
-      title: Test
+    - path: samples/create-album
+      title: Create an Album
+    - path: samples/list-albums
+      title: List Albums
+    - path: samples/import-image
+      title: Import an Image
+    - path: samples/get-image-route
+      title: Obtain an Image Public URL
+    - path: samples/set-iam-policy
+      title: Assign IAM policies
 
 rest:
   versions:

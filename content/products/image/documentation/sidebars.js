@@ -80,7 +80,11 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
-        'samples/test',
+        'samples/create-album',
+        'samples/list-albums',
+        'samples/import-image',
+        'samples/get-image-route',
+        'samples/set-iam-policy',
       ],
     },
     {

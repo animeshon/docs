@@ -1,0 +1,3 @@
+[submodule "samples/golang-samples"]
+	path = samples/golang-samples
+	url = https://github.com/animeapis/golang-samples.git
