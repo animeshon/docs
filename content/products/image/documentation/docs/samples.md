@@ -4,8 +4,8 @@ description: All Image code samples.
 ---
 
 # All Image code samples
-- [Create an Album](samples/create-album)
-- [List Albums](samples/list-albums)
-- [Import an Image](samples/import-image)
-- [Obtain an Image Public URL](samples/get-image-route)
+- [Create an album](samples/create-album)
+- [List albums](samples/list-albums)
+- [Import an image](samples/import-image)
+- [Obtain an image public URL](samples/get-image-route)
 - [Assign IAM policies](samples/set-iam-policy)

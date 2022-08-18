@@ -136,20 +136,20 @@ rpc:
 
 toc:
   guides:
-    - path: quickstarts/test
-      title: Test
+    - path: quickstarts/generate-thumbnails
+      title: Generate thumbnails
   reference:
     rpc:
       - path: reference/rpc/animeshon.image.v1alpha1
   samples:
     - path: samples/create-album
-      title: Create an Album
+      title: Create an album
     - path: samples/list-albums
-      title: List Albums
+      title: List albums
     - path: samples/import-image
-      title: Import an Image
+      title: Import an image
     - path: samples/get-image-route
-      title: Obtain an Image Public URL
+      title: Obtain an image public URL
     - path: samples/set-iam-policy
       title: Assign IAM policies
 

@@ -27,7 +27,7 @@ module.exports = {
       collapsed: true,
       items: [
         'quickstarts',
-        'quickstarts/test',
+        'quickstarts/generate-thumbnails',
         'troubleshooting',
       ],
     },

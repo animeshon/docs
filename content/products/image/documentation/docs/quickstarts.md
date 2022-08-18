@@ -4,4 +4,4 @@ description: All Image quickstarts.
 ---
 
 # Quickstarts
-- [Test](quickstarts/test)
+- [Generate thumbnails](quickstarts/generate-thumbnails)
