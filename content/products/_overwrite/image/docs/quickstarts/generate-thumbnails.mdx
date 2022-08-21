@@ -1,0 +1,62 @@
+---
+title: Generate thumbnails
+description: TODO
+---
+
+# Generate thumbnails
+
+This page describes how to obtain public thumbnails URL from an image resource name.
+
+# Parameters
+
+The following list contains all the possible parameters that can be set in an image URL:
+
+| Parameter | Example | Description |
+| --- | --- | --- |
+| `w[width]` | _w256_ | Set the maximum image width. |
+| `h[height]` | _h144_ | Set the maximum image height. |
+| `s[size]` | _s144_ | Set the maximum image height and height. |
+| `webp` | _webp_ | Set the WebP image format. |
+| `png` | _png_ | Set the PNG image format. |
+| `jpeg` | _jpeg_ | Set the JPEG image format. |
+
+Parameters can be set directly in the public image URL after the token `=`, e.g. `https://lh1.animeusercontent.dev/abc=w256`. Multiple parameters can also be concatenated with the token `-`, e.g. `https://lh1.animeusercontent.dev/abc=w256-h144-webp`.
+
+
+## Sample
+
+The following sample shows how to obtain the public thumbnails URL from an image resource name.
+
+Replace `[IMAGE]` with the resource name of the image that the public URL should be generated for, e.g. `users/123/albums/456/images/789`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/image/generate-thumbnails/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/image/generate-thumbnails/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/image/generate-thumbnails/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

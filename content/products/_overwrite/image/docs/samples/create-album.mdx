@@ -1,0 +1,47 @@
+---
+title: Create an album
+description: TODO
+---
+
+# Create an album
+
+This page describes how to programmatically create a new album.
+There is currently no way to create an album idempotently, so be aware that for each call a new album will be created.
+
+## Sample
+
+The following sample shows how to create an album with the specified display name.
+
+Replace `[USER-OR-ORGANIZATION]` with the resource name of the user or organization that the albums belong to, e.g. `users/123` or `organizations/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/image/create-album/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/image/create-album/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/image/create-album/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

@@ -35,6 +35,8 @@ do
     --sprig \
     --overwrite \
     $(cd _template && find . -type f)
+  
+  [ -d "./_overwrite/${i}" ] && cp -r ./_overwrite/${i}/* ./${i}/documentation
 done
 
 exit 0
