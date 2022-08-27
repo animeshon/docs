@@ -367,13 +367,13 @@ module.exports = {
                   icon: '\ue903',
                   activeBaseRegex: '^/webcache/.*',
                 },
-                // {
-                //   label: 'WebPage',
-                //   sublabel: 'Access indexed website pages',
-                //   to: 'webpage/docs',
-                //   icon: '\ue903',
-                //   activeBaseRegex: '^/webpage/.*',
-                // },
+                {
+                  label: 'WebPage',
+                  sublabel: 'Access indexed website pages',
+                  to: 'webpage/docs',
+                  icon: '\ue903',
+                  activeBaseRegex: '^/webpage/.*',
+                },
                 // {
                 //   label: 'WebSearch',
                 //   sublabel: 'Search via images and keywords',
