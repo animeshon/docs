@@ -95,7 +95,7 @@ quotas:
     scope: per request
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: Image service Alpha release.
 

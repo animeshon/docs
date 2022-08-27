@@ -3,7 +3,7 @@ domain: library
 api: library.animeapis.com
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: Library service Alpha release.
 

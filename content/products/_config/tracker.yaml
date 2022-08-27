@@ -75,7 +75,7 @@ roles:
       - tracker.operations.get
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: Tracker service Alpha release.
 

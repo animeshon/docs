@@ -3,7 +3,7 @@ domain: multimedia
 api: multimedia.animeapis.com
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: Multimedia service Alpha release.
 

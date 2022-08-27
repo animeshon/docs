@@ -38,7 +38,7 @@ roles:
       - webcache.caches.list
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: WebCache service Alpha release.
 

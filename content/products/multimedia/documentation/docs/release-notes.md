@@ -7,6 +7,6 @@ description: Details about updates to Multimedia.
 
 This page documents production updates to Multimedia. You can periodically check this page for announcements about new or updated features, bug fixes, known issues, and deprecated functionality.
 
-## August 01, 2022
+## September 01, 2022
 
 FEATURE: Multimedia service Alpha release.

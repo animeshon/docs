@@ -47,7 +47,7 @@ roles:
       - webpage.pages.query
 
 releases:
-  - date: August 01, 2022
+  - date: September 01, 2022
     changelog: |
       FEATURE: WebPage service Alpha release.
 

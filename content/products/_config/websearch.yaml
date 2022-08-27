@@ -3,6 +3,6 @@ domain: websearch
 api: websearch.animeapis.com
 
 # releases:
-#   - date: August 01, 2022
+#   - date: September 01, 2022
 #     changelog: |
 #       FEATURE: WebSearch service Alpha release.
