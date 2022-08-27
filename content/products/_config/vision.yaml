@@ -2,6 +2,64 @@ name: Vision
 domain: vision
 api: vision.animeapis.com
 
+permissionGroups:
+  - name: Image Analyses
+    permissions:
+        - id: vision.imageAnalyses.get
+          description: View image analyses, excluding IAM policies.
+        - id: vision.imageAnalyses.list
+          description: List image analyses.
+        - id: vision.imageAnalyses.create
+          description: Create new image analyses.
+        - id: vision.imageAnalyses.delete
+          description: Delete image analyses.
+  - name: Image Annotations
+    permissions:
+        - id: vision.imageAnnotations.get
+          description: View image annotations, excluding IAM policies.
+        - id: vision.imageAnnotations.list
+          description: List image annotations.
+        - id: vision.imageAnnotations.create
+          description: Create new image annotations.
+        - id: vision.imageAnnotations.update
+          description: Updated existing image annotations.
+        - id: vision.imageAnnotations.delete
+          description: Delete image annotations.
+
+roles:
+  - id: vision.admin
+    title: Vision Admin
+    description: "Full access to image analyses and annotations."
+    permissions:
+      - vision.imageAnalyses.get
+      - vision.imageAnalyses.list
+      - vision.imageAnalyses.create
+      - vision.imageAnalyses.delete
+      - vision.imageAnnotations.get
+      - vision.imageAnnotations.list
+      - vision.imageAnnotations.create
+      - vision.imageAnnotations.update
+      - vision.imageAnnotations.delete
+  - id: vision.editor
+    title: Vision Editor
+    description: "Edit access to image analyses and annotations."
+    permissions:
+      - vision.imageAnalyses.get
+      - vision.imageAnalyses.list
+      - vision.imageAnalyses.create
+      - vision.imageAnnotations.get
+      - vision.imageAnnotations.list
+      - vision.imageAnnotations.create
+      - vision.imageAnnotations.update
+  - id: vision.viewer
+    title: Vision Viewer
+    description: "View access to image analyses and annotations."
+    permissions:
+      - vision.imageAnalyses.get
+      - vision.imageAnalyses.list
+      - vision.imageAnnotations.get
+      - vision.imageAnnotations.list
+
 releases:
   - date: August 01, 2022
     changelog: |

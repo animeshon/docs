@@ -2,6 +2,78 @@ name: Tracker
 domain: tracker
 api: tracker.animeapis.com
 
+permissionGroups:
+  - name: Trackers
+    permissions:
+      - id: tracker.trackers.get
+        description: View trackers, excluding IAM policies.
+      - id: tracker.trackers.list
+        description: List trackers.
+      - id: tracker.trackers.create
+        description: Create new trackers.
+      - id: tracker.trackers.update
+        description: Updated existing trackers.
+      - id: tracker.trackers.delete
+        description: Delete trackers.
+      - id: tracker.trackers.import
+        description: Impor trackers from third-parties. 
+      - id: tracker.trackers.export
+        description: Export trackers to third-parties.
+  - name: Activities
+    permissions:
+      - id: tracker.activities.create
+        description: Create new activities.
+      - id: tracker.activities.delete
+        description: Delete activities.
+  - name: Operations
+    permissions:
+      - id: tracker.operations.list
+        description: List long-running operations.
+      - id: tracker.operations.get
+        description: View and wait long-running operations.
+      - id: tracker.operations.delete
+        description: Delete long-running operations.
+      - id: tracker.operations.cancel
+        description: Cancel running long-running operations.
+
+roles:
+  - id: tracker.admin
+    title: Tracker Admin
+    description: "Full access to trackers and activities."
+    permissions:
+      - tracker.trackers.get
+      - tracker.trackers.list
+      - tracker.trackers.create
+      - tracker.trackers.update
+      - tracker.trackers.delete
+      - tracker.trackers.import
+      - tracker.trackers.export
+      - tracker.activities.create
+      - tracker.activities.delete
+      - tracker.operations.list
+      - tracker.operations.get
+      - tracker.operations.delete
+      - tracker.operations.cancel
+  - id: tracker.editor
+    title: Tracker Editor
+    description: "Edit access to trackers and activities."
+    permissions:
+      - tracker.trackers.get
+      - tracker.trackers.list
+      - tracker.trackers.create
+      - tracker.trackers.update
+      - tracker.activities.create
+      - tracker.operations.list
+      - tracker.operations.get
+  - id: tracker.viewer
+    title: Tracker Viewer
+    description: "View access to trackers."
+    permissions:
+      - tracker.trackers.get
+      - tracker.trackers.list
+      - tracker.operations.list
+      - tracker.operations.get
+
 releases:
   - date: August 01, 2022
     changelog: |
