@@ -199,29 +199,29 @@ the image that the color occupies in the image.
 | --- |
 | **rpc AnalyzeImage([AnalyzeImageRequest](#animeshon.vision.v1alpha1.AnalyzeImageRequest)) [AnalyzeImageResponse](#animeshon.vision.v1alpha1.AnalyzeImageResponse)**<br/><br/> |
 
-| <span id="animeshon.vision.v1alpha1.ImageAnnotator.ListImageAnalyses">ListImageAnalyses</span> |
-| --- |
-| **rpc ListImageAnalyses([ListImageAnalysesRequest](#animeshon.vision.v1alpha1.ListImageAnalysesRequest)) [ListImageAnalysesResponse](#animeshon.vision.v1alpha1.ListImageAnalysesResponse)**<br/><br/> |
-
 | <span id="animeshon.vision.v1alpha1.ImageAnnotator.GetImageAnalysis">GetImageAnalysis</span> |
 | --- |
 | **rpc GetImageAnalysis([GetImageAnalysisRequest](#animeshon.vision.v1alpha1.GetImageAnalysisRequest)) [ImageAnalysis](#animeshon.vision.v1alpha1.ImageAnalysis)**<br/><br/>Note: to fetch the latest available report use "latest" as report id. |
+
+| <span id="animeshon.vision.v1alpha1.ImageAnnotator.ListImageAnalyses">ListImageAnalyses</span> |
+| --- |
+| **rpc ListImageAnalyses([ListImageAnalysesRequest](#animeshon.vision.v1alpha1.ListImageAnalysesRequest)) [ListImageAnalysesResponse](#animeshon.vision.v1alpha1.ListImageAnalysesResponse)**<br/><br/> |
 
 | <span id="animeshon.vision.v1alpha1.ImageAnnotator.DeleteImageAnalysis">DeleteImageAnalysis</span> |
 | --- |
 | **rpc DeleteImageAnalysis([DeleteImageAnalysisRequest](#animeshon.vision.v1alpha1.DeleteImageAnalysisRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-| <span id="animeshon.vision.v1alpha1.ImageAnnotator.CreateImageAnnotation">CreateImageAnnotation</span> |
+| <span id="animeshon.vision.v1alpha1.ImageAnnotator.GetImageAnnotation">GetImageAnnotation</span> |
 | --- |
-| **rpc CreateImageAnnotation([CreateImageAnnotationRequest](#animeshon.vision.v1alpha1.CreateImageAnnotationRequest)) [ImageAnnotation](#animeshon.vision.v1alpha1.ImageAnnotation)**<br/><br/> |
+| **rpc GetImageAnnotation([GetImageAnnotationRequest](#animeshon.vision.v1alpha1.GetImageAnnotationRequest)) [ImageAnnotation](#animeshon.vision.v1alpha1.ImageAnnotation)**<br/><br/> |
 
 | <span id="animeshon.vision.v1alpha1.ImageAnnotator.ListImageAnnotations">ListImageAnnotations</span> |
 | --- |
 | **rpc ListImageAnnotations([ListImageAnnotationsRequest](#animeshon.vision.v1alpha1.ListImageAnnotationsRequest)) [ListImageAnnotationsResponse](#animeshon.vision.v1alpha1.ListImageAnnotationsResponse)**<br/><br/> |
 
-| <span id="animeshon.vision.v1alpha1.ImageAnnotator.GetImageAnnotation">GetImageAnnotation</span> |
+| <span id="animeshon.vision.v1alpha1.ImageAnnotator.CreateImageAnnotation">CreateImageAnnotation</span> |
 | --- |
-| **rpc GetImageAnnotation([GetImageAnnotationRequest](#animeshon.vision.v1alpha1.GetImageAnnotationRequest)) [ImageAnnotation](#animeshon.vision.v1alpha1.ImageAnnotation)**<br/><br/> |
+| **rpc CreateImageAnnotation([CreateImageAnnotationRequest](#animeshon.vision.v1alpha1.CreateImageAnnotationRequest)) [ImageAnnotation](#animeshon.vision.v1alpha1.ImageAnnotation)**<br/><br/> |
 
 | <span id="animeshon.vision.v1alpha1.ImageAnnotator.UpdateImageAnnotation">UpdateImageAnnotation</span> |
 | --- |

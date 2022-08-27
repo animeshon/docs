@@ -81,7 +81,7 @@ TODO: who should be the owner of an audience? the user who created it?
 | Field | Description |
 | --- | --- |
 | parent | **[ string](#string)**<br/>The parent this playlist item belongs to. |
-| item | **[repeated PlaylistItem](#PlaylistItem)**<br/>The playlist items to create. |
+| items | **[repeated PlaylistItem](#PlaylistItem)**<br/>The playlist items to create. |
 
 ## <span id="animeshon.library.v1alpha1.BatchCreatePlaylistItemsResponse">BatchCreatePlaylistItemsResponse</span>
 

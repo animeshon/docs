@@ -2,7 +2,87 @@ name: WebPage
 domain: webpage
 api: webpage.animeapis.com
 
-# releases:
-#   - date: August 01, 2022
-#     changelog: |
-#       FEATURE: WebPage service Alpha release.
+permissionGroups:
+  - name: Pages
+    permissions:
+      - id: webpage.pages.get
+        description: View pages.
+      - id: webpage.pages.list
+        description: List pages.
+      - id: webpage.pages.query
+        description: Query pages.
+      - id: webpage.pages.create
+        description: Create new pages.
+      - id: webpage.pages.import
+        description: Import remotely accessible pages.
+      - id: webpage.pages.delete
+        description: Delete pages.
+
+roles:
+  - id: webpage.admin
+    title: webpage Admin
+    description: "Full access to pages."
+    permissions:
+      - webpage.pages.get
+      - webpage.pages.list
+      - webpage.pages.query
+      - webpage.pages.create
+      - webpage.pages.import
+      - webpage.pages.delete
+  - id: webpage.editor
+    title: webpage Editor
+    description: "Editor access to pages."
+    permissions:
+      - webpage.pages.get
+      - webpage.pages.list
+      - webpage.pages.query
+      - webpage.pages.create
+      - webpage.pages.import
+  - id: webpage.viewer
+    title: webpage Viewer
+    description: "View access to pages."
+    permissions:
+      - webpage.pages.get
+      - webpage.pages.list
+      - webpage.pages.query
+
+releases:
+  - date: August 01, 2022
+    changelog: |
+      FEATURE: WebPage service Alpha release.
+
+rpc:
+  remote:
+    prefix: webpage
+    documents:
+      - animeshon.webpage.v1alpha1.md
+  services:
+    - package: animeshon.webpage.v1alpha1
+      name: Archive
+      methods:
+        - name: Query
+          description:
+        - name: GetPage
+          description:
+        - name: ListPages
+          description:
+        - name: QueryPage
+          description:
+        - name: CreatePage
+          description:
+        - name: ImportPage
+          description:
+        - name: DeletePage
+          description:
+
+toc:
+  guides: []
+  reference:
+    rpc:
+      - path: reference/rpc/animeshon.webpage.v1alpha1
+  samples: []
+
+rest:
+  versions:
+    - version: v1alpha1
+      path: https://raw.githubusercontent.com/animeapis/openapi-specification/master/animeshon/webpage/v1alpha1/openapi.yaml

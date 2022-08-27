@@ -21,7 +21,7 @@ declare -a products=(
   "tracker"
   "vision"
   "webcache"
-  # "webpage"
+  "webpage"
   # "websearch"
 )
 

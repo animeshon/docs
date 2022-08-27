@@ -1,0 +1,35 @@
+---
+id: archive-get-page
+sidebar_label: Archive_GetPage
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Archive"],"operationId":"Archive_GetPage","parameters":[{"name":"site","in":"path","description":"The site id.","required":true,"schema":{"type":"string"}},{"name":"page","in":"path","description":"The page id.","required":true,"schema":{"type":"string"}},{"name":"selector","in":"query","description":"The html selector to use to return the page content.","schema":{"type":"string"}}],"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","description":"The name of the page."},"content":{"type":"string","description":"The page content according to the html selector."}}}}}},"default":{"description":"Default error response","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"integer","description":"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code].","format":"int32"},"message":{"type":"string","description":"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."},"details":{"type":"array","items":{"type":"object","properties":{"@type":{"type":"string","description":"The type of the serialized message."}},"additionalProperties":true,"description":"Contains an arbitrary serialized message along with a @type that describes the type of the serialized message."},"description":"A list of messages that carry the error details.  There is a common set of message types for APIs to use."}},"description":"The `Status` type defines a logical error model that is suitable for different programming environments, including REST APIs and RPC APIs. It is used by [gRPC](https://github.com/grpc). Each `Status` message contains three pieces of data: error code, error message, and error details. You can find out more about this error model and how to work with it in the [API Design Guide](https://cloud.google.com/apis/design/errors)."}}}}},"description":"Archive_GetPage","method":"get","path":"/v1alpha1/sites/{site}/pages/{page}","servers":[{"url":"https://webpage.animeapis.com"}],"securitySchemes":{"OAuth2":{"type":"oauth2","flows":{"clientCredentials":{"tokenUrl":"https://accounts.animeshon.com/o/oauth2/token","scopes":{}},"authorizationCode":{"authorizationUrl":"https://accounts.animeshon.com/o/oauth2/auth","tokenUrl":"https://accounts.animeshon.com/o/oauth2/token","scopes":{"https://www.animeapis.com/auth/webpage":"View and manage indexed sites and pages."}}}}},"info":{"title":"WebPage API","version":"v1alpha1"},"postman":{"name":"Archive Get Page","description":{"type":"text/plain"},"url":{"path":["v1alpha1","sites",":site","pages",":page"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"The html selector to use to return the page content.","type":"text/plain"},"key":"selector","value":""}],"variable":[{"disabled":false,"description":{"content":"(Required) The site id.","type":"text/plain"},"type":"any","value":"","key":"site"},{"disabled":false,"description":{"content":"(Required) The page id.","type":"text/plain"},"type":"any","value":"","key":"page"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET"}}
+sidebar_class_name: "get api-method"
+info_path: content/products/webpage/documentation/docs/reference/rest/v1alpha1/web-page-api
+---
+
+import ParamsItem from "@theme/ParamsItem";
+import SchemaItem from "@theme/SchemaItem"
+import ApiTabs from "@theme/ApiTabs";
+import TabItem from "@theme/TabItem";
+
+## Archive_GetPage
+
+
+
+Archive_GetPage
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"site","in":"path","description":"The site id.","required":true,"schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"page","in":"path","description":"The page id.","required":true,"schema":{"type":"string"}}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"selector","in":"query","description":"The html selector to use to return the page content.","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+OK
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={true} schemaDescription={"The name of the page."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"content"} required={false} schemaDescription={"The page content according to the html selector."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></details></div></TabItem><TabItem label={"default"} value={"default"}><div>
+
+Default error response
+
+</div><div><details style={{}} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"code"} required={false} schemaDescription={"The status code, which should be an enum value of [google.rpc.Code][google.rpc.Code]."} schemaName={"int32"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={false} schemaDescription={"A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the [google.rpc.Status.details][google.rpc.Status.details] field, or localized by the client."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}}><summary style={{}}><strong>details</strong><span style={{"opacity":"0.6"}}> object[]</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
+
+A list of messages that carry the error details.  There is a common set of message types for APIs to use.
+
+</div><ul><SchemaItem collapsible={false} name={"@type"} required={false} schemaDescription={"The type of the serialized message."} schemaName={"string"} qualifierMessage={undefined}></SchemaItem></ul></div></details></SchemaItem></ul></details></div></TabItem></ApiTabs></div>
+      
