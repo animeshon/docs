@@ -21,6 +21,6 @@ Basic transformations can be applied to images such as thumbnails generation and
 
 ## Access
 
-Access to images stored in the Image service is governed by the IAM policies assigned to the album where they are contained and executed by a Content Delivery Network (CDN).
+Access to images stored in the Image service is governed by the IAM policies assigned to the album where they are contained and executed by our Content Delivery Network (CDN).
 
-_Learn more about this this topic through dedicated [quickstarts](quickstarts/generate-thumbnails) and [samples](samples/get-image-route)._
+_Learn more about access control through dedicated [quickstarts](docs/quickstarts/generate-thumbnails) and [samples](docs/samples/get-image-route)._
