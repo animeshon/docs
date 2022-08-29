@@ -7,7 +7,5 @@ description: Usage policies for your Library resources.
 
 This page contains usage quota and limits that apply when using Library.
 
-## Resource limits for Library
 
-| Resource | Description | Limit | Can be increased | Scope |
-| --- | --- | --- | --- | --- |
+There are currently no resource limits or quotas specified for this service.

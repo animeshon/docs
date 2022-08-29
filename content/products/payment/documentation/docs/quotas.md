@@ -7,7 +7,5 @@ description: Usage policies for your Payment resources.
 
 This page contains usage quota and limits that apply when using Payment.
 
-## Resource limits for Payment
 
-| Resource | Description | Limit | Can be increased | Scope |
-| --- | --- | --- | --- | --- |
+There are currently no resource limits or quotas specified for this service.

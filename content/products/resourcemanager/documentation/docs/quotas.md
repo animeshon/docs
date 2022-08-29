@@ -7,7 +7,5 @@ description: Usage policies for your Resource Manager resources.
 
 This page contains usage quota and limits that apply when using Resource Manager.
 
-## Resource limits for Resource Manager
 
-| Resource | Description | Limit | Can be increased | Scope |
-| --- | --- | --- | --- | --- |
+There are currently no resource limits or quotas specified for this service.

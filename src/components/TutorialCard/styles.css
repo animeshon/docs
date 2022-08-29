@@ -79,7 +79,7 @@
   flex-wrap: wrap;
 }
 
-.tag {
+.tutorial-card__footer .tag {
   font-size: 0.675rem;
   border: 1px solid var(--ifm-color-secondary-darkest);
   cursor: default;
@@ -90,11 +90,11 @@
   align-items: center;
 }
 
-.tag .text-label {
+.tutorial-card__footer .tag .text-label {
   margin-left: 8px;
 }
 
-.tag .color-label {
+.tutorial-card__footer .tag .color-label {
   width: 7px;
   height: 7px;
   border-radius: 50%;

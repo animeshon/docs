@@ -7,7 +7,5 @@ description: Usage policies for your Cross-Reference resources.
 
 This page contains usage quota and limits that apply when using Cross-Reference.
 
-## Resource limits for Cross-Reference
 
-| Resource | Description | Limit | Can be increased | Scope |
-| --- | --- | --- | --- | --- |
+There are currently no resource limits or quotas specified for this service.

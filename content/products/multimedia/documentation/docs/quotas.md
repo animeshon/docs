@@ -7,7 +7,5 @@ description: Usage policies for your Multimedia resources.
 
 This page contains usage quota and limits that apply when using Multimedia.
 
-## Resource limits for Multimedia
 
-| Resource | Description | Limit | Can be increased | Scope |
-| --- | --- | --- | --- | --- |
+There are currently no resource limits or quotas specified for this service.

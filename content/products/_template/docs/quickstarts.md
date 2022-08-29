@@ -5,6 +5,15 @@ description: All {{ .name }} quickstarts.
 
 # Quickstarts
 
+{{- if .toc.guides }}
 {{- range $i := .toc.guides }}
 - [{{ $i.title }}]({{ $i.path }})
+{{- end }}
+{{- else }}
+There are currently no quickstarts documented for this service.
+
+Sometimes quickstarts are available but not yet documented, please check the following repositories for further information:
+
+- [Golang](https://github.com/animeapis/golang-samples)
+- [Node.js](https://github.com/animeapis/nodejs-samples)
 {{- end }}
