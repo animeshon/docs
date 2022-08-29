@@ -116,10 +116,10 @@ SafeSearch annotations detect potentially explict content that should be shown o
 {
   "safeSearchAnnotation": {
     "Adult":    "POSSIBLE",
-		"Racy":     "POSSIBLE",
-		"Violence": "POSSIBLE",
-		"Medical":  "POSSIBLE",
-		"Juvenile": "POSSIBLE"
+    "Racy":     "POSSIBLE",
+    "Violence": "POSSIBLE",
+    "Medical":  "POSSIBLE",
+    "Juvenile": "POSSIBLE"
   }
 }
 ```
