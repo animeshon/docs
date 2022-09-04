@@ -7,6 +7,10 @@ description: Overview for Multimedia.
 
 The `Multimedia` service is responsible for the management of all abstract multimedia resources. Physical and digital goods are managed by other services and APIs such as the [Product](/product/docs) service.
 
+## Updating resources
+
+All changes to Multimedia resources must be done through contributions inside the [Knowledge](/knowledge/docs) service. All users are allowed to propose new changes to keep the information up-to-date and correct. Contributions will be reviewed and approved by a selected group of moderators. Only high-level administrators are allowed to bypass the contribution process and write or delete resources directly through the Multimedia API.
+
 ## Resources and Hierarchy
 
 The top-level resources include the following:
