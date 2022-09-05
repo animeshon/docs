@@ -150,8 +150,12 @@ toc:
       title: Import an image
     - path: samples/get-image-route
       title: Obtain an image public URL
+    - path: samples/get-iam-policy
+      title: Get IAM policies
     - path: samples/set-iam-policy
       title: Assign IAM policies
+    - path: samples/test-iam-permissions
+      title: Test IAM permissions
 
 rest:
   versions:

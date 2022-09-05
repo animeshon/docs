@@ -5,7 +5,7 @@ description: TODO
 
 # Test IAM permissions
 
-This page describes how to programmatically test IAM permissions against an Identity and Access Management API resource. This is especially useful to check whether the currently authenticated identity is allowed to perform a specific action. Testing permissions is also used in Permission-Aware UIs to hide action items from the user interface, e.g. if a user is not allowed to deleter a resource the _delete button_ won't be rendered in the UI.
+This page describes how to programmatically test IAM permissions against an Identity and Access Management API resource. This is especially useful to check whether the currently authenticated identity is allowed to perform a specific action. Testing permissions is also used in Permission-Aware UIs to hide action items from the user interface, e.g. if a user is not allowed to delete a resource the _delete button_ won't be rendered in the UI.
 
 ## Permissions
 
@@ -24,8 +24,8 @@ Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Se
 :::
 
 import CodeBlock from '@theme/CodeBlock';
-import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/iam/set-iam-policy/main.go';
-// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/iam/set-iam-policy/app.ts';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/iam/test-iam-permissions/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/iam/test-iam-permissions/app.ts';
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -40,7 +40,7 @@ import TabItem from '@theme/TabItem';
     <CodeBlock language="go">
       {SampleGo}
     </CodeBlock>
-    <a href="https://github.com/animeapis/golang-samples/blob/master/iam/set-iam-policy/main.go">View on GitHub</a>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/iam/test-iam-permissions/main.go">View on GitHub</a>
   </TabItem>
   {/* <TabItem value="nodejs">
     <CodeBlock language="typescript">

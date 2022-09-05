@@ -148,6 +148,8 @@ toc:
       title: Create a service account
     - path: samples/delete-service-account
       title: Delete a service account
+    - path: samples/get-iam-policy
+      title: Get IAM policies
     - path: samples/set-iam-policy
       title: Assign IAM policies
     - path: samples/test-iam-permissions

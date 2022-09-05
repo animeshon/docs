@@ -82,6 +82,7 @@ module.exports = {
         'samples',
         'samples/create-service-account',
         'samples/delete-service-account',
+        'samples/get-iam-policy',
         'samples/set-iam-policy',
         'samples/test-iam-permissions',
       ],

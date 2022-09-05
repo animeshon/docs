@@ -84,7 +84,9 @@ module.exports = {
         'samples/list-albums',
         'samples/import-image',
         'samples/get-image-route',
+        'samples/get-iam-policy',
         'samples/set-iam-policy',
+        'samples/test-iam-permissions',
       ],
     },
     {

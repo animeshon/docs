@@ -8,4 +8,6 @@ description: All Image code samples.
 - [List albums](samples/list-albums)
 - [Import an image](samples/import-image)
 - [Obtain an image public URL](samples/get-image-route)
+- [Get IAM policies](samples/get-iam-policy)
 - [Assign IAM policies](samples/set-iam-policy)
+- [Test IAM permissions](samples/test-iam-permissions)
