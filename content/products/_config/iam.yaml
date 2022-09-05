@@ -137,11 +137,21 @@ rpc:
           description:
 
 toc:
-  guides: []
+  guides:
+    - path: quickstarts/create-service-account-with-cookie
+      title: Create a service account with cookie
   reference:
     rpc:
       - path: reference/rpc/animeshon.iam.admin.v1alpha1
-  samples: []
+  samples:
+    - path: samples/create-service-account
+      title: Create a service account
+    - path: samples/delete-service-account
+      title: Delete a service account
+    - path: samples/set-iam-policy
+      title: Assign IAM policies
+    - path: samples/test-iam-permissions
+      title: Test IAM permissions
 
 rest:
   versions:

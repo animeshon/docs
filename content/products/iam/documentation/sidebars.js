@@ -27,6 +27,7 @@ module.exports = {
       collapsed: true,
       items: [
         'quickstarts',
+        'quickstarts/create-service-account-with-cookie',
         'troubleshooting',
       ],
     },
@@ -79,6 +80,10 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/create-service-account',
+        'samples/delete-service-account',
+        'samples/set-iam-policy',
+        'samples/test-iam-permissions',
       ],
     },
     {
