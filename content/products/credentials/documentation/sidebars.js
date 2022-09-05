@@ -79,6 +79,10 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/act-as-credentials',
+        'samples/get-credentials',
+        'samples/signin',
+        'samples/exchange',
       ],
     },
     {
