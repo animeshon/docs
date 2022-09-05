@@ -19,4 +19,4 @@ The user defaults are system generated resources such as playlists and albums. U
 
 The user notifications manage how the user can be notified by our systems, such notifications include, among others, newsletters and weekly or daily reports, and can be configured to send push notifications to the phone or emails to the primary address. System communications such as security notifications cannot be disabled.
 
-NOTE: notifications are currently disabled entirely with the exception of system and security communications.
+_NOTE: notifications are currently disabled entirely with the exception of system and security communications._

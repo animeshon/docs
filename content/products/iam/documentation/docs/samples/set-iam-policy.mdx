@@ -1,0 +1,73 @@
+---
+title: Assign IAM policies
+description: TODO
+---
+
+# Assign IAM policies
+
+This page describes how to programmatically grant access to an Identity and Access Management API resource.
+
+## Roles
+
+The list of roles that can be assigned to _Identity and Access Management API_ resources can be found in the [reference page](/iam/docs/reference/iam/roles) for IAM roles.
+
+## IAM Members
+
+The IAM members that can be assigned to an IAM policy binding can be one of the following:
+
+| Member | Description |
+| --- | --- |
+| `user:12345567890` | Used to grant roles only to a specific user. |
+| `serviceAccount:12345567890` | Used to grant roles only to a specific service account. |
+
+:::warning
+
+The role `allUsers` cannot be assigned to Identity and Access Management resource policies for security reasons.
+
+:::
+
+## Sample
+
+The following code sample shows how to assign a service account IAM policy with the role `roles/iam.serviceAccountAdmin`. This means that that the policy member will be allowed full control over the specified service account, including resource deletion and IAM policy updates.
+
+Replace `[SERVICE-ACCOUNT]` with the resource name of the service account that the policy should be assigned to, e.g. `users/123/serviceAccounts/my-service-account`.
+
+Replace `[MEMBER]` with the resource name of the member to be assigned to the policy binding, e.g. `user:12345567890`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+:::caution
+
+The `SetIamPolicy` method will always replace (overwrite) any previously defined policy.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/iam/set-iam-policy/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/iam/set-iam-policy/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/iam/set-iam-policy/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>
