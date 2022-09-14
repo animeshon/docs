@@ -98,7 +98,9 @@ toc:
   reference:
     rpc:
       - path: reference/rpc/animeshon.vision.v1alpha1
-  samples: []
+  samples:
+    - path: samples/create-image-annotation
+      title: Create an image annotation
 
 rest:
   versions:

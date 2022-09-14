@@ -1,0 +1,52 @@
+---
+title: Create an image annotation
+description: TODO
+---
+
+# Create an image annotation
+
+This page describes how to create an image annotation.
+
+## Overview
+
+Image analyses are the result of image annotations and artificial intelligence analysis. By creating image annotations users can manually provide suggestions for better analysis reports and a correct classification of images. Annotations also contribute to improving our internal machine learning models.
+
+## Sample
+
+The following sample shows how to create an image annotation.
+
+Replace `[USER]` with the resource name of the user or organization that the annotations belong to, e.g. `users/123` or `organizations/123`.
+
+Replace `[RESOURCE]` with the full qualified resource name (FQRN) of the image to be annotated, e.g. `//image.animeapis.com/users/123/albums/456/images/789`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/vision/create-image-annotation/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/vision/create-image-annotation/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/vision/create-image-annotation/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

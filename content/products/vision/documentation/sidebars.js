@@ -79,6 +79,7 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/create-image-annotation',
       ],
     },
     {
