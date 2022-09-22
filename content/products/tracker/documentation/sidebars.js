@@ -79,6 +79,11 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/create-tracker',
+        'samples/create-activity',
+        'samples/update-tracker',
+        'samples/list-trackers',
+        'samples/import-trackers',
       ],
     },
     {

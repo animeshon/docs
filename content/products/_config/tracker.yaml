@@ -112,7 +112,17 @@ toc:
   reference:
     rpc:
       - path: reference/rpc/animeshon.tracker.v1alpha1
-  samples: []
+  samples:
+    - path: samples/create-tracker
+      title: Create a tracker
+    - path: samples/create-activity
+      title: Create a tracker activity
+    - path: samples/update-tracker
+      title: Update a tracker
+    - path: samples/list-trackers
+      title: List trackers
+    - path: samples/import-trackers
+      title: Import trackers from third-parties
 
 rest:
   versions:

@@ -17,7 +17,7 @@ NOTE: A feature will be made available to introduce the _continue from last time
 
 ## Trackers
 
-Trackers describe at a high level the progress of a resource conumption, such as _user X watched 50% (or 6 episodes) of anime Y, the consumption is IN PROGRESS, meaning it is yet to be COMPLETED and it's not ON HOLD, the consumed resources so far are the episodes [A ... F], and consumption started on May 22nd 2022 and was last updated on May 27th 2022_.
+Trackers describe at a high level the progress of a resource consumption, such as _user X watched 50% (or 6 episodes) of anime Y, the consumption is IN PROGRESS, meaning it is yet to be COMPLETED and it's not ON HOLD, the consumed resources so far are the episodes [A ... F], and consumption started on May 22nd 2022 and was last updated on May 27th 2022_.
 
 ### Tracking through resources
 

@@ -1,0 +1,52 @@
+---
+title: Create a tracker
+description: TODO
+---
+
+# Create a tracker
+
+This page describes how to create a tracker.
+
+## Overview
+
+Trackers describe at a high level the progress of a resource consumption, such as _user X watched 50% (or 6 episodes) of anime Y, the consumption is IN PROGRESS, meaning it is yet to be COMPLETED and it's not ON HOLD, the consumed resources so far are the episodes [A ... F], and consumption started on May 22nd 2022 and was last updated on May 27th 2022_.
+
+## Sample
+
+The following sample shows how to create a tracker.
+
+Replace `[USER-OR-AUDIENCE]` with the resource name of the user or audience the tracker belong to, e.g. `users/123` or `audiences/123`.
+
+Replace `[RESOURCE]` with the resource name of the resource to be tracked, e.g. `animes/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/tracker/create-tracker/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/tracker/create-tracker/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/tracker/create-tracker/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

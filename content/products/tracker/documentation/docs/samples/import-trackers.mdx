@@ -1,0 +1,50 @@
+---
+title: Import trackers from third-parties
+description: TODO
+---
+
+# Import trackers from third-parties
+
+This page describes how to import trackers from third-parties.
+
+## Prerequisites
+
+Trackers can be seamlessly imported from third-parties into Animeshon but the associated credentials must be configured beforehand through the [Credentials API](/credentials/docs).
+
+## Sample
+
+The following sample shows how to import trackers from third-parties.
+
+Replace `[USER-OR-AUDIENCE]` with the resource name of the user or audience the trackers will be imported to, e.g. `users/123` or `audiences/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/tracker/import-trackers/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/tracker/import-trackers/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/tracker/import-trackers/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

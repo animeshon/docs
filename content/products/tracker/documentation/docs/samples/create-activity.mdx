@@ -1,0 +1,52 @@
+---
+title: Create a tracker activity
+description: TODO
+---
+
+# Create a tracker activity
+
+This page describes how to create a tracker activity.
+
+## Overview
+
+Activities describe at a very granular level an action performed by a user or group of users (i.e. audiences) such as _user X watched episode N from 00:00 to 05:00 on the 20th of September 2022 starting at 2:37pm and finishing at 2:42pm on Netflix_.
+
+## Sample
+
+The following sample shows how to create a tracker activity.
+
+Replace `[TRACKER]` with the resource name of the tracker the activity belong to, e.g. `users/123/trackers/456`.
+
+Replace `[RESOURCE]` with the resource name of the resource (chapters or episodes) to be tracked, e.g. `animes/123/episodes/456`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/tracker/create-activity/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/tracker/create-activity/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/tracker/create-activity/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

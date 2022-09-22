@@ -1,0 +1,46 @@
+---
+title: List trackers
+description: TODO
+---
+
+# List trackers
+
+This page describes how to list trackers.
+
+## Sample
+
+The following sample shows how to list trackers.
+
+Replace `[USER-OR-AUDIENCE]` with the resource name of the user or audience the trackers will be listed from, e.g. `users/123` or `audiences/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/tracker/list-trackers/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/tracker/list-trackers/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/tracker/list-trackers/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>
