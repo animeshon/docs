@@ -4,9 +4,11 @@ description: All Library code samples.
 ---
 
 # All Library code samples
-There are currently no samples documented for this service.
-
-Sometimes samples are available but not yet documented, please check the following repositories for further information:
-
-- [Golang](https://github.com/animeapis/golang-samples)
-- [Node.js](https://github.com/animeapis/nodejs-samples)
+- [Create a playlist](samples/create-playlist)
+- [Create a playlist item](samples/create-playlist-item)
+- [Create a batch of playlist items](samples/batch-create-playlist-items)
+- [List playlists](samples/list-playlists)
+- [List items of a playlist](samples/list-playlist-items)
+- [Get IAM policies](samples/get-iam-policy)
+- [Assign IAM policies](samples/set-iam-policy)
+- [Test IAM permissions](samples/test-iam-permissions)

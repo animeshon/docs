@@ -79,6 +79,14 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/create-playlist',
+        'samples/create-playlist-item',
+        'samples/batch-create-playlist-items',
+        'samples/list-playlists',
+        'samples/list-playlist-items',
+        'samples/get-iam-policy',
+        'samples/set-iam-policy',
+        'samples/test-iam-permissions',
       ],
     },
     {

@@ -1,0 +1,66 @@
+---
+title: Assign IAM policies
+description: TODO
+---
+
+# Assign IAM policies
+
+This page describes how to programmatically grant access to a Library API resource.
+
+## Roles
+
+The list of roles that can be assigned to _Library API_ resources can be found in the [reference page](/library/docs/reference/iam/roles) for IAM roles.
+
+## IAM Members
+
+The IAM members that can be assigned to an IAM policy binding can be one of the following:
+
+| Member | Description |
+| --- | --- |
+| `allUsers` | Used to grant roles to anyone, both authenticated and unauthenticated. |
+| `user:12345567890` | Used to grant roles only to a specific user. |
+| `serviceAccount:12345567890` | Used to grant roles only to a specific service account. |
+
+## Sample
+
+The following code sample shows how to assign a playlist IAM policy with the role `roles/library.viewer` assigned to `allUsers`. This means that any user, doesn't matter if authenticated or not, will be able to access the playlist.
+
+Replace `[PLAYLIST]` with the resource name of the playlist that the policy should be assigned to, e.g. `users/123/playlists/456`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+:::caution
+
+The `SetIamPolicy` method will always replace (overwrite) any previously defined policy.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/iam/set-iam-policy/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/iam/set-iam-policy/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/iam/set-iam-policy/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

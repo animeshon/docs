@@ -88,7 +88,23 @@ toc:
   reference:
     rpc:
       - path: reference/rpc/animeshon.library.v1alpha1
-  samples: []
+  samples:
+    - path: samples/create-playlist
+      title: Create a playlist
+    - path: samples/create-playlist-item
+      title: Create a playlist item
+    - path: samples/batch-create-playlist-items
+      title: Create a batch of playlist items
+    - path: samples/list-playlists
+      title: List playlists
+    - path: samples/list-playlist-items
+      title: List items of a playlist
+    - path: samples/get-iam-policy
+      title: Get IAM policies
+    - path: samples/set-iam-policy
+      title: Assign IAM policies
+    - path: samples/test-iam-permissions
+      title: Test IAM permissions
 
 rest:
   versions:

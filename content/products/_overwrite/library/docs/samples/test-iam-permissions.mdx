@@ -1,0 +1,50 @@
+---
+title: Test IAM permissions
+description: TODO
+---
+
+# Test IAM permissions
+
+This page describes how to programmatically test IAM permissions against a Library API resource. This is especially useful to check whether the currently authenticated identity is allowed to perform a specific action. Testing permissions is also used in Permission-Aware UIs to hide action items from the user interface, e.g. if a user is not allowed to delete a resource the _delete button_ won't be rendered in the UI.
+
+## Permissions
+
+The list of permissions that can be tested against _Library API_ resources can be found in the [reference page](/library/docs/reference/iam/permissions) for IAM permissions.
+
+## Sample
+
+The following code sample shows how to test a set of permissions against a playlist.
+
+Replace `[PLAYLIST]` with the resource name of the playlist that the permissions should be tested against, e.g. `users/123/playlists/456`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/library/test-iam-permissions/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/library/test-iam-permissions/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/library/test-iam-permissions/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

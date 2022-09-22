@@ -1,0 +1,48 @@
+---
+title: Create a batch of playlist items
+description: TODO
+---
+
+# Create a batch of playlist items
+
+This page describes how to create a batch of playlist items.
+
+## Sample
+
+The following sample shows how to create a batch of playlist items.
+
+Replace `[PLAYLIST]` with the resource name of the playlist that the item belongs to, e.g. `users/123/playlists/456`.
+
+Replace `[RESOURCE-1]`, `[RESOURCE-2]`, and `[RESOURCE-3]` with the resource names of the multimedia resources to be added, e.g. `animes/123`.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/library/batch-create-playlist-items/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/library/batch-create-playlist-items/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/library/batch-create-playlist-items/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>
