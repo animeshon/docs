@@ -7,6 +7,12 @@ description: Overview for WebPage.
 
 The `WebPage` service is responsible for analyzing, parsing, and indexing HTML pages.
 
+:::tip
+
+Access to the `WebPage` service is limited, please get in touch with us for more information.
+
+:::
+
 ## Analysis
 
 Indexed HTML pages can be analyzed through the [Ferret Query Language (FQL)](https://www.montferret.dev/) and the parsed data is returned in JSON format. The analysis performance is very high and can reach up to 5.000 requests per second through requests [streaming](/protocols/grpc) (gRPC).

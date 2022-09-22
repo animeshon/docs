@@ -7,6 +7,12 @@ description: Overview for WebCache.
 
 The `WebCache` service is responsible for caching metadata related to web resources such as remote HTML pages and images. The _WebCache API_ is used by the [Image](/image/docs) and [WebPage](/webpage/docs) services to keep track of imported resources.
 
+:::tip
+
+Access to the `WebCache` service is limited, please get in touch with us for more information.
+
+:::
+
 ## Cache Metadata
 
 The caches managed by the service include the following metadata:
