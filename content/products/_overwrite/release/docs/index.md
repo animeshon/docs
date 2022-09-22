@@ -7,7 +7,11 @@ description: Overview for Release.
 
 The `Release` service is responsible for the release management of resources owned by the [Product](/product/docs) service.
 
-**_The `Release` service is in pre-alpha stage which means that the product is in early-stage development and some features might be missing, broken or behave unexpectedly._**
+:::danger
+
+The `Release` service is in pre-alpha stage which means that the product is in early-stage development and some features might be missing, broken or behave unexpectedly.
+
+:::
 
 ## Copyright and ownership authority
 

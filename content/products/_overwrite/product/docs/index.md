@@ -7,7 +7,11 @@ description: Overview for Product.
 
 The `Product` service is responsible for the management of physical and digital goods.
 
-**_The `Product` service is in pre-alpha stage which means that the product is in early-stage development and some features might be missing, broken or behave unexpectedly._**
+:::danger
+
+The `Product` service is in pre-alpha stage which means that the product is in early-stage development and some features might be missing, broken or behave unexpectedly.
+
+:::
 
 ### Products
 
