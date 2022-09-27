@@ -7,7 +7,7 @@ This page is work in progress.
 
 ## Endpoint
 
-There is a single unified endpoint for Animeshon GraphQL queries and mutations: `https://animeshon.com/graphql`.
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: `https://animeshon.com/graphql`
 
 ## Services
 
