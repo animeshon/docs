@@ -5,7 +5,25 @@ description: TODO
 
 This page is work in progress.
 
+## Endpoints
+
+Each service exposed by Animeshon has a public endpoint described in both its protobuf definitions and its gRPC documentation. The endpoint is the same as the endpoint used for REST communication.
+
+All endpoints support only connections over TLS through HTTP/2 or HTTP/3. If connections over HTTP/1.0 or HTTP/1.1 are needed please use the [REST Clients](/protocols/rest) instead.
+
+## Client Libraries
+
+Animeshon provides official gRPC client libraries for each public service in several programming languages.
+
+Please read the [Supported Client Libraries](/libraries/welcome) documentation for more information.
+
+## Definitions
+
+The protobuf services definitions can be found in the [Animeshon APIs](https://github.com/animeapis/animeapis) repository.
+
 ## Known Issues
+
+This paragraph lists known issues for gRPC endpoints.
 
 ### gRPC streaming terminated by RST_STREAM
 
