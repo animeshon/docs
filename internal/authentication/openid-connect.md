@@ -5,6 +5,12 @@ description: TODO
 
 This page is work in progress.
 
+:::caution
+
+OpenID Connect is partially supported by Animeshon but it is currently not exposed to the public.
+
+:::
+
 ## Endpoints
 
 ### JSON Web Keys Discovery
@@ -22,13 +28,3 @@ This page is work in progress.
 ### OpenID Connect Userinfo
 
 `https://accounts.animeshon.com/o/userinfo`
-
-## Status
-
-OpenID Connect is partially supported by Animeshon but it is currently not exposed to the public.
-
-:::tip
-
-Get in touch with us for more information.
-
-:::
