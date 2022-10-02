@@ -1,3 +1,9 @@
 [submodule "samples/golang-samples"]
 	path = samples/golang-samples
 	url = https://github.com/animeapis/golang-samples.git
+[submodule "samples/graphql-samples"]
+	path = samples/graphql-samples
+	url = https://github.com/animeapis/graphql-samples.git
+[submodule "samples/nodejs-samples"]
+	path = samples/nodejs-samples
+	url = https://github.com/animeapis/nodejs-samples.git
