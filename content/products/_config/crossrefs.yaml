@@ -56,7 +56,9 @@ toc:
   reference:
     rpc:
       - path: reference/rpc/animeshon.crossrefs.v1alpha1
-  samples: []
+  samples:
+    - path: samples/create-crossref
+      title: Create a cross-reference
 
 rest:
   versions:
