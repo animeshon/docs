@@ -1,0 +1,59 @@
+---
+title: Get a Contribution
+description: TODO
+---
+
+# Get a Contribution
+
+This page describes how to get a contribution.
+The returned object contains all details about the contribution, the most important one is the status and who reviewed it.
+
+:::tip
+
+Tip: the `generation` fields represent how many times the contribution has been modified by either the user or a moderator.
+
+:::
+
+:::warning
+
+The contribution object does not describe the changes the contribution is proposing. To retrieve those information use [Get Contribution Changes](get-contribution-changes) instead.
+
+:::
+
+## Sample
+
+The following sample shows how to get a contribution.
+
+Replace `[CONTRIBUTION-NAME]` with a valid contribution name you are authorized to see.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/knowledge/get-contribution/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/knowledge/get-contribution/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/knowledge/get-contribution/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

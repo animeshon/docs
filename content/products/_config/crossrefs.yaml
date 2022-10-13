@@ -59,6 +59,14 @@ toc:
   samples:
     - path: samples/create-crossref
       title: Create a cross-reference
+    - path: samples/get-crossref
+      title: Get a cross-reference
+    - path: samples/list-crossrefs
+      title: List cross-references
+    - path: samples/get-wormhole
+      title: Get a wormhole entity
+    - path: samples/list-crossrefs-by-wormhole
+      title: List cross-references by wormhole name 
 
 rest:
   versions:

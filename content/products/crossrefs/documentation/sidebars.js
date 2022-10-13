@@ -80,6 +80,10 @@ module.exports = {
       items: [
         'samples',
         'samples/create-crossref',
+        'samples/get-crossref',
+        'samples/list-crossrefs',
+        'samples/get-wormhole',
+        'samples/list-crossrefs-by-wormhole',
       ],
     },
     {

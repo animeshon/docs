@@ -1,0 +1,49 @@
+---
+title: Get Contribution Changes
+description: TODO
+---
+
+# Get Contribution Changes
+
+This page describes how to get the changes a contribution is proposing.
+The changes are returned in the same format the user provided them during creation.
+
+Please refer to [Declarative Syntax Tree](create-contribution#declarative-syntax-tree) for the Syntax Tree specification.
+
+## Sample
+
+The following sample shows how to retrieve the changes a contribution is proposing.
+
+Replace `[CONTRIBUTION-NAME]` with a valid contribution name you are authorized to see.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/knowledge/get-contribution-changes/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/knowledge/get-contribution-changes/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/knowledge/get-contribution-changes/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

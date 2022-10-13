@@ -1,30 +1,29 @@
 ---
-title: Create a cross-reference
+title: List cross-references
 description: TODO
 ---
 
-# Create a cross-reference
+# List cross-references
 
-This page describes how to create a cross-reference.
+This page describes how to list cross-references.
 
 ## Sample
 
-The following sample shows how to create a cross-reference.
-
-Be aware that the service will check if all entities put as `APPROVED` edges are not yet _fully cross-referenced_ in any other cross-reference.
-
-Given a `Name` to the cross-reference, the service will automatically add Animeshon provider's edge.
-
-EG:
-
-`Name` = `animes/123` will generate `APPROVED` edges `namespaces/animeshon-com/animes/123` and `namespaces/animeshon-com/animes/123-deletion` which are necessary fot the system to run.
+The following sample shows how to list cross-references.
 
 :::tip
 
-State = 1: `PENDING`
-State = 2: `APPROVED`
-State = 3: `REJECTED`
-State = 4: `PARTIAL`
+It is possible to filter out only cross-references of a particular collection using `Prefix` filter.
+
+```
+Prefix: "animes" -> only animes/- cross-references
+```
+
+:::
+
+:::tip
+
+It is possible to filter out only cross-references with a pending edge (therefore waiting for an operator to take action) using the `PendingOnly` filter.
 
 :::
 

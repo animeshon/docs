@@ -1,0 +1,59 @@
+---
+title: List cross-references by wormhole name 
+description: TODO
+---
+
+# List cross-references by wormhole name 
+
+This page describes how to list cross-references by wormhole name.
+
+Given a wormhole resource name in the `namespaces/{namespace}/{collection}/{id}` format, the service returns the list of all cross-references in which the womrhole entry is an edge.
+
+It is possible to specify the edge's `State` ( `PENDING`, `APPROVED`, `REJECTED`, `PARTIAL`) through the filter to restrict the result set.
+
+## Sample
+
+The following sample shows how to list cross-references by wormhole name.
+
+Replace `[RESOURCE NAME]` with a valid resource name in the `namespaces/{namespace}/{collection}/{id}` format.
+
+:::tip
+
+State = 1: `PENDING`
+State = 2: `APPROVED`
+State = 3: `REJECTED`
+State = 4: `PARTIAL`
+
+:::
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/crossrefs/list-crossrefs-by-wormhole/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/crossrefs/list-crossrefs-by-wormhole/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/crossrefs/list-crossrefs-by-wormhole/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>
