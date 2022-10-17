@@ -1,0 +1,38 @@
+---
+title: Get Viewer Info
+description: TODO
+---
+
+# Get Viewer Info
+
+This page shows how to get meaningful information about the `Viewer`. The viewer is the authenticated user currently performing the request.
+
+## Sample
+
+Performing the following GraphQL query returns info about the user.
+
+Among all self-explanatory fields, `defaults` is a special field containing very important resources created by the system by default at the SIgnUp.
+For example, the name of `albums` where to upload **profile** and **banner** images or the `LIKED` and `LATER` playlists.
+
+
+:::warning
+
+The caller must be already authenticated.
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/query-viewer-info.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/query-viewer-info.gql">View on GitHub</a>
