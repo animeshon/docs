@@ -3,7 +3,24 @@ title: GraphQL
 description: TODO
 ---
 
-This page is work in progress.
+GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools. [Source](https://graphql.org/)
+
+## Clients
+
+Any programming language capable of making a POST request supports GraphQL. There are also numerous client libraries to ease the task of manage requests and responses against a GraphQL endpoint.
+
+To name some of the most common and popular:
+
+- Javascript [Relay](https://relay.dev/)
+
+- React [Apollo](https://github.com/SerialLain3170/AwesomeAnimeResearch)
+
+- iOS [Apollo](https://www.apollographql.com/docs/ios)
+
+- Kotlin [Apollo](https://www.apollographql.com/docs/kotlin)
+
+- Multilanguage [graphql.org](https://graphql.org/code/)
+
 
 ## Endpoint
 
