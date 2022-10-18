@@ -24,7 +24,7 @@ To name some of the most common and popular:
 
 ## Endpoint
 
-There is a single unified endpoint for Animeshon GraphQL queries and mutations: `https://animeshon.com/graphql`
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
 
 ## Services
 

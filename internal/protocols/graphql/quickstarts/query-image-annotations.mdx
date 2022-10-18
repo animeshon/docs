@@ -1,0 +1,39 @@
+---
+title: Image Annotations
+description: TODO
+---
+
+# Image Annotations
+
+This page shows how to get and interpret `Image` annotations. Image annotations are attributes attached to any image created in Animeshon's systems.
+Those annotations are useful to determine whether to show or hide them to the user.
+
+For example, if someone has the **safe search** enabled, images annotated `VERY_LIKELY` to be `adult` should not be shown.
+
+## Sample
+
+`annotations` edge can be queried to any `Image` in the datagraph.
+
+Replace `[RESOURCE-NAME]` with a valid content in Animeshon's Knowledge Base.
+
+:::tip
+
+Try with `animes/4287922344858850139`.
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/query-by-crossref.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/query-by-crossref.gql">View on GitHub</a>
