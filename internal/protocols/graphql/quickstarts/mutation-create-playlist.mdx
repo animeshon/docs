@@ -1,0 +1,44 @@
+---
+title: Create a playlist
+description: TODO
+---
+
+# Create a playlist
+
+This page shows how to create a playlist using Animeshon's GraphQL gateway.
+
+## Sample
+
+Replace `[USER]` with the currently authenticated user in the `users/{id}` format.
+
+The mutation will create a playlist with the provided `displayName` for the user specified as `parent`.
+
+The call returns the unique name of the newly created playlist as `users/{user-id}/playlists/{playlist-id}`. This resource name can later be used to update the playlist.
+
+:::warning
+
+The caller must be already authenticated.
+
+:::
+
+:::warning
+
+Each call creates a new playlist.
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/mutation-create-playlist.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/mutation-create-playlist.gql">View on GitHub</a>

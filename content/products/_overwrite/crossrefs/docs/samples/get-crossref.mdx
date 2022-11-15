@@ -1,0 +1,46 @@
+---
+title: Get a cross-reference
+description: TODO
+---
+
+# Get a cross-reference
+
+This page describes how to Get a cross-reference by name.
+
+## Sample
+
+The following sample shows how to get a cross-reference by name.
+
+Replace `[RESOURCE NAME]` with a valid resource name in the `namespaces/{namespace}/{collection}/{id}` format.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/crossrefs/get-crossref/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/crossrefs/get-crossref/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/crossrefs/get-crossref/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

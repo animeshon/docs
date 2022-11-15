@@ -34,12 +34,20 @@ releases:
 #         - name: AllocateResourceName
 #           description:
 
-# toc:
-#   guides: []
-#   reference:
-#     rpc:
-#       - path: reference/rpc/animeshon.knowledge.v1alpha1
-#   samples: []
+toc:
+  guides: []
+  # reference:
+  #   rpc:
+  #     - path: reference/rpc/animeshon.knowledge.v1alpha1
+  samples:
+    - path: samples/create-contribution
+      title: Create a Contribution
+    - path: samples/get-contribution
+      title: Get a Contribution
+    - path: samples/get-contribution-changes
+      title: Get Contribution Changes
+    - path: samples/list-contributions
+      title: List Contributions
 
 rest:
   versions:

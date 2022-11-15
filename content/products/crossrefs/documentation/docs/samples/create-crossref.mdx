@@ -1,0 +1,61 @@
+---
+title: Create a cross-reference
+description: TODO
+---
+
+# Create a cross-reference
+
+This page describes how to create a cross-reference.
+
+## Sample
+
+The following sample shows how to create a cross-reference.
+
+Be aware that the service will check if all entities put as `APPROVED` edges are not yet _fully cross-referenced_ in any other cross-reference.
+
+Given a `Name` to the cross-reference, the service will automatically add Animeshon provider's edge.
+
+EG:
+
+`Name` = `animes/123` will generate `APPROVED` edges `namespaces/animeshon-com/animes/123` and `namespaces/animeshon-com/animes/123-deletion` which are necessary fot the system to run.
+
+:::tip
+
+State = 1: `PENDING`
+State = 2: `APPROVED`
+State = 3: `REJECTED`
+State = 4: `PARTIAL`
+
+:::
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/crossrefs/create-crossref/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/crossrefs/create-crossref/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/crossrefs/create-crossref/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

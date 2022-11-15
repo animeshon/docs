@@ -1,0 +1,55 @@
+---
+title: Get a wormhole entity
+description: TODO
+---
+
+# Get a wormhole entity
+
+This page describes how to retrieve a wormhole entity.
+
+Wormhole entities are raw information coming from external providers. Those information have not changed by Animeshon's systems and describe how the resource is stored and presented in other providers.
+
+Wormhole exposes only basic information like *names*, *release date*, *image*, *remote url*, ... The bare minimum to determine whether 2 entities coming from different providers should or should not be linked.
+
+:::tip
+
+Animeshon's entries in the `namespaces/animeshon-com/animes/123` format are considered valid wormhole entities. 
+
+:::
+
+## Sample
+The following sample shows how to retrieve a wormhole entity.
+
+Replace `[RESOURCE NAME]` with a valid resource name in the `namespaces/{namespace}/{collection}/{id}` format.
+
+:::tip
+
+Tip: do not forget to replace `CLIENT-ID` and `CLIENT-SECRET` with valid [IAM Service Account](/authentication/service-accounts) client credentials.
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGo from '!!raw-loader!./../../../../../../samples/golang-samples/crossrefs/get-wormhole/main.go';
+// import SampleTypescript from '!!raw-loader!./../../../../../../nodejs-samples/crossrefs/get-wormhole/app.ts';
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  groupId="programming-languages"
+  values={[
+    {label: 'Golang', value: 'go'},
+    {/* {label: 'Node.js', value: 'nodejs'}, */}
+  ]}>
+  <TabItem value="go">
+    <CodeBlock language="go">
+      {SampleGo}
+    </CodeBlock>
+    <a href="https://github.com/animeapis/golang-samples/blob/master/crossrefs/get-wormhole/main.go">View on GitHub</a>
+  </TabItem>
+  {/* <TabItem value="nodejs">
+    <CodeBlock language="typescript">
+      {SampleTypescript}
+    </CodeBlock>
+  </TabItem> */}
+</Tabs>

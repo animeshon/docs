@@ -1,0 +1,37 @@
+---
+title: Update tracker
+description: TODO
+---
+
+# Update tracker
+
+This page shows how to update a tracker using Animeshon's GraphQL gateway.
+To create the tracker check [create a tracker](mutation-create-tracker)'s page.
+
+## Sample
+
+Replace `[TRACKER-NAME]` with an existing tracker.
+
+Replace `[RESOURCE-NAME]` with the resource associated with the tracker.
+
+:::warning
+
+The caller must be already authenticated.
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/mutation-update-playlist.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/mutation-update-playlist.gql">View on GitHub</a>

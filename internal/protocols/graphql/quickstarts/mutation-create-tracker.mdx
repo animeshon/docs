@@ -1,0 +1,52 @@
+---
+title: Create a tracker
+description: TODO
+---
+
+# Create a tracker
+
+This page shows how to create a tracker using Animeshon's GraphQL gateway.
+
+## Sample
+
+Replace `[USER]` with the currently authenticated user in the `users/{id}` format.
+
+Replace `[RESOURCE-NAME]` with a valid content in Animeshon's Knowledge Base.
+
+:::tip
+
+Try to use `animes/4287922344858850139` as `[RESOURCE-NAME]`
+
+:::
+
+The mutation will create a tracker for the provided `resource` for the user specified as `parent`.
+
+The call returns the unique name of the newly created tracker as `users/{user-id}/trackers/{tracker-id}`. This resource name can later be used to update the tracker.
+
+:::warning
+
+The caller must be already authenticated.
+
+:::
+
+:::warning
+
+Each call creates a new tracker.
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/mutation-create-tracker.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/mutation-create-tracker.gql">View on GitHub</a>

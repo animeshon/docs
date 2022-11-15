@@ -4,9 +4,8 @@ description: All Cross-Reference code samples.
 ---
 
 # All Cross-Reference code samples
-There are currently no samples documented for this service.
-
-Sometimes samples are available but not yet documented, please check the following repositories for further information:
-
-- [Golang](https://github.com/animeapis/golang-samples)
-- [Node.js](https://github.com/animeapis/nodejs-samples)
+- [Create a cross-reference](samples/create-crossref)
+- [Get a cross-reference](samples/get-crossref)
+- [List cross-references](samples/list-crossrefs)
+- [Get a wormhole entity](samples/get-wormhole)
+- [List cross-references by wormhole name](samples/list-crossrefs-by-wormhole)

@@ -1,0 +1,30 @@
+---
+title: Perform a Temporal search
+description: TODO
+---
+
+# Perform a Temporal search
+
+This page shows how to query Animeshon's Knowledge Base asking for content released in the specified span of time.
+
+## Sample
+
+Customize the query to meet your need.
+
+Dates **must** be provided as strings in `YYYY-MM-DD` format.
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/oracolo-query-temporal-search.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/oracolo-query-temporal-search.gql">View on GitHub</a>

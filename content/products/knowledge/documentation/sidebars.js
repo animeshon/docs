@@ -78,6 +78,10 @@ module.exports = {
       collapsed: true,
       items: [
         'samples',
+        'samples/create-contribution',
+        'samples/get-contribution',
+        'samples/get-contribution-changes',
+        'samples/list-contributions',
       ],
     },
     {

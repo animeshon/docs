@@ -1,0 +1,39 @@
+---
+title: Search by cross-reference
+description: TODO
+---
+
+# Search by cross-reference
+
+This page shows how to use extern IDs to query Animeshon's Knowledge Base and retrieve all linked entities. 
+Searching by external cross-reference is useful when building applications or scripts already based on external provider's IDs.
+
+## Sample
+
+`kind` specifies the kind of the entity **in the external provider**.
+
+`namespace` specifies which external provider the entity `id` belongs to.
+
+Replace `[TRACKER-NAME]` with the external ID.
+
+:::tip
+
+In the following example, replace `[TRACKER-NAME]` with `239` to search for ANIDB's Anime 239
+
+:::
+
+:::tip
+
+Visit [https://animeshon.com/graphql](https://animeshon.com/graphql) to browse the GraphQL embedded documentation.
+
+There is a single unified endpoint for Animeshon GraphQL queries and mutations: [https://animeshon.com/graphql](https://animeshon.com/graphql).
+
+:::
+
+import CodeBlock from '@theme/CodeBlock';
+import SampleGql from '!!raw-loader!./../../../../samples/graphql-samples/quickstarts/query-by-crossref.gql';
+
+<CodeBlock language="graphql">
+  {SampleGql}
+</CodeBlock>
+<a href="https://github.com/animeapis/graphql-samples/blob/master/quickstarts/query-by-crossref.gql">View on GitHub</a>
