@@ -44,8 +44,8 @@ jobs:
       - name: Clone the repository code
         uses: actions/checkout@v2
 
-      - uses: azure/setup-kubectl@v1
-      - uses: azure/setup-helm@v1
+      - uses: azure/setup-kubectl@v3
+      - uses: azure/setup-helm@v3
 
       - name: Install and configure Google Cloud CLI
         uses: google-github-actions/setup-gcloud@v0
